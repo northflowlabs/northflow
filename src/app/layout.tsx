@@ -8,6 +8,7 @@ import Header from '@/components/common/Header';
 import Footer from '@/components/common/Footer';
 import StructuredData from '@/components/common/StructuredData';
 import { generateOrganizationSchema, generateWebSiteSchema } from '@/lib/seo';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -96,6 +97,7 @@ export default function RootLayout({
         <Header />
         <main>{children}</main>
         <Footer />
+        <SpeedInsights />
       </body>
     </html>);
 
