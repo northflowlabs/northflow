@@ -16,7 +16,7 @@ const MethodologicalFoundation = ({ className = '' }: MethodologicalFoundationPr
             EFOS is informed by Northflow Research methodologies developed in Project HGE. HGE contributes validation workflows, uncertainty-aware reasoning, and provenance practices that strengthen system robustness over time.
           </p>
           <Link
-            href="/research"
+            href="/research/hge"
             className="inline-flex items-center gap-2 text-primary hover:text-primary/80 font-medium transition-colors duration-200"
           >
             Read about Project HGE

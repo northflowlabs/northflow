@@ -82,7 +82,7 @@ export default function ResourcesPage() {
               </svg>
             </Link>
             <Link
-              href="/research"
+              href="/research/hge"
               className="inline-flex items-center gap-2 px-4 py-2 bg-accent text-accent-foreground rounded-md hover:bg-accent/90 transition-colors font-body text-sm font-medium"
             >
               HGE overview
