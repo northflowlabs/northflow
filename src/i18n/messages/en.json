@@ -1,0 +1,362 @@
+{
+    "nav": {
+        "home": "Home",
+        "about": "About",
+        "research": "Research",
+        "systems": "Systems",
+        "initiatives": "Initiatives",
+        "resources": "Resources",
+        "engage": "Engage",
+        "rss": "RSS Feed"
+    },
+    "footer": {
+        "tagline": "Sovereign digital infrastructure for European institutions",
+        "quickLinks": "Quick Links",
+        "about": "About",
+        "research": "Research",
+        "systems": "Systems",
+        "initiatives": "Initiatives",
+        "resources": "Resources",
+        "allResources": "All Resources",
+        "documentation": "Documentation",
+        "technicalPapers": "Technical Papers",
+        "rssFeed": "RSS Feed",
+        "legal": "Legal",
+        "legalNotice": "Legal Notice",
+        "privacyPolicy": "Privacy Policy",
+        "dataProtection": "Data Protection",
+        "termsOfService": "Terms of Service",
+        "contact": "Contact",
+        "copyright": "© {year} Northflow Technologies. All rights reserved.",
+        "languageGovernance": "Translations are provided for accessibility. The English version constitutes the authoritative reference.",
+        "technicalNote": "Detailed technical and legal materials are maintained in English as the authoritative version."
+    },
+    "common": {
+        "learnMore": "Learn More",
+        "readMore": "Read More",
+        "contactUs": "Contact Us",
+        "getStarted": "Get Started",
+        "viewAll": "View All",
+        "backToHome": "Back to Home"
+    },
+    "homepage": {
+        "hero": {
+            "title": "Sovereign Digital Infrastructure for European Institutions",
+            "subtitle": "Building resilient, compliant, and interoperable systems that preserve institutional autonomy while enabling cross-border collaboration",
+            "cta": "Explore Our Approach"
+        },
+        "trustIndicators": {
+            "title": "Institutional Trust Through Technical Excellence",
+            "norwegianBuilt": "Built in Norway",
+            "norwegianBuiltDesc": "Developed under Norwegian data sovereignty standards",
+            "europeanCompliance": "European Compliance",
+            "europeanComplianceDesc": "Aligned with EU regulatory frameworks and GDPR requirements",
+            "openStandards": "Open Standards",
+            "openStandardsDesc": "Based on transparent, auditable technical specifications",
+            "institutionalFocus": "Institutional Focus",
+            "institutionalFocusDesc": "Purpose-built for government and regulatory requirements"
+        },
+        "fourPillars": {
+            "title": "Four Pillars of Institutional Infrastructure",
+            "sovereignty": "Digital Sovereignty",
+            "sovereigntyDesc": "Maintain full control over institutional data and operations while participating in European digital ecosystems",
+            "interoperability": "Cross-Border Interoperability",
+            "interoperabilityDesc": "Enable seamless collaboration between institutions across jurisdictions without compromising autonomy",
+            "compliance": "Regulatory Compliance",
+            "complianceDesc": "Built-in adherence to European data protection, security, and governance requirements",
+            "resilience": "Operational Resilience",
+            "resilienceDesc": "Ensure continuity of critical institutional functions through robust architecture and failover mechanisms"
+        },
+        "capabilities": {
+            "title": "Technical Capabilities",
+            "subtitle": "Comprehensive infrastructure solutions for institutional requirements",
+            "identity": "Identity & Access Management",
+            "identityDesc": "Federated authentication systems preserving institutional control",
+            "data": "Data Governance Frameworks",
+            "dataDesc": "Sovereignty-preserving data management and cross-border exchange protocols",
+            "security": "Security Architecture",
+            "securityDesc": "Multi-layered security aligned with European cybersecurity standards",
+            "integration": "System Integration",
+            "integrationDesc": "Interoperability layers for connecting institutional systems"
+        },
+        "research": {
+            "title": "Research-Driven Development",
+            "description": "Our work is grounded in rigorous research on digital sovereignty, institutional interoperability, and European regulatory frameworks. We publish our findings and contribute to policy discussions.",
+            "cta": "View Research"
+        },
+        "engagement": {
+            "title": "Institutional Engagement",
+            "description": "We work with government agencies, regulatory bodies, and research institutions across Europe. Our engagement model emphasizes transparency, collaboration, and shared governance principles.",
+            "cta": "Learn About Engagement"
+        }
+    },
+    "about": {
+        "hero": {
+            "title": "Building Sovereign Digital Infrastructure for European Institutions",
+            "subtitle": "Northflow Technologies develops systems that preserve institutional autonomy while enabling cross-border collaboration"
+        },
+        "premise": {
+            "title": "The Institutional Challenge",
+            "description": "European institutions face a fundamental tension: the need for digital sovereignty conflicts with the requirement for cross-border interoperability. Current solutions often force a choice between autonomy and collaboration. We believe this is a false dichotomy."
+        },
+        "mission": {
+            "title": "Our Mission",
+            "description": "To develop and deploy digital infrastructure that enables European institutions to maintain full sovereignty over their operations while participating effectively in cross-border digital ecosystems. We achieve this through rigorous technical design, adherence to open standards, and deep engagement with regulatory frameworks."
+        },
+        "approach": {
+            "title": "Our Approach",
+            "researchDriven": "Research-Driven Development",
+            "researchDrivenDesc": "Every system we build is grounded in published research on digital sovereignty, institutional interoperability, and regulatory compliance",
+            "openStandards": "Open Standards Commitment",
+            "openStandardsDesc": "We base our work on transparent, auditable technical specifications that can be independently verified",
+            "institutionalFocus": "Institutional-First Design",
+            "institutionalFocusDesc": "Our systems are purpose-built for government and regulatory requirements, not adapted from commercial products",
+            "europeanAlignment": "European Regulatory Alignment",
+            "europeanAlignmentDesc": "Deep integration with EU frameworks including GDPR, NIS2, and emerging digital sovereignty regulations"
+        },
+        "principles": {
+            "title": "Guiding Principles",
+            "sovereignty": "Sovereignty Preservation",
+            "sovereigntyDesc": "Institutions must retain full control over their data, operations, and governance",
+            "interoperability": "Interoperability Without Compromise",
+            "interoperabilityDesc": "Cross-border collaboration should not require surrendering institutional autonomy",
+            "transparency": "Technical Transparency",
+            "transparencyDesc": "All systems must be auditable and based on open, verifiable standards",
+            "compliance": "Compliance by Design",
+            "complianceDesc": "Regulatory requirements should be embedded in system architecture, not added as afterthoughts"
+        },
+        "story": {
+            "title": "Company Story",
+            "description": "Northflow Technologies was founded in Norway with a specific mandate: to address the digital infrastructure challenges facing European institutions. Our work began with research into digital sovereignty frameworks and has evolved into the development of production-ready systems. We maintain a research laboratory that continues to inform our technical development while engaging with policy discussions at the European level."
+        },
+        "presence": {
+            "title": "Regional Presence",
+            "norway": "Norway (Headquarters)",
+            "norwayDesc": "Primary development and research operations",
+            "europe": "European Operations",
+            "europeDesc": "Institutional engagement and deployment support across EU member states"
+        },
+        "validation": {
+            "title": "Institutional Validation",
+            "description": "Our systems are deployed in institutional environments and undergo continuous evaluation. We work closely with government agencies and regulatory bodies to ensure our solutions meet real-world requirements."
+        },
+        "lab": {
+            "title": "Research Laboratory",
+            "description": "The Northflow Research Lab conducts ongoing research into digital sovereignty, institutional interoperability, and regulatory technology. Our findings are published in academic venues and inform both our technical development and policy engagement."
+        },
+        "leadership": {
+            "title": "Leadership",
+            "description": "Our leadership team combines technical expertise in distributed systems with deep knowledge of European regulatory frameworks and institutional requirements."
+        },
+        "cta": {
+            "title": "Engage With Our Work",
+            "description": "We welcome engagement from government agencies, regulatory bodies, research institutions, and policy organizations.",
+            "button": "Contact Us"
+        }
+    },
+    "research": {
+        "hero": {
+            "title": "Research on Digital Sovereignty and Institutional Infrastructure",
+            "subtitle": "Rigorous investigation into the technical and governance challenges of European digital autonomy"
+        },
+        "areas": {
+            "title": "Research Areas",
+            "sovereignty": "Digital Sovereignty Frameworks",
+            "sovereigntyDesc": "Technical architectures that preserve institutional control while enabling interoperability",
+            "interoperability": "Cross-Border Interoperability",
+            "interoperabilityDesc": "Protocols and standards for institutional collaboration across jurisdictions",
+            "compliance": "Regulatory Technology",
+            "complianceDesc": "Systems design for embedded compliance with European regulatory frameworks",
+            "governance": "Data Governance Models",
+            "governanceDesc": "Frameworks for sovereignty-preserving data management and exchange"
+        },
+        "methodology": {
+            "title": "Research Methodology",
+            "description": "Our research combines technical systems development with regulatory analysis and institutional engagement. We publish our findings in academic venues and contribute to policy discussions. All research is conducted with transparency and is subject to peer review."
+        },
+        "projects": {
+            "title": "Ongoing Research Projects",
+            "efos": "European Framework for Operational Sovereignty (EFOS)",
+            "efosDesc": "Comprehensive framework for sovereignty-preserving institutional infrastructure",
+            "identity": "Federated Identity Systems",
+            "identityDesc": "Cross-border authentication preserving institutional control",
+            "data": "Sovereign Data Exchange Protocols",
+            "dataDesc": "Technical standards for institutional data sharing"
+        },
+        "publications": {
+            "title": "Publication Archive",
+            "description": "Our research is published in academic journals, conference proceedings, and technical reports. We maintain a comprehensive archive of all publications."
+        },
+        "collaboration": {
+            "title": "Research Collaboration",
+            "description": "We collaborate with academic institutions, research organizations, and policy bodies across Europe. We welcome proposals for joint research projects aligned with our focus areas.",
+            "cta": "Propose Collaboration"
+        }
+    },
+    "systems": {
+        "hero": {
+            "title": "Institutional Infrastructure Systems",
+            "subtitle": "Production-ready solutions for European government and regulatory institutions"
+        },
+        "architecture": {
+            "title": "System Architecture",
+            "description": "Our systems are built on a modular architecture that separates sovereignty-critical components from interoperability layers. This design allows institutions to maintain full control over core operations while participating in cross-border digital ecosystems."
+        },
+        "components": {
+            "title": "Infrastructure Components",
+            "identity": "Identity & Access Management",
+            "identityDesc": "Federated authentication systems with institutional sovereignty preservation",
+            "data": "Data Governance Platform",
+            "dataDesc": "Sovereignty-preserving data management and cross-border exchange",
+            "security": "Security Infrastructure",
+            "securityDesc": "Multi-layered security architecture aligned with European standards",
+            "integration": "Interoperability Framework",
+            "integrationDesc": "Standards-based integration for institutional systems"
+        },
+        "governance": {
+            "title": "Governance Frameworks",
+            "description": "Our systems implement governance models that preserve institutional autonomy while enabling collaborative decision-making. These frameworks are based on research into sovereignty-preserving governance and align with European regulatory principles."
+        },
+        "compliance": {
+            "title": "Compliance Standards",
+            "gdpr": "GDPR Compliance",
+            "gdprDesc": "Built-in data protection and privacy controls",
+            "nis2": "NIS2 Alignment",
+            "nis2Desc": "Cybersecurity requirements for critical infrastructure",
+            "eidas": "eIDAS Integration",
+            "eidasDesc": "European electronic identification and trust services",
+            "sovereignty": "Digital Sovereignty Standards",
+            "sovereigntyDesc": "Emerging European frameworks for digital autonomy"
+        },
+        "implementation": {
+            "title": "Implementation Approach",
+            "description": "We work with institutions through a structured implementation process that includes requirements analysis, system design, deployment, and ongoing support. Our approach emphasizes knowledge transfer and institutional capacity building."
+        },
+        "technical": {
+            "title": "Technical Resources",
+            "description": "Detailed technical documentation, architecture specifications, and integration guides are available for institutional partners.",
+            "cta": "Access Documentation"
+        }
+    },
+    "initiatives": {
+        "hero": {
+            "title": "Strategic Initiatives",
+            "subtitle": "Advancing European digital sovereignty through research, development, and institutional collaboration"
+        },
+        "content": {
+            "description": "Our initiatives span research, technical development, and policy engagement. Each initiative is designed to address specific challenges in European institutional infrastructure while contributing to broader digital sovereignty objectives."
+        },
+        "grid": {
+            "efos": "European Framework for Operational Sovereignty",
+            "efosDesc": "Comprehensive framework for sovereignty-preserving institutional infrastructure",
+            "identity": "Federated Identity Initiative",
+            "identityDesc": "Cross-border authentication systems preserving institutional control",
+            "data": "Sovereign Data Exchange",
+            "dataDesc": "Protocols and standards for institutional data sharing",
+            "research": "Research Laboratory",
+            "researchDesc": "Ongoing investigation into digital sovereignty and regulatory technology",
+            "policy": "Policy Engagement",
+            "policyDesc": "Contributing to European digital sovereignty policy discussions",
+            "capacity": "Institutional Capacity Building",
+            "capacityDesc": "Knowledge transfer and training for institutional partners"
+        },
+        "efosHighlight": {
+            "title": "Featured Initiative: EFOS",
+            "description": "The European Framework for Operational Sovereignty (EFOS) is our flagship initiative, providing a comprehensive approach to sovereignty-preserving institutional infrastructure. EFOS combines technical architecture, governance frameworks, and implementation methodologies.",
+            "cta": "Learn More About EFOS"
+        },
+        "timeline": {
+            "title": "Strategic Timeline",
+            "phase1": "Phase 1: Foundation",
+            "phase1Desc": "Research and framework development",
+            "phase2": "Phase 2: Implementation",
+            "phase2Desc": "System deployment and institutional partnerships",
+            "phase3": "Phase 3: Expansion",
+            "phase3Desc": "Scaling across European institutions"
+        },
+        "participation": {
+            "title": "Participation Framework",
+            "description": "We welcome engagement from government agencies, regulatory bodies, research institutions, and policy organizations. Participation can take various forms including research collaboration, pilot deployments, and policy dialogue.",
+            "cta": "Explore Engagement Options"
+        }
+    },
+    "engage": {
+        "hero": {
+            "title": "Institutional Engagement",
+            "subtitle": "Collaborate with Northflow Technologies on digital sovereignty initiatives"
+        },
+        "process": {
+            "title": "Engagement Process",
+            "inquiry": "Initial Inquiry",
+            "inquiryDesc": "Submit your institutional requirements and objectives",
+            "assessment": "Requirements Assessment",
+            "assessmentDesc": "We evaluate alignment with our capabilities and research focus",
+            "proposal": "Engagement Proposal",
+            "proposalDesc": "Detailed proposal for collaboration or system deployment",
+            "implementation": "Implementation",
+            "implementationDesc": "Structured process for research collaboration or system deployment"
+        },
+        "guidelines": {
+            "title": "Engagement Guidelines",
+            "institutional": "Institutional Focus",
+            "institutionalDesc": "We work primarily with government agencies, regulatory bodies, and research institutions",
+            "european": "European Scope",
+            "europeanDesc": "Our work focuses on European institutional requirements and regulatory frameworks",
+            "sovereignty": "Sovereignty Alignment",
+            "sovereigntyDesc": "Engagements must align with digital sovereignty principles and institutional autonomy",
+            "transparency": "Transparency Commitment",
+            "transparencyDesc": "All engagements are conducted with full transparency and documented appropriately"
+        },
+        "form": {
+            "title": "Contact Form",
+            "institution": "Institution Name",
+            "institutionPlaceholder": "Your institution",
+            "contact": "Contact Person",
+            "contactPlaceholder": "Full name",
+            "email": "Email Address",
+            "emailPlaceholder": "institutional.email@domain.eu",
+            "role": "Role/Position",
+            "rolePlaceholder": "Your role within the institution",
+            "country": "Country",
+            "countryPlaceholder": "Select country",
+            "type": "Engagement Type",
+            "typePlaceholder": "Select engagement type",
+            "typeResearch": "Research Collaboration",
+            "typeDeployment": "System Deployment",
+            "typePolicy": "Policy Dialogue",
+            "typeOther": "Other",
+            "message": "Message",
+            "messagePlaceholder": "Describe your institutional requirements and objectives",
+            "submit": "Submit Inquiry",
+            "privacy": "All inquiries are handled in accordance with our privacy policy and European data protection regulations."
+        },
+        "pathways": {
+            "title": "Additional Contact Pathways",
+            "research": "Research Collaboration",
+            "researchEmail": "research@northflow.no",
+            "institutional": "Institutional Partnerships",
+            "institutionalEmail": "institutions@northflow.no",
+            "policy": "Policy Engagement",
+            "policyEmail": "policy@northflow.no",
+            "general": "General Inquiries",
+            "generalEmail": "contact@northflow.no"
+        }
+    },
+    "resources": {
+        "title": "Institutional Resources",
+        "subtitle": "Documentation, research publications, and technical materials",
+        "categories": {
+            "all": "All Resources",
+            "documentation": "Documentation",
+            "research": "Research Publications",
+            "technical": "Technical Papers",
+            "policy": "Policy Materials"
+        },
+        "filter": "Filter by category",
+        "search": "Search resources",
+        "noResults": "No resources found matching your criteria",
+        "viewResource": "View Resource",
+        "downloadPdf": "Download PDF",
+        "externalLink": "External Link"
+    }
+}

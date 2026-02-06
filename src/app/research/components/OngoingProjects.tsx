@@ -1,0 +1,123 @@
+interface Project {
+  id: number;
+  title: string;
+  domain: string;
+  description: string;
+  status: string;
+  outputType: string;
+}
+
+interface OngoingProjectsProps {
+  className?: string;
+}
+
+const OngoingProjects = ({ className = '' }: OngoingProjectsProps) => {
+  const projects: Project[] = [
+    {
+      id: 1,
+      title: "European Flexibility Operating System (EFOS)",
+      domain: "Energy Systems & Infrastructure",
+      description: "Research and framework development for a proposed European public–private digital infrastructure providing harmonised, cross-border operational layer for predicting, coordinating, and managing flexibility across Europe's energy system, responding to EU directives (DES, Green Deal, EPBD, Data Act, AI Act, Net Zero Industry Act).",
+      status: "Active research",
+      outputType: "Framework brief"
+    },
+    {
+      id: 2,
+      title: "Operational sovereignty frameworks",
+      domain: "Digital Sovereignty",
+      description: "Research into governance, architecture, and control mechanisms that enable states and institutions to retain operational authority over critical digital systems.",
+      status: "In development",
+      outputType: "Working paper"
+    },
+    {
+      id: 3,
+      title: "Crisis-resilient digital infrastructure",
+      domain: "Infrastructure Resilience",
+      description: "Investigation of architectural patterns and operational protocols for maintaining digital continuity during crisis, disruption, or conflict scenarios.",
+      status: "Active research",
+      outputType: "Technical concept"
+    },
+    {
+      id: 4,
+      title: "Institutional interoperability systems",
+      domain: "Systems Architecture",
+      description: "Research into interoperability as a permanent infrastructure layer across public systems, energy networks, and regulated sectors.",
+      status: "In development",
+      outputType: "Framework brief"
+    },
+    {
+      id: 5,
+      title: "AI governance for mission-critical systems",
+      domain: "AI & Governance",
+      description: "Applied research into the safe, auditable, and bounded use of AI in institutional and mission-critical environments.",
+      status: "Active research",
+      outputType: "Working paper"
+    },
+    {
+      id: 6,
+      title: "Research-to-infrastructure translation models",
+      domain: "Research Methodology",
+      description: "Development of structured pathways for translating research outputs into deployable, governable, and trusted digital infrastructure.",
+      status: "In development",
+      outputType: "Technical concept"
+    }
+  ];
+
+  const getStatusColor = (status: string) => {
+    if (status.includes('Active')) {
+      return 'bg-primary/10 text-primary';
+    }
+    return 'bg-primary/10 text-primary';
+  };
+
+  return (
+    <section className={`bg-background py-20 ${className}`}>
+      <div className="max-w-[1400px] mx-auto px-8">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-headline font-semibold text-foreground mb-4">
+            Active research initiatives
+          </h2>
+          <p className="text-lg font-body text-muted-foreground max-w-3xl mx-auto mb-3">
+            Current research initiatives addressing critical challenges in sovereign digital infrastructure and institutional technology systems.
+          </p>
+          <p className="text-sm font-body text-muted-foreground max-w-3xl mx-auto italic">
+            Initiatives represent active research, framework development, and early-stage publication work.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          {projects.map((project) => (
+            <div
+              key={project.id}
+              className="bg-card border border-border rounded-sm p-8 hover:shadow-hover transition-all duration-200 ease-institutional"
+            >
+              <div className="flex items-start justify-between mb-4">
+                <div className="flex items-center space-x-2">
+                  <span className={`inline-flex items-center px-3 py-1 text-xs font-cta font-medium rounded-sm ${getStatusColor(project.status)}`}>
+                    {project.status}
+                  </span>
+                  <span className="inline-flex items-center px-3 py-1 bg-muted text-muted-foreground text-xs font-cta font-medium rounded-sm">
+                    {project.outputType}
+                  </span>
+                </div>
+              </div>
+              <span className="text-xs font-body text-muted-foreground block mb-3">
+                {project.domain}
+              </span>
+
+              <h3 className="text-xl font-headline font-semibold text-foreground mb-3">
+                {project.title}
+              </h3>
+
+              <p className="text-sm font-body text-muted-foreground leading-relaxed">
+                {project.description}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default OngoingProjects;

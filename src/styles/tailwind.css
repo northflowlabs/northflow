@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Background Colors */
+    --color-background: #f8fafc; /* slate-50 */
+    --color-foreground: #1a202c; /* gray-900 */
+    --color-card: #ffffff; /* white */
+    --color-card-foreground: #1a202c; /* gray-900 */
+    --color-popover: #ffffff; /* white */
+    --color-popover-foreground: #1a202c; /* gray-900 */
+    
+    /* Surface Colors */
+    --color-surface: #f1f5f9; /* slate-100 */
+    --color-muted: #f1f5f9; /* slate-100 */
+    --color-muted-foreground: #4a5568; /* gray-600 */
+    
+    /* Border & Input */
+    --color-border: #e2e8f0; /* slate-200 */
+    --color-input: #e2e8f0; /* slate-200 */
+    --color-ring: #2563eb; /* blue-600 */
+    
+    /* Brand Colors */
+    --color-primary: #1e3a5f; /* blue-900 */
+    --color-primary-foreground: #ffffff; /* white */
+    --color-secondary: #4a5568; /* gray-600 */
+    --color-secondary-foreground: #ffffff; /* white */
+    
+    /* Action Colors */
+    --color-accent: #2563eb; /* blue-600 */
+    --color-accent-foreground: #ffffff; /* white */
+    --color-destructive: #dc2626; /* red-600 */
+    --color-destructive-foreground: #ffffff; /* white */
+    
+    /* Status Colors */
+    --color-success: #059669; /* emerald-600 */
+    --color-success-foreground: #ffffff; /* white */
+    --color-warning: #d97706; /* amber-600 */
+    --color-warning-foreground: #ffffff; /* white */
+    --color-error: #dc2626; /* red-600 */
+    --color-error-foreground: #ffffff; /* white */
+    
+    /* Typography */
+    --font-headline: 'Inter', sans-serif;
+    --font-body: 'Source Sans Pro', sans-serif;
+    --font-cta: 'Inter', sans-serif;
+    --font-accent: 'JetBrains Mono', monospace;
+    
+    /* Spacing Scale */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+    --spacing-2xl: 4rem;
+    
+    /* Border Radius */
+    --radius-sm: 6px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground font-body;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-headline;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Screen Reader Only - WCAG 2.1 AA Accessibility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.sr-only.focus\:not-sr-only:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  padding: inherit;
+  margin: inherit;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}
+
+/* Focus Visible Styles - Enhanced keyboard navigation */
+*:focus-visible {
+  outline: 2px solid var(--color-ring);
+  outline-offset: 2px;
+}
+
+/* High Contrast Focus for Interactive Elements */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--color-ring);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(var(--color-ring-rgb), 0.1);
+}
+
+/* Reduced Motion Support - WCAG 2.1 AA */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+  button,
+  a,
+  input,
+  select,
+  textarea {
+    border-width: 2px;
+  }
+  
+  *:focus-visible {
+    outline-width: 3px;
+  }
+}
+
+/* Ensure sufficient color contrast - WCAG AA requires 4.5:1 for normal text */
+/* Primary colors already meet contrast requirements */
+
+/* Focus indicators must be visible */
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid var(--color-ring);
+  outline-offset: 2px;
+}
+
+/* Remove outline for mouse users, keep for keyboard */
+a:focus:not(:focus-visible),
+button:focus:not(:focus-visible),
+input:focus:not(:focus-visible),
+select:focus:not(:focus-visible),
+textarea:focus:not(:focus-visible) {
+  outline: none;
+}
