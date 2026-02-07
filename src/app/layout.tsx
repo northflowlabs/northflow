@@ -1,11 +1,8 @@
-import React, { Suspense } from 'react';
-import { Inter } from 'next/font/google';
 import type { Metadata } from 'next';
+import { Inter, Source_Sans_3, JetBrains_Mono } from 'next/font/google';
 import '../styles/index.css';
 import '../styles/tailwind.css';
-import GoogleAnalytics from '@/components/GoogleAnalytics';
-import Header from '@/components/common/Header';
-import Footer from '@/components/common/Footer';
+import ClientLayout from './client-layout';
 import StructuredData from '@/components/common/StructuredData';
 import { generateOrganizationSchema, generateWebSiteSchema } from '@/lib/seo';
 
@@ -15,6 +12,22 @@ const inter = Inter({
   display: 'swap',
   preload: true,
   weight: ['400', '500', '600']
+});
+
+const sourceSansPro = Source_Sans_3({
+  subsets: ['latin'],
+  variable: '--font-source-sans-pro',
+  display: 'swap',
+  preload: true,
+  weight: ['400', '600', '700']
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ['latin'],
+  variable: '--font-jetbrains-mono',
+  display: 'swap',
+  preload: true,
+  weight: ['400', '500']
 });
 
 export const metadata: Metadata = {
@@ -38,7 +51,6 @@ export const metadata: Metadata = {
       height: 630,
       alt: 'Northflow Technologies'
     }]
-
   },
   twitter: {
     card: 'summary_large_image',
@@ -71,32 +83,18 @@ interface RootLayoutProps {
 
 export default function RootLayout({
   children
-
 }: {children: React.ReactNode;}) {
   const organizationSchema = generateOrganizationSchema();
   const websiteSchema = generateWebSiteSchema();
 
   return (
-    <html lang="en" className={inter.variable}>
+    <html lang="en" className={`${inter.variable} ${sourceSansPro.variable} ${jetbrainsMono.variable}`}>
       <head>
-        <link
-          rel="preconnect"
-          href="https://fonts.googleapis.com" />
-
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous" />
-</head>
+      </head>
       <body className="antialiased">
-        <Suspense fallback={null}>
-          <GoogleAnalytics />
-        </Suspense>
-        <StructuredData data={[organizationSchema, websiteSchema]} />
-        <Header />
-        <main>{children}</main>
-        <Footer />
+        <ClientLayout>
+          {children}
+        </ClientLayout>
       </body>
     </html>);
-
 }

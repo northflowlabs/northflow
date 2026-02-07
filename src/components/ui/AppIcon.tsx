@@ -1,9 +1,31 @@
 'use client';
 
 import React from 'react';
-import * as HeroIcons from '@heroicons/react/24/outline';
-import * as HeroIconsSolid from '@heroicons/react/24/solid';
-import { QuestionMarkCircleIcon } from '@heroicons/react/24/outline';
+import { 
+  ChevronRightIcon,
+  ArrowRightIcon,
+  AcademicCapIcon,
+  BuildingOfficeIcon,
+  ChartBarIcon,
+  DocumentTextIcon,
+  GlobeAltIcon,
+  UserGroupIcon,
+  ShieldCheckIcon,
+  QuestionMarkCircleIcon
+} from '@heroicons/react/24/outline';
+
+// Icon mapping for tree-shaking
+const iconMap = {
+  'chevron-right': ChevronRightIcon,
+  'arrow-right': ArrowRightIcon,
+  'academic-cap': AcademicCapIcon,
+  'building-office': BuildingOfficeIcon,
+  'chart-bar': ChartBarIcon,
+  'document-text': DocumentTextIcon,
+  'globe-alt': GlobeAltIcon,
+  'user-group': UserGroupIcon,
+  'shield-check': ShieldCheckIcon,
+} as const;
 
 type IconVariant = 'outline' | 'solid';
 
@@ -26,20 +48,7 @@ function Icon({
     disabled = false,
     ...props
 }: IconProps) {
-    const iconSet = variant === 'solid' ? HeroIconsSolid : HeroIcons;
-    const IconComponent = iconSet[name as keyof typeof iconSet] as React.ComponentType<any>;
-
-    if (!IconComponent) {
-        return (
-            <QuestionMarkCircleIcon
-                width={size}
-                height={size}
-                className={`text-gray-400 ${disabled ? 'opacity-50 cursor-not-allowed' : ''} ${className}`}
-                onClick={disabled ? undefined : onClick}
-                {...props}
-            />
-        );
-    }
+    const IconComponent = iconMap[name as keyof typeof iconMap] || QuestionMarkCircleIcon;
 
     return (
         <IconComponent
