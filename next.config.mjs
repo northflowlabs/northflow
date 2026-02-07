@@ -2,10 +2,14 @@
 const nextConfig = {
   productionBrowserSourceMaps: true,
   distDir: process.env.DIST_DIR || '.next',
+  
+  compiler: {
+    removeConsole: process.env.NODE_ENV === 'production',
+  },
 
   typescript: {
-      ignoreBuildErrors: true,
-    },
+    ignoreBuildErrors: true,
+  },
 
   eslint: {
     ignoreDuringBuilds: true,
