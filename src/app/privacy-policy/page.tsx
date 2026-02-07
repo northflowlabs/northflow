@@ -3,7 +3,7 @@ import { generateMetadata, generateWebPageSchema } from '@/lib/seo';
 import StructuredData from '@/components/common/StructuredData';
 
 export const metadata: Metadata = generateMetadata({
-  title: 'Privacy policy — Northflow Technologies',
+  title: 'Privacy Policy | Northflow',
   description: 'Privacy policy describing how Northflow handles personal data, cookies, and user rights in connection with the website and communications.',
   path: '/privacy-policy',
   ogType: 'website',
@@ -11,7 +11,7 @@ export const metadata: Metadata = generateMetadata({
 
 export default function PrivacyPolicyPage() {
   const webPageSchema = generateWebPageSchema({
-    title: 'Privacy policy — Northflow Technologies',
+    title: 'Privacy Policy | Northflow',
     description: 'Privacy policy describing how Northflow handles personal data, cookies, and user rights in connection with the website and communications.',
     path: '/privacy-policy'
   });

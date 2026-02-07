@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { generateMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = generateMetadata({
-  title: '404 - Page Not Found',
+  title: '404 Page Not Found | Northflow',
   description: 'The page you are looking for could not be found. Return to Northflow Technologies homepage or explore our institutional digital infrastructure solutions.',
   path: '/404',
 });

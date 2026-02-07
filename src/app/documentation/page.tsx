@@ -1,9 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Documentation - Northflow Technologies',
-  description:
-    'Technical documentation and implementation guides for institutional stakeholders.',
+  title: 'Institutional Documentation & Technical Guidance | Northflow',
+  description: 'Technical documentation and implementation guidance for institutions engaging with Northflow systems and governance architectures.',
 };
 
 export default function DocumentationPage() {

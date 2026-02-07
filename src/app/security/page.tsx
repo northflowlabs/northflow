@@ -2,9 +2,8 @@ import type { Metadata } from 'next';
 
 
 export const metadata: Metadata = {
-  title: 'Security - Northflow Technologies',
-  description:
-    'Security practices and standards for Northflow Technologies institutional infrastructure.',
+  title: 'Institutional Security & Operational Assurance | Northflow',
+  description: 'Security practices supporting institutional-grade digital infrastructure, auditability, and operational assurance across regulated environments.',
 };
 
 export default function SecurityPage() {

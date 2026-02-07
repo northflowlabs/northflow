@@ -7,8 +7,8 @@ import AccessEngagementProcess from './components/AccessEngagementProcess';
 import AccessRequestForm from './components/AccessRequestForm';
 
 export const metadata: Metadata = generateMetadata({
-  title: 'Request Access to Institutional Materials - Northflow',
-  description: 'Formal gateway for requesting access to research publications, framework documents, and institutional materials through structured engagement.',
+  title: 'Request Access to Institutional Materials | Northflow',
+  description: 'Formal access pathway for institutional stakeholders requesting research publications, governance frameworks, and controlled Northflow materials.',
   path: '/engage/request-access',
   keywords: [
     'institutional access request',

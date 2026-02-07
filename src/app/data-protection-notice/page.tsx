@@ -3,7 +3,7 @@ import { generateMetadata, generateWebPageSchema } from '@/lib/seo';
 import StructuredData from '@/components/common/StructuredData';
 
 export const metadata: Metadata = generateMetadata({
-  title: 'Data protection notice — Northflow Technologies',
+  title: 'Data Protection Notice | Northflow',
   description: 'Data protection notice outlining processing purposes, legal bases, retention, and rights under applicable data protection regulations.',
   path: '/data-protection-notice',
   ogType: 'website',
@@ -11,7 +11,7 @@ export const metadata: Metadata = generateMetadata({
 
 export default function DataProtectionNoticePage() {
   const webPageSchema = generateWebPageSchema({
-    title: 'Data protection notice — Northflow Technologies',
+    title: 'Data Protection Notice | Northflow',
     description: 'Data protection notice outlining processing purposes, legal bases, retention, and rights under applicable data protection regulations.',
     path: '/data-protection-notice'
   });

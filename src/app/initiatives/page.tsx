@@ -5,16 +5,16 @@ import StructuredData from '@/components/common/StructuredData';
 import InitiativesContent from './components/InitiativesContent';
 
 export const metadata: Metadata = generateMetadata({
-  title: 'Initiatives — programs, pilots, and institutional collaboration',
-  description: 'Northflow initiatives connect research and delivery: structured programs, pilots, and institutional collaboration around digital infrastructure and governance.',
+  title: 'Institutional Initiatives & Structured Programs | Northflow',
+  description: 'Northflow initiatives connect research and systems through structured programs, pilots, and institutional collaboration without commercial pressure.',
   path: '/initiatives',
   ogType: 'website',
 });
 
 export default function InitiativesPage() {
   const webPageSchema = generateWebPageSchema({
-    title: 'Initiatives — programs, pilots, and institutional collaboration',
-    description: 'Northflow initiatives connect research and delivery: structured programs, pilots, and institutional collaboration around digital infrastructure and governance.',
+    title: 'Institutional Initiatives & Structured Programs | Northflow',
+    description: 'Northflow initiatives connect research and systems through structured programs, pilots, and institutional collaboration without commercial pressure.',
     path: '/initiatives'
   });
 

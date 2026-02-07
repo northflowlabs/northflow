@@ -8,8 +8,8 @@ import EngagementSection from './homepage/components/EngagementSection';
 import { generateMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = generateMetadata({
-  title: 'Northflow Technologies - Sovereign Digital Infrastructure for European Institutions',
-  description: 'Resilient digital infrastructure for government entities and mission-critical operations. Auditable systems designed for operational continuity and regulatory compliance across Europe.',
+  title: 'Sovereign Digital Infrastructure for Europe | Northflow',
+  description: 'Northflow designs sovereign, auditable digital infrastructure for European institutions operating under regulation, long-term responsibility, and operational continuity.',
   path: '/',
   keywords: [
     'European digital sovereignty',

@@ -9,8 +9,8 @@ import HGELinks from './components/HGELinks';
 import HGEContact from './components/HGEContact';
 
 export const metadata: Metadata = generateMetadata({
-  title: 'Project HGE (Hypothesis Generation Engine) - Northflow Research',
-  description: 'Project HGE operationalizes the scientific method through automated hypothesis testing, experiment design, execution on real instruments, and belief updates. Currently validating on live quantum hardware.',
+  title: 'Project HGE — Hypothesis Generation Infrastructure | Northflow',
+  description: 'Project HGE is a reference architecture for automated hypothesis generation, testing, and belief updates across real instruments and constrained research environments.',
   path: '/research/hge',
   keywords: [
     'hypothesis generation engine',

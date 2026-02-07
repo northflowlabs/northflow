@@ -3,7 +3,7 @@ import { generateMetadata, generateWebPageSchema } from '@/lib/seo';
 import StructuredData from '@/components/common/StructuredData';
 
 export const metadata: Metadata = generateMetadata({
-  title: 'Terms of service — Northflow Technologies',
+  title: 'Terms of Service | Northflow',
   description: 'Terms governing use of the Northflow website, including acceptable use, limitations, and general conditions.',
   path: '/terms-of-service',
   ogType: 'website',
@@ -11,7 +11,7 @@ export const metadata: Metadata = generateMetadata({
 
 export default function TermsOfServicePage() {
   const webPageSchema = generateWebPageSchema({
-    title: 'Terms of service — Northflow Technologies',
+    title: 'Terms of Service | Northflow',
     description: 'Terms governing use of the Northflow website, including acceptable use, limitations, and general conditions.',
     path: '/terms-of-service'
   });

@@ -3,9 +3,8 @@ import Link from 'next/link';
 import ResourceIndex from '@/components/resources/ResourceIndex';
 
 export const metadata: Metadata = {
-  title: 'Resources - Northflow Technologies',
-  description:
-    'Searchable index of documentation, technical papers, compliance frameworks, and security resources.',
+  title: 'Institutional Resources & Reference Materials | Northflow',
+  description: 'Searchable index of documentation, research papers, compliance materials, and institutional reference resources.',
 };
 
 export default function ResourcesPage() {

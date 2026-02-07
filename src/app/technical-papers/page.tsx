@@ -1,9 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Technical Papers - Northflow Technologies',
-  description:
-    'Research and publication archive featuring European Flexibility Operating System (EFOS) framework documentation and operational sovereignty research.',
+  title: 'Technical Papers & Reference Architectures | Northflow',
+  description: 'Archive of technical papers detailing EFOS, institutional governance models, and sovereign digital infrastructure research.',
 };
 
 export default function TechnicalPapersPage() {

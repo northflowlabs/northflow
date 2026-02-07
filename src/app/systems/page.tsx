@@ -11,16 +11,16 @@ import { generateMetadata, generateWebPageSchema } from '@/lib/seo';
 import StructuredData from '@/components/common/StructuredData';
 
 export const metadata: Metadata = generateMetadata({
-  title: 'Systems — infrastructure, governance, and operational reliability',
-  description: 'Explore Northflow\'s system architecture: digital infrastructure, operational governance, resilience, and research-driven platform design for institutional contexts.',
+  title: 'Institutional Systems & Governance Architecture | Northflow',
+  description: 'Northflow systems define institutional digital architecture for governance, resilience, auditability, and long-lived operational reliability in European contexts.',
   path: '/systems',
   ogType: 'website',
 });
 
 export default function SystemsPage() {
   const webPageSchema = generateWebPageSchema({
-    title: 'Systems — infrastructure, governance, and operational reliability',
-    description: 'Explore Northflow\'s system architecture: digital infrastructure, operational governance, resilience, and research-driven platform design for institutional contexts.',
+    title: 'Institutional Systems & Governance Architecture | Northflow',
+    description: 'Northflow systems define institutional digital architecture for governance, resilience, auditability, and long-lived operational reliability in European contexts.',
     path: '/systems'
   });
 

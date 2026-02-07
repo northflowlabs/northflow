@@ -1,9 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Compliance - Northflow Technologies',
-  description:
-    'Regulatory alignment philosophy and framework compliance approach for Northflow Technologies.',
+  title: 'Regulatory Alignment & Institutional Compliance | Northflow',
+  description: "Northflow's compliance approach aligns digital infrastructure with European regulatory frameworks, governance requirements, and long-term accountability.",
 };
 
 export default function CompliancePage() {

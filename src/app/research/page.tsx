@@ -11,16 +11,16 @@ import { generateMetadata, generateWebPageSchema } from '@/lib/seo';
 import StructuredData from '@/components/common/StructuredData';
 
 export const metadata: Metadata = generateMetadata({
-  title: 'Research — Project HGE and long-horizon discovery systems',
-  description: 'Northflow research develops instrument-agnostic discovery infrastructure. Project HGE operationalizes hypothesis-driven science through automated testing under uncertainty.',
+  title: 'Institutional Research Infrastructure Under Uncertainty | Northflow',
+  description: 'Northflow Research develops long-horizon discovery infrastructure for institutions operating under uncertainty, regulation, and irreversible decision environments.',
   path: '/research',
   ogType: 'website',
 });
 
 export default function ResearchPage() {
   const webPageSchema = generateWebPageSchema({
-    title: 'Research — Project HGE and long-horizon discovery systems',
-    description: 'Northflow research develops instrument-agnostic discovery infrastructure. Project HGE operationalizes hypothesis-driven science through automated testing under uncertainty.',
+    title: 'Institutional Research Infrastructure Under Uncertainty | Northflow',
+    description: 'Northflow Research develops long-horizon discovery infrastructure for institutions operating under uncertainty, regulation, and irreversible decision environments.',
     path: '/research'
   });
 

@@ -11,16 +11,16 @@ import { generateMetadata, generateWebPageSchema } from '@/lib/seo';
 import StructuredData from '@/components/common/StructuredData';
 
 export const metadata: Metadata = generateMetadata({
-  title: 'EFOS framework — operational and governance architecture',
-  description: 'EFOS is a structured framework for resilient digital operations and governance. Learn how the architecture supports traceability, control, and long-horizon reliability.',
+  title: 'EFOS — European Operational Governance Architecture | Northflow',
+  description: 'EFOS defines a reference architecture for traceable, auditable, and sovereign digital operations designed for long-horizon institutional governance.',
   path: '/efos-framework-details',
   ogType: 'website',
 });
 
 export default function EFOSFrameworkDetailsPage() {
   const webPageSchema = generateWebPageSchema({
-    title: 'EFOS framework — operational and governance architecture',
-    description: 'EFOS is a structured framework for resilient digital operations and governance. Learn how the architecture supports traceability, control, and long-horizon reliability.',
+    title: 'EFOS — European Operational Governance Architecture | Northflow',
+    description: 'EFOS defines a reference architecture for traceable, auditable, and sovereign digital operations designed for long-horizon institutional governance.',
     path: '/efos-framework-details'
   });
 
