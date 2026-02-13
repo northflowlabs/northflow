@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import HeroSection from './homepage/components/HeroSection';
 import FourPillarsSection from './homepage/components/FourPillarsSection';
+import ValidationEvidenceSection from './homepage/components/ValidationEvidenceSection';
 import CapabilitiesSection from './homepage/components/CapabilitiesSection';
 import TrustIndicatorsSection from './homepage/components/TrustIndicatorsSection';
 import ResearchHighlightSection from './homepage/components/ResearchHighlightSection';
@@ -29,6 +30,7 @@ export default function HomePage() {
     <>
       <HeroSection />
       <FourPillarsSection />
+      <ValidationEvidenceSection />
       <CapabilitiesSection />
       <TrustIndicatorsSection />
       <ResearchHighlightSection />

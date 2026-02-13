@@ -65,14 +65,16 @@ const PublicationArchive = ({ className = '' }: PublicationArchiveProps) => {
   const publications: Publication[] = [
     {
       id: 1,
-      title: 'Crisis-resilient digital infrastructure',
-      publicationDate: 'In preparation',
-      category: 'Infrastructure Resilience',
-      type: 'Working paper',
-      classification: 'In preparation',
+      title: 'Gaia DR3 validation summary: HGE structured hypothesis search at scale',
+      publicationDate: '30.01.26',
+      category: 'Auditable Systems',
+      type: 'Technical brief',
+      classification: 'Available',
       abstract:
-        'Working paper exploring frameworks for crisis-resilient digital infrastructure design, focusing on continuity and operational resilience during disruption scenarios.',
-      status: 'in-preparation',
+        'Technical summary documenting operational validation of HGE on Gaia DR3 astronomical catalog data, including deterministic execution outcomes, reproducibility constraints, and evidence-bundle structure used for institutional review.',
+      status: 'published',
+      actionLabel: 'Request brief',
+      downloadUrl: '/engage',
     },
     {
       id: 2,
@@ -285,7 +287,7 @@ const PublicationArchive = ({ className = '' }: PublicationArchiveProps) => {
                   <div className="flex items-center space-x-6">
                     <div className="flex items-center space-x-2">
                       <Icon
-                        name="CalendarIcon"
+                        name="calendar"
                         size={16}
                         variant="outline"
                         className="text-muted-foreground"
@@ -297,7 +299,7 @@ const PublicationArchive = ({ className = '' }: PublicationArchiveProps) => {
                     {publication.citations !== undefined && (
                       <div className="flex items-center space-x-2">
                         <Icon
-                          name="DocumentTextIcon"
+                          name="document-text"
                           size={16}
                           variant="outline"
                           className="text-muted-foreground"
@@ -311,7 +313,16 @@ const PublicationArchive = ({ className = '' }: PublicationArchiveProps) => {
                 </div>
 
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-                  {publication.actionLabel && (
+                  {publication.downloadUrl && publication.actionLabel && (
+                    <a
+                      href={publication.downloadUrl}
+                      className="inline-flex items-center text-sm font-cta font-medium text-primary hover:text-primary/80 transition-colors"
+                    >
+                      {publication.actionLabel}
+                      <Icon name="arrow-right" size={14} variant="outline" className="ml-1" />
+                    </a>
+                  )}
+                  {publication.actionLabel && !publication.downloadUrl && (
                     <span className="text-sm font-body text-muted-foreground">
                       {publication.actionLabel}
                     </span>
@@ -331,7 +342,7 @@ const PublicationArchive = ({ className = '' }: PublicationArchiveProps) => {
         {filteredPublications.length === 0 && (
           <div className="bg-card border border-border rounded-sm p-12 text-center">
             <Icon
-              name="DocumentMagnifyingGlassIcon"
+              name="document-magnifying-glass"
               size={48}
               variant="outline"
               className="text-muted-foreground mx-auto mb-4"

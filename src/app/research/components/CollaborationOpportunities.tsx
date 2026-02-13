@@ -50,7 +50,7 @@ const CollaborationOpportunities = ({ className = '' }: CollaborationOpportuniti
       title: 'Applied research exchange',
       type: 'Engagement mode',
       description:
-        'Structured exchange of methodologies and findings addressing shared challenges in climate resilience, governance, and mission-critical institutional systems.',
+        'Structured exchange of methodologies and findings addressing shared challenges in climate resilience, space observation, governance, and mission-critical institutional systems.',
       requirements: [
         'Active research in relevant areas',
         'Commitment to applied research approach',
@@ -84,7 +84,8 @@ const CollaborationOpportunities = ({ className = '' }: CollaborationOpportuniti
           </h2>
           <p className="text-lg font-body text-muted-foreground max-w-3xl mx-auto">
             Northflow engages in structured institutional dialogue and research collaboration within
-            climate resilience, governance, and critical infrastructure domains.
+            climate resilience, space-enabled observation, governance, and critical infrastructure
+            domains.
           </p>
         </div>
 

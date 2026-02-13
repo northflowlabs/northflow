@@ -1,7 +1,7 @@
 'use client';
 
 import Icon from '@/components/ui/AppIcon';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 interface ResearchArea {
   id: number;
@@ -9,7 +9,14 @@ interface ResearchArea {
   description: string;
   icon: string;
   trackCount: number;
+  statusLabel: string;
   tracks: string[];
+}
+
+interface FutureArea {
+  id: number;
+  title: string;
+  description: string;
 }
 
 interface ResearchAreasProps {
@@ -28,9 +35,10 @@ const ResearchAreas = ({ className = '' }: ResearchAreasProps) => {
       id: 1,
       title: 'Climate and infrastructure resilience',
       description:
-        'Evidence frameworks for resilience analysis across climate-exposed and mission-critical infrastructure domains.',
+        'Evidence frameworks for resilience analysis across climate-exposed and mission-critical infrastructure domains. Integration of satellite observation data with structured hypothesis search for institutional decision support.',
       icon: 'arrow-path',
       trackCount: 4,
+      statusLabel: 'Primary research focus',
       tracks: [
         'Resilience Indicator Frameworks — Structured indicators, thresholds, and evaluation criteria for resilience claims.',
         'Hazard–Exposure Evidence Mapping — Linking signals, exposure models, and evidence provenance into reviewable bundles.',
@@ -45,6 +53,7 @@ const ResearchAreas = ({ className = '' }: ResearchAreasProps) => {
         'Governance-aligned evaluation and evidence controls for bounded AI use in institutional and critical environments.',
       icon: 'shield-check',
       trackCount: 4,
+      statusLabel: 'Active development',
       tracks: [
         'Audit-Ready Evaluation Protocols — Testable criteria for safety, boundedness, and institutional acceptability.',
         'Evidence Governance and Provenance — Traceable evidence bundles, versioning, and integrity controls.',
@@ -56,9 +65,10 @@ const ResearchAreas = ({ className = '' }: ResearchAreasProps) => {
       id: 3,
       title: 'Research-to-infrastructure translation models',
       description:
-        'Structured pathways for moving governed research outputs into deployable institutional architectures.',
+        'Structured pathways for moving governed research outputs into deployable institutional architectures. Methodology for converting validated research into operational systems with full provenance tracking and governance integration.',
       icon: 'document-check',
       trackCount: 3,
+      statusLabel: 'Active development',
       tracks: [
         'Publication-to-Architecture Translation — Converting working documents into implementation-ready system specifications.',
         'Validation and Review Loops — Institutional review, validation dialogue, and controlled iteration processes.',
@@ -67,42 +77,32 @@ const ResearchAreas = ({ className = '' }: ResearchAreasProps) => {
     },
     {
       id: 4,
-      title: 'Energy systems evidence infrastructure',
-      description:
-        'Evidence and reasoning frameworks for resilience, flexibility, and coordination in energy-system contexts.',
-      icon: 'globe-alt',
-      trackCount: 3,
-      tracks: [
-        'Flexibility Evidence Models — Evaluation frameworks for flexibility assumptions and coordination claims.',
-        'Cross-Border Coordination Semantics — Institutional definitions, constraints, and audit-ready operational semantics.',
-        'System Integrity and Resilience Controls — Evidence governance for mission-critical energy-system decisions.',
-      ],
-    },
-    {
-      id: 5,
       title: 'Institutional interoperability systems',
       description:
-        'Interoperability as evidence infrastructure: exchange, verification, and portability across institutions and sectors.',
+        'Interoperability as evidence infrastructure: exchange, verification, and portability across institutions, sectors, and jurisdictions. Cross-border data and evidence sharing frameworks for European institutional environments.',
       icon: 'server-stack',
       trackCount: 3,
+      statusLabel: 'Framework development',
       tracks: [
         'Evidence Portability Frameworks — Standardized evidence bundles and exchange patterns across institutional boundaries.',
         'Cross-System Verification Interfaces — Interoperable verification mechanisms for claims and supporting evidence.',
         'Long-Horizon Compatibility and Governance — Sustaining interoperability under changing constraints and standards.',
       ],
     },
+  ];
+
+  const futureAreas: FutureArea[] = [
     {
-      id: 6,
+      id: 1,
+      title: 'Energy systems evidence infrastructure',
+      description:
+        'Evidence and reasoning frameworks for resilience, flexibility, and coordination in energy-system contexts.',
+    },
+    {
+      id: 2,
       title: 'Operational sovereignty frameworks',
       description:
-        'Governance and control structures that preserve institutional authority over evidence, infrastructure, and decision-critical systems.',
-      icon: 'lock-closed',
-      trackCount: 3,
-      tracks: [
-        'Operational Authority and Control — Mechanisms for maintaining institutional control over critical system operations.',
-        'Governance-Aligned Architecture Patterns — Roles, oversight flows, and enforceable accountability structures.',
-        'Policy and Regulatory Compatibility — Structural alignment without identity-led positioning or marketing framing.',
-      ],
+        'Governance, architecture, and control mechanisms that enable states and institutions to retain operational authority over critical digital systems.',
     },
   ];
 
@@ -115,11 +115,11 @@ const ResearchAreas = ({ className = '' }: ResearchAreasProps) => {
           </h2>
           <p className="text-lg font-body text-muted-foreground max-w-3xl mx-auto">
             Northflow Research Lab conducts applied research across domains critical to climate
-            resilience and institutional system integrity.
+            resilience, space-enabled observation, and institutional system integrity.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {researchAreas.map((area) => (
             <div
               key={area.id}
@@ -151,7 +151,7 @@ const ResearchAreas = ({ className = '' }: ResearchAreasProps) => {
                       className="text-muted-foreground"
                     />
                     <span className="text-xs font-body text-muted-foreground">
-                      {area.trackCount} structured research tracks · Research scope
+                      {area.trackCount} structured research tracks · {area.statusLabel}
                     </span>
                   </div>
                   <button
@@ -185,6 +185,29 @@ const ResearchAreas = ({ className = '' }: ResearchAreasProps) => {
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="mt-10">
+          <h3 className="text-xl font-headline font-semibold text-foreground mb-4">
+            Future research directions
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {futureAreas.map((area) => (
+              <div key={area.id} className="bg-muted/40 border border-border rounded-sm p-6">
+                <div className="flex items-center justify-between mb-3">
+                  <h4 className="text-lg font-headline font-semibold text-muted-foreground">
+                    {area.title}
+                  </h4>
+                  <span className="inline-flex items-center px-2 py-1 bg-muted text-muted-foreground text-xs font-body rounded-sm border border-border">
+                    Future
+                  </span>
+                </div>
+                <p className="text-sm font-body text-muted-foreground leading-relaxed">
+                  {area.description}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

@@ -10,15 +10,32 @@ export default function CompliancePage() {
   return (
     <>
       <div className="min-h-screen bg-background">
-        <div className="max-w-[1200px] mx-auto px-8 py-16">
-          <div className="max-w-[900px]">
-            <h1 className="text-4xl font-headline font-bold text-foreground mb-4">Compliance</h1>
-            <p className="text-lg text-muted-foreground font-body mb-12 leading-relaxed">
-              Regulatory alignment philosophy and framework compliance approach for institutional
-              stakeholders.
-            </p>
+        <section className="bg-gradient-to-br from-primary to-primary/90 text-primary-foreground">
+          <div className="max-w-[1400px] mx-auto px-8 py-24">
+            <div className="max-w-3xl">
+              <div className="inline-flex items-center space-x-2 bg-primary-foreground/10 px-4 py-2 rounded-sm mb-6">
+                <span className="text-xs font-cta font-medium tracking-wide uppercase">
+                  Regulatory alignment
+                </span>
+              </div>
+              <h1 className="text-4xl md:text-5xl font-headline font-semibold mb-6 leading-tight">
+                Compliance as design principle
+              </h1>
+              <p className="text-lg font-body text-primary-foreground/90 leading-relaxed mb-4">
+                Northflow approaches regulatory alignment as foundational system design, not
+                retrospective requirement. Architectures are developed with European regulatory
+                frameworks embedded throughout — enabling institutional deployment in governed
+                environments.
+              </p>
+              <p className="text-sm font-body text-primary-foreground/70 leading-relaxed italic">
+                Standards references describe design intent and target operating models. Formal
+                certifications pursued where applicable.
+              </p>
+            </div>
           </div>
+        </section>
 
+        <div className="max-w-[1200px] mx-auto px-8 py-16">
           <div className="space-y-12">
             <section>
               <h2 className="text-2xl font-headline font-semibold text-foreground mb-6">
@@ -39,7 +56,7 @@ export default function CompliancePage() {
                   particularly around uncertainty handling and provenance tracking.
                 </p>
                 <p>This approach prioritises:</p>
-                <ul className="space-y-2 ml-6">
+                <ul className="space-y-2 ml-6 [&>li]:flex [&>li]:items-start [&>li]:gap-3 [&>li>span:first-child]:mt-0.5 [&>li>span:first-child]:leading-none">
                   <li className="flex gap-3">
                     <span className="text-primary mt-1">•</span>
                     <span>
@@ -86,19 +103,19 @@ export default function CompliancePage() {
                   <div className="grid md:grid-cols-2 gap-6">
                     <div className="border-2 border-primary rounded-lg p-6 bg-card shadow-sm">
                       <h4 className="text-lg font-headline font-semibold text-foreground mb-3">
-                        GDPR
+                        GDPR — Data protection design alignment
                       </h4>
                       <p className="text-sm text-muted-foreground mb-3">
                         General Data Protection Regulation
                       </p>
                       <p className="text-sm text-foreground leading-relaxed">
                         Data protection principles, processing requirements, and individual rights
-                        are embedded in system design and operational procedures.
+                        embedded in system architecture.
                       </p>
                     </div>
                     <div className="border-2 border-primary rounded-lg p-6 bg-card shadow-sm">
                       <h4 className="text-lg font-headline font-semibold text-foreground mb-3">
-                        NIS2 Directive
+                        NIS2 Directive — Security design alignment
                       </h4>
                       <p className="text-sm text-muted-foreground mb-3">
                         Network and information security
@@ -118,7 +135,7 @@ export default function CompliancePage() {
                   <div className="grid md:grid-cols-3 gap-6">
                     <div className="border border-border rounded-lg p-6 bg-card">
                       <h4 className="text-lg font-headline font-semibold text-foreground mb-3">
-                        ISO/IEC 27001
+                        ISO/IEC 27001 — Information security design alignment
                       </h4>
                       <p className="text-sm text-muted-foreground mb-3">
                         Information security management
@@ -130,7 +147,7 @@ export default function CompliancePage() {
                     </div>
                     <div className="border border-border rounded-lg p-6 bg-card">
                       <h4 className="text-lg font-headline font-semibold text-foreground mb-3">
-                        ISO 22301
+                        ISO 22301 — Business continuity design alignment
                       </h4>
                       <p className="text-sm text-muted-foreground mb-3">
                         Business continuity management
@@ -142,7 +159,7 @@ export default function CompliancePage() {
                     </div>
                     <div className="border border-border rounded-lg p-6 bg-card">
                       <h4 className="text-lg font-headline font-semibold text-foreground mb-3">
-                        DORA
+                        DORA — Operational resilience design alignment
                       </h4>
                       <p className="text-sm text-muted-foreground mb-3">
                         Digital Operational Resilience Act
@@ -170,7 +187,7 @@ export default function CompliancePage() {
                     accreditation, or regulatory approval.
                   </p>
                   <p>Alignment indicates that:</p>
-                  <ul className="space-y-2 ml-6">
+                  <ul className="space-y-2 ml-6 [&>li]:flex [&>li]:items-start [&>li]:gap-3 [&>li>span:first-child]:mt-0.5 [&>li>span:first-child]:leading-none">
                     <li className="flex gap-3">
                       <span className="text-primary mt-1">•</span>
                       <span>
@@ -187,12 +204,16 @@ export default function CompliancePage() {
                         Documentation and governance structures reflect framework standards
                       </span>
                     </li>
-                  </ul>
-                  <p>Alignment does not indicate:</p>
-                  <ul className="space-y-2 ml-6">
                     <li className="flex gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span>Formal certification by accredited bodies</span>
+                      <span>Continuous monitoring of regulatory developments</span>
+                    </li>
+                  </ul>
+                  <p>Alignment does not indicate:</p>
+                  <ul className="space-y-2 ml-6 [&>li]:flex [&>li]:items-start [&>li]:gap-3 [&>li>span:first-child]:mt-0.5 [&>li>span:first-child]:leading-none">
+                    <li className="flex gap-3">
+                      <span className="text-primary mt-1">•</span>
+                      <span>Formal certification by accredited bodies (unless explicitly stated)</span>
                     </li>
                     <li className="flex gap-3">
                       <span className="text-primary mt-1">•</span>
@@ -201,6 +222,10 @@ export default function CompliancePage() {
                     <li className="flex gap-3">
                       <span className="text-primary mt-1">•</span>
                       <span>Legal compliance guarantees for specific use cases</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-primary mt-1">•</span>
+                      <span>Audit completion or attestation</span>
                     </li>
                   </ul>
                   <p>
@@ -222,7 +247,7 @@ export default function CompliancePage() {
                   stakeholders through structured engagement.
                 </p>
                 <p>Documentation includes:</p>
-                <ul className="space-y-2 ml-6">
+                <ul className="space-y-2 ml-6 [&>li]:flex [&>li]:items-start [&>li]:gap-3 [&>li>span:first-child]:mt-0.5 [&>li>span:first-child]:leading-none">
                   <li className="flex gap-3">
                     <span className="text-primary mt-1">•</span>
                     <span>Framework requirement mapping to system architecture</span>

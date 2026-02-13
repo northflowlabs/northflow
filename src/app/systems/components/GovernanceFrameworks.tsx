@@ -66,6 +66,10 @@ const GovernanceFrameworks = ({ className = '' }: GovernanceFrameworksProps) => 
             Governance embedded as system design, not post-deployment compliance. Frameworks
             emphasise control mapping, auditability, and institutional oversight from inception.
           </p>
+          <p className="text-xs text-muted-foreground font-body mt-2 italic max-w-3xl">
+            Standards references describe design alignment and intended operating model, not claimed
+            certification status.
+          </p>
         </div>
 
         <div className="space-y-8">
@@ -84,7 +88,7 @@ const GovernanceFrameworks = ({ className = '' }: GovernanceFrameworksProps) => 
                     {framework.features.map((feature, index) => (
                       <div key={index} className="flex items-start space-x-2">
                         <Icon
-                          name="CheckCircleIcon"
+                          name="check-circle"
                           size={16}
                           variant="solid"
                           className="text-primary flex-shrink-0 mt-0.5"

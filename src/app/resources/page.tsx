@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import ResourceIndex from '@/components/resources/ResourceIndex';
+import ResourceIndexV2 from '@/components/resources/ResourceIndexV2';
 
 export const metadata: Metadata = {
   title: 'Institutional Resources & Reference Materials | Northflow',
@@ -21,16 +21,12 @@ export default function ResourcesPage() {
               </span>
             </div>
             <h1 className="text-4xl md:text-5xl font-headline font-semibold mb-6 leading-tight">
-              Resources
+              Research materials and technical documentation
             </h1>
             <p className="text-lg font-body text-primary-foreground/90 leading-relaxed mb-8">
-              Comprehensive index of documentation, technical papers, compliance frameworks, and
-              security resources for institutional stakeholders.
-            </p>
-            <p className="text-sm font-body text-primary-foreground/70 leading-relaxed italic">
-              These resources reflect Northflow's applied research, system design principles, and
-              regulatory alignment work. Materials are published at different stages of maturity and
-              made available through appropriate engagement pathways.
+              Methodology notes, validation artifacts, and framework documentation for institutional
+              stakeholders. Materials reflect applied research in structured discovery, evidence
+              systems, and space-enabled climate resilience.
             </p>
           </div>
         </div>
@@ -43,8 +39,8 @@ export default function ResourcesPage() {
             Project HGE resources
           </h2>
           <p className="text-sm text-muted-foreground font-body leading-relaxed mb-4">
-            Access methodology, validation logs, and instrument integration notes from Project
-            HGE—Northflow's automated scientific discovery infrastructure.
+            Access methodology, validation logs, and integration notes from Project HGE —
+            Northflow&apos;s structured scientific discovery infrastructure.
           </p>
           <div className="flex flex-wrap gap-4">
             <Link
@@ -76,10 +72,10 @@ export default function ResourcesPage() {
               </svg>
             </Link>
             <Link
-              href="/research/hge"
+              href="/validation"
               className="inline-flex items-center gap-2 px-4 py-2 bg-accent text-accent-foreground rounded-md hover:bg-accent/90 transition-colors font-body text-sm font-medium"
             >
-              HGE overview
+              Validation artifacts
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path
                   strokeLinecap="round"
@@ -92,8 +88,29 @@ export default function ResourcesPage() {
           </div>
         </div>
 
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+          <div className="p-6 bg-card border border-border rounded-lg">
+            <h2 className="text-xl font-headline font-semibold text-foreground mb-3">
+              Evidence infrastructure resources
+            </h2>
+            <p className="text-sm text-muted-foreground font-body leading-relaxed">
+              Framework documentation for institutional evidence systems, governance
+              methodologies, and audit-grade verification workflows.
+            </p>
+          </div>
+          <div className="p-6 bg-card border border-border rounded-lg">
+            <h2 className="text-xl font-headline font-semibold text-foreground mb-3">
+              Regulatory alignment resources
+            </h2>
+            <p className="text-sm text-muted-foreground font-body leading-relaxed">
+              Design alignment documentation for European regulatory frameworks including GDPR,
+              NIS2, DORA, and ISO standards.
+            </p>
+          </div>
+        </div>
+
         {/* Searchable Resource Index */}
-        <ResourceIndex />
+        <ResourceIndexV2 />
       </div>
     </div>
   );
