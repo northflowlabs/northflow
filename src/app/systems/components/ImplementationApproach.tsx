@@ -19,7 +19,7 @@ const ImplementationApproach = ({ className = '' }: ImplementationApproachProps)
       number: '01',
       title: 'Assessment & validation',
       description:
-        'Comprehensive evaluation of institutional requirements, regulatory context, and governance readiness.',
+        'Comprehensive evaluation of institutional requirements, regulatory context, and governance readiness. Informed by HGE\'s structured evaluation methodology.',
       deliverables: [
         'Requirements documentation',
         'Compliance assessment',
@@ -115,7 +115,7 @@ const ImplementationApproach = ({ className = '' }: ImplementationApproachProps)
                         {phase.deliverables.map((deliverable, idx) => (
                           <div key={idx} className="flex items-center space-x-2">
                             <Icon
-                              name="CheckCircleIcon"
+                              name="check-circle"
                               size={16}
                               variant="solid"
                               className="text-primary flex-shrink-0"

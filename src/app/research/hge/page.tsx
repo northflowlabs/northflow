@@ -5,6 +5,9 @@ import HGEHero from './components/HGEHero';
 import HGEMethodology from './components/HGEMethodology';
 import HGEValidation from './components/HGEValidation';
 import HGEApplications from './components/HGEApplications';
+import HGEDomainArchitecture from './components/HGEDomainArchitecture';
+import HGETechnicalSpecifications from './components/HGETechnicalSpecifications';
+import HGEPipelineVisualization from './components/HGEPipelineVisualization';
 import HGELinks from './components/HGELinks';
 import HGEContact from './components/HGEContact';
 
@@ -31,9 +34,12 @@ export default function ProjectHGEPage() {
   return (
     <>
       <HGEHero />
-      <HGEMethodology />
-      <HGEValidation />
       <HGEApplications />
+      <HGEMethodology />
+      <HGEPipelineVisualization />
+      <HGEValidation />
+      <HGEDomainArchitecture />
+      <HGETechnicalSpecifications />
       <HGELinks />
       <HGEContact />
     </>

@@ -41,6 +41,11 @@ export default function SystemsPage() {
               compliance frameworks, and operational continuity. Each layer is designed to support
               the others while maintaining independence.
             </p>
+            <p className="text-sm font-body text-foreground bg-background border border-primary/20 rounded-sm px-4 py-3 mb-8 text-center">
+              <span className="font-semibold">HGE connection:</span> The governance and audit layer
+              is informed by Project HGE&apos;s verification methodology, including signed evidence
+              bundles, deterministic replay, and audit invariants.
+            </p>
             <div className="flex justify-center">
               <SystemDiagram className="w-full max-w-3xl text-muted-foreground" />
             </div>
