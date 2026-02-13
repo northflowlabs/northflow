@@ -12,7 +12,8 @@ const FrameworksOperationalSystems = () => {
             <FrameworksOperationalSystemsDiagram className="w-full max-w-3xl text-muted-foreground" />
           </div>
           <p className="text-sm text-muted-foreground font-body leading-relaxed text-center italic">
-            EFOS informs system design and governance. It does not replace operational tools or institutional authority.
+            EFOS informs system design and governance. It does not replace operational tools or
+            institutional authority.
           </p>
         </div>
       </div>

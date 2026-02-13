@@ -15,28 +15,28 @@ const TrustIndicatorsSection = ({ className = '' }: TrustIndicatorsSectionProps)
   const indicators: TrustIndicator[] = [
     {
       id: 1,
-      icon: 'CheckBadgeIcon',
+      icon: 'check-badge',
       label: 'Designed to align with ISO 27001',
-      description: 'Information security management systems alignment'
+      description: 'Information security management alignment.',
     },
     {
       id: 2,
-      icon: 'ShieldCheckIcon',
+      icon: 'shield-check',
       label: 'GDPR-aligned data protection approach',
-      description: 'European data protection regulation adherence'
+      description: 'European data protection regulation adherence.',
     },
     {
       id: 3,
-      icon: 'BuildingLibraryIcon',
-      label: 'Mapped to frameworks relevant to NATO member states',
-      description: 'Framework alignment for institutional cooperation'
+      icon: 'building-library',
+      label: 'Mapped to relevant European governance frameworks',
+      description: 'Institutional and cross-border regulatory considerations.',
     },
     {
       id: 4,
-      icon: 'DocumentCheckIcon',
-      label: 'Audit ready',
-      description: 'Comprehensive governance and transparency frameworks'
-    }
+      icon: 'document-check',
+      label: 'Audit-ready',
+      description: 'Comprehensive governance and transparency architecture.',
+    },
   ];
 
   return (
@@ -47,7 +47,8 @@ const TrustIndicatorsSection = ({ className = '' }: TrustIndicatorsSectionProps)
             Standards alignment framework
           </h2>
           <p className="text-lg text-muted-foreground font-body max-w-3xl mx-auto">
-            Systems built with controls mapped to compliance and certification standards for government and regulated environments.
+            Systems built with controls mapped to relevant European regulatory and governance
+            standards.
           </p>
         </div>
 
@@ -58,10 +59,10 @@ const TrustIndicatorsSection = ({ className = '' }: TrustIndicatorsSectionProps)
               className="bg-background p-6 rounded-sm border border-border text-center"
             >
               <div className="w-12 h-12 bg-primary/10 rounded-sm flex items-center justify-center mx-auto mb-4">
-                <Icon 
-                  name={indicator.icon as any} 
-                  size={24} 
-                  variant="solid" 
+                <Icon
+                  name={indicator.icon as any}
+                  size={24}
+                  variant="solid"
                   className="text-primary"
                 />
               </div>
@@ -74,10 +75,11 @@ const TrustIndicatorsSection = ({ className = '' }: TrustIndicatorsSectionProps)
             </div>
           ))}
         </div>
-        
+
         <div className="mt-8 text-center">
           <p className="text-xs text-muted-foreground font-body max-w-3xl mx-auto italic">
-            Standards references describe design alignment and target operating models. Formal certifications are pursued and verified where applicable.
+            Standards references describe design alignment and target operating models. Formal
+            certifications are pursued and verified where applicable.
           </p>
         </div>
       </div>

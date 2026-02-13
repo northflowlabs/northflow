@@ -5,17 +5,20 @@ interface ApproachSectionProps {
 const ApproachSection = ({ className = '' }: ApproachSectionProps) => {
   const principles = [
     {
-      title: "Infrastructure before interfaces",
-      description: "We prioritise foundational systems and control layers before user-facing components. Institutional technology must operate reliably, securely, and predictably before usability layers are introduced."
+      title: 'Infrastructure before interfaces',
+      description:
+        'Foundational reasoning and verification layers precede interface layers. Systems must operate reliably before they scale.',
     },
     {
-      title: "Research before execution",
-      description: "System design is informed by structured research and applied methodology developed through Northflow Research Lab. Solutions are developed based on validated frameworks, not assumptions or short-term trends."
+      title: 'Research before execution',
+      description:
+        'Architectures are informed by structured methodology and validation, not assumption or trend.',
     },
     {
-      title: "Operations over abstraction",
-      description: "We focus on systems designed for real-world operation. Deployment, maintenance, resilience, and continuity are treated as core design requirements, not downstream concerns."
-    }
+      title: 'Operations over abstraction',
+      description:
+        'Systems are designed for real institutional environments, with resilience and auditability as primary constraints.',
+    },
   ];
 
   return (

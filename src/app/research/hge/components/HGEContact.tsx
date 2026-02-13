@@ -32,7 +32,9 @@ const HGEContact = ({ className = '' }: HGEContactProps) => {
               Discuss research collaboration
             </h2>
             <p className="text-base font-body text-muted-foreground leading-relaxed mb-8 max-w-2xl mx-auto">
-              Institutions and research organizations interested in exploring HGE methodology, validation approaches, or potential collaborative applications are invited to initiate structured dialogue through the institutional engagement process.
+              Institutions and research organizations interested in exploring HGE methodology,
+              validation approaches, or potential collaborative applications are invited to initiate
+              structured dialogue through the institutional engagement process.
             </p>
             <Link
               href="/engage"
@@ -43,7 +45,8 @@ const HGEContact = ({ className = '' }: HGEContactProps) => {
               <Icon name="ArrowRightIcon" size={16} variant="outline" className="ml-2" />
             </Link>
             <p className="text-xs font-body text-muted-foreground mt-6">
-              Engagement follows structured institutional dialogue protocols. Response times vary based on inquiry complexity and alignment with current research priorities.
+              Engagement follows structured institutional dialogue protocols. Response times vary
+              based on inquiry complexity and alignment with current research priorities.
             </p>
           </div>
         </div>

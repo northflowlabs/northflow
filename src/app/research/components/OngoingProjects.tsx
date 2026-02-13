@@ -15,59 +15,62 @@ const OngoingProjects = ({ className = '' }: OngoingProjectsProps) => {
   const projects: Project[] = [
     {
       id: 1,
-      title: "European Flexibility Operating System (EFOS)",
-      domain: "Energy Systems & Infrastructure",
-      description: "Research and framework development for a proposed European public–private digital infrastructure providing harmonised, cross-border operational layer for predicting, coordinating, and managing flexibility across Europe's energy system, responding to EU directives (DES, Green Deal, EPBD, Data Act, AI Act, Net Zero Industry Act).",
-      status: "Active research",
-      outputType: "Framework brief"
+      title: 'Crisis-resilient digital infrastructure',
+      domain: 'Infrastructure Resilience',
+      description:
+        'Investigation of architectural patterns and operational protocols for maintaining digital continuity during crisis, disruption, or conflict scenarios.',
+      status: 'Status: Active',
+      outputType: 'Technical concept',
     },
     {
       id: 2,
-      title: "Operational sovereignty frameworks",
-      domain: "Digital Sovereignty",
-      description: "Research into governance, architecture, and control mechanisms that enable states and institutions to retain operational authority over critical digital systems.",
-      status: "In development",
-      outputType: "Working paper"
+      title: 'AI governance for mission-critical systems',
+      domain: 'AI & Governance',
+      description:
+        'Applied research into the safe, auditable, and bounded use of AI in institutional and mission-critical environments.',
+      status: 'Status: Active',
+      outputType: 'Working paper',
     },
     {
       id: 3,
-      title: "Crisis-resilient digital infrastructure",
-      domain: "Infrastructure Resilience",
-      description: "Investigation of architectural patterns and operational protocols for maintaining digital continuity during crisis, disruption, or conflict scenarios.",
-      status: "Active research",
-      outputType: "Technical concept"
+      title: 'Research-to-infrastructure translation models',
+      domain: 'Research Methodology',
+      description:
+        'Development of structured pathways for translating research outputs into deployable, governable, and trusted digital infrastructure.',
+      status: 'Status: In development',
+      outputType: 'Technical concept',
     },
     {
       id: 4,
-      title: "Institutional interoperability systems",
-      domain: "Systems Architecture",
-      description: "Research into interoperability as a permanent infrastructure layer across public systems, energy networks, and regulated sectors.",
-      status: "In development",
-      outputType: "Framework brief"
+      title: 'European Flexibility Operating System (EFOS)',
+      domain: 'Energy Systems & Infrastructure',
+      description:
+        'Research and framework development for a proposed European public–private digital infrastructure providing a harmonised, cross-border operational layer for predicting, coordinating, and managing flexibility across Europe’s energy system, aligned with relevant European regulatory frameworks and energy system directives.',
+      status: 'Status: Active',
+      outputType: 'Framework brief',
     },
     {
       id: 5,
-      title: "AI governance for mission-critical systems",
-      domain: "AI & Governance",
-      description: "Applied research into the safe, auditable, and bounded use of AI in institutional and mission-critical environments.",
-      status: "Active research",
-      outputType: "Working paper"
+      title: 'Institutional interoperability systems',
+      domain: 'Systems Architecture',
+      description:
+        'Research into interoperability as a permanent infrastructure layer across public systems, energy networks, and regulated sectors.',
+      status: 'Status: In development',
+      outputType: 'Framework brief',
     },
     {
       id: 6,
-      title: "Research-to-infrastructure translation models",
-      domain: "Research Methodology",
-      description: "Development of structured pathways for translating research outputs into deployable, governable, and trusted digital infrastructure.",
-      status: "In development",
-      outputType: "Technical concept"
-    }
+      title: 'Operational sovereignty frameworks',
+      domain: 'Digital Sovereignty',
+      description:
+        'Research into governance, architecture, and control mechanisms that enable states and institutions to retain operational authority over critical digital systems.',
+      status: 'Status: In development',
+      outputType: 'Working paper',
+    },
   ];
 
   const getStatusColor = (status: string) => {
-    if (status.includes('Active')) {
-      return 'bg-primary/10 text-primary';
-    }
-    return 'bg-primary/10 text-primary';
+    return 'bg-muted text-muted-foreground';
   };
 
   return (
@@ -78,10 +81,12 @@ const OngoingProjects = ({ className = '' }: OngoingProjectsProps) => {
             Active research initiatives
           </h2>
           <p className="text-lg font-body text-muted-foreground max-w-3xl mx-auto mb-3">
-            Current research initiatives addressing critical challenges in sovereign digital infrastructure and institutional technology systems.
+            Current research initiatives addressing climate resilience, institutional evidence
+            systems, and mission-critical infrastructure.
           </p>
           <p className="text-sm font-body text-muted-foreground max-w-3xl mx-auto italic">
-            Initiatives represent active research, framework development, and early-stage publication work.
+            Initiatives represent active research, framework development, and early-stage
+            publication work.
           </p>
         </div>
 
@@ -93,10 +98,12 @@ const OngoingProjects = ({ className = '' }: OngoingProjectsProps) => {
             >
               <div className="flex items-start justify-between mb-4">
                 <div className="flex items-center space-x-2">
-                  <span className={`inline-flex items-center px-3 py-1 text-xs font-cta font-medium rounded-sm ${getStatusColor(project.status)}`}>
+                  <span
+                    className={`inline-flex items-center px-3 py-1 text-xs font-body font-medium rounded-sm ${getStatusColor(project.status)}`}
+                  >
                     {project.status}
                   </span>
-                  <span className="inline-flex items-center px-3 py-1 bg-muted text-muted-foreground text-xs font-cta font-medium rounded-sm">
+                  <span className="inline-flex items-center px-3 py-1 bg-muted text-muted-foreground text-xs font-body font-medium rounded-sm">
                     {project.outputType}
                   </span>
                 </div>

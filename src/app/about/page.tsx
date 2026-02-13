@@ -12,7 +12,8 @@ import StructuredData from '@/components/common/StructuredData';
 
 export const metadata: Metadata = generateMetadata({
   title: 'About Northflow | Institutional Digital Infrastructure Stewardship',
-  description: 'Northflow is a Nordic technology organization stewarding long-horizon digital infrastructure, research systems, and governance architectures for regulated European environments.',
+  description:
+    'Northflow is a Nordic technology organization stewarding long-horizon digital infrastructure, research systems, and governance architectures for regulated European environments.',
   path: '/about',
   ogType: 'website',
 });
@@ -20,8 +21,9 @@ export const metadata: Metadata = generateMetadata({
 export default function AboutPage() {
   const webPageSchema = generateWebPageSchema({
     title: 'About Northflow | Institutional Digital Infrastructure Stewardship',
-    description: 'Northflow is a Nordic technology organization stewarding long-horizon digital infrastructure, research systems, and governance architectures for regulated European environments.',
-    path: '/about'
+    description:
+      'Northflow is a Nordic technology organization stewarding long-horizon digital infrastructure, research systems, and governance architectures for regulated European environments.',
+    path: '/about',
   });
 
   return (

@@ -11,7 +11,10 @@ const PowerGridCTA = ({ className = '' }: PowerGridCTAProps) => {
             Power Grid Systems Collaboration
           </h2>
           <p className="text-lg font-body leading-relaxed mb-8 opacity-90">
-            We are actively seeking collaboration and information exchange on power grid systems, operational continuity frameworks, and cross-border energy infrastructure governance. If your institution is working on related initiatives or requires technical consultation, we welcome the opportunity to engage.
+            We are actively seeking collaboration and information exchange on power grid systems,
+            operational continuity frameworks, and cross-border energy infrastructure governance. If
+            your institution is working on related initiatives or requires technical consultation,
+            we welcome the opportunity to engage.
           </p>
           <a
             href="/engage/request-access?source=efos-framework"

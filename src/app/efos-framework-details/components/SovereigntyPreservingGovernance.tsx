@@ -12,7 +12,8 @@ const SovereigntyPreservingGovernance = () => {
             <SovereigntyPreservingGovernanceDiagram className="w-full max-w-4xl text-muted-foreground" />
           </div>
           <p className="text-sm text-muted-foreground font-body leading-relaxed text-center italic">
-            Control remains at national and institutional level. EFOS enables coordination without transferring sovereignty.
+            Control remains at national and institutional level. EFOS enables coordination without
+            transferring sovereignty.
           </p>
         </div>
       </div>

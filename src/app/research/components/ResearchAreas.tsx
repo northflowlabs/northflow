@@ -1,11 +1,15 @@
+'use client';
+
 import Icon from '@/components/ui/AppIcon';
+import { useState, useEffect } from 'react';
 
 interface ResearchArea {
   id: number;
   title: string;
   description: string;
   icon: string;
-  activeProjects: number;
+  trackCount: number;
+  tracks: string[];
 }
 
 interface ResearchAreasProps {
@@ -13,49 +17,93 @@ interface ResearchAreasProps {
 }
 
 const ResearchAreas = ({ className = '' }: ResearchAreasProps) => {
+  const [expandedArea, setExpandedArea] = useState<number | null>(null);
+
+  const toggleExpansion = (areaId: number) => {
+    setExpandedArea(expandedArea === areaId ? null : areaId);
+  };
+
   const researchAreas: ResearchArea[] = [
     {
       id: 1,
-      title: "Digital sovereignty frameworks",
-      description: "Inquiry into sovereign technology architectures that enable government entities to maintain operational independence and data control within their jurisdictions.",
-      icon: "ShieldCheckIcon",
-      activeProjects: 8
+      title: 'Climate and infrastructure resilience',
+      description:
+        'Evidence frameworks for resilience analysis across climate-exposed and mission-critical infrastructure domains.',
+      icon: 'arrow-path',
+      trackCount: 4,
+      tracks: [
+        'Resilience Indicator Frameworks — Structured indicators, thresholds, and evaluation criteria for resilience claims.',
+        'Hazard–Exposure Evidence Mapping — Linking signals, exposure models, and evidence provenance into reviewable bundles.',
+        'Continuity and Failure-Mode Assessment — Formal analysis of disruption scenarios and operational continuity constraints.',
+        'Decision Support under Uncertainty — Reproducible reasoning frameworks for institutional risk and resilience decisions.',
+      ],
     },
     {
       id: 2,
-      title: "Infrastructure resilience",
-      description: "Development of continuity frameworks for mission-critical systems that maintain operational capability during crisis scenarios and conflict situations.",
-      icon: "ServerStackIcon",
-      activeProjects: 12
+      title: 'AI governance for mission-critical systems',
+      description:
+        'Governance-aligned evaluation and evidence controls for bounded AI use in institutional and critical environments.',
+      icon: 'shield-check',
+      trackCount: 4,
+      tracks: [
+        'Audit-Ready Evaluation Protocols — Testable criteria for safety, boundedness, and institutional acceptability.',
+        'Evidence Governance and Provenance — Traceable evidence bundles, versioning, and integrity controls.',
+        'Drift and Degradation Detection — Monitoring approaches that preserve accountability over time.',
+        'Operational Control and Oversight — Human oversight patterns, escalation paths, and enforceable governance modes.',
+      ],
     },
     {
       id: 3,
-      title: "Auditable systems design",
-      description: "Methodologies for creating governable and auditable infrastructure that meets regulatory compliance requirements for institutional stakeholders.",
-      icon: "DocumentCheckIcon",
-      activeProjects: 6
+      title: 'Research-to-infrastructure translation models',
+      description:
+        'Structured pathways for moving governed research outputs into deployable institutional architectures.',
+      icon: 'document-check',
+      trackCount: 3,
+      tracks: [
+        'Publication-to-Architecture Translation — Converting working documents into implementation-ready system specifications.',
+        'Validation and Review Loops — Institutional review, validation dialogue, and controlled iteration processes.',
+        'Governed Deployment Pathways — Operational patterns for moving from validated frameworks into system integration.',
+      ],
     },
     {
       id: 4,
-      title: "Operational continuity",
-      description: "Research into systems that ensure uninterrupted service delivery for government operations and critical asset management during disruption events.",
-      icon: "ArrowPathIcon",
-      activeProjects: 10
+      title: 'Energy systems evidence infrastructure',
+      description:
+        'Evidence and reasoning frameworks for resilience, flexibility, and coordination in energy-system contexts.',
+      icon: 'globe-alt',
+      trackCount: 3,
+      tracks: [
+        'Flexibility Evidence Models — Evaluation frameworks for flexibility assumptions and coordination claims.',
+        'Cross-Border Coordination Semantics — Institutional definitions, constraints, and audit-ready operational semantics.',
+        'System Integrity and Resilience Controls — Evidence governance for mission-critical energy-system decisions.',
+      ],
     },
     {
       id: 5,
-      title: "Regulatory alignment",
-      description: "Frameworks for technology infrastructure that aligns with European regulatory standards and institutional compliance mandates.",
-      icon: "DocumentTextIcon",
-      activeProjects: 7
+      title: 'Institutional interoperability systems',
+      description:
+        'Interoperability as evidence infrastructure: exchange, verification, and portability across institutions and sectors.',
+      icon: 'server-stack',
+      trackCount: 3,
+      tracks: [
+        'Evidence Portability Frameworks — Standardized evidence bundles and exchange patterns across institutional boundaries.',
+        'Cross-System Verification Interfaces — Interoperable verification mechanisms for claims and supporting evidence.',
+        'Long-Horizon Compatibility and Governance — Sustaining interoperability under changing constraints and standards.',
+      ],
     },
     {
       id: 6,
-      title: "Security architecture",
-      description: "Advanced security methodologies for protecting institutional data and maintaining operational security in government environments.",
-      icon: "LockClosedIcon",
-      activeProjects: 9
-    }
+      title: 'Operational sovereignty frameworks',
+      description:
+        'Governance and control structures that preserve institutional authority over evidence, infrastructure, and decision-critical systems.',
+      icon: 'lock-closed',
+      trackCount: 3,
+      tracks: [
+        'Operational Authority and Control — Mechanisms for maintaining institutional control over critical system operations.',
+        'Governance-Aligned Architecture Patterns — Roles, oversight flows, and enforceable accountability structures.',
+        'Policy and Regulatory Compatibility — Structural alignment without identity-led positioning or marketing framing.',
+      ],
+    },
   ];
 
   return (
@@ -66,7 +114,8 @@ const ResearchAreas = ({ className = '' }: ResearchAreasProps) => {
             Research focus areas
           </h2>
           <p className="text-lg font-body text-muted-foreground max-w-3xl mx-auto">
-            NRL conducts research across six primary domains, each addressing critical challenges in sovereign digital infrastructure and institutional technology systems.
+            Northflow Research Lab conducts applied research across domains critical to climate
+            resilience and institutional system integrity.
           </p>
         </div>
 
@@ -74,11 +123,16 @@ const ResearchAreas = ({ className = '' }: ResearchAreasProps) => {
           {researchAreas.map((area) => (
             <div
               key={area.id}
-              className="bg-card border border-border rounded-sm p-8 hover:shadow-hover transition-all duration-200 ease-institutional"
+              className="bg-card border border-border rounded-sm p-8 hover:shadow-hover transition-all duration-200 ease-institutional flex flex-col h-full"
             >
               <div className="flex items-start justify-between mb-6">
                 <div className="w-12 h-12 bg-primary/10 rounded-sm flex items-center justify-center">
-                  <Icon name={area.icon as any} size={24} variant="outline" className="text-primary" />
+                  <Icon
+                    name={area.icon as any}
+                    size={24}
+                    variant="outline"
+                    className="text-primary"
+                  />
                 </div>
               </div>
               <h3 className="text-xl font-headline font-semibold text-foreground mb-3">
@@ -87,13 +141,47 @@ const ResearchAreas = ({ className = '' }: ResearchAreasProps) => {
               <p className="text-sm font-body text-muted-foreground leading-relaxed mb-6">
                 {area.description}
               </p>
-              <div className="pt-6 border-t border-border">
-                <div className="flex items-center space-x-2">
-                  <Icon name="BeakerIcon" size={16} variant="outline" className="text-muted-foreground" />
-                  <span className="text-xs font-body text-muted-foreground">
-                    {area.activeProjects} active research lines
-                  </span>
+              <div className="pt-6 border-t border-border mt-auto">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center space-x-2">
+                    <Icon
+                      name="beaker"
+                      size={16}
+                      variant="outline"
+                      className="text-muted-foreground"
+                    />
+                    <span className="text-xs font-body text-muted-foreground">
+                      {area.trackCount} structured research tracks · Research scope
+                    </span>
+                  </div>
+                  <button
+                    onClick={() => toggleExpansion(area.id)}
+                    className="text-xs font-body text-primary hover:text-primary/80 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+                    aria-label={`View methodological scope for ${area.title}`}
+                  >
+                    View scope
+                  </button>
                 </div>
+
+                {expandedArea === area.id && (
+                  <>
+                    <div className="border-t border-border mt-4"></div>
+                    <div className="pt-4">
+                      <h4 className="text-sm font-headline font-medium text-muted-foreground mb-4">
+                        Structured research tracks
+                      </h4>
+                      <ul className="space-y-3">
+                        {area.tracks.map((track, index) => (
+                          <li key={index}>
+                            <div className="text-sm font-body font-medium text-foreground leading-relaxed">
+                              {track}
+                            </div>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </>
+                )}
               </div>
             </div>
           ))}

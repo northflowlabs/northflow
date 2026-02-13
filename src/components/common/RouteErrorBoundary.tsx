@@ -36,13 +36,9 @@ export default function RouteErrorBoundary({ error, reset }: RouteErrorBoundaryP
             </svg>
           </div>
 
-          <h1 className="text-3xl font-bold text-gray-900 mb-3">
-            Page Error
-          </h1>
+          <h1 className="text-3xl font-bold text-gray-900 mb-3">Page Error</h1>
 
-          <p className="text-gray-600 mb-2">
-            We encountered an error while loading this page.
-          </p>
+          <p className="text-gray-600 mb-2">We encountered an error while loading this page.</p>
 
           {pathname && (
             <p className="text-sm text-gray-500 mb-6">
@@ -74,25 +70,19 @@ export default function RouteErrorBoundary({ error, reset }: RouteErrorBoundaryP
             </summary>
             <div className="mt-3 p-4 bg-gray-100 rounded-lg">
               <p className="text-xs font-semibold text-gray-700 mb-2">Message:</p>
-              <pre className="text-xs overflow-auto text-red-600 mb-4">
-                {error.message}
-              </pre>
+              <pre className="text-xs overflow-auto text-red-600 mb-4">{error.message}</pre>
 
               {error.digest && (
                 <>
                   <p className="text-xs font-semibold text-gray-700 mb-2">Digest:</p>
-                  <pre className="text-xs overflow-auto text-gray-600 mb-4">
-                    {error.digest}
-                  </pre>
+                  <pre className="text-xs overflow-auto text-gray-600 mb-4">{error.digest}</pre>
                 </>
               )}
 
               {error.stack && (
                 <>
                   <p className="text-xs font-semibold text-gray-700 mb-2">Stack:</p>
-                  <pre className="text-xs overflow-auto text-gray-600">
-                    {error.stack}
-                  </pre>
+                  <pre className="text-xs overflow-auto text-gray-600">{error.stack}</pre>
                 </>
               )}
             </div>

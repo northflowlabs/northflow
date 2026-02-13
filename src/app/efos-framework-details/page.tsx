@@ -12,7 +12,8 @@ import StructuredData from '@/components/common/StructuredData';
 
 export const metadata: Metadata = generateMetadata({
   title: 'EFOS — European Operational Governance Architecture | Northflow',
-  description: 'EFOS defines a reference architecture for traceable, auditable, and sovereign digital operations designed for long-horizon institutional governance.',
+  description:
+    'EFOS defines a reference architecture for traceable, auditable, and sovereign digital operations designed for long-horizon institutional governance.',
   path: '/efos-framework-details',
   ogType: 'website',
 });
@@ -20,8 +21,9 @@ export const metadata: Metadata = generateMetadata({
 export default function EFOSFrameworkDetailsPage() {
   const webPageSchema = generateWebPageSchema({
     title: 'EFOS — European Operational Governance Architecture | Northflow',
-    description: 'EFOS defines a reference architecture for traceable, auditable, and sovereign digital operations designed for long-horizon institutional governance.',
-    path: '/efos-framework-details'
+    description:
+      'EFOS defines a reference architecture for traceable, auditable, and sovereign digital operations designed for long-horizon institutional governance.',
+    path: '/efos-framework-details',
   });
 
   return (

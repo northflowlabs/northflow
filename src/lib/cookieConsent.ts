@@ -24,7 +24,7 @@ export function getCookieConsent(): CookieConsent | null {
     if (!stored) return null;
 
     const consent = JSON.parse(stored) as CookieConsent;
-    
+
     // Validate consent structure
     if (
       typeof consent.necessary === 'boolean' &&
@@ -34,7 +34,7 @@ export function getCookieConsent(): CookieConsent | null {
     ) {
       return consent;
     }
-    
+
     return null;
   } catch (error) {
     console.error('Error reading cookie consent:', error);
@@ -55,7 +55,7 @@ export function setCookieConsent(consent: CookieConsent): void {
     // Also set a cookie for server-side access if needed
     const expiryDate = new Date();
     expiryDate.setDate(expiryDate.getDate() + CONSENT_COOKIE_EXPIRY_DAYS);
-    
+
     document.cookie = `${CONSENT_COOKIE_NAME}=${JSON.stringify(consent)}; expires=${expiryDate.toUTCString()}; path=/; SameSite=Strict; Secure`;
 
     // Dispatch custom event for other components to react

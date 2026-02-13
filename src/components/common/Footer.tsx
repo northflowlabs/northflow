@@ -16,72 +16,63 @@ const Footer = () => {
                 viewBox="0 0 40 40"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                aria-hidden="true">
-
+                aria-hidden="true"
+              >
                 <rect width="40" height="40" rx="8" fill="var(--color-primary)" />
                 <path
                   d="M12 28V12L20 16L28 12V28L20 24L12 28Z"
                   stroke="white"
                   strokeWidth="2"
                   strokeLinecap="round"
-                  strokeLinejoin="round" />
+                  strokeLinejoin="round"
+                />
 
-                <path
-                  d="M20 16V24"
-                  stroke="white"
-                  strokeWidth="2"
-                  strokeLinecap="round" />
-
+                <path d="M20 16V24" stroke="white" strokeWidth="2" strokeLinecap="round" />
               </svg>
               <div>
-                <div className="font-headline font-semibold text-foreground">
-                  Northflow
-                </div>
-                <div className="text-xs text-muted-foreground">
-                  Technologies
-                </div>
+                <div className="font-headline font-semibold text-foreground">Northflow</div>
+                <div className="text-xs text-muted-foreground">Technologies</div>
               </div>
             </div>
-            <p className="text-sm text-muted-foreground leading-relaxed">Sovereign digital infrastructure for institutional and mission-critical environments across Europe.
-Built in Norway. Operating across Europe.
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              Institutional evidence infrastructure for climate and critical systems. Built in
+              Norway. Operating across Europe.
             </p>
           </div>
 
           {/* Company */}
           <div>
-            <h3 className="font-headline font-semibold text-foreground mb-4">
-              Company
-            </h3>
+            <h3 className="font-headline font-semibold text-foreground mb-4">Company</h3>
             <ul className="space-y-2">
               <li>
                 <Link
                   href="/about"
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 focus:outline-none focus:underline">
-
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 focus:outline-none focus:underline"
+                >
                   About
                 </Link>
               </li>
               <li>
                 <Link
                   href="/research"
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 focus:outline-none focus:underline">
-
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 focus:outline-none focus:underline"
+                >
                   Research
                 </Link>
               </li>
               <li>
                 <Link
                   href="/systems"
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 focus:outline-none focus:underline">
-
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 focus:outline-none focus:underline"
+                >
                   Systems
                 </Link>
               </li>
               <li>
                 <Link
                   href="/initiatives"
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 focus:outline-none focus:underline">
-
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 focus:outline-none focus:underline"
+                >
                   Initiatives
                 </Link>
               </li>
@@ -90,47 +81,45 @@ Built in Norway. Operating across Europe.
 
           {/* Resources */}
           <div>
-            <h3 className="font-headline font-semibold text-foreground mb-4">
-              Resources
-            </h3>
+            <h3 className="font-headline font-semibold text-foreground mb-4">Resources</h3>
             <ul className="space-y-2">
               <li>
                 <Link
                   href="/resources"
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 focus:outline-none focus:underline">
-
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 focus:outline-none focus:underline"
+                >
                   All Resources
                 </Link>
               </li>
               <li>
                 <Link
                   href="/documentation"
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 focus:outline-none focus:underline">
-
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 focus:outline-none focus:underline"
+                >
                   Documentation
                 </Link>
               </li>
               <li>
                 <Link
                   href="/technical-papers"
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 focus:outline-none focus:underline">
-
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 focus:outline-none focus:underline"
+                >
                   Technical Papers
                 </Link>
               </li>
               <li>
                 <Link
                   href="/compliance"
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 focus:outline-none focus:underline">
-
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 focus:outline-none focus:underline"
+                >
                   Compliance
                 </Link>
               </li>
               <li>
                 <Link
                   href="/security"
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 focus:outline-none focus:underline">
-
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 focus:outline-none focus:underline"
+                >
                   Security
                 </Link>
               </li>
@@ -139,39 +128,37 @@ Built in Norway. Operating across Europe.
 
           {/* Legal */}
           <div>
-            <h3 className="font-headline font-semibold text-foreground mb-4">
-              Legal
-            </h3>
+            <h3 className="font-headline font-semibold text-foreground mb-4">Legal</h3>
             <ul className="space-y-2">
               <li>
                 <Link
                   href="/legal-notice"
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 focus:outline-none focus:underline">
-
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 focus:outline-none focus:underline"
+                >
                   Legal Notice
                 </Link>
               </li>
               <li>
                 <Link
                   href="/privacy-policy"
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 focus:outline-none focus:underline">
-
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 focus:outline-none focus:underline"
+                >
                   Privacy Policy
                 </Link>
               </li>
               <li>
                 <Link
                   href="/data-protection-notice"
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 focus:outline-none focus:underline">
-
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 focus:outline-none focus:underline"
+                >
                   Data Protection
                 </Link>
               </li>
               <li>
                 <Link
                   href="/terms-of-service"
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 focus:outline-none focus:underline">
-
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 focus:outline-none focus:underline"
+                >
                   Terms of Service
                 </Link>
               </li>
@@ -191,8 +178,8 @@ Built in Norway. Operating across Europe.
           </div>
         </div>
       </div>
-    </footer>);
-
+    </footer>
+  );
 };
 
 export default Footer;

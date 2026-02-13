@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect } from 'react';
 
-
 import InitiativeHero from './InitiativeHero';
 import InitiativeGrid from './InitiativeGrid';
 import EFOSHighlight from './EFOSHighlight';

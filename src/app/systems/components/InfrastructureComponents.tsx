@@ -16,52 +16,56 @@ const InfrastructureComponents = ({ className = '' }: InfrastructureComponentsPr
   const components: InfrastructureComponent[] = [
     {
       id: 1,
-      title: "Sovereign data infrastructure",
-      description: "Designed to support geographically distributed data systems with full jurisdictional control and regulatory compliance.",
-      icon: "ServerStackIcon",
+      title: 'Sovereign data infrastructure',
+      description:
+        'Designed to support geographically distributed data systems with full jurisdictional control and regulatory compliance.',
+      icon: 'ServerStackIcon',
       capabilities: [
-        "Multi-region data residency",
-        "Jurisdictional compliance",
-        "Audit trail architecture",
-        "Regulatory alignment"
-      ]
+        'Multi-region data residency',
+        'Jurisdictional compliance',
+        'Audit trail architecture',
+        'Regulatory alignment',
+      ],
     },
     {
       id: 2,
-      title: "Identity & access management",
-      description: "Intended to enable enterprise-grade authentication systems with institutional governance and audit capabilities.",
-      icon: "ShieldCheckIcon",
+      title: 'Identity & access management',
+      description:
+        'Intended to enable enterprise-grade authentication systems with institutional governance and audit capabilities.',
+      icon: 'ShieldCheckIcon',
       capabilities: [
-        "Multi-factor authentication",
-        "Role-based access control",
-        "Audit logging",
-        "Compliance reporting"
-      ]
+        'Multi-factor authentication',
+        'Role-based access control',
+        'Audit logging',
+        'Compliance reporting',
+      ],
     },
     {
       id: 3,
-      title: "Operational continuity systems",
-      description: "Structured to allow mission-critical infrastructure for uninterrupted operation during crisis scenarios.",
-      icon: "ArrowPathIcon",
+      title: 'Operational continuity systems',
+      description:
+        'Structured to allow mission-critical infrastructure for uninterrupted operation during crisis scenarios.',
+      icon: 'ArrowPathIcon',
       capabilities: [
-        "Failover mechanisms",
-        "Disaster recovery",
-        "Business continuity",
-        "Resilience testing"
-      ]
+        'Failover mechanisms',
+        'Disaster recovery',
+        'Business continuity',
+        'Resilience testing',
+      ],
     },
     {
       id: 4,
-      title: "Governance & audit framework",
-      description: "Designed to support comprehensive audit and governance systems for regulatory compliance and institutional oversight.",
-      icon: "DocumentCheckIcon",
+      title: 'Governance & audit framework',
+      description:
+        'Designed to support comprehensive audit and governance systems for regulatory compliance and institutional oversight.',
+      icon: 'DocumentCheckIcon',
       capabilities: [
-        "Compliance monitoring",
-        "Audit trail generation",
-        "Policy enforcement",
-        "Regulatory reporting"
-      ]
-    }
+        'Compliance monitoring',
+        'Audit trail generation',
+        'Policy enforcement',
+        'Regulatory reporting',
+      ],
+    },
   ];
 
   return (
@@ -72,10 +76,12 @@ const InfrastructureComponents = ({ className = '' }: InfrastructureComponentsPr
             Infrastructure components
           </h2>
           <p className="text-lg text-muted-foreground font-body max-w-3xl mb-2">
-            Governance-aware system components representing architectural capabilities. Each component is designed to support auditable operations with comprehensive governance.
+            Governance-aware system components representing architectural capabilities. Each
+            component is designed to support auditable operations with comprehensive governance.
           </p>
           <p className="text-sm text-muted-foreground font-body max-w-3xl italic">
-            Components described represent design capabilities and intended functionality, not deployed features.
+            Components described represent design capabilities and intended functionality, not
+            deployed features.
           </p>
         </div>
 
@@ -87,9 +93,9 @@ const InfrastructureComponents = ({ className = '' }: InfrastructureComponentsPr
             >
               <div className="flex items-start space-x-4 mb-6">
                 <div className="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                  <Icon 
-                    name={component.icon as any} 
-                    size={24} 
+                  <Icon
+                    name={component.icon as any}
+                    size={24}
                     variant="outline"
                     className="text-primary"
                   />
@@ -107,15 +113,13 @@ const InfrastructureComponents = ({ className = '' }: InfrastructureComponentsPr
               <div className="space-y-2">
                 {component.capabilities.map((capability, index) => (
                   <div key={index} className="flex items-center space-x-2">
-                    <Icon 
-                      name="CheckCircleIcon" 
-                      size={16} 
+                    <Icon
+                      name="CheckCircleIcon"
+                      size={16}
                       variant="solid"
                       className="text-primary flex-shrink-0"
                     />
-                    <span className="text-sm text-foreground font-body">
-                      {capability}
-                    </span>
+                    <span className="text-sm text-foreground font-body">{capability}</span>
                   </div>
                 ))}
               </div>
@@ -125,7 +129,8 @@ const InfrastructureComponents = ({ className = '' }: InfrastructureComponentsPr
 
         <div className="mt-8 pt-6 border-t border-border">
           <p className="text-xs text-muted-foreground font-body italic text-center">
-            Some systems incorporate validation and provenance methodologies originating from Project HGE.
+            Some systems incorporate validation and provenance methodologies originating from
+            Project HGE.
           </p>
         </div>
       </div>

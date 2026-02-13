@@ -41,17 +41,17 @@ export default function LanguageSwitcher() {
 
   const handleLanguageChange = (locale: Locale) => {
     setIsOpen(false);
-    
+
     // For English-only pages, always stay in English
     if (isEnglishOnly && locale !== 'en') {
       return;
     }
 
     const newPathname = addLocaleToPathname(cleanPathname, locale);
-    
+
     // Set cookie for persistence
     document.cookie = `NEXT_LOCALE=${locale}; path=/; max-age=${60 * 60 * 24 * 365}; SameSite=Lax`;
-    
+
     router.push(newPathname);
     router.refresh();
   };
@@ -143,7 +143,8 @@ export default function LanguageSwitcher() {
                 onKeyDown={(e) => handleKeyDown(e, locale)}
                 className={`w-full text-left px-4 py-2 text-sm hover:bg-gray-100 focus:bg-gray-100 focus:outline-none transition-colors ${
                   currentLocale === locale
-                    ? 'bg-blue-50 text-blue-700 font-medium' :'text-gray-700'
+                    ? 'bg-blue-50 text-blue-700 font-medium'
+                    : 'text-gray-700'
                 }`}
                 role="menuitem"
                 aria-current={currentLocale === locale ? 'true' : undefined}

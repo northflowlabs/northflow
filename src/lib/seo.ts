@@ -2,13 +2,14 @@ import { Metadata } from 'next';
 
 export const siteConfig = {
   name: 'Northflow Technologies',
-  description: 'Sovereign digital infrastructure for European government entities and institutional stakeholders. Resilient, auditable systems designed for operational continuity and regulatory compliance.',
+  description:
+    'Sovereign digital infrastructure for European government entities and institutional stakeholders. Resilient, auditable systems designed for operational continuity and regulatory compliance.',
   url: 'https://northflow.no',
-  ogImage: "https://img.rocket.new/generatedImages/rocket_gen_img_1b3cec599-1767132942397.png",
+  ogImage: 'https://img.rocket.new/generatedImages/rocket_gen_img_1b3cec599-1767132942397.png',
   links: {
     twitter: 'https://twitter.com/northflowtech',
-    linkedin: 'https://linkedin.com/company/northflow-technologies'
-  }
+    linkedin: 'https://linkedin.com/company/northflow-technologies',
+  },
 };
 
 export interface SEOProps {
@@ -30,23 +31,23 @@ export function generateMetadata({
   ogType = 'website',
   publishedTime,
   modifiedTime,
-  authors
+  authors,
 }: SEOProps): Metadata {
   const url = `${siteConfig.url}${path}`;
   const fullTitle = title.includes('Northflow') ? title : `${title} | ${siteConfig.name}`;
 
   const defaultKeywords = [
-  'digital sovereignty',
-  'European digital infrastructure',
-  'government technology',
-  'institutional infrastructure',
-  'operational continuity',
-  'regulatory compliance',
-  'mission-critical systems',
-  'sovereign technology',
-  'digital resilience',
-  'European technology'];
-
+    'digital sovereignty',
+    'European digital infrastructure',
+    'government technology',
+    'institutional infrastructure',
+    'operational continuity',
+    'regulatory compliance',
+    'mission-critical systems',
+    'sovereign technology',
+    'digital resilience',
+    'European technology',
+  ];
 
   const allKeywords = [...new Set([...keywords, ...defaultKeywords])];
 
@@ -60,11 +61,11 @@ export function generateMetadata({
     formatDetection: {
       email: false,
       address: false,
-      telephone: false
+      telephone: false,
     },
     metadataBase: new URL(siteConfig.url),
     alternates: {
-      canonical: url
+      canonical: url,
     },
     openGraph: {
       type: ogType,
@@ -74,22 +75,23 @@ export function generateMetadata({
       description,
       siteName: siteConfig.name,
       images: [
-      {
-        url: siteConfig.ogImage,
-        width: 1200,
-        height: 630,
-        alt: `${siteConfig.name} - ${title}`
-      }],
+        {
+          url: siteConfig.ogImage,
+          width: 1200,
+          height: 630,
+          alt: `${siteConfig.name} - ${title}`,
+        },
+      ],
 
       ...(publishedTime && { publishedTime }),
-      ...(modifiedTime && { modifiedTime })
+      ...(modifiedTime && { modifiedTime }),
     },
     twitter: {
       card: 'summary_large_image',
       title: fullTitle,
       description,
       images: [siteConfig.ogImage],
-      creator: '@northflowtech'
+      creator: '@northflowtech',
     },
     robots: {
       index: true,
@@ -99,9 +101,9 @@ export function generateMetadata({
         follow: true,
         'max-video-preview': -1,
         'max-image-preview': 'large',
-        'max-snippet': -1
-      }
-    }
+        'max-snippet': -1,
+      },
+    },
   };
 }
 
@@ -115,24 +117,23 @@ export function generateOrganizationSchema() {
     url: siteConfig.url,
     description: siteConfig.description,
     areaServed: [
-    {
-      '@type': 'Place',
-      name: 'Europe'
-    },
-    {
-      '@type': 'Place',
-      name: 'Nordic Countries'
-    }],
+      {
+        '@type': 'Place',
+        name: 'Europe',
+      },
+      {
+        '@type': 'Place',
+        name: 'Nordic Countries',
+      },
+    ],
 
-    sameAs: [
-    siteConfig.links.twitter,
-    siteConfig.links.linkedin],
+    sameAs: [siteConfig.links.twitter, siteConfig.links.linkedin],
 
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'Institutional Engagement',
-      url: `${siteConfig.url}/engage`
-    }
+      url: `${siteConfig.url}/engage`,
+    },
   };
 }
 
@@ -145,12 +146,12 @@ export function generateWebSiteSchema() {
     url: siteConfig.url,
     description: siteConfig.description,
     publisher: {
-      '@id': `${siteConfig.url}/#organization`
-    }
+      '@id': `${siteConfig.url}/#organization`,
+    },
   };
 }
 
-export function generateBreadcrumbSchema(items: {name: string;url: string;}[]) {
+export function generateBreadcrumbSchema(items: { name: string; url: string }[]) {
   return {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -158,8 +159,8 @@ export function generateBreadcrumbSchema(items: {name: string;url: string;}[]) {
       '@type': 'ListItem',
       position: index + 1,
       name: item.name,
-      item: `${siteConfig.url}${item.url}`
-    }))
+      item: `${siteConfig.url}${item.url}`,
+    })),
   };
 }
 
@@ -169,15 +170,15 @@ export function generateArticleSchema({
   path,
   publishedTime,
   modifiedTime,
-  authors = ['Northflow Research Lab']
-
-
-
-
-
-
-
-}: {title: string;description: string;path: string;publishedTime: string;modifiedTime?: string;authors?: string[];}) {
+  authors = ['Northflow Research Lab'],
+}: {
+  title: string;
+  description: string;
+  path: string;
+  publishedTime: string;
+  modifiedTime?: string;
+  authors?: string[];
+}) {
   return {
     '@context': 'https://schema.org',
     '@type': 'Article',
@@ -188,16 +189,16 @@ export function generateArticleSchema({
     dateModified: modifiedTime || publishedTime,
     author: authors.map((name) => ({
       '@type': 'Person',
-      name
+      name,
     })),
     publisher: {
       '@type': 'Organization',
       name: 'Northflow Technologies',
       logo: {
         '@type': 'ImageObject',
-        url: `${siteConfig.url}/logo.png`
-      }
-    }
+        url: `${siteConfig.url}/logo.png`,
+      },
+    },
   };
 }
 
@@ -205,8 +206,13 @@ export function generateResearchSchema({
   title,
   description,
   path,
-  publishedTime
-}: {title: string;description: string;path: string;publishedTime: string;}) {
+  publishedTime,
+}: {
+  title: string;
+  description: string;
+  path: string;
+  publishedTime: string;
+}) {
   return {
     '@context': 'https://schema.org',
     '@type': 'ScholarlyArticle',
@@ -216,24 +222,24 @@ export function generateResearchSchema({
     datePublished: publishedTime,
     author: {
       '@type': 'Organization',
-      name: 'Northflow Research Lab'
+      name: 'Northflow Research Lab',
     },
     publisher: {
       '@type': 'Organization',
-      name: 'Northflow Technologies'
-    }
+      name: 'Northflow Technologies',
+    },
   };
 }
 
 export function generateWebPageSchema({
   title,
   description,
-  path
-
-
-
-
-}: {title: string;description: string;path: string;}) {
+  path,
+}: {
+  title: string;
+  description: string;
+  path: string;
+}) {
   return {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
@@ -242,11 +248,11 @@ export function generateWebPageSchema({
     name: title,
     description,
     isPartOf: {
-      '@id': `${siteConfig.url}/#website`
+      '@id': `${siteConfig.url}/#website`,
     },
     about: {
-      '@id': `${siteConfig.url}/#organization`
+      '@id': `${siteConfig.url}/#organization`,
     },
-    inLanguage: 'en'
+    inLanguage: 'en',
   };
 }

@@ -79,12 +79,7 @@ const Header = ({ className = '' }: HeaderProps) => {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 />
-                <path
-                  d="M20 16V24"
-                  stroke="white"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                />
+                <path d="M20 16V24" stroke="white" strokeWidth="2" strokeLinecap="round" />
               </svg>
             </div>
 

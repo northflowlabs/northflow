@@ -16,17 +16,26 @@ export default function StrategicTimeline() {
       quarter: 'Phase 1',
       year: '',
       title: 'Foundation and research',
-      description: 'Framework conceptualisation and initial stakeholder dialogue across European institutions.',
-      initiatives: ['EFOS Framework Design', 'Research Consortium Formation', 'Governance Standards'],
-      status: 'Development'
+      description:
+        'Framework conceptualisation and initial stakeholder dialogue across European institutions.',
+      initiatives: [
+        'EFOS Framework Design',
+        'Research Consortium Formation',
+        'Governance Standards',
+      ],
+      status: 'Development',
     },
     {
       quarter: 'Phase 2',
       year: '',
       title: 'Framework definition',
       description: 'Core standards definition and architectural principles development.',
-      initiatives: ['Reference Architecture', 'Compliance Methodologies', 'Technical Specifications'],
-      status: 'Development'
+      initiatives: [
+        'Reference Architecture',
+        'Compliance Methodologies',
+        'Technical Specifications',
+      ],
+      status: 'Development',
     },
     {
       quarter: 'Phase 3',
@@ -34,7 +43,7 @@ export default function StrategicTimeline() {
       title: 'Pilot exploration',
       description: 'Scoped validation exercises and iterative framework refinement.',
       initiatives: ['Pilot Design', 'Validation Protocols', 'Feedback Integration'],
-      status: 'Planned'
+      status: 'Planned',
     },
     {
       quarter: 'Phase 4',
@@ -42,7 +51,7 @@ export default function StrategicTimeline() {
       title: 'Iterative development',
       description: 'Framework maturation based on pilot outcomes and institutional feedback.',
       initiatives: ['Framework Refinement', 'Standards Evolution', 'Documentation Development'],
-      status: 'Planned'
+      status: 'Planned',
     },
     {
       quarter: 'Phase 5',
@@ -50,7 +59,7 @@ export default function StrategicTimeline() {
       title: 'Institutional readiness',
       description: 'Preparation for potential adoption pathways and ecosystem development.',
       initiatives: ['Adoption Frameworks', 'Training Materials', 'Support Infrastructure'],
-      status: 'Planned'
+      status: 'Planned',
     },
     {
       quarter: 'Phase 6',
@@ -58,17 +67,22 @@ export default function StrategicTimeline() {
       title: 'Potential adoption pathways',
       description: 'Long-term governance establishment and ecosystem maturation.',
       initiatives: ['Governance Models', 'Certification Pathways', 'Ecosystem Growth'],
-      status: 'Planned'
-    }
+      status: 'Planned',
+    },
   ];
 
   const getStatusColor = (status: string) => {
     switch (status) {
-      case 'Foundation': return 'bg-primary text-primary-foreground';
-      case 'Development': return 'bg-accent text-accent-foreground';
-      case 'Exploration': return 'bg-primary text-primary-foreground';
-      case 'Planned': return 'bg-muted text-muted-foreground';
-      default: return 'bg-muted text-muted-foreground';
+      case 'Foundation':
+        return 'bg-primary text-primary-foreground';
+      case 'Development':
+        return 'bg-accent text-accent-foreground';
+      case 'Exploration':
+        return 'bg-primary text-primary-foreground';
+      case 'Planned':
+        return 'bg-muted text-muted-foreground';
+      default:
+        return 'bg-muted text-muted-foreground';
     }
   };
 
@@ -80,10 +94,12 @@ export default function StrategicTimeline() {
             Indicative programme development pathway
           </h2>
           <p className="text-sm text-muted-foreground font-body mb-4 italic">
-            The timeline below represents an indicative development pathway. Phases may evolve based on institutional dialogue, regulatory context, and pilot outcomes.
+            The timeline below represents an indicative development pathway. Phases may evolve based
+            on institutional dialogue, regulatory context, and pilot outcomes.
           </p>
           <p className="text-lg text-muted-foreground font-body max-w-3xl">
-            Phased approach to framework maturation, structured to progress through research, validation, and institutional engagement.
+            Phased approach to framework maturation, structured to progress through research,
+            validation, and institutional engagement.
           </p>
         </div>
 
@@ -94,7 +110,9 @@ export default function StrategicTimeline() {
                 <div className="md:grid md:grid-cols-12 md:gap-8">
                   <div className="md:col-span-3 mb-4 md:mb-0">
                     <div className="flex items-center space-x-3 md:justify-end">
-                      <div className={`px-3 py-1 rounded-sm text-sm font-cta font-medium ${getStatusColor(event.status)}`}>
+                      <div
+                        className={`px-3 py-1 rounded-sm text-sm font-cta font-medium ${getStatusColor(event.status)}`}
+                      >
                         {event.status}
                       </div>
                       <div className="text-right">
@@ -119,7 +137,12 @@ export default function StrategicTimeline() {
                         </p>
                         {event.initiatives.map((initiative, idx) => (
                           <div key={idx} className="flex items-start space-x-2">
-                            <Icon name="ArrowRightIcon" size={14} variant="outline" className="text-primary mt-0.5 flex-shrink-0" />
+                            <Icon
+                              name="ArrowRightIcon"
+                              size={14}
+                              variant="outline"
+                              className="text-primary mt-0.5 flex-shrink-0"
+                            />
                             <span className="text-sm text-foreground font-body">{initiative}</span>
                           </div>
                         ))}
@@ -134,13 +157,21 @@ export default function StrategicTimeline() {
 
         <div className="mt-12 bg-card border border-border rounded-sm p-8">
           <div className="flex items-start space-x-4">
-            <Icon name="InformationCircleIcon" size={24} variant="outline" className="text-primary flex-shrink-0 mt-1" />
+            <Icon
+              name="InformationCircleIcon"
+              size={24}
+              variant="outline"
+              className="text-primary flex-shrink-0 mt-1"
+            />
             <div>
               <h3 className="text-lg font-headline font-semibold text-foreground mb-2">
                 Development pathway notes
               </h3>
               <p className="text-sm text-muted-foreground font-body leading-relaxed">
-                This pathway represents an indicative sequence for framework development. Actual progression depends on institutional dialogue outcomes, regulatory developments, and pilot validation results. Phases are designed to be iterative and may overlap or extend based on stakeholder requirements and framework maturation needs.
+                This pathway represents an indicative sequence for framework development. Actual
+                progression depends on institutional dialogue outcomes, regulatory developments, and
+                pilot validation results. Phases are designed to be iterative and may overlap or
+                extend based on stakeholder requirements and framework maturation needs.
               </p>
             </div>
           </div>

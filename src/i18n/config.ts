@@ -13,38 +13,18 @@ const ENGLISH_ONLY_PAGES = [
 
 export function isEnglishOnlyPage(pathname: string): boolean {
   // Remove trailing slash for consistent comparison
-  const cleanPath = pathname.endsWith('/') && pathname !== '/' 
-    ? pathname.slice(0, -1) 
-    : pathname;
-  
+  const cleanPath = pathname.endsWith('/') && pathname !== '/' ? pathname.slice(0, -1) : pathname;
+
   return ENGLISH_ONLY_PAGES.includes(cleanPath);
 }
 
-function locales(...args: any[]): any {
-  // eslint-disable-next-line no-console
-  console.warn('Placeholder: locales is not implemented yet.', args);
-  return null;
-}
+export const locales = ['en', 'de'] as const;
 
-export { locales };
-function localeNames(...args: any[]): any {
-  // eslint-disable-next-line no-console
-  console.warn('Placeholder: localeNames is not implemented yet.', args);
-  return null;
-}
+export type Locale = (typeof locales)[number];
 
-export { localeNames };
-function Locale(...args: any[]): any {
-  // eslint-disable-next-line no-console
-  console.warn('Placeholder: Locale is not implemented yet.', args);
-  return null;
-}
+export const defaultLocale: Locale = 'en';
 
-export { Locale };
-function defaultLocale(...args: any[]): any {
-  // eslint-disable-next-line no-console
-  console.warn('Placeholder: defaultLocale is not implemented yet.', args);
-  return null;
-}
-
-export { defaultLocale };
+export const localeNames: Record<Locale, string> = {
+  en: 'English',
+  de: 'Deutsch',
+};

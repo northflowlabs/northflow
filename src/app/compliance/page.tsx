@@ -2,7 +2,8 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Regulatory Alignment & Institutional Compliance | Northflow',
-  description: "Northflow's compliance approach aligns digital infrastructure with European regulatory frameworks, governance requirements, and long-term accountability.",
+  description:
+    "Northflow's compliance approach aligns digital infrastructure with European regulatory frameworks, governance requirements, and long-term accountability.",
 };
 
 export default function CompliancePage() {
@@ -11,11 +12,10 @@ export default function CompliancePage() {
       <div className="min-h-screen bg-background">
         <div className="max-w-[1200px] mx-auto px-8 py-16">
           <div className="max-w-[900px]">
-            <h1 className="text-4xl font-headline font-bold text-foreground mb-4">
-              Compliance
-            </h1>
+            <h1 className="text-4xl font-headline font-bold text-foreground mb-4">Compliance</h1>
             <p className="text-lg text-muted-foreground font-body mb-12 leading-relaxed">
-              Regulatory alignment philosophy and framework compliance approach for institutional stakeholders.
+              Regulatory alignment philosophy and framework compliance approach for institutional
+              stakeholders.
             </p>
           </div>
 
@@ -26,25 +26,31 @@ export default function CompliancePage() {
               </h2>
               <div className="space-y-4 text-base text-foreground font-body leading-relaxed">
                 <p>
-                  Northflow Technologies approaches regulatory compliance as a foundational design principle rather than a retrospective requirement.
+                  Northflow Technologies approaches regulatory compliance as a foundational design
+                  principle rather than a retrospective requirement.
                 </p>
                 <p>
-                  Systems and operational frameworks are developed with regulatory alignment embedded throughout the design process, ensuring that compliance considerations inform architectural decisions, governance structures, and operational procedures.
+                  Systems and operational frameworks are developed with regulatory alignment
+                  embedded throughout the design process, ensuring that compliance considerations
+                  inform architectural decisions, governance structures, and operational procedures.
                 </p>
                 <p>
-                  Our compliance systems are informed by research workflows from Project HGE, particularly around uncertainty handling and provenance tracking.
+                  Our compliance systems are informed by research workflows from Project HGE,
+                  particularly around uncertainty handling and provenance tracking.
                 </p>
-                <p>
-                  This approach prioritises:
-                </p>
+                <p>This approach prioritises:</p>
                 <ul className="space-y-2 ml-6">
                   <li className="flex gap-3">
                     <span className="text-primary mt-1">•</span>
-                    <span>Alignment with European regulatory frameworks from initial design stages</span>
+                    <span>
+                      Alignment with European regulatory frameworks from initial design stages
+                    </span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-primary mt-1">•</span>
-                    <span>Systematic integration of compliance requirements into technical architecture</span>
+                    <span>
+                      Systematic integration of compliance requirements into technical architecture
+                    </span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-primary mt-1">•</span>
@@ -52,7 +58,9 @@ export default function CompliancePage() {
                   </li>
                   <li className="flex gap-3">
                     <span className="text-primary mt-1">•</span>
-                    <span>Continuous monitoring of regulatory developments and framework evolution</span>
+                    <span>
+                      Continuous monitoring of regulatory developments and framework evolution
+                    </span>
                   </li>
                 </ul>
               </div>
@@ -64,12 +72,13 @@ export default function CompliancePage() {
               </h2>
               <div className="space-y-4 text-base text-foreground font-body leading-relaxed">
                 <p>
-                  Northflow Technologies designs systems and operational frameworks to align with the following regulatory and standards frameworks:
+                  Northflow Technologies designs systems and operational frameworks to align with
+                  the following regulatory and standards frameworks:
                 </p>
                 <p className="text-sm text-muted-foreground italic">
                   Framework relevance varies by jurisdiction, sector, and institutional mandate.
                 </p>
-                
+
                 <div className="mt-6 mb-8">
                   <h3 className="text-lg font-headline font-semibold text-foreground mb-4">
                     Primary European frameworks
@@ -83,7 +92,8 @@ export default function CompliancePage() {
                         General Data Protection Regulation
                       </p>
                       <p className="text-sm text-foreground leading-relaxed">
-                        Data protection principles, processing requirements, and individual rights are embedded in system design and operational procedures.
+                        Data protection principles, processing requirements, and individual rights
+                        are embedded in system design and operational procedures.
                       </p>
                     </div>
                     <div className="border-2 border-primary rounded-lg p-6 bg-card shadow-sm">
@@ -94,7 +104,8 @@ export default function CompliancePage() {
                         Network and information security
                       </p>
                       <p className="text-sm text-foreground leading-relaxed">
-                        Security requirements, incident reporting, and risk management measures aligned with European cybersecurity directive.
+                        Security requirements, incident reporting, and risk management measures
+                        aligned with European cybersecurity directive.
                       </p>
                     </div>
                   </div>
@@ -113,7 +124,8 @@ export default function CompliancePage() {
                         Information security management
                       </p>
                       <p className="text-sm text-foreground leading-relaxed">
-                        Security controls, risk management methodologies, and information security governance aligned with international standards.
+                        Security controls, risk management methodologies, and information security
+                        governance aligned with international standards.
                       </p>
                     </div>
                     <div className="border border-border rounded-lg p-6 bg-card">
@@ -124,7 +136,8 @@ export default function CompliancePage() {
                         Business continuity management
                       </p>
                       <p className="text-sm text-foreground leading-relaxed">
-                        Continuity planning, resilience frameworks, and recovery procedures designed to align with business continuity standards.
+                        Continuity planning, resilience frameworks, and recovery procedures designed
+                        to align with business continuity standards.
                       </p>
                     </div>
                     <div className="border border-border rounded-lg p-6 bg-card">
@@ -135,7 +148,8 @@ export default function CompliancePage() {
                         Digital Operational Resilience Act
                       </p>
                       <p className="text-sm text-foreground leading-relaxed">
-                        Operational resilience requirements, testing frameworks, and third-party risk management aligned with financial sector regulation.
+                        Operational resilience requirements, testing frameworks, and third-party
+                        risk management aligned with financial sector regulation.
                       </p>
                     </div>
                   </div>
@@ -149,19 +163,19 @@ export default function CompliancePage() {
               </h2>
               <div className="bg-card border border-border rounded-lg p-8">
                 <div className="space-y-4 text-base text-foreground font-body leading-relaxed">
-                  <p className="font-semibold">
-                    Important clarification:
-                  </p>
+                  <p className="font-semibold">Important clarification:</p>
                   <p>
-                    Framework alignment describes the design approach and operational methodology employed by Northflow Technologies. It does not constitute formal certification, accreditation, or regulatory approval.
+                    Framework alignment describes the design approach and operational methodology
+                    employed by Northflow Technologies. It does not constitute formal certification,
+                    accreditation, or regulatory approval.
                   </p>
-                  <p>
-                    Alignment indicates that:
-                  </p>
+                  <p>Alignment indicates that:</p>
                   <ul className="space-y-2 ml-6">
                     <li className="flex gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span>Systems are designed with framework requirements as foundational principles</span>
+                      <span>
+                        Systems are designed with framework requirements as foundational principles
+                      </span>
                     </li>
                     <li className="flex gap-3">
                       <span className="text-primary mt-1">•</span>
@@ -169,12 +183,12 @@ export default function CompliancePage() {
                     </li>
                     <li className="flex gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span>Documentation and governance structures reflect framework standards</span>
+                      <span>
+                        Documentation and governance structures reflect framework standards
+                      </span>
                     </li>
                   </ul>
-                  <p>
-                    Alignment does not indicate:
-                  </p>
+                  <p>Alignment does not indicate:</p>
                   <ul className="space-y-2 ml-6">
                     <li className="flex gap-3">
                       <span className="text-primary mt-1">•</span>
@@ -190,7 +204,8 @@ export default function CompliancePage() {
                     </li>
                   </ul>
                   <p>
-                    Institutional stakeholders should conduct independent compliance assessment appropriate to their specific regulatory context and operational requirements.
+                    Institutional stakeholders should conduct independent compliance assessment
+                    appropriate to their specific regulatory context and operational requirements.
                   </p>
                 </div>
               </div>
@@ -202,11 +217,11 @@ export default function CompliancePage() {
               </h2>
               <div className="space-y-4 text-base text-foreground font-body leading-relaxed">
                 <p>
-                  Detailed compliance documentation, including framework mapping, control implementation details, and audit trail materials, is available to institutional stakeholders through structured engagement.
+                  Detailed compliance documentation, including framework mapping, control
+                  implementation details, and audit trail materials, is available to institutional
+                  stakeholders through structured engagement.
                 </p>
-                <p>
-                  Documentation includes:
-                </p>
+                <p>Documentation includes:</p>
                 <ul className="space-y-2 ml-6">
                   <li className="flex gap-3">
                     <span className="text-primary mt-1">•</span>
@@ -234,10 +249,13 @@ export default function CompliancePage() {
               </h2>
               <div className="space-y-4 text-base text-foreground font-body leading-relaxed">
                 <p>
-                  Northflow Technologies maintains systematic monitoring of regulatory developments, framework updates, and emerging compliance requirements relevant to European digital infrastructure.
+                  Northflow Technologies maintains systematic monitoring of regulatory developments,
+                  framework updates, and emerging compliance requirements relevant to European
+                  digital infrastructure.
                 </p>
                 <p>
-                  This monitoring informs ongoing system evolution and ensures that alignment remains current with regulatory expectations.
+                  This monitoring informs ongoing system evolution and ensures that alignment
+                  remains current with regulatory expectations.
                 </p>
               </div>
             </section>
@@ -248,7 +266,8 @@ export default function CompliancePage() {
                   Compliance consultation
                 </h2>
                 <p className="text-base text-muted-foreground font-body mb-6 max-w-2xl mx-auto">
-                  Looking for research collaboration or institutional deployment? Request a briefing.
+                  Looking for research collaboration or institutional deployment? Request a
+                  briefing.
                 </p>
                 <p className="text-xs text-muted-foreground font-body mb-6">
                   Research dialogue · Institutional collaboration · Funding discussions
