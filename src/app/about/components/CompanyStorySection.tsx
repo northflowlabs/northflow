@@ -9,7 +9,7 @@ const CompanyStorySection = ({ className = '' }: CompanyStorySectionProps) => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl md:text-4xl font-headline font-semibold text-foreground mb-6">
-              Norwegian heritage. European reach.
+              Norwegian heritage.<br />European reach.
             </h2>
             <div className="space-y-4 text-muted-foreground font-body leading-relaxed">
               <p>
