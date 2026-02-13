@@ -10,21 +10,22 @@ interface RegionalPresenceSectionProps {
 const RegionalPresenceSection = ({ className = '' }: RegionalPresenceSectionProps) => {
   const scopes: RegionalScope[] = [
     {
-      title: "Nordics",
-      description: "Primary grounding. Nordic digital governance, regulated infrastructure environments, and applied systems research."
+      title: 'Nordics',
+      description: 'Primary grounding in regulated Nordic infrastructure and research contexts.',
     },
     {
-      title: "Spain",
-      description: "Active engagement. Energy systems, sustainability frameworks, and institutional dialogue linked to emerging infrastructure initiatives."
+      title: 'Spain',
+      description: 'Active engagement in energy, systems, and resilience-oriented dialogues.',
     },
     {
-      title: "European Union",
-      description: "Exploratory dialogue. Early-stage engagement around cross-border infrastructure concepts, policy alignment, and systems coordination."
+      title: 'European Union',
+      description: 'Cross-border governance awareness and institutional coordination contexts.',
     },
     {
-      title: "Cross-border systems",
-      description: "Research scope. Interoperability, governance, and coordination challenges across European institutional systems."
-    }
+      title: 'Cross-border systems',
+      description:
+        'Structured methodologies designed for interoperability and institutional consistency.',
+    },
   ];
 
   return (
@@ -35,12 +36,13 @@ const RegionalPresenceSection = ({ className = '' }: RegionalPresenceSectionProp
             Regional grounding and European scope
           </h2>
           <p className="text-lg text-muted-foreground font-body leading-relaxed">
-            Grounded in Nordic regulatory environments, with active engagement in Southern Europe and exploratory dialogue at European level.
+            Developed within Nordic regulatory systems with active engagement across European
+            institutional environments.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {scopes.map((scope, index) => (
-            <div 
+            <div
               key={index}
               className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow duration-200"
             >

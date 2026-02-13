@@ -7,11 +7,7 @@ const GovernanceFrameworks = () => {
     // eslint-disable-next-line no-console
     console.warn('Placeholder: GovernanceFrameworks is not implemented yet.');
   }, []);
-  return (
-    <>
-  { /*GovernanceFrameworks */} 
- </>
-  );
+  return <>{/*GovernanceFrameworks */}</>;
 };
 
 export default GovernanceFrameworks;

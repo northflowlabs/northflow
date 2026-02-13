@@ -11,7 +11,9 @@ const AccessRequestHero = ({ className = '' }: AccessRequestHeroProps) => {
             Request access to institutional materials
           </h1>
           <p className="text-lg text-muted-foreground font-body leading-relaxed">
-            Certain research publications, framework documents, and initiative materials are made available through structured institutional engagement to ensure appropriate use, contextual understanding, and governance alignment.
+            Certain research publications, framework documents, and initiative materials are made
+            available through structured institutional engagement to ensure appropriate use,
+            contextual understanding, and governance alignment.
           </p>
         </div>
       </div>

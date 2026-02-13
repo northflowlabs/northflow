@@ -6,13 +6,13 @@ import PublicationArchive from './components/PublicationArchive';
 import OngoingProjects from './components/OngoingProjects';
 import ResearchMethodology from './components/ResearchMethodology';
 import CollaborationOpportunities from './components/CollaborationOpportunities';
-import ResearchFlowDiagram from '@/components/diagrams/ResearchFlowDiagram';
 import { generateMetadata, generateWebPageSchema } from '@/lib/seo';
 import StructuredData from '@/components/common/StructuredData';
 
 export const metadata: Metadata = generateMetadata({
   title: 'Institutional Research Infrastructure Under Uncertainty | Northflow',
-  description: 'Northflow Research develops long-horizon discovery infrastructure for institutions operating under uncertainty, regulation, and irreversible decision environments.',
+  description:
+    'Northflow Research develops long-horizon discovery infrastructure for institutions operating under uncertainty, regulation, and irreversible decision environments.',
   path: '/research',
   ogType: 'website',
 });
@@ -20,8 +20,9 @@ export const metadata: Metadata = generateMetadata({
 export default function ResearchPage() {
   const webPageSchema = generateWebPageSchema({
     title: 'Institutional Research Infrastructure Under Uncertainty | Northflow',
-    description: 'Northflow Research develops long-horizon discovery infrastructure for institutions operating under uncertainty, regulation, and irreversible decision environments.',
-    path: '/research'
+    description:
+      'Northflow Research develops long-horizon discovery infrastructure for institutions operating under uncertainty, regulation, and irreversible decision environments.',
+    path: '/research',
   });
 
   return (
@@ -32,14 +33,15 @@ export default function ResearchPage() {
         <div className="max-w-[1400px] mx-auto px-8">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl font-headline font-semibold text-foreground mb-6 text-center">
-              Why research exists inside Northflow
+              Institutional research for climate and critical systems
             </h2>
             <p className="text-base text-muted-foreground font-body leading-relaxed mb-8 text-center">
-              NRL was formalized as an internal division to ensure that systems are grounded in rigorous methodology rather than assumption. Research informs architecture. Architecture enables deployment. This translation from study to operational systems is central to how Northflow operates.
+              Northflow conducts applied research focused on structured evidence systems for climate
+              resilience and mission-critical institutional environments. The research program
+              formalizes how claims are defined, evaluated, and governed under uncertainty. Its
+              outputs progress from methodological validation to deployable system architectures
+              through structured institutional engagement.
             </p>
-            <div className="flex justify-center">
-              <ResearchFlowDiagram className="w-full max-w-2xl text-muted-foreground" />
-            </div>
           </div>
         </div>
       </section>

@@ -12,7 +12,8 @@ const OperationalContinuityFlow = () => {
             <OperationalContinuityFlowDiagram className="w-full max-w-4xl text-muted-foreground" />
           </div>
           <p className="text-sm text-muted-foreground font-body leading-relaxed text-center italic">
-            EFOS supports continuity planning by aligning governance, architecture, and operational responsibilities before disruption occurs.
+            EFOS supports continuity planning by aligning governance, architecture, and operational
+            responsibilities before disruption occurs.
           </p>
         </div>
       </div>

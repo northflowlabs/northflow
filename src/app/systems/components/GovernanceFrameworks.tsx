@@ -16,40 +16,43 @@ const GovernanceFrameworks = ({ className = '' }: GovernanceFrameworksProps) => 
   const frameworks: Framework[] = [
     {
       id: 1,
-      title: "Audit & compliance framework",
-      description: "Designed to support comprehensive audit capabilities for regulatory compliance and institutional oversight requirements.",
+      title: 'Audit & compliance framework',
+      description:
+        'Designed to support comprehensive audit capabilities for regulatory compliance and institutional oversight requirements.',
       features: [
-        "Real-time audit trail generation",
-        "Automated compliance monitoring",
-        "Policy enforcement mechanisms",
-        "Regulatory reporting automation"
+        'Real-time audit trail generation',
+        'Automated compliance monitoring',
+        'Policy enforcement mechanisms',
+        'Regulatory reporting automation',
       ],
-      compliance: ["ISO 27001", "GDPR", "SOC 2", "NIS2"]
+      compliance: ['ISO 27001', 'GDPR', 'SOC 2', 'NIS2'],
     },
     {
       id: 2,
-      title: "Data governance system",
-      description: "Intended to enable enterprise data governance with full lineage tracking and jurisdictional compliance capabilities.",
+      title: 'Data governance system',
+      description:
+        'Intended to enable enterprise data governance with full lineage tracking and jurisdictional compliance capabilities.',
       features: [
-        "Data lineage tracking",
-        "Jurisdictional controls",
-        "Privacy by design",
-        "Data classification"
+        'Data lineage tracking',
+        'Jurisdictional controls',
+        'Privacy by design',
+        'Data classification',
       ],
-      compliance: ["GDPR", "Data Protection Act", "CCPA", "Privacy Shield"]
+      compliance: ['GDPR', 'Data Protection Act', 'CCPA', 'Privacy Shield'],
     },
     {
       id: 3,
-      title: "Access control framework",
-      description: "Structured to allow institutional-grade access management with comprehensive audit and governance capabilities.",
+      title: 'Access control framework',
+      description:
+        'Structured to allow institutional-grade access management with comprehensive audit and governance capabilities.',
       features: [
-        "Role-based access control",
-        "Privileged access management",
-        "Access review workflows",
-        "Segregation of duties"
+        'Role-based access control',
+        'Privileged access management',
+        'Access review workflows',
+        'Segregation of duties',
       ],
-      compliance: ["ISO 27001", "NIST", "CIS Controls", "PCI DSS"]
-    }
+      compliance: ['ISO 27001', 'NIST', 'CIS Controls', 'PCI DSS'],
+    },
   ];
 
   return (
@@ -60,16 +63,14 @@ const GovernanceFrameworks = ({ className = '' }: GovernanceFrameworksProps) => 
             Governance frameworks
           </h2>
           <p className="text-lg text-muted-foreground font-body max-w-3xl">
-            Governance embedded as system design, not post-deployment compliance. Frameworks emphasise control mapping, auditability, and institutional oversight from inception.
+            Governance embedded as system design, not post-deployment compliance. Frameworks
+            emphasise control mapping, auditability, and institutional oversight from inception.
           </p>
         </div>
 
         <div className="space-y-8">
           {frameworks.map((framework) => (
-            <div
-              key={framework.id}
-              className="bg-card border border-border rounded-lg p-8"
-            >
+            <div key={framework.id} className="bg-card border border-border rounded-lg p-8">
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                 <div className="lg:col-span-2">
                   <h3 className="text-xl font-headline font-semibold text-foreground mb-3">
@@ -78,19 +79,17 @@ const GovernanceFrameworks = ({ className = '' }: GovernanceFrameworksProps) => 
                   <p className="text-sm text-muted-foreground font-body leading-relaxed mb-6">
                     {framework.description}
                   </p>
-                  
+
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     {framework.features.map((feature, index) => (
                       <div key={index} className="flex items-start space-x-2">
-                        <Icon 
-                          name="CheckCircleIcon" 
-                          size={16} 
+                        <Icon
+                          name="CheckCircleIcon"
+                          size={16}
                           variant="solid"
                           className="text-primary flex-shrink-0 mt-0.5"
                         />
-                        <span className="text-sm text-foreground font-body">
-                          {feature}
-                        </span>
+                        <span className="text-sm text-foreground font-body">{feature}</span>
                       </div>
                     ))}
                   </div>

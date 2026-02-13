@@ -18,25 +18,29 @@ const EngagementProcess = ({ className = '' }: EngagementProcessProps) => {
       id: 1,
       icon: 'DocumentMagnifyingGlassIcon',
       title: 'Initial review',
-      description: 'Each inquiry is reviewed for relevance, scope, and alignment with Northflow research and systems focus.',
+      description:
+        'Each inquiry is reviewed for relevance, scope, and alignment with Northflow research and systems focus.',
     },
     {
       id: 2,
       icon: 'ClipboardDocumentCheckIcon',
       title: 'Contextual evaluation',
-      description: 'Additional clarification may be requested to understand institutional context and objectives.',
+      description:
+        'Additional clarification may be requested to understand institutional context and objectives.',
     },
     {
       id: 3,
       icon: 'LockClosedIcon',
       title: 'Confidential dialogue',
-      description: 'Engagement is conducted under appropriate confidentiality standards and professional discretion.',
+      description:
+        'Engagement is conducted under appropriate confidentiality standards and professional discretion.',
     },
     {
       id: 4,
       icon: 'ArrowPathIcon',
       title: 'Structured next steps',
-      description: 'Where appropriate, next steps may include briefings, exploratory discussions, or referral to research or systems teams.',
+      description:
+        'Where appropriate, next steps may include briefings, exploratory discussions, or referral to research or systems teams.',
     },
   ];
 
@@ -48,7 +52,8 @@ const EngagementProcess = ({ className = '' }: EngagementProcessProps) => {
             Engagement process
           </h2>
           <p className="text-base text-muted-foreground font-body max-w-2xl mx-auto">
-            Engagement follows a structured, step-based process designed for institutional and public-sector contexts.
+            Engagement follows a structured, step-based process designed for institutional and
+            public-sector contexts.
           </p>
         </div>
 
@@ -59,10 +64,10 @@ const EngagementProcess = ({ className = '' }: EngagementProcessProps) => {
               className="bg-card p-6 rounded-sm border border-border hover:border-primary/30 transition-colors duration-200"
             >
               <div className="w-12 h-12 bg-primary/10 rounded-sm flex items-center justify-center mb-4">
-                <Icon 
-                  name={step.icon as any} 
-                  size={24} 
-                  variant="outline" 
+                <Icon
+                  name={step.icon as any}
+                  size={24}
+                  variant="outline"
                   className="text-primary"
                 />
               </div>

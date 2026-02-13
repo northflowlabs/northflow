@@ -12,17 +12,22 @@ const CompanyStorySection = ({ className = '' }: CompanyStorySectionProps) => {
               Norwegian heritage. European reach.
             </h2>
             <div className="space-y-4 text-muted-foreground font-body leading-relaxed">
-              <p>Northflow builds on research and applied systems work developed over multiple years across digital infrastructure, governance, and mission-critical environments.
-
-              </p>
-              <p>Northflow draws on long-standing experience across technology, health-related research, and organisational leadership. This experience informs an approach to digital infrastructure that prioritises auditability, governance, and long-term operational reliability.
-
+              <p>
+                Northflow operates from a Nordic regulatory foundation with active engagement across
+                European institutional contexts.
               </p>
               <p>
-                We operate from the principle that institutional technology must prioritize continuity over innovation. Systems must be designed to function during network disruptions, political transitions, and crisis scenarios. This approach has positioned Northflow as a partner for organizations that cannot accept failure.
+                The company develops research-grade and applied systems designed for resilience,
+                structured evaluation, and operational integrity under uncertainty.
               </p>
               <p>
-                Today, we maintain operations across six European nations, supporting government entities, organizations aligned with resilience frameworks, and large asset managers with infrastructure built for institutional requirements.
+                Our approach prioritizes long-horizon infrastructure thinking: systems must remain
+                stable across political transitions, regulatory shifts, and evolving institutional
+                requirements.
+              </p>
+              <p>
+                We work with environments where continuity, auditability, and structural clarity are
+                primary design constraints.
               </p>
             </div>
           </div>
@@ -36,7 +41,7 @@ const CompanyStorySection = ({ className = '' }: CompanyStorySectionProps) => {
                   Phase 1
                 </div>
                 <div className="text-sm text-muted-foreground font-body">
-                  Company establishment with focus on sovereign technology infrastructure
+                  Formalization of structured hypothesis and evaluation architecture
                 </div>
               </div>
               <div className="flex space-x-4">
@@ -44,7 +49,7 @@ const CompanyStorySection = ({ className = '' }: CompanyStorySectionProps) => {
                   Phase 2
                 </div>
                 <div className="text-sm text-muted-foreground font-body">
-                  Target operating model aligned to information security management standards
+                  Validation across astronomical and Earth observation datasets
                 </div>
               </div>
               <div className="flex space-x-4">
@@ -52,7 +57,7 @@ const CompanyStorySection = ({ className = '' }: CompanyStorySectionProps) => {
                   Phase 3
                 </div>
                 <div className="text-sm text-muted-foreground font-body">
-                  Northflow Research Lab (NRL) formalized recently as internal division for advanced R&D
+                  Governance and reproducibility framework consolidation
                 </div>
               </div>
               <div className="flex space-x-4">
@@ -60,7 +65,7 @@ const CompanyStorySection = ({ className = '' }: CompanyStorySectionProps) => {
                   Phase 4
                 </div>
                 <div className="text-sm text-muted-foreground font-body">
-                  Regional operations expanded across Nordic and Northern European nations
+                  Institutional adaptation within European regulatory contexts
                 </div>
               </div>
               <div className="flex space-x-4">
@@ -68,15 +73,15 @@ const CompanyStorySection = ({ className = '' }: CompanyStorySectionProps) => {
                   Ongoing
                 </div>
                 <div className="text-sm text-muted-foreground font-body">
-                  Certification pathways pursued for resilience standards and institutional frameworks
+                  Long-horizon methodological refinement and domain extension
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>);
-
+    </section>
+  );
 };
 
 export default CompanyStorySection;

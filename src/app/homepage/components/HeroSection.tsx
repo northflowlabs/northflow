@@ -13,37 +13,38 @@ const HeroSection = ({ className = '' }: HeroSectionProps) => {
           {/* Left: Text Content */}
           <div className="max-w-2xl">
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-headline font-semibold text-foreground leading-tight mb-6">
-              Sovereign-aligned digital infrastructure for institutional environments
+              Institutional evidence infrastructure for climate and critical systems
             </h1>
             <p className="text-lg lg:text-xl text-muted-foreground font-body leading-relaxed mb-8">
-              Resilient systems designed to support regulated and mission-critical environments. Built in Norway. Operating across Europe.
+              Structured, reproducible, and verifiable architectures designed for regulated European
+              environments. Built in Norway. Operating across Europe.
             </p>
             <Link
               href="/engage"
-              className="inline-block px-8 py-3.5 bg-primary text-primary-foreground text-base font-cta font-medium rounded-sm transition-all duration-200 ease-institutional hover:-translate-y-0.5 hover:shadow-hover">
-
-              Request briefing
+              className="inline-block px-8 py-3.5 bg-primary text-primary-foreground text-base font-cta font-medium rounded-sm transition-all duration-200 ease-institutional hover:-translate-y-0.5 hover:shadow-hover"
+            >
+              Request institutional briefing
             </Link>
             <p className="text-sm text-muted-foreground font-body mt-3">
-              For institutions, funding agencies, and research partners.
+              For government entities, research institutions, and mission-critical stakeholders.
             </p>
           </div>
 
           {/* Right: Geographic Context Image */}
           <div className="relative w-full h-[400px] lg:h-[500px] rounded-sm overflow-hidden">
             <Image
-              src="/assets/images/Sovereign-aligned_digital_infrastructure_for_institutional_environments-1767183287567.jpg"
-              alt="Dramatic upward-angle architectural photo of modern institutional buildings - glass facades and geometric structural elements shot from below against sky, establishing strong institutional presence for Northflow's Nordic and European operational context"
+              src="/assets/images/Northflow - Earth Sat.jpg"
+              alt="Earth from space showing oceans and clouds with bright light reflection, representing global climate and critical systems monitoring"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover opacity-90 grayscale-[10%]"
-              priority />
-
+              priority
+            />
           </div>
         </div>
       </div>
-    </section>);
-
+    </section>
+  );
 };
 
 export default HeroSection;

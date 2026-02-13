@@ -13,7 +13,9 @@ const MethodologicalFoundation = ({ className = '' }: MethodologicalFoundationPr
             Methodological foundation
           </h2>
           <p className="text-base text-foreground font-body leading-relaxed mb-6">
-            EFOS is informed by Northflow Research methodologies developed in Project HGE. HGE contributes validation workflows, uncertainty-aware reasoning, and provenance practices that strengthen system robustness over time.
+            EFOS is informed by Northflow Research methodologies developed in Project HGE. HGE
+            contributes validation workflows, uncertainty-aware reasoning, and provenance practices
+            that strengthen system robustness over time.
           </p>
           <Link
             href="/research/hge"
@@ -27,12 +29,7 @@ const MethodologicalFoundation = ({ className = '' }: MethodologicalFoundationPr
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M9 5l7 7-7 7"
-              />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
           </Link>
         </div>

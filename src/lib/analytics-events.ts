@@ -3,7 +3,12 @@ import type { EventParams } from '@/types/gtag';
 
 // Institutional engagement event parameters
 interface InstitutionalEngagementParams extends EventParams {
-  engagement_type: 'contact_form' | 'access_request' | 'resource_download' | 'research_view' | 'cta_click';
+  engagement_type:
+    | 'contact_form'
+    | 'access_request'
+    | 'resource_download'
+    | 'research_view'
+    | 'cta_click';
   audience_type?: 'institution' | 'research_partner' | 'general_visitor';
   institution_type?: string;
   page_section?: string;
@@ -57,7 +62,7 @@ export function trackAudienceEngagement(
   }
 ): void {
   const audienceType = getAudienceType(params.context);
-  
+
   trackEvent('audience_engagement', {
     engagement_type: engagementType,
     audience_type: audienceType,
@@ -127,7 +132,11 @@ export function trackNavigation(params: NavigationParams): void {
 }
 
 // Resource engagement
-export function trackResourceEngagement(resourceType: string, resourceId: string, audienceContext?: string): void {
+export function trackResourceEngagement(
+  resourceType: string,
+  resourceId: string,
+  audienceContext?: string
+): void {
   trackEvent('resource_engagement', {
     resource_type: resourceType,
     resource_id: resourceId,

@@ -59,16 +59,18 @@ const InstitutionalContactForm = ({ className = '' }: InstitutionalContactFormPr
     'Institutional briefing',
   ];
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
-    
+
     // Track form start on first interaction
     if (!hasTrackedFormStart) {
       trackFormStart('institutional_contact_form', 'institution');
       setHasTrackedFormStart(true);
     }
-    
-    setFormData(prev => ({ ...prev, [name]: value }));
+
+    setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
   const handleCheckboxChange = (option: string) => {
@@ -76,18 +78,18 @@ const InstitutionalContactForm = ({ className = '' }: InstitutionalContactFormPr
       trackFormStart('institutional_contact_form', 'institution');
       setHasTrackedFormStart(true);
     }
-    
-    setFormData(prev => ({
+
+    setFormData((prev) => ({
       ...prev,
       inquiryFocus: prev.inquiryFocus.includes(option)
-        ? prev.inquiryFocus.filter(item => item !== option)
+        ? prev.inquiryFocus.filter((item) => item !== option)
         : [...prev.inquiryFocus, option],
     }));
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     // Reset error state
     setErrorMessage('');
     setSubmitStatus('idle');
@@ -143,23 +145,27 @@ const InstitutionalContactForm = ({ className = '' }: InstitutionalContactFormPr
 
     // Enhanced GDPR consent validation with specific messaging
     if (!formData.dataProcessingConsent && !formData.privacyPolicyAccepted) {
-      setErrorMessage('Please accept both the data processing consent and privacy policy to submit your inquiry.');
+      setErrorMessage(
+        'Please accept both the data processing consent and privacy policy to submit your inquiry.'
+      );
       setSubmitStatus('error');
       return;
     }
-    
+
     if (!formData.dataProcessingConsent) {
       setErrorMessage('Please accept the data processing consent (GDPR) to submit your inquiry.');
       setSubmitStatus('error');
       return;
     }
-    
+
     if (!formData.privacyPolicyAccepted) {
-      setErrorMessage('Please accept the Privacy Policy and Data Protection Notice to submit your inquiry.');
+      setErrorMessage(
+        'Please accept the Privacy Policy and Data Protection Notice to submit your inquiry.'
+      );
       setSubmitStatus('error');
       return;
     }
-    
+
     setIsSubmitting(true);
 
     try {
@@ -180,7 +186,7 @@ const InstitutionalContactForm = ({ className = '' }: InstitutionalContactFormPr
       if (response.ok && result.success) {
         setSubmitStatus('success');
         setErrorMessage('');
-        
+
         // Track successful form submission
         trackFormSubmit({
           form_id: 'institutional_contact_form',
@@ -189,7 +195,7 @@ const InstitutionalContactForm = ({ className = '' }: InstitutionalContactFormPr
           organization_type: formData.organizationType,
           audience_type: 'institution',
         });
-        
+
         // Track as qualified inbound conversation
         trackQualifiedInbound({
           source: 'institutional_contact_form',
@@ -197,7 +203,7 @@ const InstitutionalContactForm = ({ className = '' }: InstitutionalContactFormPr
           inquiryFocus: formData.inquiryFocus,
           audienceType: 'institution',
         });
-        
+
         // Reset form after successful submission
         setFormData({
           organizationName: '',
@@ -215,12 +221,17 @@ const InstitutionalContactForm = ({ className = '' }: InstitutionalContactFormPr
         setHasTrackedFormStart(false);
       } else {
         setSubmitStatus('error');
-        setErrorMessage(result.message || 'An error occurred while submitting your inquiry. Please try again or contact us directly at hello@northflow.no');
+        setErrorMessage(
+          result.message ||
+            'An error occurred while submitting your inquiry. Please try again or contact us directly at hello@northflow.no'
+        );
       }
     } catch (error) {
       console.error('Form submission error:', error);
       setSubmitStatus('error');
-      setErrorMessage('A network error occurred. Please check your connection and try again, or contact us directly at hello@northflow.no');
+      setErrorMessage(
+        'A network error occurred. Please check your connection and try again, or contact us directly at hello@northflow.no'
+      );
     } finally {
       setIsSubmitting(false);
     }
@@ -230,48 +241,86 @@ const InstitutionalContactForm = ({ className = '' }: InstitutionalContactFormPr
     <section className={`bg-card py-20 ${className}`} aria-labelledby="contact-form-heading">
       <div className="max-w-[900px] mx-auto px-8">
         <div className="mb-12 text-center">
-          <h2 id="contact-form-heading" className="text-3xl md:text-4xl font-headline font-semibold text-foreground mb-4">
+          <h2
+            id="contact-form-heading"
+            className="text-3xl md:text-4xl font-headline font-semibold text-foreground mb-4"
+          >
             Initiate formal dialogue
           </h2>
           <p className="text-base text-muted-foreground font-body max-w-2xl mx-auto">
-            Use the form below to initiate a structured engagement inquiry. Submissions are reviewed to determine relevance, scope, and appropriate next steps. All inquiries are handled with institutional confidentiality.
+            Use the form below to initiate a structured engagement inquiry. Submissions are reviewed
+            to determine relevance, scope, and appropriate next steps. All inquiries are handled
+            with institutional confidentiality.
           </p>
         </div>
 
         {/* What to Include Guidance */}
         <div className="mb-10 p-6 bg-background border border-border rounded-sm">
           <h3 className="text-lg font-headline font-semibold text-foreground mb-4 flex items-center">
-            <Icon name="InformationCircleIcon" size={20} variant="outline" className="text-primary mr-2" aria-hidden="true" />
+            <Icon
+              name="InformationCircleIcon"
+              size={20}
+              variant="outline"
+              className="text-primary mr-2"
+              aria-hidden="true"
+            />
             What to include
           </h3>
           <ul className="space-y-2 text-sm text-muted-foreground font-body">
             <li className="flex items-start space-x-2">
               <span className="text-primary mt-0.5">•</span>
-              <span><strong className="text-foreground">Your organization and role:</strong> Include your institutional affiliation, position, and relevant context for your inquiry.</span>
+              <span>
+                <strong className="text-foreground">Your organization and role:</strong> Include
+                your institutional affiliation, position, and relevant context for your inquiry.
+              </span>
             </li>
             <li className="flex items-start space-x-2">
               <span className="text-primary mt-0.5">•</span>
-              <span><strong className="text-foreground">What you want to explore:</strong> Specify whether you are interested in research collaboration, institutional deployment, funding discussions, or governance frameworks.</span>
+              <span>
+                <strong className="text-foreground">What you want to explore:</strong> Specify
+                whether you are interested in research collaboration, institutional deployment,
+                funding discussions, or governance frameworks.
+              </span>
             </li>
             <li className="flex items-start space-x-2">
               <span className="text-primary mt-0.5">•</span>
-              <span><strong className="text-foreground">Desired timeline (optional):</strong> If you have specific timeframes or milestones, include them to help us prioritize and structure the dialogue.</span>
+              <span>
+                <strong className="text-foreground">Desired timeline (optional):</strong> If you
+                have specific timeframes or milestones, include them to help us prioritize and
+                structure the dialogue.
+              </span>
             </li>
           </ul>
         </div>
 
-        <form onSubmit={handleSubmit} className="bg-background p-8 md:p-12 rounded-sm border border-border shadow-institutional" noValidate>
+        <form
+          onSubmit={handleSubmit}
+          className="bg-background p-8 md:p-12 rounded-sm border border-border shadow-institutional"
+          noValidate
+        >
           {/* Organization Information */}
           <fieldset className="mb-10">
             <legend className="text-xl font-headline font-semibold text-foreground mb-6 flex items-center">
-              <Icon name="BuildingOffice2Icon" size={24} variant="outline" className="text-primary mr-3" aria-hidden="true" />
+              <Icon
+                name="BuildingOffice2Icon"
+                size={24}
+                variant="outline"
+                className="text-primary mr-3"
+                aria-hidden="true"
+              />
               Organisation information
             </legend>
-            
+
             <div className="space-y-6">
               <div>
-                <label htmlFor="organizationName" className="block text-sm font-cta font-medium text-foreground mb-2">
-                  Organisation name <span className="text-error" aria-label="required">*</span>
+                <label
+                  htmlFor="organizationName"
+                  className="block text-sm font-cta font-medium text-foreground mb-2"
+                >
+                  Organisation name{' '}
+                  <span className="text-error" aria-label="required">
+                    *
+                  </span>
                 </label>
                 <input
                   type="text"
@@ -287,8 +336,14 @@ const InstitutionalContactForm = ({ className = '' }: InstitutionalContactFormPr
               </div>
 
               <div>
-                <label htmlFor="organizationType" className="block text-sm font-cta font-medium text-foreground mb-2">
-                  Organisation type <span className="text-error" aria-label="required">*</span>
+                <label
+                  htmlFor="organizationType"
+                  className="block text-sm font-cta font-medium text-foreground mb-2"
+                >
+                  Organisation type{' '}
+                  <span className="text-error" aria-label="required">
+                    *
+                  </span>
                 </label>
                 <select
                   id="organizationType"
@@ -309,8 +364,14 @@ const InstitutionalContactForm = ({ className = '' }: InstitutionalContactFormPr
               </div>
 
               <div>
-                <label htmlFor="country" className="block text-sm font-cta font-medium text-foreground mb-2">
-                  Country of operation <span className="text-error" aria-label="required">*</span>
+                <label
+                  htmlFor="country"
+                  className="block text-sm font-cta font-medium text-foreground mb-2"
+                >
+                  Country of operation{' '}
+                  <span className="text-error" aria-label="required">
+                    *
+                  </span>
                 </label>
                 <input
                   type="text"
@@ -330,15 +391,27 @@ const InstitutionalContactForm = ({ className = '' }: InstitutionalContactFormPr
           {/* Contact Information */}
           <fieldset className="mb-10">
             <legend className="text-xl font-headline font-semibold text-foreground mb-6 flex items-center">
-              <Icon name="UserIcon" size={24} variant="outline" className="text-primary mr-3" aria-hidden="true" />
+              <Icon
+                name="UserIcon"
+                size={24}
+                variant="outline"
+                className="text-primary mr-3"
+                aria-hidden="true"
+              />
               Contact information
             </legend>
-            
+
             <div className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="contactName" className="block text-sm font-cta font-medium text-foreground mb-2">
-                    Full name <span className="text-error" aria-label="required">*</span>
+                  <label
+                    htmlFor="contactName"
+                    className="block text-sm font-cta font-medium text-foreground mb-2"
+                  >
+                    Full name{' '}
+                    <span className="text-error" aria-label="required">
+                      *
+                    </span>
                   </label>
                   <input
                     type="text"
@@ -354,8 +427,14 @@ const InstitutionalContactForm = ({ className = '' }: InstitutionalContactFormPr
                 </div>
 
                 <div>
-                  <label htmlFor="contactTitle" className="block text-sm font-cta font-medium text-foreground mb-2">
-                    Title / position <span className="text-error" aria-label="required">*</span>
+                  <label
+                    htmlFor="contactTitle"
+                    className="block text-sm font-cta font-medium text-foreground mb-2"
+                  >
+                    Title / position{' '}
+                    <span className="text-error" aria-label="required">
+                      *
+                    </span>
                   </label>
                   <input
                     type="text"
@@ -373,8 +452,14 @@ const InstitutionalContactForm = ({ className = '' }: InstitutionalContactFormPr
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="email" className="block text-sm font-cta font-medium text-foreground mb-2">
-                    Institutional email address <span className="text-error" aria-label="required">*</span>
+                  <label
+                    htmlFor="email"
+                    className="block text-sm font-cta font-medium text-foreground mb-2"
+                  >
+                    Institutional email address{' '}
+                    <span className="text-error" aria-label="required">
+                      *
+                    </span>
                   </label>
                   <input
                     type="email"
@@ -388,11 +473,16 @@ const InstitutionalContactForm = ({ className = '' }: InstitutionalContactFormPr
                     className="w-full px-4 py-3 bg-card border border-input rounded-sm text-foreground font-body text-sm focus:outline-none focus:ring-2 focus:ring-ring focus:border-transparent transition-all duration-200"
                     placeholder="your.email@organisation.com"
                   />
-                  <p id="email-description" className="sr-only">Please use your official institutional email address</p>
+                  <p id="email-description" className="sr-only">
+                    Please use your official institutional email address
+                  </p>
                 </div>
 
                 <div>
-                  <label htmlFor="phone" className="block text-sm font-cta font-medium text-foreground mb-2">
+                  <label
+                    htmlFor="phone"
+                    className="block text-sm font-cta font-medium text-foreground mb-2"
+                  >
                     Phone number (optional)
                   </label>
                   <input
@@ -412,21 +502,35 @@ const InstitutionalContactForm = ({ className = '' }: InstitutionalContactFormPr
           {/* Inquiry Details */}
           <fieldset className="mb-10">
             <legend className="text-xl font-headline font-semibold text-foreground mb-6 flex items-center">
-              <Icon name="DocumentTextIcon" size={24} variant="outline" className="text-primary mr-3" aria-hidden="true" />
+              <Icon
+                name="DocumentTextIcon"
+                size={24}
+                variant="outline"
+                className="text-primary mr-3"
+                aria-hidden="true"
+              />
               Engagement focus
             </legend>
-            
+
             <div className="space-y-6">
               <div>
-                <label id="inquiry-focus-label" className="block text-sm font-cta font-medium text-foreground mb-3">
-                  Select all that apply <span className="text-error" aria-label="required">*</span>
+                <label
+                  id="inquiry-focus-label"
+                  className="block text-sm font-cta font-medium text-foreground mb-3"
+                >
+                  Select all that apply{' '}
+                  <span className="text-error" aria-label="required">
+                    *
+                  </span>
                 </label>
-                <div className="space-y-3" role="group" aria-labelledby="inquiry-focus-label" aria-required="true">
+                <div
+                  className="space-y-3"
+                  role="group"
+                  aria-labelledby="inquiry-focus-label"
+                  aria-required="true"
+                >
                   {inquiryFocusOptions.map((option) => (
-                    <label
-                      key={option}
-                      className="flex items-start space-x-3 cursor-pointer group"
-                    >
+                    <label key={option} className="flex items-start space-x-3 cursor-pointer group">
                       <input
                         type="checkbox"
                         checked={formData.inquiryFocus.includes(option)}
@@ -443,8 +547,14 @@ const InstitutionalContactForm = ({ className = '' }: InstitutionalContactFormPr
               </div>
 
               <div>
-                <label htmlFor="dialogueIntent" className="block text-sm font-cta font-medium text-foreground mb-2">
-                  Dialogue intent <span className="text-error" aria-label="required">*</span>
+                <label
+                  htmlFor="dialogueIntent"
+                  className="block text-sm font-cta font-medium text-foreground mb-2"
+                >
+                  Dialogue intent{' '}
+                  <span className="text-error" aria-label="required">
+                    *
+                  </span>
                 </label>
                 <textarea
                   id="dialogueIntent"
@@ -458,42 +568,74 @@ const InstitutionalContactForm = ({ className = '' }: InstitutionalContactFormPr
                   className="w-full px-4 py-3 bg-card border border-input rounded-sm text-foreground font-body text-sm focus:outline-none focus:ring-2 focus:ring-ring focus:border-transparent transition-all duration-200 resize-none"
                   placeholder="Please describe the context and purpose of your inquiry. This may include policy considerations, infrastructure challenges, research interests, or evaluation objectives. Do not submit confidential or classified information at this stage."
                 />
-                <p id="dialogue-intent-description" className="sr-only">Describe your engagement objectives without including confidential information</p>
+                <p id="dialogue-intent-description" className="sr-only">
+                  Describe your engagement objectives without including confidential information
+                </p>
               </div>
             </div>
           </fieldset>
 
           {/* Confidentiality Notice */}
-          <div className="mb-8 p-6 bg-card border border-border rounded-sm" role="note" aria-label="Confidentiality notice">
+          <div
+            className="mb-8 p-6 bg-card border border-border rounded-sm"
+            role="note"
+            aria-label="Confidentiality notice"
+          >
             <h4 className="text-sm font-cta font-semibold text-foreground mb-2 flex items-center">
-              <Icon name="LockClosedIcon" size={18} variant="outline" className="text-primary mr-2" aria-hidden="true" />
+              <Icon
+                name="LockClosedIcon"
+                size={18}
+                variant="outline"
+                className="text-primary mr-2"
+                aria-hidden="true"
+              />
               Confidentiality notice
             </h4>
             <p className="text-xs text-muted-foreground font-body leading-relaxed">
-              Information submitted through this form is treated as confidential and used solely to evaluate the relevance of potential institutional engagement. Submission does not constitute a contractual offer, commitment, or partnership. Further confidentiality arrangements may be discussed where appropriate.
+              Information submitted through this form is treated as confidential and used solely to
+              evaluate the relevance of potential institutional engagement. Submission does not
+              constitute a contractual offer, commitment, or partnership. Further confidentiality
+              arrangements may be discussed where appropriate.
             </p>
           </div>
 
           {/* GDPR Data Processing Consent */}
           <fieldset className="mb-8 p-6 bg-muted/30 border border-border rounded-sm">
             <legend className="text-base font-cta font-semibold text-foreground mb-4 flex items-center">
-              <Icon name="ShieldCheckIcon" size={20} variant="outline" className="text-primary mr-2" aria-hidden="true" />
+              <Icon
+                name="ShieldCheckIcon"
+                size={20}
+                variant="outline"
+                className="text-primary mr-2"
+                aria-hidden="true"
+              />
               Data processing consent (GDPR)
             </legend>
-            
+
             <div className="space-y-4">
               <div className="flex items-start space-x-3">
                 <input
                   type="checkbox"
                   id="dataProcessingConsent"
                   checked={formData.dataProcessingConsent}
-                  onChange={(e) => setFormData(prev => ({ ...prev, dataProcessingConsent: e.target.checked }))}
+                  onChange={(e) =>
+                    setFormData((prev) => ({ ...prev, dataProcessingConsent: e.target.checked }))
+                  }
                   required
                   aria-required="true"
                   className="mt-1 w-4 h-4 text-primary border-input rounded focus:ring-2 focus:ring-ring focus:ring-offset-0 cursor-pointer"
                 />
-                <label htmlFor="dataProcessingConsent" className="text-sm text-foreground font-body leading-relaxed cursor-pointer">
-                  I consent to the processing of the personal data provided in this form for the purpose of institutional engagement evaluation and correspondence. I understand that this data will be processed in accordance with the General Data Protection Regulation (GDPR) and applicable European data protection laws. <span className="text-error" aria-label="required">*</span>
+                <label
+                  htmlFor="dataProcessingConsent"
+                  className="text-sm text-foreground font-body leading-relaxed cursor-pointer"
+                >
+                  I consent to the processing of the personal data provided in this form for the
+                  purpose of institutional engagement evaluation and correspondence. I understand
+                  that this data will be processed in accordance with the General Data Protection
+                  Regulation (GDPR) and applicable European data protection laws.{' '}
+                  <span className="text-error" aria-label="required">
+                    *
+                  </span>
                 </label>
               </div>
 
@@ -502,12 +644,17 @@ const InstitutionalContactForm = ({ className = '' }: InstitutionalContactFormPr
                   type="checkbox"
                   id="privacyPolicyAccepted"
                   checked={formData.privacyPolicyAccepted}
-                  onChange={(e) => setFormData(prev => ({ ...prev, privacyPolicyAccepted: e.target.checked }))}
+                  onChange={(e) =>
+                    setFormData((prev) => ({ ...prev, privacyPolicyAccepted: e.target.checked }))
+                  }
                   required
                   aria-required="true"
                   className="mt-1 w-4 h-4 text-primary border-input rounded focus:ring-2 focus:ring-ring focus:ring-offset-0 cursor-pointer"
                 />
-                <label htmlFor="privacyPolicyAccepted" className="text-sm text-foreground font-body leading-relaxed cursor-pointer">
+                <label
+                  htmlFor="privacyPolicyAccepted"
+                  className="text-sm text-foreground font-body leading-relaxed cursor-pointer"
+                >
                   I have read and accept the{' '}
                   <a
                     href="/privacy-policy"
@@ -516,8 +663,8 @@ const InstitutionalContactForm = ({ className = '' }: InstitutionalContactFormPr
                     className="text-primary hover:text-accent underline font-medium focus:outline-none focus:ring-2 focus:ring-ring rounded"
                   >
                     Privacy Policy
-                  </a>
-                  {' '}and{' '}
+                  </a>{' '}
+                  and{' '}
                   <a
                     href="/data-protection-notice"
                     target="_blank"
@@ -526,12 +673,17 @@ const InstitutionalContactForm = ({ className = '' }: InstitutionalContactFormPr
                   >
                     Data Protection Notice
                   </a>
-                  . <span className="text-error" aria-label="required">*</span>
+                  .{' '}
+                  <span className="text-error" aria-label="required">
+                    *
+                  </span>
                 </label>
               </div>
 
               <div className="mt-4 p-4 bg-card border-l-4 border-primary rounded-sm">
-                <h5 className="text-xs font-cta font-semibold text-foreground mb-2">Your data protection rights:</h5>
+                <h5 className="text-xs font-cta font-semibold text-foreground mb-2">
+                  Your data protection rights:
+                </h5>
                 <ul className="text-xs text-muted-foreground font-body space-y-1 ml-4 list-disc">
                   <li>Right to access your personal data</li>
                   <li>Right to rectification of inaccurate data</li>
@@ -541,7 +693,10 @@ const InstitutionalContactForm = ({ className = '' }: InstitutionalContactFormPr
                 </ul>
                 <p className="text-xs text-muted-foreground font-body mt-3">
                   To exercise these rights, contact:{' '}
-                  <a href="mailto:hello@northflow.no" className="text-primary hover:text-accent underline font-medium">
+                  <a
+                    href="mailto:hello@northflow.no"
+                    className="text-primary hover:text-accent underline font-medium"
+                  >
                     hello@northflow.no
                   </a>
                 </p>
@@ -561,18 +716,25 @@ const InstitutionalContactForm = ({ className = '' }: InstitutionalContactFormPr
             </button>
 
             {submitStatus === 'success' && (
-              <div className="mt-4 p-4 bg-primary/10 border border-primary/20 rounded-sm" role="status" aria-live="polite">
+              <div
+                className="mt-4 p-4 bg-primary/10 border border-primary/20 rounded-sm"
+                role="status"
+                aria-live="polite"
+              >
                 <p className="text-sm text-primary font-body text-center">
-                  Your inquiry has been submitted successfully. We will review and respond accordingly.
+                  Your inquiry has been submitted successfully. We will review and respond
+                  accordingly.
                 </p>
               </div>
             )}
-            
+
             {submitStatus === 'error' && errorMessage && (
-              <div className="mt-4 p-4 bg-error/10 border border-error/20 rounded-sm" role="alert" aria-live="assertive">
-                <p className="text-sm text-error font-body text-center">
-                  {errorMessage}
-                </p>
+              <div
+                className="mt-4 p-4 bg-error/10 border border-error/20 rounded-sm"
+                role="alert"
+                aria-live="assertive"
+              >
+                <p className="text-sm text-error font-body text-center">{errorMessage}</p>
               </div>
             )}
           </div>

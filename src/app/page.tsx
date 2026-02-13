@@ -9,7 +9,8 @@ import { generateMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = generateMetadata({
   title: 'Sovereign Digital Infrastructure for Europe | Northflow',
-  description: 'Northflow designs sovereign, auditable digital infrastructure for European institutions operating under regulation, long-term responsibility, and operational continuity.',
+  description:
+    'Northflow designs sovereign, auditable digital infrastructure for European institutions operating under regulation, long-term responsibility, and operational continuity.',
   path: '/',
   keywords: [
     'European digital sovereignty',

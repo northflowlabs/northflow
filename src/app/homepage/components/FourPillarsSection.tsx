@@ -19,28 +19,32 @@ const FourPillarsSection = ({ className = '' }: FourPillarsSectionProps) => {
   const pillars: Pillar[] = [
     {
       id: 1,
-      icon: 'ShieldCheckIcon',
-      title: 'Sovereign technology',
-      description: 'Infrastructure designed to support operational independence and regulatory compliance.'
+      icon: 'magnifying-glass',
+      title: 'Structured discovery',
+      description:
+        'Systematic hypothesis generation and structured search across complex data environments.',
     },
     {
       id: 2,
-      icon: 'CubeTransparentIcon',
-      title: 'Auditable systems',
-      description: 'Governable architecture aligned with comprehensive audit trails and transparency frameworks.'
+      icon: 'check-badge',
+      title: 'Verifiable evaluation',
+      description:
+        'Deterministic execution, explicit audit trails, and reproducible evidence artifacts.',
     },
     {
       id: 3,
-      icon: 'ArrowPathIcon',
-      title: 'Operational continuity',
-      description: 'Resilient infrastructure designed to support uninterrupted service delivery during peacetime and crisis.'
+      icon: 'server-stack',
+      title: 'Operational resilience',
+      description:
+        'Architectures designed for regulated, mission-critical, and long-horizon contexts.',
     },
     {
       id: 4,
-      icon: 'BeakerIcon',
-      title: 'Research-driven',
-      description: 'Advanced capabilities informed by research through Northflow Research Lab for practical deployment.'
-    }
+      icon: 'globe-alt',
+      title: 'Research integration',
+      description:
+        'Applied research methodologies bridging Earth Observation, climate systems, and decision support.',
+    },
   ];
 
   return (
@@ -51,7 +55,7 @@ const FourPillarsSection = ({ className = '' }: FourPillarsSectionProps) => {
             Four pillars framework
           </h2>
           <p className="text-lg text-muted-foreground font-body max-w-3xl mx-auto">
-            Core capabilities that define our institutional approach to digital infrastructure.
+            Core capabilities defining our institutional approach to evidence infrastructure.
           </p>
         </div>
 
@@ -62,10 +66,10 @@ const FourPillarsSection = ({ className = '' }: FourPillarsSectionProps) => {
               className="bg-background p-8 rounded-sm border border-border transition-all duration-200 hover:border-primary hover:-translate-y-1 flex flex-col"
             >
               <div className="w-12 h-12 bg-primary/10 rounded-sm flex items-center justify-center mb-6">
-                <Icon 
-                  name={pillar.icon as any} 
-                  size={24} 
-                  variant="outline" 
+                <Icon
+                  name={pillar.icon as any}
+                  size={24}
+                  variant="outline"
                   className="text-primary"
                 />
               </div>
@@ -88,26 +92,29 @@ const FourPillarsSection = ({ className = '' }: FourPillarsSectionProps) => {
               Flagship research initiative: Project HGE
             </h3>
             <p className="text-base text-muted-foreground font-body leading-relaxed mb-6">
-              Powered by Project HGE (Hypothesis Generation Engine) — an instrument-agnostic research platform for automated, hypothesis-driven discovery, validated on real instruments. Project HGE represents Northflow's commitment to advancing research infrastructure through systematic experimentation and evidence-based confidence updates.
+              Powered by HGE (Hypothesis Generation Engine), an instrument-agnostic system for
+              structured, machine-driven hypothesis discovery and reproducible evaluation. Initially
+              validated on astronomical catalog data, HGE is now being extended to Earth Observation
+              datasets within climate and resilience domains.
             </p>
-            
+
             <ul className="space-y-3 mb-8">
               <li className="flex items-start gap-3">
-                <Icon name="CheckCircleIcon" size={20} className="text-primary flex-shrink-0 mt-0.5" />
+                <Icon name="check-circle" size={20} className="text-primary flex-shrink-0 mt-0.5" />
                 <span className="text-sm text-muted-foreground font-body">
-                  Hypotheses → experiments → evidence → confidence updates
+                  Structured hypothesis search with explicit representation
                 </span>
               </li>
               <li className="flex items-start gap-3">
-                <Icon name="CheckCircleIcon" size={20} className="text-primary flex-shrink-0 mt-0.5" />
+                <Icon name="check-circle" size={20} className="text-primary flex-shrink-0 mt-0.5" />
                 <span className="text-sm text-muted-foreground font-body">
-                  Instrument-agnostic and designed for long-term scientific infrastructure
+                  Deterministic execution with signed evidence artifacts
                 </span>
               </li>
               <li className="flex items-start gap-3">
-                <Icon name="CheckCircleIcon" size={20} className="text-primary flex-shrink-0 mt-0.5" />
+                <Icon name="check-circle" size={20} className="text-primary flex-shrink-0 mt-0.5" />
                 <span className="text-sm text-muted-foreground font-body">
-                  Validated on real instruments (including live remote quantum hardware as a test environment)
+                  Designed for institutional reproducibility and auditability
                 </span>
               </li>
             </ul>
@@ -117,7 +124,7 @@ const FourPillarsSection = ({ className = '' }: FourPillarsSectionProps) => {
               className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground font-cta font-medium rounded-sm hover:bg-primary/90 transition-colors"
             >
               Explore Project HGE
-              <Icon name="ArrowRightIcon" size={18} className="text-primary-foreground" />
+              <Icon name="arrow-right" size={18} className="text-primary-foreground" />
             </Link>
           </div>
         </div>

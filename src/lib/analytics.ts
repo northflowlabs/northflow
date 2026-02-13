@@ -21,17 +21,17 @@ export function useGoogleAnalytics(): void {
       window.dataLayer = [];
       window.gtag = function gtag() {
         // eslint-disable-next-line prefer-rest-params
-        window.dataLayer.push(arguments);
+        window.dataLayer?.push(arguments);
       };
-      
-      window.gtag('js', new Date());
-      window.gtag('config', measurementId, {
+
+      (window as any).gtag?.('js', new Date());
+      (window as any).gtag?.('config', measurementId, {
         page_path: pathname,
       });
     }
 
     const url = pathname + (searchParams.toString() ? `?${searchParams}` : '');
-    window.gtag('event', 'page_view', { page_path: url });
+    (window as any).gtag?.('event', 'page_view', { page_path: url });
   }, [pathname, searchParams]);
 }
 
@@ -44,15 +44,23 @@ export function trackEvent(eventName: string, eventParams: EventParams = {}): vo
 // Audience type classification helper
 export function getAudienceType(context?: string): string {
   if (!context) return 'general_visitor';
-  
+
   const lowerContext = context.toLowerCase();
-  
-  if (lowerContext.includes('institution') || lowerContext.includes('government') || lowerContext.includes('funding')) {
+
+  if (
+    lowerContext.includes('institution') ||
+    lowerContext.includes('government') ||
+    lowerContext.includes('funding')
+  ) {
     return 'institution';
   }
-  if (lowerContext.includes('research') || lowerContext.includes('academic') || lowerContext.includes('collaboration')) {
+  if (
+    lowerContext.includes('research') ||
+    lowerContext.includes('academic') ||
+    lowerContext.includes('collaboration')
+  ) {
     return 'research_partner';
   }
-  
+
   return 'general_visitor';
 }

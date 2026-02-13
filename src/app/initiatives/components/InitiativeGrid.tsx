@@ -8,7 +8,12 @@ interface Initiative {
   id: string;
   title: string;
   category: string;
-  status: 'Framework development' | 'In design' | 'Exploratory' | 'Concept stage' | 'Flagship research initiative';
+  status:
+    | 'Framework development'
+    | 'In design'
+    | 'Exploratory'
+    | 'Concept stage'
+    | 'Flagship research initiative';
   description: string;
   secondaryDescription?: string;
   focusAreas: string[];
@@ -28,97 +33,150 @@ export default function InitiativeGrid() {
       title: 'Project HGE (Hypothesis Generation Engine)',
       category: 'Research',
       status: 'Flagship research initiative',
-      description: 'Automated, hypothesis-driven discovery infrastructure for instrument-grade research.',
-      secondaryDescription: 'Validated via live remote quantum hardware as a physical stress-test environment.',
-      focusAreas: ['Hypothesis generation', 'Experiment prioritization', 'Uncertainty tracking', 'Provenance systems'],
+      description:
+        'Automated, hypothesis-driven discovery infrastructure for instrument-grade research.',
+      secondaryDescription:
+        'Validated via live remote quantum hardware as a physical stress-test environment.',
+      focusAreas: [
+        'Hypothesis generation',
+        'Experiment prioritization',
+        'Uncertainty tracking',
+        'Provenance systems',
+      ],
       timeline: 'Active validation',
       participants: 'Research infrastructure programme',
       icon: 'BeakerIcon',
       ctaText: 'Explore HGE',
-      ctaLink: '/research'
+      ctaLink: '/research',
     },
     {
       id: 'efos',
       title: 'European framework for operational sovereignty',
       category: 'Sovereignty',
       status: 'Framework development',
-      description: 'Proposed framework establishing digital sovereignty principles for European government entities and critical infrastructure operators.',
-      focusAreas: ['Data sovereignty', 'Operational independence', 'Regulatory compliance', 'Audit standards'],
+      description:
+        'Proposed framework establishing digital sovereignty principles for European government entities and critical infrastructure operators.',
+      focusAreas: [
+        'Data sovereignty',
+        'Operational independence',
+        'Regulatory compliance',
+        'Audit standards',
+      ],
       timeline: 'Development phase',
       participants: 'Institutional dialogue underway',
-      icon: 'ShieldCheckIcon'
+      icon: 'ShieldCheckIcon',
     },
     {
       id: 'resilience',
       title: 'Critical infrastructure resilience programme',
       category: 'Resilience',
       status: 'In design',
-      description: 'Initiative developing operational continuity frameworks for mission-critical digital infrastructure across NATO-adjacent regions.',
-      focusAreas: ['Continuity planning', 'Failover systems', 'Crisis management', 'Recovery protocols'],
+      description:
+        'Initiative developing operational continuity frameworks for mission-critical digital infrastructure across NATO-adjacent regions.',
+      focusAreas: [
+        'Continuity planning',
+        'Failover systems',
+        'Crisis management',
+        'Recovery protocols',
+      ],
       timeline: 'Framework definition',
       participants: 'Exploratory engagement',
-      icon: 'CpuChipIcon'
+      icon: 'CpuChipIcon',
     },
     {
       id: 'governance',
       title: 'Institutional governance framework',
       category: 'Governance',
       status: 'Framework development',
-      description: 'Governance methodologies for auditable digital infrastructure in regulated institutional environments.',
+      description:
+        'Governance methodologies for auditable digital infrastructure in regulated institutional environments.',
       focusAreas: ['Audit trails', 'Compliance automation', 'Policy enforcement', 'Access control'],
       timeline: 'In preparation',
       participants: 'Requirements gathering',
-      icon: 'DocumentCheckIcon'
+      icon: 'DocumentCheckIcon',
     },
     {
       id: 'interop',
       title: 'Cross-border interoperability initiative',
       category: 'Integration',
       status: 'Concept stage',
-      description: 'Technical standards enabling secure data exchange between sovereign infrastructure systems across European jurisdictions.',
-      focusAreas: ['Protocol standards', 'Security frameworks', 'Data exchange', 'Identity management'],
+      description:
+        'Technical standards enabling secure data exchange between sovereign infrastructure systems across European jurisdictions.',
+      focusAreas: [
+        'Protocol standards',
+        'Security frameworks',
+        'Data exchange',
+        'Identity management',
+      ],
       timeline: 'Conceptual design',
       participants: 'Early consultation',
-      icon: 'ArrowsRightLeftIcon'
+      icon: 'ArrowsRightLeftIcon',
     },
     {
       id: 'research',
       title: 'Sovereign technology research consortium',
       category: 'Research',
       status: 'Exploratory',
-      description: 'Research programme advancing sovereign digital infrastructure capabilities through institutional partnerships and academic collaboration.',
-      focusAreas: ['Advanced cryptography', 'Distributed systems', 'Quantum readiness', 'Zero-trust architecture'],
+      description:
+        'Research programme advancing sovereign digital infrastructure capabilities through institutional partnerships and academic collaboration.',
+      focusAreas: [
+        'Advanced cryptography',
+        'Distributed systems',
+        'Quantum readiness',
+        'Zero-trust architecture',
+      ],
       timeline: 'Exploratory programme',
       participants: 'Research dialogue',
-      icon: 'BeakerIcon'
+      icon: 'BeakerIcon',
     },
     {
       id: 'regional',
       title: 'Regional deployment framework',
       category: 'Operations',
       status: 'In design',
-      description: 'Deployment methodologies ensuring consistent infrastructure implementation across diverse European regulatory environments.',
-      focusAreas: ['Local compliance', 'Regional standards', 'Deployment protocols', 'Support infrastructure'],
+      description:
+        'Deployment methodologies ensuring consistent infrastructure implementation across diverse European regulatory environments.',
+      focusAreas: [
+        'Local compliance',
+        'Regional standards',
+        'Deployment protocols',
+        'Support infrastructure',
+      ],
       timeline: 'Framework definition',
       participants: 'Regional consultation',
-      icon: 'GlobeEuropeAfricaIcon'
-    }
+      icon: 'GlobeEuropeAfricaIcon',
+    },
   ];
 
-  const categories = ['All', 'Sovereignty', 'Resilience', 'Governance', 'Integration', 'Research', 'Operations'];
+  const categories = [
+    'All',
+    'Sovereignty',
+    'Resilience',
+    'Governance',
+    'Integration',
+    'Research',
+    'Operations',
+  ];
 
-  const filteredInitiatives = selectedCategory === 'All' 
-    ? initiatives 
-    : initiatives.filter(init => init.category === selectedCategory);
+  const filteredInitiatives =
+    selectedCategory === 'All'
+      ? initiatives
+      : initiatives.filter((init) => init.category === selectedCategory);
 
   const getStatusColor = (status: string) => {
     switch (status) {
-      case 'Flagship research initiative': return 'bg-accent/20 text-accent border border-accent/30';
-      case 'Framework development': return 'bg-accent/10 text-accent';
-      case 'In design': return 'bg-primary/10 text-primary';
-      case 'Exploratory': return 'bg-warning/10 text-warning';
-      case 'Concept stage': return 'bg-muted text-muted-foreground';
-      default: return 'bg-muted text-muted-foreground';
+      case 'Flagship research initiative':
+        return 'bg-accent/20 text-accent border border-accent/30';
+      case 'Framework development':
+        return 'bg-accent/10 text-accent';
+      case 'In design':
+        return 'bg-primary/10 text-primary';
+      case 'Exploratory':
+        return 'bg-warning/10 text-warning';
+      case 'Concept stage':
+        return 'bg-muted text-muted-foreground';
+      default:
+        return 'bg-muted text-muted-foreground';
     }
   };
 
@@ -130,7 +188,8 @@ export default function InitiativeGrid() {
             Strategic programmes
           </h2>
           <p className="text-lg text-muted-foreground font-body max-w-3xl">
-            Framework initiatives under development, structured to advance through research, pilot exploration, and institutional dialogue.
+            Framework initiatives under development, structured to advance through research, pilot
+            exploration, and institutional dialogue.
           </p>
         </div>
 
@@ -158,9 +217,16 @@ export default function InitiativeGrid() {
             >
               <div className="flex items-start justify-between mb-4">
                 <div className="w-12 h-12 bg-primary/10 rounded-sm flex items-center justify-center flex-shrink-0">
-                  <Icon name={initiative.icon as any} size={24} variant="outline" className="text-primary" />
+                  <Icon
+                    name={initiative.icon as any}
+                    size={24}
+                    variant="outline"
+                    className="text-primary"
+                  />
                 </div>
-                <span className={`px-3 py-1 rounded-sm text-xs font-cta font-medium ${getStatusColor(initiative.status)}`}>
+                <span
+                  className={`px-3 py-1 rounded-sm text-xs font-cta font-medium ${getStatusColor(initiative.status)}`}
+                >
                   {initiative.status}
                 </span>
               </div>

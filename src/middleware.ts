@@ -3,12 +3,12 @@ import type { NextRequest } from 'next/server';
 
 export function middleware(request: NextRequest) {
   const hostname = request.headers.get('host') || '';
-  
+
   // Skip redirects on Rocket preview domain to prevent infinite loops
   if (hostname.includes('builtwithrocket.new')) {
     return NextResponse.next();
   }
-  
+
   // Redirect northflow.tech to northflow.no
   if (hostname.includes('northflow.tech')) {
     const url = request.nextUrl.clone();
@@ -16,7 +16,7 @@ export function middleware(request: NextRequest) {
     url.protocol = 'https:';
     return NextResponse.redirect(url, 301);
   }
-  
+
   // Redirect www to non-www
   if (hostname.startsWith('www.')) {
     const url = request.nextUrl.clone();
@@ -28,7 +28,5 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: [
-    '/((?!api|_next/static|_next/image|favicon.ico|assets).*)',
-  ],
+  matcher: ['/((?!api|_next/static|_next/image|favicon.ico|assets).*)'],
 };

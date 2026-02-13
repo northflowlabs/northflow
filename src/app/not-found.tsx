@@ -3,7 +3,8 @@ import { generateMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = generateMetadata({
   title: '404 Page Not Found | Northflow',
-  description: 'The page you are looking for could not be found. Return to Northflow Technologies homepage or explore our institutional digital infrastructure solutions.',
+  description:
+    'The page you are looking for could not be found. Return to Northflow Technologies homepage or explore our institutional digital infrastructure solutions.',
   path: '/404',
 });
 
@@ -15,9 +16,7 @@ export default function NotFound() {
           <h1 className="text-6xl font-headline font-bold text-foreground" aria-label="Error 404">
             404
           </h1>
-          <h2 className="text-2xl font-headline font-semibold text-foreground">
-            Page not found
-          </h2>
+          <h2 className="text-2xl font-headline font-semibold text-foreground">Page not found</h2>
           <p className="text-base text-muted-foreground font-body leading-relaxed">
             The page you are looking for does not exist or has been moved.
           </p>

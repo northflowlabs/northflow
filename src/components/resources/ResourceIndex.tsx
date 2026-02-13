@@ -13,7 +13,10 @@ interface Resource {
   publicationDate: string;
   description: string;
   href: string;
-  availability: 'Public institutional materials' | 'Structured engagement' | 'Controlled disclosure';
+  availability:
+    | 'Public institutional materials'
+    | 'Structured engagement'
+    | 'Controlled disclosure';
 }
 
 interface SavedSearch {
@@ -44,7 +47,8 @@ const resources: Resource[] = [
     type: 'Technical Papers',
     topic: ['Digital sovereignty', 'Infrastructure design', 'Governance frameworks'],
     publicationDate: 'December 2025',
-    description: 'Research publication examining operational sovereignty principles and their application to institutional digital infrastructure design and governance.',
+    description:
+      'Research publication examining operational sovereignty principles and their application to institutional digital infrastructure design and governance.',
     href: '/research',
     availability: 'Public institutional materials',
   },
@@ -54,7 +58,8 @@ const resources: Resource[] = [
     type: 'Compliance',
     topic: ['Operational resilience', 'Financial sector', 'Third-party risk', 'DORA'],
     publicationDate: 'December 2025',
-    description: 'Operational resilience requirements, testing frameworks, and third-party risk management.',
+    description:
+      'Operational resilience requirements, testing frameworks, and third-party risk management.',
     href: '/compliance',
     availability: 'Structured engagement',
   },
@@ -64,7 +69,8 @@ const resources: Resource[] = [
     type: 'Compliance',
     topic: ['Cybersecurity', 'Incident reporting', 'Risk management', 'NIS2'],
     publicationDate: 'November 2025',
-    description: 'Security requirements, incident reporting, and risk management measures aligned with European cybersecurity directive.',
+    description:
+      'Security requirements, incident reporting, and risk management measures aligned with European cybersecurity directive.',
     href: '/compliance',
     availability: 'Structured engagement',
   },
@@ -84,7 +90,8 @@ const resources: Resource[] = [
     type: 'Technical Papers',
     topic: ['Critical infrastructure', 'Risk management', 'Regulatory compliance'],
     publicationDate: 'October 2025',
-    description: 'Analysis of operational sovereignty requirements for critical infrastructure operators.',
+    description:
+      'Analysis of operational sovereignty requirements for critical infrastructure operators.',
     href: '/technical-papers',
     availability: 'Structured engagement',
   },
@@ -114,7 +121,8 @@ const resources: Resource[] = [
     type: 'Compliance',
     topic: ['Information security', 'Risk management', 'Security controls', 'ISO 27001'],
     publicationDate: 'September 2025',
-    description: 'Security controls, risk management methodologies, and information security governance.',
+    description:
+      'Security controls, risk management methodologies, and information security governance.',
     href: '/compliance',
     availability: 'Structured engagement',
   },
@@ -124,7 +132,8 @@ const resources: Resource[] = [
     type: 'Security',
     topic: ['Security architecture', 'Access control', 'Identity management'],
     publicationDate: 'August 2025',
-    description: 'Zero-trust security model implementation for critical infrastructure environments.',
+    description:
+      'Zero-trust security model implementation for critical infrastructure environments.',
     href: '/security',
     availability: 'Controlled disclosure',
   },
@@ -134,7 +143,8 @@ const resources: Resource[] = [
     type: 'Compliance',
     topic: ['Data protection', 'Privacy', 'Regulatory compliance', 'GDPR'],
     publicationDate: 'August 2025',
-    description: 'Data protection principles, processing requirements, and individual rights embedded in system design.',
+    description:
+      'Data protection principles, processing requirements, and individual rights embedded in system design.',
     href: '/compliance',
     availability: 'Public institutional materials',
   },
@@ -154,7 +164,8 @@ const resources: Resource[] = [
     type: 'Security',
     topic: ['Incident response', 'Detection', 'Notification protocols'],
     publicationDate: 'July 2025',
-    description: 'Incident response procedures designed to align with European regulatory requirements.',
+    description:
+      'Incident response procedures designed to align with European regulatory requirements.',
     href: '/security',
     availability: 'Controlled disclosure',
   },
@@ -164,7 +175,8 @@ const resources: Resource[] = [
     type: 'Technical Papers',
     topic: ['Data governance', 'Regulatory alignment', 'Interoperability'],
     publicationDate: 'June 2025',
-    description: 'Framework analysis for cross-border data governance in regulated infrastructure environments.',
+    description:
+      'Framework analysis for cross-border data governance in regulated infrastructure environments.',
     href: '/technical-papers',
     availability: 'Controlled disclosure',
   },
@@ -174,7 +186,8 @@ const resources: Resource[] = [
     type: 'Security',
     topic: ['Cryptography', 'Data protection', 'Key management'],
     publicationDate: 'June 2025',
-    description: 'Cryptographic controls aligned with European standards for data at rest and in transit.',
+    description:
+      'Cryptographic controls aligned with European standards for data at rest and in transit.',
     href: '/security',
     availability: 'Controlled disclosure',
   },
@@ -184,7 +197,8 @@ const resources: Resource[] = [
     type: 'Security',
     topic: ['Security architecture', 'Defence in depth', 'Access control'],
     publicationDate: 'May 2025',
-    description: 'Foundational security design principles including isolation, cryptographic protection, and access control.',
+    description:
+      'Foundational security design principles including isolation, cryptographic protection, and access control.',
     href: '/security',
     availability: 'Public institutional materials',
   },
@@ -204,7 +218,8 @@ const resources: Resource[] = [
     type: 'Documentation',
     topic: ['System architecture', 'Operational procedures', 'Governance frameworks'],
     publicationDate: 'March 2025',
-    description: 'Comprehensive documentation practices covering system architecture, operational procedures, governance frameworks, and compliance methodologies.',
+    description:
+      'Comprehensive documentation practices covering system architecture, operational procedures, governance frameworks, and compliance methodologies.',
     href: '/documentation',
     availability: 'Public institutional materials',
   },
@@ -214,7 +229,8 @@ const resources: Resource[] = [
     type: 'Technical Papers',
     topic: ['Digital sovereignty', 'Infrastructure design', 'Regulatory alignment', 'EFOS'],
     publicationDate: 'March 2025',
-    description: 'Proposed European public–private digital infrastructure for harmonised, cross-border energy system flexibility management, responding to EU directives (DES, Green Deal, EPBD, Data Act, AI Act, Net Zero Industry Act). Long-term digital backbone for EU system objectives, not a commercial software product.',
+    description:
+      'Proposed European public–private digital infrastructure for harmonised, cross-border energy system flexibility management, responding to EU directives (DES, Green Deal, EPBD, Data Act, AI Act, Net Zero Industry Act). Long-term digital backbone for EU system objectives, not a commercial software product.',
     href: '/efos-framework-details',
     availability: 'Structured engagement',
   },
@@ -234,7 +250,8 @@ const resources: Resource[] = [
     type: 'Technical Papers',
     topic: ['Infrastructure design', 'Resilience', 'Business continuity'],
     publicationDate: 'In preparation',
-    description: 'Working paper exploring frameworks for crisis-resilient digital infrastructure design, focusing on continuity and operational resilience during disruption scenarios.',
+    description:
+      'Working paper exploring frameworks for crisis-resilient digital infrastructure design, focusing on continuity and operational resilience during disruption scenarios.',
     href: '/research',
     availability: 'Structured engagement',
   },
@@ -244,7 +261,8 @@ const resources: Resource[] = [
     type: 'Technical Papers',
     topic: ['Interoperability', 'Digital sovereignty', 'Regulatory alignment'],
     publicationDate: 'In preparation',
-    description: 'Framework brief examining interoperability as foundational infrastructure requirement for sovereign digital systems and cross-border coordination.',
+    description:
+      'Framework brief examining interoperability as foundational infrastructure requirement for sovereign digital systems and cross-border coordination.',
     href: '/research',
     availability: 'Structured engagement',
   },
@@ -254,7 +272,8 @@ const resources: Resource[] = [
     type: 'Technical Papers',
     topic: ['Artificial intelligence', 'Governance frameworks', 'Security architecture'],
     publicationDate: 'In preparation',
-    description: 'Brief addressing governance frameworks for AI deployment in mission-critical institutional systems, covering accountability, transparency, and operational control.',
+    description:
+      'Brief addressing governance frameworks for AI deployment in mission-critical institutional systems, covering accountability, transparency, and operational control.',
     href: '/research',
     availability: 'Structured engagement',
   },
@@ -301,32 +320,41 @@ const ResourceIndex = () => {
   }, [showTopicsDropdown]);
 
   const resourceTypes = ['All', 'Documentation', 'Technical Papers', 'Compliance', 'Security'];
-  const availabilityOptions = ['All', 'Public institutional materials', 'Structured engagement', 'Controlled disclosure'];
-  
+  const availabilityOptions = [
+    'All',
+    'Public institutional materials',
+    'Structured engagement',
+    'Controlled disclosure',
+  ];
+
   const allTopics = useMemo(() => {
     const topics = new Set<string>();
-    resources.forEach(resource => {
-      resource.topic.forEach(t => topics.add(t));
+    resources.forEach((resource) => {
+      resource.topic.forEach((t) => topics.add(t));
     });
     return Array.from(topics).sort();
   }, []);
 
   const publicationDates = useMemo(() => {
-    const dates = new Set(resources.map(r => r.publicationDate));
+    const dates = new Set(resources.map((r) => r.publicationDate));
     return ['All', ...Array.from(dates).sort().reverse()];
   }, []);
 
   const filteredResources = useMemo(() => {
-    return resources.filter(resource => {
-      const matchesSearch = searchQuery === '' || 
+    return resources.filter((resource) => {
+      const matchesSearch =
+        searchQuery === '' ||
         resource.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
         resource.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        resource.topic.some(t => t.toLowerCase().includes(searchQuery.toLowerCase()));
-      
+        resource.topic.some((t) => t.toLowerCase().includes(searchQuery.toLowerCase()));
+
       const matchesType = selectedType === 'All' || resource.type === selectedType;
-      const matchesTopics = selectedTopics.length === 0 || selectedTopics.some(topic => resource.topic.includes(topic));
+      const matchesTopics =
+        selectedTopics.length === 0 ||
+        selectedTopics.some((topic) => resource.topic.includes(topic));
       const matchesDate = selectedDate === 'All' || resource.publicationDate === selectedDate;
-      const matchesAvailability = selectedAvailability === 'All' || resource.availability === selectedAvailability;
+      const matchesAvailability =
+        selectedAvailability === 'All' || resource.availability === selectedAvailability;
 
       return matchesSearch && matchesType && matchesTopics && matchesDate && matchesAvailability;
     });
@@ -348,10 +376,8 @@ const ResourceIndex = () => {
   ].reduce((a, b) => a + b, 0);
 
   const toggleTopic = (topic: string) => {
-    setSelectedTopics(prev => 
-      prev.includes(topic) 
-        ? prev.filter(t => t !== topic)
-        : [...prev, topic]
+    setSelectedTopics((prev) =>
+      prev.includes(topic) ? prev.filter((t) => t !== topic) : [...prev, topic]
     );
   };
 
@@ -386,7 +412,7 @@ const ResourceIndex = () => {
   };
 
   const deleteSavedSearch = (id: string) => {
-    const updated = savedSearches.filter(s => s.id !== id);
+    const updated = savedSearches.filter((s) => s.id !== id);
     setSavedSearches(updated);
     localStorage.setItem('northflow_saved_searches', JSON.stringify(updated));
   };
@@ -427,7 +453,7 @@ const ResourceIndex = () => {
             <div className="bg-muted/50 border border-border rounded-lg p-4">
               <h3 className="text-sm font-semibold text-foreground mb-3">Saved searches</h3>
               <div className="space-y-2">
-                {savedSearches.map(search => (
+                {savedSearches.map((search) => (
                   <div
                     key={search.id}
                     className="flex items-center justify-between gap-4 p-3 bg-background border border-border rounded-sm"
@@ -436,10 +462,18 @@ const ResourceIndex = () => {
                       <p className="text-sm font-medium text-foreground mb-1">{search.name}</p>
                       <div className="flex flex-wrap gap-2 text-xs text-muted-foreground">
                         {search.searchQuery && <span>Query: "{search.searchQuery}"</span>}
-                        {search.selectedType !== 'All' && <span>• Type: {search.selectedType}</span>}
-                        {search.selectedTopics.length > 0 && <span>• Topics: {search.selectedTopics.length}</span>}
-                        {search.selectedDate !== 'All' && <span>• Date: {search.selectedDate}</span>}
-                        {search.selectedAvailability !== 'All' && <span>• Availability: {search.selectedAvailability}</span>}
+                        {search.selectedType !== 'All' && (
+                          <span>• Type: {search.selectedType}</span>
+                        )}
+                        {search.selectedTopics.length > 0 && (
+                          <span>• Topics: {search.selectedTopics.length}</span>
+                        )}
+                        {search.selectedDate !== 'All' && (
+                          <span>• Date: {search.selectedDate}</span>
+                        )}
+                        {search.selectedAvailability !== 'All' && (
+                          <span>• Availability: {search.selectedAvailability}</span>
+                        )}
                       </div>
                     </div>
                     <div className="flex items-center gap-2">
@@ -496,9 +530,9 @@ const ResourceIndex = () => {
           )}
 
           <div className="relative">
-            <Icon 
-              name="MagnifyingGlassIcon" 
-              size={20} 
+            <Icon
+              name="MagnifyingGlassIcon"
+              size={20}
               variant="outline"
               className="absolute left-4 top-1/2 -translate-y-1/2 text-muted-foreground"
             />
@@ -521,38 +555,42 @@ const ResourceIndex = () => {
                 onChange={(e) => setSelectedType(e.target.value)}
                 className="w-full px-4 py-2.5 bg-background border border-border rounded-sm text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all duration-200"
               >
-                {resourceTypes.map(type => (
-                  <option key={type} value={type}>{type}</option>
+                {resourceTypes.map((type) => (
+                  <option key={type} value={type}>
+                    {type}
+                  </option>
                 ))}
               </select>
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-foreground mb-2">
-                Topics
-              </label>
+              <label className="block text-sm font-medium text-foreground mb-2">Topics</label>
               <div className="relative" ref={topicsDropdownRef}>
                 <button
                   onClick={() => setShowTopicsDropdown(!showTopicsDropdown)}
                   className="w-full px-4 py-2.5 bg-background border border-border rounded-sm text-sm text-left focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all duration-200 flex items-center justify-between"
                 >
-                  <span className={selectedTopics.length === 0 ? 'text-muted-foreground' : 'text-foreground'}>
-                    {selectedTopics.length === 0 
-                      ? 'Select topics...' 
+                  <span
+                    className={
+                      selectedTopics.length === 0 ? 'text-muted-foreground' : 'text-foreground'
+                    }
+                  >
+                    {selectedTopics.length === 0
+                      ? 'Select topics...'
                       : `${selectedTopics.length} selected`}
                   </span>
-                  <Icon 
-                    name={showTopicsDropdown ? "ChevronUpIcon" : "ChevronDownIcon"} 
-                    size={16} 
+                  <Icon
+                    name={showTopicsDropdown ? 'ChevronUpIcon' : 'ChevronDownIcon'}
+                    size={16}
                     variant="outline"
                     className="text-muted-foreground"
                   />
                 </button>
-                
+
                 {showTopicsDropdown && (
                   <div className="absolute z-50 w-full mt-1 bg-background border border-border rounded-sm shadow-lg max-h-80 overflow-y-auto">
                     <div className="p-2 space-y-1">
-                      {allTopics.map(topic => (
+                      {allTopics.map((topic) => (
                         <label
                           key={topic}
                           className="flex items-center gap-3 px-3 py-2 hover:bg-muted rounded-sm cursor-pointer transition-colors duration-150"
@@ -591,23 +629,25 @@ const ResourceIndex = () => {
                 onChange={(e) => setSelectedDate(e.target.value)}
                 className="w-full px-4 py-2.5 bg-background border border-border rounded-sm text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all duration-200"
               >
-                {publicationDates.map(date => (
-                  <option key={date} value={date}>{date}</option>
+                {publicationDates.map((date) => (
+                  <option key={date} value={date}>
+                    {date}
+                  </option>
                 ))}
               </select>
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-foreground mb-2">
-                Availability
-              </label>
+              <label className="block text-sm font-medium text-foreground mb-2">Availability</label>
               <select
                 value={selectedAvailability}
                 onChange={(e) => setSelectedAvailability(e.target.value)}
                 className="w-full px-4 py-2.5 bg-background border border-border rounded-sm text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all duration-200"
               >
-                {availabilityOptions.map(option => (
-                  <option key={option} value={option}>{option}</option>
+                {availabilityOptions.map((option) => (
+                  <option key={option} value={option}>
+                    {option}
+                  </option>
                 ))}
               </select>
             </div>
@@ -619,7 +659,7 @@ const ResourceIndex = () => {
                 Selected topics
               </label>
               <div className="flex flex-wrap gap-2">
-                {selectedTopics.map(topic => (
+                {selectedTopics.map((topic) => (
                   <span
                     key={topic}
                     className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-primary/10 text-primary text-sm font-medium rounded-sm"
@@ -641,7 +681,8 @@ const ResourceIndex = () => {
             <div className="flex items-center justify-between pt-2">
               <p className="text-sm text-muted-foreground">
                 {activeFilterCount} filter{activeFilterCount > 1 ? 's' : ''} applied
-                {selectedTopics.length > 0 && ` (${selectedTopics.length} topic${selectedTopics.length > 1 ? 's' : ''})`}
+                {selectedTopics.length > 0 &&
+                  ` (${selectedTopics.length} topic${selectedTopics.length > 1 ? 's' : ''})`}
               </p>
               <button
                 onClick={resetFilters}
@@ -663,9 +704,9 @@ const ResourceIndex = () => {
 
         {filteredResources.length === 0 ? (
           <div className="bg-card border border-border rounded-lg p-12 text-center">
-            <Icon 
-              name="DocumentMagnifyingGlassIcon" 
-              size={48} 
+            <Icon
+              name="DocumentMagnifyingGlassIcon"
+              size={48}
               variant="outline"
               className="mx-auto mb-4 text-muted-foreground"
             />
@@ -684,7 +725,7 @@ const ResourceIndex = () => {
           </div>
         ) : (
           <div className="space-y-4">
-            {filteredResources.map(resource => (
+            {filteredResources.map((resource) => (
               <div
                 key={resource.id}
                 className="bg-card border border-border rounded-lg p-6 hover:border-primary/30 transition-all duration-200"
@@ -706,7 +747,7 @@ const ResourceIndex = () => {
                       {resource.description}
                     </p>
                     <div className="flex flex-wrap gap-1.5 mb-3">
-                      {resource.topic.map(topic => (
+                      {resource.topic.map((topic) => (
                         <span
                           key={topic}
                           className="px-2 py-0.5 bg-muted/60 text-foreground text-[11px] font-medium rounded border border-border/50"
@@ -737,7 +778,9 @@ const ResourceIndex = () => {
           Access to resources
         </h3>
         <p className="text-sm text-muted-foreground leading-relaxed mb-6">
-          Resource availability reflects sensitivity, regulatory context, and system maturity. Public materials are accessible directly. Restricted materials are shared through structured institutional engagement and appropriate confidentiality arrangements.
+          Resource availability reflects sensitivity, regulatory context, and system maturity.
+          Public materials are accessible directly. Restricted materials are shared through
+          structured institutional engagement and appropriate confidentiality arrangements.
         </p>
         <Link
           href="/engage"

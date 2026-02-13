@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
 
-
 export const metadata: Metadata = {
   title: 'Institutional Security & Operational Assurance | Northflow',
-  description: 'Security practices supporting institutional-grade digital infrastructure, auditability, and operational assurance across regulated environments.',
+  description:
+    'Security practices supporting institutional-grade digital infrastructure, auditability, and operational assurance across regulated environments.',
 };
 
 export default function SecurityPage() {
@@ -12,11 +12,10 @@ export default function SecurityPage() {
       <div className="min-h-screen bg-background">
         <div className="max-w-[1200px] mx-auto px-8 py-16">
           <div className="max-w-[900px]">
-            <h1 className="text-4xl font-headline font-bold text-foreground mb-4">
-              Security
-            </h1>
+            <h1 className="text-4xl font-headline font-bold text-foreground mb-4">Security</h1>
             <p className="text-lg text-muted-foreground font-body mb-12 leading-relaxed">
-              Security practices and standards for Northflow Technologies institutional infrastructure.
+              Security practices and standards for Northflow Technologies institutional
+              infrastructure.
             </p>
           </div>
 
@@ -27,11 +26,11 @@ export default function SecurityPage() {
               </h2>
               <div className="space-y-4 text-base text-foreground font-body leading-relaxed">
                 <p>
-                  Security is approached as a foundational design principle. Systems and operational frameworks are developed with security requirements embedded throughout the architecture, governance structures, and operational procedures.
+                  Security is approached as a foundational design principle. Systems and operational
+                  frameworks are developed with security requirements embedded throughout the
+                  architecture, governance structures, and operational procedures.
                 </p>
-                <p>
-                  This philosophy prioritises:
-                </p>
+                <p>This philosophy prioritises:</p>
                 <ul className="space-y-2 ml-6">
                   <li className="flex gap-3">
                     <span className="text-primary mt-1">•</span>
@@ -72,7 +71,9 @@ export default function SecurityPage() {
                         Isolation and segmentation
                       </h3>
                       <p className="text-sm text-muted-foreground leading-relaxed">
-                        System architecture employs isolation and segmentation principles to contain potential security incidents and limit lateral movement. Critical functions are separated from general operations through architectural boundaries.
+                        System architecture employs isolation and segmentation principles to contain
+                        potential security incidents and limit lateral movement. Critical functions
+                        are separated from general operations through architectural boundaries.
                       </p>
                     </div>
                   </div>
@@ -85,7 +86,9 @@ export default function SecurityPage() {
                         Cryptographic protection
                       </h3>
                       <p className="text-sm text-muted-foreground leading-relaxed">
-                        Data protection employs cryptographic controls aligned with European standards. Encryption is applied to data at rest and in transit, with key management procedures designed for institutional requirements.
+                        Data protection employs cryptographic controls aligned with European
+                        standards. Encryption is applied to data at rest and in transit, with key
+                        management procedures designed for institutional requirements.
                       </p>
                     </div>
                   </div>
@@ -98,7 +101,9 @@ export default function SecurityPage() {
                         Access control and authentication
                       </h3>
                       <p className="text-sm text-muted-foreground leading-relaxed">
-                        Access control mechanisms enforce least privilege principles with multi-factor authentication for privileged operations. Identity and access management procedures align with institutional governance requirements.
+                        Access control mechanisms enforce least privilege principles with
+                        multi-factor authentication for privileged operations. Identity and access
+                        management procedures align with institutional governance requirements.
                       </p>
                     </div>
                   </div>
@@ -111,7 +116,9 @@ export default function SecurityPage() {
                         Audit and monitoring
                       </h3>
                       <p className="text-sm text-muted-foreground leading-relaxed">
-                        Comprehensive audit logging and monitoring capabilities provide visibility into system operations, access patterns, and security events. Audit trails are maintained in accordance with regulatory retention requirements.
+                        Comprehensive audit logging and monitoring capabilities provide visibility
+                        into system operations, access patterns, and security events. Audit trails
+                        are maintained in accordance with regulatory retention requirements.
                       </p>
                     </div>
                   </div>
@@ -124,44 +131,179 @@ export default function SecurityPage() {
                         Incident response
                       </h3>
                       <p className="text-sm text-muted-foreground leading-relaxed">
-                        Incident response procedures are designed to align with European regulatory requirements, including detection, containment, investigation, and notification protocols appropriate to institutional context.
+                        Incident response procedures are designed to align with European regulatory
+                        requirements, including detection, containment, investigation, and
+                        notification protocols appropriate to institutional context.
                       </p>
                     </div>
                   </div>
                 </div>
 
                 <div className="mt-8 bg-card border border-border rounded-lg p-6">
-                  <svg className="w-full h-64" viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
+                  <svg
+                    className="w-full h-64"
+                    viewBox="0 0 800 300"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
                     <defs>
-                      <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                      <marker
+                        id="arrowhead"
+                        markerWidth="10"
+                        markerHeight="10"
+                        refX="9"
+                        refY="3"
+                        orient="auto"
+                      >
                         <polygon points="0 0, 10 3, 0 6" fill="#64748b" />
                       </marker>
                     </defs>
-                    
+
                     {/* Layer 1: Perimeter */}
-                    <rect x="50" y="20" width="700" height="60" fill="#ffffff" stroke="#64748b" strokeWidth="1.5" rx="4" />
-                    <text x="400" y="55" textAnchor="middle" fill="#334155" fontSize="14" fontWeight="600">Perimeter Security & Access Control</text>
-                    
+                    <rect
+                      x="50"
+                      y="20"
+                      width="700"
+                      height="60"
+                      fill="#ffffff"
+                      stroke="#64748b"
+                      strokeWidth="1.5"
+                      rx="4"
+                    />
+                    <text
+                      x="400"
+                      y="55"
+                      textAnchor="middle"
+                      fill="#334155"
+                      fontSize="14"
+                      fontWeight="600"
+                    >
+                      Perimeter Security & Access Control
+                    </text>
+
                     {/* Layer 2: Application */}
-                    <rect x="50" y="100" width="700" height="60" fill="#ffffff" stroke="#64748b" strokeWidth="1.5" rx="4" />
-                    <text x="400" y="135" textAnchor="middle" fill="#334155" fontSize="14" fontWeight="600">Application Security & Authentication</text>
-                    
+                    <rect
+                      x="50"
+                      y="100"
+                      width="700"
+                      height="60"
+                      fill="#ffffff"
+                      stroke="#64748b"
+                      strokeWidth="1.5"
+                      rx="4"
+                    />
+                    <text
+                      x="400"
+                      y="135"
+                      textAnchor="middle"
+                      fill="#334155"
+                      fontSize="14"
+                      fontWeight="600"
+                    >
+                      Application Security & Authentication
+                    </text>
+
                     {/* Layer 3: Data */}
-                    <rect x="50" y="180" width="700" height="60" fill="#ffffff" stroke="#64748b" strokeWidth="1.5" rx="4" />
-                    <text x="400" y="215" textAnchor="middle" fill="#334155" fontSize="14" fontWeight="600">Data Protection & Cryptographic Controls</text>
-                    
+                    <rect
+                      x="50"
+                      y="180"
+                      width="700"
+                      height="60"
+                      fill="#ffffff"
+                      stroke="#64748b"
+                      strokeWidth="1.5"
+                      rx="4"
+                    />
+                    <text
+                      x="400"
+                      y="215"
+                      textAnchor="middle"
+                      fill="#334155"
+                      fontSize="14"
+                      fontWeight="600"
+                    >
+                      Data Protection & Cryptographic Controls
+                    </text>
+
                     {/* Layer 4: Monitoring */}
-                    <rect x="50" y="260" width="340" height="30" fill="#ffffff" stroke="#64748b" strokeWidth="1.5" rx="4" />
-                    <text x="220" y="280" textAnchor="middle" fill="#334155" fontSize="12" fontWeight="600">Audit & Monitoring</text>
-                    
-                    <rect x="410" y="260" width="340" height="30" fill="#ffffff" stroke="#64748b" strokeWidth="1.5" rx="4" />
-                    <text x="580" y="280" textAnchor="middle" fill="#334155" fontSize="12" fontWeight="600">Incident Response</text>
-                    
+                    <rect
+                      x="50"
+                      y="260"
+                      width="340"
+                      height="30"
+                      fill="#ffffff"
+                      stroke="#64748b"
+                      strokeWidth="1.5"
+                      rx="4"
+                    />
+                    <text
+                      x="220"
+                      y="280"
+                      textAnchor="middle"
+                      fill="#334155"
+                      fontSize="12"
+                      fontWeight="600"
+                    >
+                      Audit & Monitoring
+                    </text>
+
+                    <rect
+                      x="410"
+                      y="260"
+                      width="340"
+                      height="30"
+                      fill="#ffffff"
+                      stroke="#64748b"
+                      strokeWidth="1.5"
+                      rx="4"
+                    />
+                    <text
+                      x="580"
+                      y="280"
+                      textAnchor="middle"
+                      fill="#334155"
+                      fontSize="12"
+                      fontWeight="600"
+                    >
+                      Incident Response
+                    </text>
+
                     {/* Arrows */}
-                    <line x1="400" y1="80" x2="400" y2="95" stroke="#64748b" strokeWidth="2" markerEnd="url(#arrowhead)" />
-                    <line x1="400" y1="160" x2="400" y2="175" stroke="#64748b" strokeWidth="2" markerEnd="url(#arrowhead)" />
-                    <line x1="400" y1="240" x2="220" y2="255" stroke="#64748b" strokeWidth="2" markerEnd="url(#arrowhead)" />
-                    <line x1="400" y1="240" x2="580" y2="255" stroke="#64748b" strokeWidth="2" markerEnd="url(#arrowhead)" />
+                    <line
+                      x1="400"
+                      y1="80"
+                      x2="400"
+                      y2="95"
+                      stroke="#64748b"
+                      strokeWidth="2"
+                      markerEnd="url(#arrowhead)"
+                    />
+                    <line
+                      x1="400"
+                      y1="160"
+                      x2="400"
+                      y2="175"
+                      stroke="#64748b"
+                      strokeWidth="2"
+                      markerEnd="url(#arrowhead)"
+                    />
+                    <line
+                      x1="400"
+                      y1="240"
+                      x2="220"
+                      y2="255"
+                      stroke="#64748b"
+                      strokeWidth="2"
+                      markerEnd="url(#arrowhead)"
+                    />
+                    <line
+                      x1="400"
+                      y1="240"
+                      x2="580"
+                      y2="255"
+                      stroke="#64748b"
+                      strokeWidth="2"
+                      markerEnd="url(#arrowhead)"
+                    />
                   </svg>
                   <p className="text-xs text-muted-foreground text-center mt-4">
                     Defence-in-depth security architecture with layered controls
@@ -176,10 +318,13 @@ export default function SecurityPage() {
               </h2>
               <div className="space-y-4 text-base text-foreground font-body leading-relaxed">
                 <p>
-                  Security maturity is developed through systematic implementation of controls, continuous improvement processes, and alignment with recognised security frameworks.
+                  Security maturity is developed through systematic implementation of controls,
+                  continuous improvement processes, and alignment with recognised security
+                  frameworks.
                 </p>
                 <p>
-                  Security practices benefit from research-grade validation workflows and provenance concepts developed in Project HGE.
+                  Security practices benefit from research-grade validation workflows and provenance
+                  concepts developed in Project HGE.
                 </p>
                 <div className="grid md:grid-cols-3 gap-6 mt-6">
                   <div className="border border-border rounded-lg p-6 bg-card">
@@ -187,7 +332,8 @@ export default function SecurityPage() {
                       Risk management
                     </h3>
                     <p className="text-sm text-muted-foreground">
-                      Systematic risk assessment, threat modelling, and mitigation planning aligned with institutional risk tolerance.
+                      Systematic risk assessment, threat modelling, and mitigation planning aligned
+                      with institutional risk tolerance.
                     </p>
                   </div>
                   <div className="border border-border rounded-lg p-6 bg-card">
@@ -195,7 +341,8 @@ export default function SecurityPage() {
                       Vulnerability management
                     </h3>
                     <p className="text-sm text-muted-foreground">
-                      Regular security assessments, vulnerability scanning, and remediation procedures maintaining security posture.
+                      Regular security assessments, vulnerability scanning, and remediation
+                      procedures maintaining security posture.
                     </p>
                   </div>
                   <div className="border border-border rounded-lg p-6 bg-card">
@@ -203,7 +350,8 @@ export default function SecurityPage() {
                       Security governance
                     </h3>
                     <p className="text-sm text-muted-foreground">
-                      Governance structures, policy frameworks, and oversight mechanisms ensuring security accountability.
+                      Governance structures, policy frameworks, and oversight mechanisms ensuring
+                      security accountability.
                     </p>
                   </div>
                 </div>
@@ -217,19 +365,25 @@ export default function SecurityPage() {
               <div className="bg-card border border-border rounded-lg p-8">
                 <div className="space-y-4 text-base text-foreground font-body leading-relaxed">
                   <p>
-                    Detailed security architecture, control implementation specifics, and vulnerability management procedures are subject to controlled disclosure protocols.
+                    Detailed security architecture, control implementation specifics, and
+                    vulnerability management procedures are subject to controlled disclosure
+                    protocols.
                   </p>
-                  <p>
-                    This approach balances:
-                  </p>
+                  <p>This approach balances:</p>
                   <ul className="space-y-2 ml-6">
                     <li className="flex gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span>Transparency appropriate for institutional evaluation and procurement processes</span>
+                      <span>
+                        Transparency appropriate for institutional evaluation and procurement
+                        processes
+                      </span>
                     </li>
                     <li className="flex gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span>Protection of operational security details that could facilitate threat activity</span>
+                      <span>
+                        Protection of operational security details that could facilitate threat
+                        activity
+                      </span>
                     </li>
                     <li className="flex gap-3">
                       <span className="text-primary mt-1">•</span>
@@ -237,7 +391,9 @@ export default function SecurityPage() {
                     </li>
                   </ul>
                   <p>
-                    Enhanced security documentation is available to qualified institutional stakeholders through structured engagement pathways, subject to appropriate confidentiality protocols.
+                    Enhanced security documentation is available to qualified institutional
+                    stakeholders through structured engagement pathways, subject to appropriate
+                    confidentiality protocols.
                   </p>
                 </div>
               </div>
@@ -249,7 +405,8 @@ export default function SecurityPage() {
                   Institutional security consultation
                 </h2>
                 <p className="text-base text-muted-foreground font-body mb-6 max-w-2xl mx-auto">
-                  Looking for research collaboration or institutional deployment? Request a briefing.
+                  Looking for research collaboration or institutional deployment? Request a
+                  briefing.
                 </p>
                 <p className="text-xs text-muted-foreground font-body mb-6">
                   Research dialogue · Institutional collaboration · Funding discussions

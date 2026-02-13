@@ -27,7 +27,7 @@ interface AccessRequestFormProps {
 
 const AccessRequestForm = ({ className = '' }: AccessRequestFormProps) => {
   const searchParams = useSearchParams();
-  
+
   const [formData, setFormData] = useState<FormData>({
     organizationName: '',
     organizationType: '',
@@ -53,8 +53,8 @@ const AccessRequestForm = ({ className = '' }: AccessRequestFormProps) => {
     // Pre-populate form based on URL parameters
     const source = searchParams.get('source') || '';
     const title = searchParams.get('title') || '';
-    
-    setFormData(prev => ({
+
+    setFormData((prev) => ({
       ...prev,
       requestSource: source,
       documentTitle: title,
@@ -79,25 +79,27 @@ const AccessRequestForm = ({ className = '' }: AccessRequestFormProps) => {
     'Strategic review',
   ];
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
+    setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
   const handleCheckboxChange = (name: keyof FormData) => {
-    setFormData(prev => ({ ...prev, [name]: !prev[name] }));
+    setFormData((prev) => ({ ...prev, [name]: !prev[name] }));
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     // Reset error state
     setSubmitStatus('idle');
     setErrorMessage('');
 
     // Comprehensive field validation
     const missingFields: string[] = [];
-    
+
     if (!formData.organizationName.trim()) missingFields.push('Organisation name');
     if (!formData.organizationType) missingFields.push('Organisation type');
     if (!formData.country.trim()) missingFields.push('Country/jurisdiction');
@@ -116,18 +118,22 @@ const AccessRequestForm = ({ className = '' }: AccessRequestFormProps) => {
 
     // Check for missing required fields
     if (missingFields.length > 0) {
-      setErrorMessage(`Please complete the following required fields: ${missingFields.join(', ')}.`);
+      setErrorMessage(
+        `Please complete the following required fields: ${missingFields.join(', ')}.`
+      );
       setSubmitStatus('error');
       return;
     }
 
     // Validate GDPR consent only after all fields are filled
     if (!formData.dataProcessingConsent || !formData.privacyPolicyAccepted) {
-      setErrorMessage('Please accept the required data processing consent and privacy policy to submit your access request.');
+      setErrorMessage(
+        'Please accept the required data processing consent and privacy policy to submit your access request.'
+      );
       setSubmitStatus('error');
       return;
     }
-    
+
     setIsSubmitting(true);
 
     try {
@@ -182,26 +188,46 @@ const AccessRequestForm = ({ className = '' }: AccessRequestFormProps) => {
     <section className={`bg-card py-20 ${className}`} aria-labelledby="access-form-heading">
       <div className="max-w-[900px] mx-auto px-8">
         <div className="mb-12 text-center">
-          <h2 id="access-form-heading" className="text-3xl md:text-4xl font-headline font-semibold text-foreground mb-4">
+          <h2
+            id="access-form-heading"
+            className="text-3xl md:text-4xl font-headline font-semibold text-foreground mb-4"
+          >
             Initiate access request
           </h2>
           <p className="text-base text-muted-foreground font-body max-w-2xl mx-auto">
-            Complete the form below to request access to institutional materials. All requests are reviewed based on institutional context and intended use.
+            Complete the form below to request access to institutional materials. All requests are
+            reviewed based on institutional context and intended use.
           </p>
         </div>
 
-        <form onSubmit={handleSubmit} className="bg-background p-8 md:p-12 rounded-sm border border-border shadow-institutional" noValidate>
+        <form
+          onSubmit={handleSubmit}
+          className="bg-background p-8 md:p-12 rounded-sm border border-border shadow-institutional"
+          noValidate
+        >
           {/* Organization Information */}
           <fieldset className="mb-10">
             <legend className="text-xl font-headline font-semibold text-foreground mb-6 flex items-center">
-              <Icon name="BuildingOffice2Icon" size={24} variant="outline" className="text-primary mr-3" aria-hidden="true" />
+              <Icon
+                name="BuildingOffice2Icon"
+                size={24}
+                variant="outline"
+                className="text-primary mr-3"
+                aria-hidden="true"
+              />
               Organisation information
             </legend>
-            
+
             <div className="space-y-6">
               <div>
-                <label htmlFor="organizationName" className="block text-sm font-cta font-medium text-foreground mb-2">
-                  Organisation name <span className="text-error" aria-label="required">*</span>
+                <label
+                  htmlFor="organizationName"
+                  className="block text-sm font-cta font-medium text-foreground mb-2"
+                >
+                  Organisation name{' '}
+                  <span className="text-error" aria-label="required">
+                    *
+                  </span>
                 </label>
                 <input
                   type="text"
@@ -217,8 +243,14 @@ const AccessRequestForm = ({ className = '' }: AccessRequestFormProps) => {
               </div>
 
               <div>
-                <label htmlFor="organizationType" className="block text-sm font-cta font-medium text-foreground mb-2">
-                  Organisation type <span className="text-error" aria-label="required">*</span>
+                <label
+                  htmlFor="organizationType"
+                  className="block text-sm font-cta font-medium text-foreground mb-2"
+                >
+                  Organisation type{' '}
+                  <span className="text-error" aria-label="required">
+                    *
+                  </span>
                 </label>
                 <select
                   id="organizationType"
@@ -239,8 +271,14 @@ const AccessRequestForm = ({ className = '' }: AccessRequestFormProps) => {
               </div>
 
               <div>
-                <label htmlFor="country" className="block text-sm font-cta font-medium text-foreground mb-2">
-                  Country / jurisdiction <span className="text-error" aria-label="required">*</span>
+                <label
+                  htmlFor="country"
+                  className="block text-sm font-cta font-medium text-foreground mb-2"
+                >
+                  Country / jurisdiction{' '}
+                  <span className="text-error" aria-label="required">
+                    *
+                  </span>
                 </label>
                 <input
                   type="text"
@@ -260,15 +298,27 @@ const AccessRequestForm = ({ className = '' }: AccessRequestFormProps) => {
           {/* Contact Information */}
           <fieldset className="mb-10">
             <legend className="text-xl font-headline font-semibold text-foreground mb-6 flex items-center">
-              <Icon name="UserIcon" size={24} variant="outline" className="text-primary mr-3" aria-hidden="true" />
+              <Icon
+                name="UserIcon"
+                size={24}
+                variant="outline"
+                className="text-primary mr-3"
+                aria-hidden="true"
+              />
               Contact information
             </legend>
-            
+
             <div className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="contactName" className="block text-sm font-cta font-medium text-foreground mb-2">
-                    Full name <span className="text-error" aria-label="required">*</span>
+                  <label
+                    htmlFor="contactName"
+                    className="block text-sm font-cta font-medium text-foreground mb-2"
+                  >
+                    Full name{' '}
+                    <span className="text-error" aria-label="required">
+                      *
+                    </span>
                   </label>
                   <input
                     type="text"
@@ -284,8 +334,14 @@ const AccessRequestForm = ({ className = '' }: AccessRequestFormProps) => {
                 </div>
 
                 <div>
-                  <label htmlFor="contactTitle" className="block text-sm font-cta font-medium text-foreground mb-2">
-                    Role / title <span className="text-error" aria-label="required">*</span>
+                  <label
+                    htmlFor="contactTitle"
+                    className="block text-sm font-cta font-medium text-foreground mb-2"
+                  >
+                    Role / title{' '}
+                    <span className="text-error" aria-label="required">
+                      *
+                    </span>
                   </label>
                   <input
                     type="text"
@@ -303,8 +359,14 @@ const AccessRequestForm = ({ className = '' }: AccessRequestFormProps) => {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="email" className="block text-sm font-cta font-medium text-foreground mb-2">
-                    Institutional email address <span className="text-error" aria-label="required">*</span>
+                  <label
+                    htmlFor="email"
+                    className="block text-sm font-cta font-medium text-foreground mb-2"
+                  >
+                    Institutional email address{' '}
+                    <span className="text-error" aria-label="required">
+                      *
+                    </span>
                   </label>
                   <input
                     type="email"
@@ -318,11 +380,16 @@ const AccessRequestForm = ({ className = '' }: AccessRequestFormProps) => {
                     className="w-full px-4 py-3 bg-card border border-input rounded-sm text-foreground font-body text-sm focus:outline-none focus:ring-2 focus:ring-ring focus:border-transparent transition-all duration-200"
                     placeholder="your.email@organisation.com"
                   />
-                  <p id="email-description" className="sr-only">Please use your official institutional email address</p>
+                  <p id="email-description" className="sr-only">
+                    Please use your official institutional email address
+                  </p>
                 </div>
 
                 <div>
-                  <label htmlFor="phone" className="block text-sm font-cta font-medium text-foreground mb-2">
+                  <label
+                    htmlFor="phone"
+                    className="block text-sm font-cta font-medium text-foreground mb-2"
+                  >
                     Phone number <span className="text-muted-foreground text-xs">(optional)</span>
                   </label>
                   <input
@@ -342,14 +409,26 @@ const AccessRequestForm = ({ className = '' }: AccessRequestFormProps) => {
           {/* Request Details */}
           <fieldset className="mb-10">
             <legend className="text-xl font-headline font-semibold text-foreground mb-6 flex items-center">
-              <Icon name="DocumentTextIcon" size={24} variant="outline" className="text-primary mr-3" aria-hidden="true" />
+              <Icon
+                name="DocumentTextIcon"
+                size={24}
+                variant="outline"
+                className="text-primary mr-3"
+                aria-hidden="true"
+              />
               Request details
             </legend>
-            
+
             <div className="space-y-6">
               <div>
-                <label htmlFor="intendedUse" className="block text-sm font-cta font-medium text-foreground mb-2">
-                  Intended use <span className="text-error" aria-label="required">*</span>
+                <label
+                  htmlFor="intendedUse"
+                  className="block text-sm font-cta font-medium text-foreground mb-2"
+                >
+                  Intended use{' '}
+                  <span className="text-error" aria-label="required">
+                    *
+                  </span>
                 </label>
                 <select
                   id="intendedUse"
@@ -370,8 +449,12 @@ const AccessRequestForm = ({ className = '' }: AccessRequestFormProps) => {
               </div>
 
               <div>
-                <label htmlFor="projectContext" className="block text-sm font-cta font-medium text-foreground mb-2">
-                  Project, mandate, or context description <span className="text-muted-foreground text-xs">(optional but recommended)</span>
+                <label
+                  htmlFor="projectContext"
+                  className="block text-sm font-cta font-medium text-foreground mb-2"
+                >
+                  Project, mandate, or context description{' '}
+                  <span className="text-muted-foreground text-xs">(optional but recommended)</span>
                 </label>
                 <textarea
                   id="projectContext"
@@ -389,10 +472,16 @@ const AccessRequestForm = ({ className = '' }: AccessRequestFormProps) => {
           {/* GDPR Consent */}
           <fieldset className="mb-10">
             <legend className="text-xl font-headline font-semibold text-foreground mb-6 flex items-center">
-              <Icon name="ShieldCheckIcon" size={24} variant="outline" className="text-primary mr-3" aria-hidden="true" />
+              <Icon
+                name="ShieldCheckIcon"
+                size={24}
+                variant="outline"
+                className="text-primary mr-3"
+                aria-hidden="true"
+              />
               Data processing and consent
             </legend>
-            
+
             <div className="space-y-4 bg-card p-6 rounded-sm border border-border">
               <div className="flex items-start">
                 <input
@@ -405,8 +494,15 @@ const AccessRequestForm = ({ className = '' }: AccessRequestFormProps) => {
                   aria-required="true"
                   className="mt-1 h-4 w-4 text-primary border-input rounded focus:ring-2 focus:ring-ring focus:ring-offset-0"
                 />
-                <label htmlFor="dataProcessingConsent" className="ml-3 text-sm text-foreground font-body">
-                  I consent to the processing of my personal data for the purpose of reviewing this access request and facilitating institutional engagement. <span className="text-error" aria-label="required">*</span>
+                <label
+                  htmlFor="dataProcessingConsent"
+                  className="ml-3 text-sm text-foreground font-body"
+                >
+                  I consent to the processing of my personal data for the purpose of reviewing this
+                  access request and facilitating institutional engagement.{' '}
+                  <span className="text-error" aria-label="required">
+                    *
+                  </span>
                 </label>
               </div>
 
@@ -421,15 +517,28 @@ const AccessRequestForm = ({ className = '' }: AccessRequestFormProps) => {
                   aria-required="true"
                   className="mt-1 h-4 w-4 text-primary border-input rounded focus:ring-2 focus:ring-ring focus:ring-offset-0"
                 />
-                <label htmlFor="privacyPolicyAccepted" className="ml-3 text-sm text-foreground font-body">
+                <label
+                  htmlFor="privacyPolicyAccepted"
+                  className="ml-3 text-sm text-foreground font-body"
+                >
                   I have read and accept the{' '}
-                  <a href="/privacy-policy" className="text-primary hover:underline focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 rounded-sm">
+                  <a
+                    href="/privacy-policy"
+                    className="text-primary hover:underline focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 rounded-sm"
+                  >
                     Privacy Policy
                   </a>{' '}
                   and{' '}
-                  <a href="/data-protection-notice" className="text-primary hover:underline focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 rounded-sm">
+                  <a
+                    href="/data-protection-notice"
+                    className="text-primary hover:underline focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 rounded-sm"
+                  >
                     Data Protection Notice
-                  </a>. <span className="text-error" aria-label="required">*</span>
+                  </a>
+                  .{' '}
+                  <span className="text-error" aria-label="required">
+                    *
+                  </span>
                 </label>
               </div>
             </div>
@@ -446,14 +555,25 @@ const AccessRequestForm = ({ className = '' }: AccessRequestFormProps) => {
             </button>
 
             {submitStatus === 'success' && (
-              <div className="flex items-center gap-2 text-success text-sm font-body" role="status" aria-live="polite">
+              <div
+                className="flex items-center gap-2 text-success text-sm font-body"
+                role="status"
+                aria-live="polite"
+              >
                 <Icon name="CheckCircleIcon" size={20} variant="solid" aria-hidden="true" />
-                <span>Access request submitted successfully. We will review your request and respond within 5–7 business days.</span>
+                <span>
+                  Access request submitted successfully. We will review your request and respond
+                  within 5–7 business days.
+                </span>
               </div>
             )}
 
             {submitStatus === 'error' && errorMessage && (
-              <div className="flex items-center gap-2 text-error text-sm font-body" role="alert" aria-live="assertive">
+              <div
+                className="flex items-center gap-2 text-error text-sm font-body"
+                role="alert"
+                aria-live="assertive"
+              >
                 <Icon name="XCircleIcon" size={20} variant="solid" aria-hidden="true" />
                 <span>{errorMessage}</span>
               </div>

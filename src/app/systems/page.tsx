@@ -12,7 +12,8 @@ import StructuredData from '@/components/common/StructuredData';
 
 export const metadata: Metadata = generateMetadata({
   title: 'Institutional Systems & Governance Architecture | Northflow',
-  description: 'Northflow systems define institutional digital architecture for governance, resilience, auditability, and long-lived operational reliability in European contexts.',
+  description:
+    'Northflow systems define institutional digital architecture for governance, resilience, auditability, and long-lived operational reliability in European contexts.',
   path: '/systems',
   ogType: 'website',
 });
@@ -20,8 +21,9 @@ export const metadata: Metadata = generateMetadata({
 export default function SystemsPage() {
   const webPageSchema = generateWebPageSchema({
     title: 'Institutional Systems & Governance Architecture | Northflow',
-    description: 'Northflow systems define institutional digital architecture for governance, resilience, auditability, and long-lived operational reliability in European contexts.',
-    path: '/systems'
+    description:
+      'Northflow systems define institutional digital architecture for governance, resilience, auditability, and long-lived operational reliability in European contexts.',
+    path: '/systems',
   });
 
   return (
@@ -35,7 +37,9 @@ export default function SystemsPage() {
               System architecture overview
             </h2>
             <p className="text-base text-muted-foreground font-body leading-relaxed mb-8 text-center">
-              Institutional infrastructure built on three foundational pillars: sovereign control, compliance frameworks, and operational continuity. Each layer is designed to support the others while maintaining independence.
+              Institutional infrastructure built on three foundational pillars: sovereign control,
+              compliance frameworks, and operational continuity. Each layer is designed to support
+              the others while maintaining independence.
             </p>
             <div className="flex justify-center">
               <SystemDiagram className="w-full max-w-3xl text-muted-foreground" />

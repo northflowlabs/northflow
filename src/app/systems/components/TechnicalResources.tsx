@@ -23,44 +23,48 @@ const TechnicalResources = ({ className = '' }: TechnicalResourcesProps) => {
   const resources: Resource[] = [
     {
       id: 1,
-      title: "Systems architecture reference",
-      description: "Reference documentation covering infrastructure components, design patterns, and integration frameworks for evaluation purposes.",
-      type: "Reference material",
-      status: "Working draft",
-      icon: "DocumentTextIcon",
-      ctaText: "Request access",
-      ctaUrl: "/engage"
+      title: 'Systems architecture reference',
+      description:
+        'Reference documentation covering infrastructure components, design patterns, and integration frameworks for evaluation purposes.',
+      type: 'Reference material',
+      status: 'Working draft',
+      icon: 'DocumentTextIcon',
+      ctaText: 'Request access',
+      ctaUrl: '/engage',
     },
     {
       id: 2,
-      title: "Governance framework outline",
-      description: "Implementation reference for institutional governance and audit capabilities, intended for planning and assessment.",
-      type: "Framework outline",
-      status: "In development",
-      icon: "ClipboardDocumentCheckIcon",
-      ctaText: "Request briefing",
-      ctaUrl: "/engage"
+      title: 'Governance framework outline',
+      description:
+        'Implementation reference for institutional governance and audit capabilities, intended for planning and assessment.',
+      type: 'Framework outline',
+      status: 'In development',
+      icon: 'ClipboardDocumentCheckIcon',
+      ctaText: 'Request briefing',
+      ctaUrl: '/engage',
     },
     {
       id: 3,
-      title: "Compliance mapping matrix",
-      description: "Design alignment mapping across ISO/IEC 27001, GDPR, NIS2, and DORA frameworks for evaluation support.",
-      type: "Evaluation material",
-      status: "Working draft",
-      icon: "TableCellsIcon",
-      ctaText: "View outline",
-      ctaUrl: "/engage"
+      title: 'Compliance mapping matrix',
+      description:
+        'Design alignment mapping across ISO/IEC 27001, GDPR, NIS2, and DORA frameworks for evaluation support.',
+      type: 'Evaluation material',
+      status: 'Working draft',
+      icon: 'TableCellsIcon',
+      ctaText: 'View outline',
+      ctaUrl: '/engage',
     },
     {
       id: 4,
-      title: "Security architecture reference",
-      description: "Reference analysis of security architecture patterns and threat mitigation strategies for design context.",
-      type: "Reference document",
-      status: "In development",
-      icon: "ShieldCheckIcon",
-      ctaText: "Request briefing",
-      ctaUrl: "/engage"
-    }
+      title: 'Security architecture reference',
+      description:
+        'Reference analysis of security architecture patterns and threat mitigation strategies for design context.',
+      type: 'Reference document',
+      status: 'In development',
+      icon: 'ShieldCheckIcon',
+      ctaText: 'Request briefing',
+      ctaUrl: '/engage',
+    },
   ];
 
   const handleResourceClick = (resource: Resource) => {
@@ -85,10 +89,13 @@ const TechnicalResources = ({ className = '' }: TechnicalResourcesProps) => {
             Technical resources
           </h2>
           <p className="text-lg text-muted-foreground font-body max-w-3xl mb-3">
-            Reference, evaluation, and in-development materials for institutional stakeholders. Resources provide design context, framework guidance, and support implementation planning.
+            Reference, evaluation, and in-development materials for institutional stakeholders.
+            Resources provide design context, framework guidance, and support implementation
+            planning.
           </p>
           <p className="text-sm text-muted-foreground font-body max-w-3xl italic">
-            Availability varies by development stage. Materials are provided for evaluation, dialogue, and design review.
+            Availability varies by development stage. Materials are provided for evaluation,
+            dialogue, and design review.
           </p>
         </div>
 
@@ -101,9 +108,9 @@ const TechnicalResources = ({ className = '' }: TechnicalResourcesProps) => {
               <div className="flex items-start justify-between mb-4">
                 <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0 w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
-                    <Icon 
-                      name={resource.icon as any} 
-                      size={20} 
+                    <Icon
+                      name={resource.icon as any}
+                      size={20}
                       variant="outline"
                       className="text-primary"
                     />
@@ -117,16 +124,14 @@ const TechnicalResources = ({ className = '' }: TechnicalResourcesProps) => {
                         {resource.status}
                       </span>
                     </div>
-                    <p className="text-xs text-muted-foreground font-body mb-3">
-                      {resource.type}
-                    </p>
+                    <p className="text-xs text-muted-foreground font-body mb-3">{resource.type}</p>
                     <p className="text-sm text-muted-foreground font-body leading-relaxed">
                       {resource.description}
                     </p>
                   </div>
                 </div>
               </div>
-              
+
               <Link
                 href="/engage/request-access?source=technical-resource"
                 onClick={() => handleResourceClick(resource)}
@@ -146,7 +151,8 @@ const TechnicalResources = ({ className = '' }: TechnicalResourcesProps) => {
                 Request technical consultation
               </h3>
               <p className="text-sm text-muted-foreground font-body">
-                Engage with our systems architecture team for detailed technical discussions and implementation planning.
+                Engage with our systems architecture team for detailed technical discussions and
+                implementation planning.
               </p>
               <p className="text-sm text-muted-foreground font-body mt-2">
                 Looking for research collaboration or institutional deployment? Request a briefing.

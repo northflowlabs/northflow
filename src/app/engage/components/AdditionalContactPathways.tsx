@@ -1,7 +1,6 @@
 import React from 'react';
 import Icon from '@/components/ui/AppIcon';
 
-
 interface AdditionalContactPathwaysProps {
   className?: string;
 }
@@ -15,7 +14,8 @@ const AdditionalContactPathways = ({ className = '' }: AdditionalContactPathways
             Additional contact pathways
           </h2>
           <p className="text-base text-muted-foreground font-body text-center mb-12">
-            For specific engagement contexts, alternative pathways may be appropriate following initial review.
+            For specific engagement contexts, alternative pathways may be appropriate following
+            initial review.
           </p>
 
           <div className="bg-background p-8 rounded-sm border border-border space-y-6">
@@ -28,7 +28,8 @@ const AdditionalContactPathways = ({ className = '' }: AdditionalContactPathways
                   Research collaboration inquiries
                 </h3>
                 <p className="text-sm text-muted-foreground font-body leading-relaxed">
-                  Refer to the Research section for information on Northflow Research Lab and applied research dialogue.
+                  Refer to the Research section for information on Northflow Research Lab and
+                  applied research dialogue.
                 </p>
               </div>
             </div>

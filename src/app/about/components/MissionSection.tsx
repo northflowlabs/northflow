@@ -5,21 +5,23 @@ interface MissionSectionProps {
 const MissionSection = ({ className = '' }: MissionSectionProps) => {
   const principles = [
     {
-      title: "Sovereign technology",
-      description: "Infrastructure that governments can audit, govern, and control without external dependencies or proprietary constraints."
+      title: 'Sovereign-aligned architecture',
+      description:
+        'Systems designed for institutional oversight, cross-border collaboration, and regulatory coherence.',
     },
     {
-      title: "Operational continuity",
-      description: "Systems designed to function during network disruptions, political transitions, and crisis scenarios without degradation."
+      title: 'Operational continuity',
+      description:
+        'Architectures built to function across crisis, transition, and evolving governance conditions.',
     },
     {
-      title: "Institutional trust",
-      description: "Demonstrated capability through regulatory compliance, audit transparency, and proven deployment in regulated environments."
+      title: 'Institutional trust',
+      description: 'Deterministic evaluation and verifiable outputs suitable for formal review.',
     },
     {
-      title: "Mission-critical reliability",
-      description: "Infrastructure built for organizations that cannot accept failure, with focus on resilience over feature velocity."
-    }
+      title: 'Mission-critical reliability',
+      description: 'Infrastructure designed for environments where failure is not acceptable.',
+    },
   ];
 
   return (
@@ -30,15 +32,18 @@ const MissionSection = ({ className = '' }: MissionSectionProps) => {
             Our institutional mission
           </h2>
           <p className="text-lg text-muted-foreground font-body leading-relaxed">
-            We exist to provide European institutions with digital infrastructure that prioritizes sovereignty, auditability, and operational continuity over commercial convenience.
+            We exist to formalize how institutions generate, evaluate, and verify knowledge under
+            uncertainty — prioritizing reproducibility, structural clarity, and long-term
+            operational resilience over short-term acceleration.
           </p>
           <p className="text-sm text-muted-foreground/80 font-body leading-relaxed mt-6">
-            Northflow engages with public research agencies, academic institutions, and international partners on long-horizon infrastructure research.
+            Northflow engages with public research agencies, academic institutions, and
+            international partners on long-horizon infrastructure research.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {principles.map((principle, index) => (
-            <div 
+            <div
               key={index}
               className="bg-card border border-border rounded-lg p-8 hover:shadow-lg transition-shadow duration-200"
             >

@@ -20,28 +20,29 @@ const EngagementSection = ({ className = '' }: EngagementSectionProps) => {
   const engagementPaths: EngagementPath[] = [
     {
       id: 1,
-      icon: 'BuildingOffice2Icon',
+      icon: 'building-office-2',
       title: 'Government entities',
-      description: 'Formal dialogue process for sovereign infrastructure requirements and institutional partnerships.',
+      description: 'Infrastructure and resilience systems aligned with institutional requirements.',
       action: 'Initiate institutional dialogue',
       audienceType: 'institution',
     },
     {
       id: 2,
-      icon: 'UserGroupIcon',
+      icon: 'user-group',
       title: 'Research collaboration',
-      description: 'Academic and policy research partnerships through Northflow Research Lab initiatives.',
+      description:
+        'Academic and research partnerships in climate and structured discovery systems.',
       action: 'Explore research opportunities',
       audienceType: 'research_partner',
     },
     {
       id: 3,
-      icon: 'BuildingLibraryIcon',
-      title: 'Asset managers',
-      description: 'Mission-critical infrastructure consultation for regulated financial institutions.',
+      icon: 'building-library',
+      title: 'Institutional stakeholders',
+      description: 'Mission-critical infrastructure consultation within regulated environments.',
       action: 'Request formal consultation',
       audienceType: 'institution',
-    }
+    },
   ];
 
   const handlePathClick = (path: EngagementPath) => {
@@ -71,21 +72,18 @@ const EngagementSection = ({ className = '' }: EngagementSectionProps) => {
             Institutional engagement
           </h2>
           <p className="text-lg text-muted-foreground font-body max-w-3xl mx-auto">
-            Formal dialogue pathways for qualified stakeholders and institutional partners.
+            Formal dialogue pathways for qualified institutional stakeholders.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           {engagementPaths.map((path) => (
-            <div
-              key={path.id}
-              className="bg-background p-8 rounded-sm border border-border"
-            >
+            <div key={path.id} className="bg-background p-8 rounded-sm border border-border">
               <div className="w-12 h-12 bg-primary/10 rounded-sm flex items-center justify-center mb-6">
-                <Icon 
-                  name={path.icon as any} 
-                  size={24} 
-                  variant="outline" 
+                <Icon
+                  name={path.icon as any}
+                  size={24}
+                  variant="outline"
                   className="text-primary"
                 />
               </div>
@@ -101,7 +99,7 @@ const EngagementSection = ({ className = '' }: EngagementSectionProps) => {
                 className="inline-flex items-center space-x-2 text-primary font-cta font-medium text-sm hover:underline transition-all duration-200"
               >
                 <span>{path.action}</span>
-                <Icon name="ArrowRightIcon" size={16} variant="outline" />
+                <Icon name="arrow-right" size={16} variant="outline" />
               </a>
             </div>
           ))}

@@ -23,19 +23,22 @@ const AccessEngagementProcess = ({ className = '' }: AccessEngagementProcessProp
       id: 2,
       icon: 'ClipboardDocumentCheckIcon',
       title: 'Institutional review by Northflow Technologies',
-      description: 'Request is evaluated based on institutional role, intended use, and governance alignment.',
+      description:
+        'Request is evaluated based on institutional role, intended use, and governance alignment.',
     },
     {
       id: 3,
       icon: 'ChatBubbleLeftRightIcon',
       title: 'Clarification requested if required',
-      description: 'Additional information may be requested to ensure appropriate access level and context.',
+      description:
+        'Additional information may be requested to ensure appropriate access level and context.',
     },
     {
       id: 4,
       icon: 'CheckCircleIcon',
       title: 'Access granted or guidance provided',
-      description: 'Materials are shared with appropriate confidentiality arrangements, or alternative guidance is provided.',
+      description:
+        'Materials are shared with appropriate confidentiality arrangements, or alternative guidance is provided.',
     },
   ];
 
@@ -64,10 +67,10 @@ const AccessEngagementProcess = ({ className = '' }: AccessEngagementProcessProp
               className="bg-card p-6 rounded-sm border border-border hover:border-primary/30 transition-colors duration-200"
             >
               <div className="w-12 h-12 bg-primary/10 rounded-sm flex items-center justify-center mb-4">
-                <Icon 
-                  name={step.icon as any} 
-                  size={24} 
-                  variant="outline" 
+                <Icon
+                  name={step.icon as any}
+                  size={24}
+                  variant="outline"
                   className="text-primary"
                 />
               </div>

@@ -96,10 +96,7 @@ export function hasMinimumContrast(
 /**
  * Ensures keyboard navigation works for custom interactive elements
  */
-export function makeKeyboardAccessible(
-  element: HTMLElement,
-  onClick: () => void
-): void {
+export function makeKeyboardAccessible(element: HTMLElement, onClick: () => void): void {
   element.setAttribute('tabindex', '0');
   element.setAttribute('role', 'button');
 

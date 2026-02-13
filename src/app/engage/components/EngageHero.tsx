@@ -6,7 +6,9 @@ interface EngageHeroProps {
 
 const EngageHero = ({ className = '' }: EngageHeroProps) => {
   return (
-    <section className={`bg-gradient-to-br from-primary to-primary/90 text-primary-foreground ${className}`}>
+    <section
+      className={`bg-gradient-to-br from-primary to-primary/90 text-primary-foreground ${className}`}
+    >
       <div className="max-w-[1400px] mx-auto px-8 py-24">
         <div className="max-w-4xl">
           <div className="inline-flex items-center space-x-2 bg-primary-foreground/10 px-4 py-2 rounded-sm mb-6">
@@ -19,14 +21,14 @@ const EngageHero = ({ className = '' }: EngageHeroProps) => {
           </h1>
           <div className="space-y-4 text-lg md:text-xl text-primary-foreground/90 font-body leading-relaxed mb-8">
             <p>
-              Northflow conducts briefings with selected institutional stakeholders exploring sovereign digital infrastructure, long-horizon systems, or research collaboration.
+              Northflow conducts briefings with selected institutional stakeholders exploring
+              sovereign digital infrastructure, long-horizon systems, or research collaboration.
             </p>
             <p>
-              Briefings are confidential, non-commercial exchanges focused on alignment, governance, and architectural considerations — not product demonstrations or sales discussions.
+              Briefings are confidential, non-commercial exchanges focused on alignment, governance,
+              and architectural considerations — not product demonstrations or sales discussions.
             </p>
-            <p>
-              All requests are subject to internal review. Engagement is selective.
-            </p>
+            <p>All requests are subject to internal review. Engagement is selective.</p>
           </div>
           <div className="flex items-center space-x-6 text-sm text-primary-foreground/90 font-body">
             <span className="flex items-center space-x-2">

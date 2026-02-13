@@ -14,10 +14,14 @@ export default function InitiativeHero() {
             Institutional infrastructure initiatives
           </h1>
           <p className="text-lg font-body text-primary-foreground/90 leading-relaxed mb-8">
-            Strategic initiatives under development, focused on designing and advancing digital infrastructure frameworks for institutional environments. These initiatives are structured to mature through research, pilot exploration, and phased institutional engagement.
+            Strategic initiatives under development, focused on designing and advancing digital
+            infrastructure frameworks for institutional environments. These initiatives are
+            structured to mature through research, pilot exploration, and phased institutional
+            engagement.
           </p>
           <p className="text-sm font-body text-primary-foreground/70 leading-relaxed mb-8 italic">
-            Intended for institutional and research audiences. Public materials are released selectively.
+            Intended for institutional and research audiences. Public materials are released
+            selectively.
           </p>
           <div className="flex flex-wrap gap-4">
             <div className="flex items-center space-x-2">

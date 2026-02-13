@@ -6,11 +6,7 @@ import { usePathname, useSearchParams } from 'next/navigation';
 
 declare global {
   interface Window {
-    gtag?: (
-      command: string,
-      targetId: string,
-      config?: Record<string, any>
-    ) => void;
+    gtag?: (command: string, targetId: string, config?: Record<string, any>) => void;
     dataLayer?: any[];
   }
 }

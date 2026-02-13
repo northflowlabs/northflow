@@ -4,7 +4,8 @@ import ResourceIndex from '@/components/resources/ResourceIndex';
 
 export const metadata: Metadata = {
   title: 'Institutional Resources & Reference Materials | Northflow',
-  description: 'Searchable index of documentation, research papers, compliance materials, and institutional reference resources.',
+  description:
+    'Searchable index of documentation, research papers, compliance materials, and institutional reference resources.',
 };
 
 export default function ResourcesPage() {
@@ -23,10 +24,13 @@ export default function ResourcesPage() {
               Resources
             </h1>
             <p className="text-lg font-body text-primary-foreground/90 leading-relaxed mb-8">
-              Comprehensive index of documentation, technical papers, compliance frameworks, and security resources for institutional stakeholders.
+              Comprehensive index of documentation, technical papers, compliance frameworks, and
+              security resources for institutional stakeholders.
             </p>
             <p className="text-sm font-body text-primary-foreground/70 leading-relaxed italic">
-              These resources reflect Northflow's applied research, system design principles, and regulatory alignment work. Materials are published at different stages of maturity and made available through appropriate engagement pathways.
+              These resources reflect Northflow's applied research, system design principles, and
+              regulatory alignment work. Materials are published at different stages of maturity and
+              made available through appropriate engagement pathways.
             </p>
           </div>
         </div>
@@ -39,7 +43,8 @@ export default function ResourcesPage() {
             Project HGE resources
           </h2>
           <p className="text-sm text-muted-foreground font-body leading-relaxed mb-4">
-            Access methodology, validation logs, and instrument integration notes from Project HGE—Northflow's automated scientific discovery infrastructure.
+            Access methodology, validation logs, and instrument integration notes from Project
+            HGE—Northflow's automated scientific discovery infrastructure.
           </p>
           <div className="flex flex-wrap gap-4">
             <Link
@@ -47,12 +52,7 @@ export default function ResourcesPage() {
               className="inline-flex items-center gap-2 px-4 py-2 bg-accent text-accent-foreground rounded-md hover:bg-accent/90 transition-colors font-body text-sm font-medium"
             >
               Technical papers
-              <svg
-                className="w-4 h-4"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -66,12 +66,7 @@ export default function ResourcesPage() {
               className="inline-flex items-center gap-2 px-4 py-2 bg-accent text-accent-foreground rounded-md hover:bg-accent/90 transition-colors font-body text-sm font-medium"
             >
               Documentation
-              <svg
-                className="w-4 h-4"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -85,12 +80,7 @@ export default function ResourcesPage() {
               className="inline-flex items-center gap-2 px-4 py-2 bg-accent text-accent-foreground rounded-md hover:bg-accent/90 transition-colors font-body text-sm font-medium"
             >
               HGE overview
-              <svg
-                className="w-4 h-4"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"

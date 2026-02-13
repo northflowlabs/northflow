@@ -31,19 +31,12 @@ function PrinciplesSection({}: PrinciplesSectionProps) {
   return (
     <section className="py-24 bg-muted/30">
       <div className="container mx-auto px-4 max-w-5xl">
-        <h2 className="text-3xl md:text-4xl font-light mb-16 text-foreground">
-          How we work
-        </h2>
+        <h2 className="text-3xl md:text-4xl font-light mb-16 text-foreground">How we work</h2>
         <div className="space-y-12">
           {principles.map((principle) => (
-            <div
-              key={principle.number}
-              className="border-l-2 border-primary pl-8 py-4"
-            >
+            <div key={principle.number} className="border-l-2 border-primary pl-8 py-4">
               <div className="flex items-baseline gap-4 mb-3">
-                <span className="text-sm text-muted-foreground font-mono">
-                  {principle.number}
-                </span>
+                <span className="text-sm text-muted-foreground font-mono">{principle.number}</span>
                 <h3 className="text-xl md:text-2xl font-normal text-foreground">
                   {principle.title}
                 </h3>

@@ -7,13 +7,17 @@ import { removeLocaleFromPathname } from '@/lib/i18n';
 export default function EnglishOnlyNotice() {
   const pathname = usePathname();
   const cleanPathname = removeLocaleFromPathname(pathname);
-  
+
   if (!isEnglishOnlyPage(cleanPathname)) {
     return null;
   }
 
   return (
-    <div className="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8" role="note" aria-label="Language notice">
+    <div
+      className="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8"
+      role="note"
+      aria-label="Language notice"
+    >
       <div className="flex items-start">
         <div className="flex-shrink-0">
           <svg
@@ -35,7 +39,8 @@ export default function EnglishOnlyNotice() {
             This page is available in English only
           </p>
           <p className="text-xs text-blue-600 mt-1">
-            Detailed technical and legal materials are maintained in English as the authoritative version.
+            Detailed technical and legal materials are maintained in English as the authoritative
+            version.
           </p>
         </div>
       </div>

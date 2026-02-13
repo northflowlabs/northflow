@@ -15,7 +15,8 @@ const HGEApplications = ({ className = '' }: HGEApplicationsProps) => {
               Why it matters
             </h2>
             <p className="text-lg font-body text-muted-foreground">
-              HGE addresses the challenge of systematic discovery in domains where experimentation is expensive, time-consuming, or constrained by physical limitations.
+              HGE addresses the challenge of systematic discovery in domains where experimentation
+              is expensive, time-consuming, or constrained by physical limitations.
             </p>
           </div>
 
@@ -30,7 +31,11 @@ const HGEApplications = ({ className = '' }: HGEApplicationsProps) => {
                 </h3>
               </div>
               <p className="text-base font-body text-muted-foreground leading-relaxed mb-6">
-                HGE is currently focused on astronomy and physics research, where observational constraints, instrument availability, and data acquisition costs make systematic hypothesis testing particularly valuable. The methodology enables efficient exploration of parameter spaces and identification of promising research directions under resource constraints.
+                HGE is currently focused on astronomy and physics research, where observational
+                constraints, instrument availability, and data acquisition costs make systematic
+                hypothesis testing particularly valuable. The methodology enables efficient
+                exploration of parameter spaces and identification of promising research directions
+                under resource constraints.
               </p>
               <div className="flex flex-wrap gap-2">
                 <span className="inline-flex items-center px-3 py-1 bg-primary/10 text-primary text-xs font-cta font-medium rounded-sm">
@@ -60,7 +65,11 @@ const HGEApplications = ({ className = '' }: HGEApplicationsProps) => {
                 </div>
               </div>
               <p className="text-base font-body text-muted-foreground leading-relaxed mb-6">
-                Future applications may extend to biology and health research, where similar challenges exist: high experimental costs, long feedback cycles, and complex parameter spaces. Potential applications include drug discovery optimization, biological pathway exploration, and clinical trial design. These applications represent future research directions and are not currently active.
+                Future applications may extend to biology and health research, where similar
+                challenges exist: high experimental costs, long feedback cycles, and complex
+                parameter spaces. Potential applications include drug discovery optimization,
+                biological pathway exploration, and clinical trial design. These applications
+                represent future research directions and are not currently active.
               </p>
               <div className="flex flex-wrap gap-2">
                 <span className="inline-flex items-center px-3 py-1 bg-accent/10 text-accent text-xs font-cta font-medium rounded-sm">
@@ -78,7 +87,9 @@ const HGEApplications = ({ className = '' }: HGEApplicationsProps) => {
 
           <div className="mt-8 p-6 bg-card border border-border rounded-sm">
             <p className="text-sm font-body text-muted-foreground text-center">
-              <span className="font-semibold text-foreground">Core value proposition:</span> HGE enables systematic, resource-efficient exploration of complex problem spaces where traditional approaches are limited by cost, time, or physical constraints.
+              <span className="font-semibold text-foreground">Core value proposition:</span> HGE
+              enables systematic, resource-efficient exploration of complex problem spaces where
+              traditional approaches are limited by cost, time, or physical constraints.
             </p>
           </div>
         </div>

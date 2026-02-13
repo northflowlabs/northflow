@@ -1,362 +1,362 @@
 {
-    "nav": {
-        "home": "Hjem",
-        "about": "Om oss",
-        "research": "Forskning",
-        "systems": "Systemer",
-        "initiatives": "Initiativer",
-        "resources": "Ressurser",
-        "engage": "Engasjer",
-        "rss": "RSS-feed"
+  "nav": {
+    "home": "Hjem",
+    "about": "Om oss",
+    "research": "Forskning",
+    "systems": "Systemer",
+    "initiatives": "Initiativer",
+    "resources": "Ressurser",
+    "engage": "Engasjer",
+    "rss": "RSS-feed"
+  },
+  "footer": {
+    "tagline": "Suveren digital infrastruktur for europeiske institusjoner",
+    "quickLinks": "Hurtiglenker",
+    "about": "Om oss",
+    "research": "Forskning",
+    "systems": "Systemer",
+    "initiatives": "Initiativer",
+    "resources": "Ressurser",
+    "allResources": "Alle ressurser",
+    "documentation": "Dokumentasjon",
+    "technicalPapers": "Tekniske artikler",
+    "rssFeed": "RSS-feed",
+    "legal": "Juridisk",
+    "legalNotice": "Juridisk merknad",
+    "privacyPolicy": "Personvernregler",
+    "dataProtection": "Databeskyttelse",
+    "termsOfService": "Tjenestevilkår",
+    "contact": "Kontakt",
+    "copyright": "© {year} Northflow Technologies. Alle rettigheter reservert.",
+    "languageGovernance": "Oversettelser er gitt for tilgjengelighet. Den engelske versjonen utgjør den autoritative referansen.",
+    "technicalNote": "Detaljerte tekniske og juridiske materialer vedlikeholdes på engelsk som den autoritative versjonen."
+  },
+  "common": {
+    "learnMore": "Lær mer",
+    "readMore": "Les mer",
+    "contactUs": "Kontakt oss",
+    "getStarted": "Kom i gang",
+    "viewAll": "Se alle",
+    "backToHome": "Tilbake til hjem"
+  },
+  "homepage": {
+    "hero": {
+      "title": "Suveren digital infrastruktur for europeiske institusjoner",
+      "subtitle": "Bygger robuste, regelverkskompatible og interoperable systemer som bevarer institusjonell autonomi samtidig som de muliggjør grensekryssende samarbeid",
+      "cta": "Utforsk vår tilnærming"
     },
-    "footer": {
-        "tagline": "Suveren digital infrastruktur for europeiske institusjoner",
-        "quickLinks": "Hurtiglenker",
-        "about": "Om oss",
-        "research": "Forskning",
-        "systems": "Systemer",
-        "initiatives": "Initiativer",
-        "resources": "Ressurser",
-        "allResources": "Alle ressurser",
-        "documentation": "Dokumentasjon",
-        "technicalPapers": "Tekniske artikler",
-        "rssFeed": "RSS-feed",
-        "legal": "Juridisk",
-        "legalNotice": "Juridisk merknad",
-        "privacyPolicy": "Personvernregler",
-        "dataProtection": "Databeskyttelse",
-        "termsOfService": "Tjenestevilkår",
-        "contact": "Kontakt",
-        "copyright": "© {year} Northflow Technologies. Alle rettigheter reservert.",
-        "languageGovernance": "Oversettelser er gitt for tilgjengelighet. Den engelske versjonen utgjør den autoritative referansen.",
-        "technicalNote": "Detaljerte tekniske og juridiske materialer vedlikeholdes på engelsk som den autoritative versjonen."
+    "trustIndicators": {
+      "title": "Institusjonell tillit gjennom teknisk ekspertise",
+      "norwegianBuilt": "Bygget i Norge",
+      "norwegianBuiltDesc": "Utviklet under norske standarder for datasuverenitet",
+      "europeanCompliance": "Europeisk regelverk",
+      "europeanComplianceDesc": "Tilpasset EUs regulatoriske rammeverk og GDPR-krav",
+      "openStandards": "Åpne standarder",
+      "openStandardsDesc": "Basert på transparente, kontrollerbare tekniske spesifikasjoner",
+      "institutionalFocus": "Institusjonelt fokus",
+      "institutionalFocusDesc": "Spesialbygget for offentlige og regulatoriske krav"
     },
-    "common": {
-        "learnMore": "Lær mer",
-        "readMore": "Les mer",
-        "contactUs": "Kontakt oss",
-        "getStarted": "Kom i gang",
-        "viewAll": "Se alle",
-        "backToHome": "Tilbake til hjem"
+    "fourPillars": {
+      "title": "Fire pilarer for institusjonell infrastruktur",
+      "sovereignty": "Digital suverenitet",
+      "sovereigntyDesc": "Oppretthold full kontroll over institusjonelle data og operasjoner samtidig som du deltar i europeiske digitale økosystemer",
+      "interoperability": "Grensekryssende interoperabilitet",
+      "interoperabilityDesc": "Muliggjør sømløst samarbeid mellom institusjoner på tvers av jurisdiksjoner uten å kompromittere autonomi",
+      "compliance": "Regelverksetterlevelse",
+      "complianceDesc": "Innebygd overholdelse av europeiske krav til databeskyttelse, sikkerhet og styring",
+      "resilience": "Operasjonell robusthet",
+      "resilienceDesc": "Sikre kontinuitet i kritiske institusjonelle funksjoner gjennom robust arkitektur og failover-mekanismer"
     },
-    "homepage": {
-        "hero": {
-            "title": "Suveren digital infrastruktur for europeiske institusjoner",
-            "subtitle": "Bygger robuste, regelverkskompatible og interoperable systemer som bevarer institusjonell autonomi samtidig som de muliggjør grensekryssende samarbeid",
-            "cta": "Utforsk vår tilnærming"
-        },
-        "trustIndicators": {
-            "title": "Institusjonell tillit gjennom teknisk ekspertise",
-            "norwegianBuilt": "Bygget i Norge",
-            "norwegianBuiltDesc": "Utviklet under norske standarder for datasuverenitet",
-            "europeanCompliance": "Europeisk regelverk",
-            "europeanComplianceDesc": "Tilpasset EUs regulatoriske rammeverk og GDPR-krav",
-            "openStandards": "Åpne standarder",
-            "openStandardsDesc": "Basert på transparente, kontrollerbare tekniske spesifikasjoner",
-            "institutionalFocus": "Institusjonelt fokus",
-            "institutionalFocusDesc": "Spesialbygget for offentlige og regulatoriske krav"
-        },
-        "fourPillars": {
-            "title": "Fire pilarer for institusjonell infrastruktur",
-            "sovereignty": "Digital suverenitet",
-            "sovereigntyDesc": "Oppretthold full kontroll over institusjonelle data og operasjoner samtidig som du deltar i europeiske digitale økosystemer",
-            "interoperability": "Grensekryssende interoperabilitet",
-            "interoperabilityDesc": "Muliggjør sømløst samarbeid mellom institusjoner på tvers av jurisdiksjoner uten å kompromittere autonomi",
-            "compliance": "Regelverksetterlevelse",
-            "complianceDesc": "Innebygd overholdelse av europeiske krav til databeskyttelse, sikkerhet og styring",
-            "resilience": "Operasjonell robusthet",
-            "resilienceDesc": "Sikre kontinuitet i kritiske institusjonelle funksjoner gjennom robust arkitektur og failover-mekanismer"
-        },
-        "capabilities": {
-            "title": "Tekniske kapasiteter",
-            "subtitle": "Omfattende infrastrukturløsninger for institusjonelle krav",
-            "identity": "Identitets- og tilgangsstyring",
-            "identityDesc": "Fødererte autentiseringssystemer som bevarer institusjonell kontroll",
-            "data": "Datastyringsrammeverk",
-            "dataDesc": "Suverenitetsbevareende dataadministrasjon og grensekryssende utvekslingsprotokoller",
-            "security": "Sikkerhetsarkitektur",
-            "securityDesc": "Flerlagssikkerhet tilpasset europeiske cybersikkerhetsstandarder",
-            "integration": "Systemintegrasjon",
-            "integrationDesc": "Interoperabilitetslag for tilkobling av institusjonelle systemer"
-        },
-        "research": {
-            "title": "Forskningsdrevet utvikling",
-            "description": "Vårt arbeid er forankret i grundig forskning på digital suverenitet, institusjonell interoperabilitet og europeiske regulatoriske rammeverk. Vi publiserer våre funn og bidrar til politiske diskusjoner.",
-            "cta": "Se forskning"
-        },
-        "engagement": {
-            "title": "Institusjonelt engasjement",
-            "description": "Vi samarbeider med offentlige etater, regulatoriske organer og forskningsinstitusjoner over hele Europa. Vår engasjementsmodell vektlegger åpenhet, samarbeid og delte styringsprinsipper.",
-            "cta": "Lær om engasjement"
-        }
-    },
-    "about": {
-        "hero": {
-            "title": "Bygger suveren digital infrastruktur for europeiske institusjoner",
-            "subtitle": "Northflow Technologies utvikler systemer som bevarer institusjonell autonomi samtidig som de muliggjør grensekryssende samarbeid"
-        },
-        "premise": {
-            "title": "Den institusjonelle utfordringen",
-            "description": "Europeiske institusjoner står overfor en grunnleggende spenning: behovet for digital suverenitet er i konflikt med kravet om grensekryssende interoperabilitet. Nåværende løsninger tvinger ofte til et valg mellom autonomi og samarbeid. Vi mener dette er et falskt dikotomi."
-        },
-        "mission": {
-            "title": "Vårt oppdrag",
-            "description": "Å utvikle og implementere digital infrastruktur som gjør det mulig for europeiske institusjoner å opprettholde full suverenitet over sine operasjoner samtidig som de deltar effektivt i grensekryssende digitale økosystemer. Vi oppnår dette gjennom grundig teknisk design, overholdelse av åpne standarder og dyp engasjement med regulatoriske rammeverk."
-        },
-        "approach": {
-            "title": "Vår tilnærming",
-            "researchDriven": "Forskningsdrevet utvikling",
-            "researchDrivenDesc": "Hvert system vi bygger er forankret i publisert forskning på digital suverenitet, institusjonell interoperabilitet og regelverksetterlevelse",
-            "openStandards": "Forpliktelse til åpne standarder",
-            "openStandardsDesc": "Vi baserer vårt arbeid på transparente, kontrollerbare tekniske spesifikasjoner som kan verifiseres uavhengig",
-            "institutionalFocus": "Institusjonelt-først design",
-            "institutionalFocusDesc": "Våre systemer er spesialbygget for offentlige og regulatoriske krav, ikke tilpasset fra kommersielle produkter",
-            "europeanAlignment": "Europeisk regulatorisk tilpasning",
-            "europeanAlignmentDesc": "Dyp integrasjon med EU-rammeverk inkludert GDPR, NIS2 og fremvoksende digitale suverenitetsstandarder"
-        },
-        "principles": {
-            "title": "Veiledende prinsipper",
-            "sovereignty": "Suverenitetsbevaring",
-            "sovereigntyDesc": "Institusjoner må beholde full kontroll over sine data, operasjoner og styring",
-            "interoperability": "Interoperabilitet uten kompromiss",
-            "interoperabilityDesc": "Grensekryssende samarbeid bør ikke kreve at man gir fra seg institusjonell autonomi",
-            "transparency": "Teknisk åpenhet",
-            "transparencyDesc": "Alle systemer må være kontrollerbare og basert på åpne, verifiserbare standarder",
-            "compliance": "Regelverk ved design",
-            "complianceDesc": "Regulatoriske krav bør være innebygd i systemarkitekturen, ikke lagt til i ettertid"
-        },
-        "story": {
-            "title": "Selskapets historie",
-            "description": "Northflow Technologies ble grunnlagt i Norge med et spesifikt mandat: å adressere de digitale infrastrukturutfordringene som europeiske institusjoner står overfor. Vårt arbeid begynte med forskning på digitale suverenitetsstandarder og har utviklet seg til utvikling av produksjonsklare systemer. Vi opprettholder et forskningslaboratorium som fortsetter å informere vår tekniske utvikling samtidig som vi engasjerer oss i politiske diskusjoner på europeisk nivå."
-        },
-        "presence": {
-            "title": "Regional tilstedeværelse",
-            "norway": "Norge (hovedkontor)",
-            "norwayDesc": "Primær utvikling og forskningsoperasjoner",
-            "europe": "Europeiske operasjoner",
-            "europeDesc": "Institusjonelt engasjement og implementeringsstøtte på tvers av EU-medlemsland"
-        },
-        "validation": {
-            "title": "Institusjonell validering",
-            "description": "Våre systemer er implementert i institusjonelle miljøer og gjennomgår kontinuerlig evaluering. Vi samarbeider tett med offentlige etater og regulatoriske organer for å sikre at våre løsninger møter virkelige krav."
-        },
-        "lab": {
-            "title": "Forskningslaboratorium",
-            "description": "Northflow Research Lab utfører pågående forskning på digital suverenitet, institusjonell interoperabilitet og regulatorisk teknologi. Våre funn publiseres i akademiske fora og informerer både vår tekniske utvikling og politiske engasjement."
-        },
-        "leadership": {
-            "title": "Ledelse",
-            "description": "Vårt lederteam kombinerer teknisk ekspertise i distribuerte systemer med dyp kunnskap om europeiske regulatoriske rammeverk og institusjonelle krav."
-        },
-        "cta": {
-            "title": "Engasjer deg i vårt arbeid",
-            "description": "Vi ønsker engasjement fra offentlige etater, regulatoriske organer, forskningsinstitusjoner og politiske organisasjoner.",
-            "button": "Kontakt oss"
-        }
+    "capabilities": {
+      "title": "Tekniske kapasiteter",
+      "subtitle": "Omfattende infrastrukturløsninger for institusjonelle krav",
+      "identity": "Identitets- og tilgangsstyring",
+      "identityDesc": "Fødererte autentiseringssystemer som bevarer institusjonell kontroll",
+      "data": "Datastyringsrammeverk",
+      "dataDesc": "Suverenitetsbevareende dataadministrasjon og grensekryssende utvekslingsprotokoller",
+      "security": "Sikkerhetsarkitektur",
+      "securityDesc": "Flerlagssikkerhet tilpasset europeiske cybersikkerhetsstandarder",
+      "integration": "Systemintegrasjon",
+      "integrationDesc": "Interoperabilitetslag for tilkobling av institusjonelle systemer"
     },
     "research": {
-        "hero": {
-            "title": "Forskning på digital suverenitet og institusjonell infrastruktur",
-            "subtitle": "Grundig undersøkelse av de tekniske og styringsmessige utfordringene ved europeisk digital autonomi"
-        },
-        "areas": {
-            "title": "Forskningsområder",
-            "sovereignty": "Digitale suverenitetsstandarder",
-            "sovereigntyDesc": "Tekniske arkitekturer som bevarer institusjonell kontroll samtidig som de muliggjør interoperabilitet",
-            "interoperability": "Grensekryssende interoperabilitet",
-            "interoperabilityDesc": "Protokoller og standarder for institusjonelt samarbeid på tvers av jurisdiksjoner",
-            "compliance": "Regulatorisk teknologi",
-            "complianceDesc": "Systemdesign for innebygd overholdelse av europeiske regulatoriske rammeverk",
-            "governance": "Datastyringsmodeller",
-            "governanceDesc": "Rammeverk for suverenitetsbevareende dataadministrasjon og utveksling"
-        },
-        "methodology": {
-            "title": "Forskningsmetodikk",
-            "description": "Vår forskning kombinerer teknisk systemutvikling med regulatorisk analyse og institusjonelt engasjement. Vi publiserer våre funn i akademiske fora og bidrar til politiske diskusjoner. All forskning utføres med åpenhet og er gjenstand for fagfellevurdering."
-        },
-        "projects": {
-            "title": "Pågående forskningsprosjekter",
-            "efos": "European Framework for Operational Sovereignty (EFOS)",
-            "efosDesc": "Omfattende rammeverk for suverenitetsbevareende institusjonell infrastruktur",
-            "identity": "Fødererte identitetssystemer",
-            "identityDesc": "Grensekryssende autentisering som bevarer institusjonell kontroll",
-            "data": "Suverene datautvekslingsprotokoller",
-            "dataDesc": "Tekniske standarder for institusjonell datadeling"
-        },
-        "publications": {
-            "title": "Publikasjonsarkiv",
-            "description": "Vår forskning publiseres i akademiske tidsskrifter, konferansepublikasjoner og tekniske rapporter. Vi opprettholder et omfattende arkiv av alle publikasjoner."
-        },
-        "collaboration": {
-            "title": "Forskningssamarbeid",
-            "description": "Vi samarbeider med akademiske institusjoner, forskningsorganisasjoner og politiske organer over hele Europa. Vi ønsker forslag til felles forskningsprosjekter som er tilpasset våre fokusområder.",
-            "cta": "Foreslå samarbeid"
-        }
+      "title": "Forskningsdrevet utvikling",
+      "description": "Vårt arbeid er forankret i grundig forskning på digital suverenitet, institusjonell interoperabilitet og europeiske regulatoriske rammeverk. Vi publiserer våre funn og bidrar til politiske diskusjoner.",
+      "cta": "Se forskning"
     },
-    "systems": {
-        "hero": {
-            "title": "Institusjonelle infrastruktursystemer",
-            "subtitle": "Produksjonsklare løsninger for europeiske offentlige og regulatoriske institusjoner"
-        },
-        "architecture": {
-            "title": "Systemarkitektur",
-            "description": "Våre systemer er bygget på en modulær arkitektur som skiller suverenitetskritiske komponenter fra interoperabilitetslag. Dette designet gjør det mulig for institusjoner å opprettholde full kontroll over kjerneoperasjoner samtidig som de deltar i grensekryssende digitale økosystemer."
-        },
-        "components": {
-            "title": "Infrastrukturkomponenter",
-            "identity": "Identitets- og tilgangsstyring",
-            "identityDesc": "Fødererte autentiseringssystemer med institusjonell suverenitetsbevaring",
-            "data": "Datastyringsplattform",
-            "dataDesc": "Suverenitetsbevareende dataadministrasjon og grensekryssende utveksling",
-            "security": "Sikkerhetsinfrastruktur",
-            "securityDesc": "Flerlagssikkerhetsarkitektur tilpasset europeiske standarder",
-            "integration": "Interoperabilitetsrammeverk",
-            "integrationDesc": "Standardbasert integrasjon for institusjonelle systemer"
-        },
-        "governance": {
-            "title": "Styringsrammeverk",
-            "description": "Våre systemer implementerer styringsmodeller som bevarer institusjonell autonomi samtidig som de muliggjør samarbeidende beslutningstaking. Disse rammeverkene er basert på forskning på suverenitetsbevareende styring og er tilpasset europeiske regulatoriske prinsipper."
-        },
-        "compliance": {
-            "title": "Regelverksstandarder",
-            "gdpr": "GDPR-overholdelse",
-            "gdprDesc": "Innebygde databeskyttelses- og personvernkontroller",
-            "nis2": "NIS2-tilpasning",
-            "nis2Desc": "Cybersikkerhetskrav for kritisk infrastruktur",
-            "eidas": "eIDAS-integrasjon",
-            "eidasDesc": "Europeisk elektronisk identifikasjon og tillitstjenester",
-            "sovereignty": "Digitale suverenitetsstandarder",
-            "sovereigntyDesc": "Fremvoksende europeiske rammeverk for digital autonomi"
-        },
-        "implementation": {
-            "title": "Implementeringstilnærming",
-            "description": "Vi samarbeider med institusjoner gjennom en strukturert implementeringsprosess som inkluderer kravanalyse, systemdesign, implementering og løpende støtte. Vår tilnærming vektlegger kunnskapsoverføring og institusjonell kapasitetsbygging."
-        },
-        "technical": {
-            "title": "Tekniske ressurser",
-            "description": "Detaljert teknisk dokumentasjon, arkitekturspesifikasjoner og integrasjonsveiledninger er tilgjengelige for institusjonelle partnere.",
-            "cta": "Tilgang til dokumentasjon"
-        }
-    },
-    "initiatives": {
-        "hero": {
-            "title": "Strategiske initiativer",
-            "subtitle": "Fremme europeisk digital suverenitet gjennom forskning, utvikling og institusjonelt samarbeid"
-        },
-        "content": {
-            "description": "Våre initiativer spenner over forskning, teknisk utvikling og politisk engasjement. Hvert initiativ er designet for å adressere spesifikke utfordringer i europeisk institusjonell infrastruktur samtidig som det bidrar til bredere digitale suverenitetsmål."
-        },
-        "grid": {
-            "efos": "European Framework for Operational Sovereignty",
-            "efosDesc": "Omfattende rammeverk for suverenitetsbevareende institusjonell infrastruktur",
-            "identity": "Føderert identitetsinitiativ",
-            "identityDesc": "Grensekryssende autentiseringssystemer som bevarer institusjonell kontroll",
-            "data": "Suveren datautveksling",
-            "dataDesc": "Protokoller og standarder for institusjonell datadeling",
-            "research": "Forskningslaboratorium",
-            "researchDesc": "Pågående undersøkelse av digital suverenitet og regulatorisk teknologi",
-            "policy": "Politisk engasjement",
-            "policyDesc": "Bidra til europeiske politiske diskusjoner om digital suverenitet",
-            "capacity": "Institusjonell kapasitetsbygging",
-            "capacityDesc": "Kunnskapsoverføring og opplæring for institusjonelle partnere"
-        },
-        "efosHighlight": {
-            "title": "Fremhevet initiativ: EFOS",
-            "description": "European Framework for Operational Sovereignty (EFOS) er vårt flaggskipinitiativ, som gir en omfattende tilnærming til suverenitetsbevareende institusjonell infrastruktur. EFOS kombinerer teknisk arkitektur, styringsrammeverk og implementeringsmetodikk.",
-            "cta": "Lær mer om EFOS"
-        },
-        "timeline": {
-            "title": "Strategisk tidslinje",
-            "phase1": "Fase 1: Grunnlag",
-            "phase1Desc": "Forskning og rammeverkutvikling",
-            "phase2": "Fase 2: Implementering",
-            "phase2Desc": "Systemimplementering og institusjonelle partnerskap",
-            "phase3": "Fase 3: Ekspansjon",
-            "phase3Desc": "Skalering på tvers av europeiske institusjoner"
-        },
-        "participation": {
-            "title": "Deltakelsesrammeverk",
-            "description": "Vi ønsker engasjement fra offentlige etater, regulatoriske organer, forskningsinstitusjoner og politiske organisasjoner. Deltakelse kan ta ulike former inkludert forskningssamarbeid, pilotimplementeringer og politisk dialog.",
-            "cta": "Utforsk engasjementsmuligheter"
-        }
-    },
-    "engage": {
-        "hero": {
-            "title": "Institusjonelt engasjement",
-            "subtitle": "Samarbeid med Northflow Technologies om digitale suverenitetsinitiativer"
-        },
-        "process": {
-            "title": "Engasjementsprosess",
-            "inquiry": "Innledende henvendelse",
-            "inquiryDesc": "Send inn dine institusjonelle krav og mål",
-            "assessment": "Kravvurdering",
-            "assessmentDesc": "Vi evaluerer tilpasning med våre kapasiteter og forskningsfokus",
-            "proposal": "Engasjementsforslag",
-            "proposalDesc": "Detaljert forslag for samarbeid eller systemimplementering",
-            "implementation": "Implementering",
-            "implementationDesc": "Strukturert prosess for forskningssamarbeid eller systemimplementering"
-        },
-        "guidelines": {
-            "title": "Engasjementsretningslinjer",
-            "institutional": "Institusjonelt fokus",
-            "institutionalDesc": "Vi arbeider primært med offentlige etater, regulatoriske organer og forskningsinstitusjoner",
-            "european": "Europeisk omfang",
-            "europeanDesc": "Vårt arbeid fokuserer på europeiske institusjonelle krav og regulatoriske rammeverk",
-            "sovereignty": "Suverenitetstilpasning",
-            "sovereigntyDesc": "Engasjementer må være tilpasset digitale suverenitetsprinsipper og institusjonell autonomi",
-            "transparency": "Åpenhetsforpliktelse",
-            "transparencyDesc": "Alle engasjementer utføres med full åpenhet og dokumenteres på riktig måte"
-        },
-        "form": {
-            "title": "Kontaktskjema",
-            "institution": "Institusjonsnavn",
-            "institutionPlaceholder": "Din institusjon",
-            "contact": "Kontaktperson",
-            "contactPlaceholder": "Fullt navn",
-            "email": "E-postadresse",
-            "emailPlaceholder": "institusjonell.epost@domene.no",
-            "role": "Rolle/stilling",
-            "rolePlaceholder": "Din rolle i institusjonen",
-            "country": "Land",
-            "countryPlaceholder": "Velg land",
-            "type": "Engasjementstype",
-            "typePlaceholder": "Velg engasjementstype",
-            "typeResearch": "Forskningssamarbeid",
-            "typeDeployment": "Systemimplementering",
-            "typePolicy": "Politisk dialog",
-            "typeOther": "Annet",
-            "message": "Melding",
-            "messagePlaceholder": "Beskriv dine institusjonelle krav og mål",
-            "submit": "Send henvendelse",
-            "privacy": "Alle henvendelser håndteres i samsvar med våre personvernregler og europeiske databeskyttelsesforskrifter."
-        },
-        "pathways": {
-            "title": "Ytterligere kontaktveier",
-            "research": "Forskningssamarbeid",
-            "researchEmail": "research@northflow.no",
-            "institutional": "Institusjonelle partnerskap",
-            "institutionalEmail": "institutions@northflow.no",
-            "policy": "Politisk engasjement",
-            "policyEmail": "policy@northflow.no",
-            "general": "Generelle henvendelser",
-            "generalEmail": "contact@northflow.no"
-        }
-    },
-    "resources": {
-        "title": "Institusjonelle ressurser",
-        "subtitle": "Dokumentasjon, forskningspublikasjoner og tekniske materialer",
-        "categories": {
-            "all": "Alle ressurser",
-            "documentation": "Dokumentasjon",
-            "research": "Forskningspublikasjoner",
-            "technical": "Tekniske artikler",
-            "policy": "Politiske materialer"
-        },
-        "filter": "Filtrer etter kategori",
-        "search": "Søk i ressurser",
-        "noResults": "Ingen ressurser funnet som matcher dine kriterier",
-        "viewResource": "Se ressurs",
-        "downloadPdf": "Last ned PDF",
-        "externalLink": "Ekstern lenke"
+    "engagement": {
+      "title": "Institusjonelt engasjement",
+      "description": "Vi samarbeider med offentlige etater, regulatoriske organer og forskningsinstitusjoner over hele Europa. Vår engasjementsmodell vektlegger åpenhet, samarbeid og delte styringsprinsipper.",
+      "cta": "Lær om engasjement"
     }
+  },
+  "about": {
+    "hero": {
+      "title": "Bygger suveren digital infrastruktur for europeiske institusjoner",
+      "subtitle": "Northflow Technologies utvikler systemer som bevarer institusjonell autonomi samtidig som de muliggjør grensekryssende samarbeid"
+    },
+    "premise": {
+      "title": "Den institusjonelle utfordringen",
+      "description": "Europeiske institusjoner står overfor en grunnleggende spenning: behovet for digital suverenitet er i konflikt med kravet om grensekryssende interoperabilitet. Nåværende løsninger tvinger ofte til et valg mellom autonomi og samarbeid. Vi mener dette er et falskt dikotomi."
+    },
+    "mission": {
+      "title": "Vårt oppdrag",
+      "description": "Å utvikle og implementere digital infrastruktur som gjør det mulig for europeiske institusjoner å opprettholde full suverenitet over sine operasjoner samtidig som de deltar effektivt i grensekryssende digitale økosystemer. Vi oppnår dette gjennom grundig teknisk design, overholdelse av åpne standarder og dyp engasjement med regulatoriske rammeverk."
+    },
+    "approach": {
+      "title": "Vår tilnærming",
+      "researchDriven": "Forskningsdrevet utvikling",
+      "researchDrivenDesc": "Hvert system vi bygger er forankret i publisert forskning på digital suverenitet, institusjonell interoperabilitet og regelverksetterlevelse",
+      "openStandards": "Forpliktelse til åpne standarder",
+      "openStandardsDesc": "Vi baserer vårt arbeid på transparente, kontrollerbare tekniske spesifikasjoner som kan verifiseres uavhengig",
+      "institutionalFocus": "Institusjonelt-først design",
+      "institutionalFocusDesc": "Våre systemer er spesialbygget for offentlige og regulatoriske krav, ikke tilpasset fra kommersielle produkter",
+      "europeanAlignment": "Europeisk regulatorisk tilpasning",
+      "europeanAlignmentDesc": "Dyp integrasjon med EU-rammeverk inkludert GDPR, NIS2 og fremvoksende digitale suverenitetsstandarder"
+    },
+    "principles": {
+      "title": "Veiledende prinsipper",
+      "sovereignty": "Suverenitetsbevaring",
+      "sovereigntyDesc": "Institusjoner må beholde full kontroll over sine data, operasjoner og styring",
+      "interoperability": "Interoperabilitet uten kompromiss",
+      "interoperabilityDesc": "Grensekryssende samarbeid bør ikke kreve at man gir fra seg institusjonell autonomi",
+      "transparency": "Teknisk åpenhet",
+      "transparencyDesc": "Alle systemer må være kontrollerbare og basert på åpne, verifiserbare standarder",
+      "compliance": "Regelverk ved design",
+      "complianceDesc": "Regulatoriske krav bør være innebygd i systemarkitekturen, ikke lagt til i ettertid"
+    },
+    "story": {
+      "title": "Selskapets historie",
+      "description": "Northflow Technologies ble grunnlagt i Norge med et spesifikt mandat: å adressere de digitale infrastrukturutfordringene som europeiske institusjoner står overfor. Vårt arbeid begynte med forskning på digitale suverenitetsstandarder og har utviklet seg til utvikling av produksjonsklare systemer. Vi opprettholder et forskningslaboratorium som fortsetter å informere vår tekniske utvikling samtidig som vi engasjerer oss i politiske diskusjoner på europeisk nivå."
+    },
+    "presence": {
+      "title": "Regional tilstedeværelse",
+      "norway": "Norge (hovedkontor)",
+      "norwayDesc": "Primær utvikling og forskningsoperasjoner",
+      "europe": "Europeiske operasjoner",
+      "europeDesc": "Institusjonelt engasjement og implementeringsstøtte på tvers av EU-medlemsland"
+    },
+    "validation": {
+      "title": "Institusjonell validering",
+      "description": "Våre systemer er implementert i institusjonelle miljøer og gjennomgår kontinuerlig evaluering. Vi samarbeider tett med offentlige etater og regulatoriske organer for å sikre at våre løsninger møter virkelige krav."
+    },
+    "lab": {
+      "title": "Forskningslaboratorium",
+      "description": "Northflow Research Lab utfører pågående forskning på digital suverenitet, institusjonell interoperabilitet og regulatorisk teknologi. Våre funn publiseres i akademiske fora og informerer både vår tekniske utvikling og politiske engasjement."
+    },
+    "leadership": {
+      "title": "Ledelse",
+      "description": "Vårt lederteam kombinerer teknisk ekspertise i distribuerte systemer med dyp kunnskap om europeiske regulatoriske rammeverk og institusjonelle krav."
+    },
+    "cta": {
+      "title": "Engasjer deg i vårt arbeid",
+      "description": "Vi ønsker engasjement fra offentlige etater, regulatoriske organer, forskningsinstitusjoner og politiske organisasjoner.",
+      "button": "Kontakt oss"
+    }
+  },
+  "research": {
+    "hero": {
+      "title": "Forskning på digital suverenitet og institusjonell infrastruktur",
+      "subtitle": "Grundig undersøkelse av de tekniske og styringsmessige utfordringene ved europeisk digital autonomi"
+    },
+    "areas": {
+      "title": "Forskningsområder",
+      "sovereignty": "Digitale suverenitetsstandarder",
+      "sovereigntyDesc": "Tekniske arkitekturer som bevarer institusjonell kontroll samtidig som de muliggjør interoperabilitet",
+      "interoperability": "Grensekryssende interoperabilitet",
+      "interoperabilityDesc": "Protokoller og standarder for institusjonelt samarbeid på tvers av jurisdiksjoner",
+      "compliance": "Regulatorisk teknologi",
+      "complianceDesc": "Systemdesign for innebygd overholdelse av europeiske regulatoriske rammeverk",
+      "governance": "Datastyringsmodeller",
+      "governanceDesc": "Rammeverk for suverenitetsbevareende dataadministrasjon og utveksling"
+    },
+    "methodology": {
+      "title": "Forskningsmetodikk",
+      "description": "Vår forskning kombinerer teknisk systemutvikling med regulatorisk analyse og institusjonelt engasjement. Vi publiserer våre funn i akademiske fora og bidrar til politiske diskusjoner. All forskning utføres med åpenhet og er gjenstand for fagfellevurdering."
+    },
+    "projects": {
+      "title": "Pågående forskningsprosjekter",
+      "efos": "European Framework for Operational Sovereignty (EFOS)",
+      "efosDesc": "Omfattende rammeverk for suverenitetsbevareende institusjonell infrastruktur",
+      "identity": "Fødererte identitetssystemer",
+      "identityDesc": "Grensekryssende autentisering som bevarer institusjonell kontroll",
+      "data": "Suverene datautvekslingsprotokoller",
+      "dataDesc": "Tekniske standarder for institusjonell datadeling"
+    },
+    "publications": {
+      "title": "Publikasjonsarkiv",
+      "description": "Vår forskning publiseres i akademiske tidsskrifter, konferansepublikasjoner og tekniske rapporter. Vi opprettholder et omfattende arkiv av alle publikasjoner."
+    },
+    "collaboration": {
+      "title": "Forskningssamarbeid",
+      "description": "Vi samarbeider med akademiske institusjoner, forskningsorganisasjoner og politiske organer over hele Europa. Vi ønsker forslag til felles forskningsprosjekter som er tilpasset våre fokusområder.",
+      "cta": "Foreslå samarbeid"
+    }
+  },
+  "systems": {
+    "hero": {
+      "title": "Institusjonelle infrastruktursystemer",
+      "subtitle": "Produksjonsklare løsninger for europeiske offentlige og regulatoriske institusjoner"
+    },
+    "architecture": {
+      "title": "Systemarkitektur",
+      "description": "Våre systemer er bygget på en modulær arkitektur som skiller suverenitetskritiske komponenter fra interoperabilitetslag. Dette designet gjør det mulig for institusjoner å opprettholde full kontroll over kjerneoperasjoner samtidig som de deltar i grensekryssende digitale økosystemer."
+    },
+    "components": {
+      "title": "Infrastrukturkomponenter",
+      "identity": "Identitets- og tilgangsstyring",
+      "identityDesc": "Fødererte autentiseringssystemer med institusjonell suverenitetsbevaring",
+      "data": "Datastyringsplattform",
+      "dataDesc": "Suverenitetsbevareende dataadministrasjon og grensekryssende utveksling",
+      "security": "Sikkerhetsinfrastruktur",
+      "securityDesc": "Flerlagssikkerhetsarkitektur tilpasset europeiske standarder",
+      "integration": "Interoperabilitetsrammeverk",
+      "integrationDesc": "Standardbasert integrasjon for institusjonelle systemer"
+    },
+    "governance": {
+      "title": "Styringsrammeverk",
+      "description": "Våre systemer implementerer styringsmodeller som bevarer institusjonell autonomi samtidig som de muliggjør samarbeidende beslutningstaking. Disse rammeverkene er basert på forskning på suverenitetsbevareende styring og er tilpasset europeiske regulatoriske prinsipper."
+    },
+    "compliance": {
+      "title": "Regelverksstandarder",
+      "gdpr": "GDPR-overholdelse",
+      "gdprDesc": "Innebygde databeskyttelses- og personvernkontroller",
+      "nis2": "NIS2-tilpasning",
+      "nis2Desc": "Cybersikkerhetskrav for kritisk infrastruktur",
+      "eidas": "eIDAS-integrasjon",
+      "eidasDesc": "Europeisk elektronisk identifikasjon og tillitstjenester",
+      "sovereignty": "Digitale suverenitetsstandarder",
+      "sovereigntyDesc": "Fremvoksende europeiske rammeverk for digital autonomi"
+    },
+    "implementation": {
+      "title": "Implementeringstilnærming",
+      "description": "Vi samarbeider med institusjoner gjennom en strukturert implementeringsprosess som inkluderer kravanalyse, systemdesign, implementering og løpende støtte. Vår tilnærming vektlegger kunnskapsoverføring og institusjonell kapasitetsbygging."
+    },
+    "technical": {
+      "title": "Tekniske ressurser",
+      "description": "Detaljert teknisk dokumentasjon, arkitekturspesifikasjoner og integrasjonsveiledninger er tilgjengelige for institusjonelle partnere.",
+      "cta": "Tilgang til dokumentasjon"
+    }
+  },
+  "initiatives": {
+    "hero": {
+      "title": "Strategiske initiativer",
+      "subtitle": "Fremme europeisk digital suverenitet gjennom forskning, utvikling og institusjonelt samarbeid"
+    },
+    "content": {
+      "description": "Våre initiativer spenner over forskning, teknisk utvikling og politisk engasjement. Hvert initiativ er designet for å adressere spesifikke utfordringer i europeisk institusjonell infrastruktur samtidig som det bidrar til bredere digitale suverenitetsmål."
+    },
+    "grid": {
+      "efos": "European Framework for Operational Sovereignty",
+      "efosDesc": "Omfattende rammeverk for suverenitetsbevareende institusjonell infrastruktur",
+      "identity": "Føderert identitetsinitiativ",
+      "identityDesc": "Grensekryssende autentiseringssystemer som bevarer institusjonell kontroll",
+      "data": "Suveren datautveksling",
+      "dataDesc": "Protokoller og standarder for institusjonell datadeling",
+      "research": "Forskningslaboratorium",
+      "researchDesc": "Pågående undersøkelse av digital suverenitet og regulatorisk teknologi",
+      "policy": "Politisk engasjement",
+      "policyDesc": "Bidra til europeiske politiske diskusjoner om digital suverenitet",
+      "capacity": "Institusjonell kapasitetsbygging",
+      "capacityDesc": "Kunnskapsoverføring og opplæring for institusjonelle partnere"
+    },
+    "efosHighlight": {
+      "title": "Fremhevet initiativ: EFOS",
+      "description": "European Framework for Operational Sovereignty (EFOS) er vårt flaggskipinitiativ, som gir en omfattende tilnærming til suverenitetsbevareende institusjonell infrastruktur. EFOS kombinerer teknisk arkitektur, styringsrammeverk og implementeringsmetodikk.",
+      "cta": "Lær mer om EFOS"
+    },
+    "timeline": {
+      "title": "Strategisk tidslinje",
+      "phase1": "Fase 1: Grunnlag",
+      "phase1Desc": "Forskning og rammeverkutvikling",
+      "phase2": "Fase 2: Implementering",
+      "phase2Desc": "Systemimplementering og institusjonelle partnerskap",
+      "phase3": "Fase 3: Ekspansjon",
+      "phase3Desc": "Skalering på tvers av europeiske institusjoner"
+    },
+    "participation": {
+      "title": "Deltakelsesrammeverk",
+      "description": "Vi ønsker engasjement fra offentlige etater, regulatoriske organer, forskningsinstitusjoner og politiske organisasjoner. Deltakelse kan ta ulike former inkludert forskningssamarbeid, pilotimplementeringer og politisk dialog.",
+      "cta": "Utforsk engasjementsmuligheter"
+    }
+  },
+  "engage": {
+    "hero": {
+      "title": "Institusjonelt engasjement",
+      "subtitle": "Samarbeid med Northflow Technologies om digitale suverenitetsinitiativer"
+    },
+    "process": {
+      "title": "Engasjementsprosess",
+      "inquiry": "Innledende henvendelse",
+      "inquiryDesc": "Send inn dine institusjonelle krav og mål",
+      "assessment": "Kravvurdering",
+      "assessmentDesc": "Vi evaluerer tilpasning med våre kapasiteter og forskningsfokus",
+      "proposal": "Engasjementsforslag",
+      "proposalDesc": "Detaljert forslag for samarbeid eller systemimplementering",
+      "implementation": "Implementering",
+      "implementationDesc": "Strukturert prosess for forskningssamarbeid eller systemimplementering"
+    },
+    "guidelines": {
+      "title": "Engasjementsretningslinjer",
+      "institutional": "Institusjonelt fokus",
+      "institutionalDesc": "Vi arbeider primært med offentlige etater, regulatoriske organer og forskningsinstitusjoner",
+      "european": "Europeisk omfang",
+      "europeanDesc": "Vårt arbeid fokuserer på europeiske institusjonelle krav og regulatoriske rammeverk",
+      "sovereignty": "Suverenitetstilpasning",
+      "sovereigntyDesc": "Engasjementer må være tilpasset digitale suverenitetsprinsipper og institusjonell autonomi",
+      "transparency": "Åpenhetsforpliktelse",
+      "transparencyDesc": "Alle engasjementer utføres med full åpenhet og dokumenteres på riktig måte"
+    },
+    "form": {
+      "title": "Kontaktskjema",
+      "institution": "Institusjonsnavn",
+      "institutionPlaceholder": "Din institusjon",
+      "contact": "Kontaktperson",
+      "contactPlaceholder": "Fullt navn",
+      "email": "E-postadresse",
+      "emailPlaceholder": "institusjonell.epost@domene.no",
+      "role": "Rolle/stilling",
+      "rolePlaceholder": "Din rolle i institusjonen",
+      "country": "Land",
+      "countryPlaceholder": "Velg land",
+      "type": "Engasjementstype",
+      "typePlaceholder": "Velg engasjementstype",
+      "typeResearch": "Forskningssamarbeid",
+      "typeDeployment": "Systemimplementering",
+      "typePolicy": "Politisk dialog",
+      "typeOther": "Annet",
+      "message": "Melding",
+      "messagePlaceholder": "Beskriv dine institusjonelle krav og mål",
+      "submit": "Send henvendelse",
+      "privacy": "Alle henvendelser håndteres i samsvar med våre personvernregler og europeiske databeskyttelsesforskrifter."
+    },
+    "pathways": {
+      "title": "Ytterligere kontaktveier",
+      "research": "Forskningssamarbeid",
+      "researchEmail": "research@northflow.no",
+      "institutional": "Institusjonelle partnerskap",
+      "institutionalEmail": "institutions@northflow.no",
+      "policy": "Politisk engasjement",
+      "policyEmail": "policy@northflow.no",
+      "general": "Generelle henvendelser",
+      "generalEmail": "contact@northflow.no"
+    }
+  },
+  "resources": {
+    "title": "Institusjonelle ressurser",
+    "subtitle": "Dokumentasjon, forskningspublikasjoner og tekniske materialer",
+    "categories": {
+      "all": "Alle ressurser",
+      "documentation": "Dokumentasjon",
+      "research": "Forskningspublikasjoner",
+      "technical": "Tekniske artikler",
+      "policy": "Politiske materialer"
+    },
+    "filter": "Filtrer etter kategori",
+    "search": "Søk i ressurser",
+    "noResults": "Ingen ressurser funnet som matcher dine kriterier",
+    "viewResource": "Se ressurs",
+    "downloadPdf": "Last ned PDF",
+    "externalLink": "Ekstern lenke"
+  }
 }

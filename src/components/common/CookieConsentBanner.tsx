@@ -74,10 +74,7 @@ const CookieConsentBanner = ({ className = '' }: CookieConsentBannerProps) => {
 
   return (
     <>
-      <div
-        className="fixed inset-0 bg-foreground/20 backdrop-blur-sm z-40"
-        aria-hidden="true"
-      />
+      <div className="fixed inset-0 bg-foreground/20 backdrop-blur-sm z-40" aria-hidden="true" />
       <div
         role="dialog"
         aria-labelledby="cookie-consent-title"
@@ -109,20 +106,27 @@ const CookieConsentBanner = ({ className = '' }: CookieConsentBannerProps) => {
                         id="cookie-consent-description"
                         className="text-sm text-muted-foreground font-body leading-relaxed"
                       >
-                        This website uses cookies and processes personal data in accordance with European data protection regulations (GDPR). Necessary cookies are required for core functionality. Optional cookies support site analytics and functional improvements. You may withdraw consent at any time through the privacy settings.
+                        This website uses cookies and processes personal data in accordance with
+                        European data protection regulations (GDPR). Necessary cookies are required
+                        for core functionality. Optional cookies support site analytics and
+                        functional improvements. You may withdraw consent at any time through the
+                        privacy settings.
                       </p>
                     </div>
                   </div>
 
                   <div className="ml-11 space-y-2">
                     <p className="text-xs text-muted-foreground font-body">
-                      <strong className="font-semibold text-foreground">Necessary cookies:</strong> Essential for site operation, security, and form submission.
+                      <strong className="font-semibold text-foreground">Necessary cookies:</strong>{' '}
+                      Essential for site operation, security, and form submission.
                     </p>
                     <p className="text-xs text-muted-foreground font-body">
-                      <strong className="font-semibold text-foreground">Functional cookies:</strong> Enable enhanced features and user preferences.
+                      <strong className="font-semibold text-foreground">Functional cookies:</strong>{' '}
+                      Enable enhanced features and user preferences.
                     </p>
                     <p className="text-xs text-muted-foreground font-body">
-                      <strong className="font-semibold text-foreground">Analytics cookies:</strong> Help us understand site usage patterns (anonymized data only).
+                      <strong className="font-semibold text-foreground">Analytics cookies:</strong>{' '}
+                      Help us understand site usage patterns (anonymized data only).
                     </p>
                   </div>
 
@@ -184,11 +188,14 @@ const CookieConsentBanner = ({ className = '' }: CookieConsentBannerProps) => {
                         Necessary cookies
                       </h3>
                       <p className="text-sm text-muted-foreground font-body">
-                        Required for core site functionality, security, and compliance. These cannot be disabled.
+                        Required for core site functionality, security, and compliance. These cannot
+                        be disabled.
                       </p>
                     </div>
                     <div className="flex items-center">
-                      <span className="text-sm font-cta font-medium text-muted-foreground">Always active</span>
+                      <span className="text-sm font-cta font-medium text-muted-foreground">
+                        Always active
+                      </span>
                     </div>
                   </div>
 
@@ -198,14 +205,17 @@ const CookieConsentBanner = ({ className = '' }: CookieConsentBannerProps) => {
                         Functional cookies
                       </h3>
                       <p className="text-sm text-muted-foreground font-body">
-                        Enable enhanced features such as saved preferences and improved user experience.
+                        Enable enhanced features such as saved preferences and improved user
+                        experience.
                       </p>
                     </div>
                     <label className="flex items-center cursor-pointer">
                       <input
                         type="checkbox"
                         checked={preferences.functional}
-                        onChange={(e) => setPreferences({ ...preferences, functional: e.target.checked })}
+                        onChange={(e) =>
+                          setPreferences({ ...preferences, functional: e.target.checked })
+                        }
                         className="w-5 h-5 text-primary border-input rounded focus:ring-2 focus:ring-ring focus:ring-offset-2 cursor-pointer"
                         aria-label="Enable functional cookies"
                       />
@@ -218,14 +228,17 @@ const CookieConsentBanner = ({ className = '' }: CookieConsentBannerProps) => {
                         Analytics cookies
                       </h3>
                       <p className="text-sm text-muted-foreground font-body">
-                        Help us understand how the site is used through anonymized data collection. No personal identification.
+                        Help us understand how the site is used through anonymized data collection.
+                        No personal identification.
                       </p>
                     </div>
                     <label className="flex items-center cursor-pointer">
                       <input
                         type="checkbox"
                         checked={preferences.analytics}
-                        onChange={(e) => setPreferences({ ...preferences, analytics: e.target.checked })}
+                        onChange={(e) =>
+                          setPreferences({ ...preferences, analytics: e.target.checked })
+                        }
                         className="w-5 h-5 text-primary border-input rounded focus:ring-2 focus:ring-ring focus:ring-offset-2 cursor-pointer"
                         aria-label="Enable analytics cookies"
                       />

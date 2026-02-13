@@ -18,7 +18,7 @@ export function useAnalytics(): UseAnalyticsReturn {
   const trackClick = useCallback((elementId: string, additionalParams: EventParams = {}) => {
     trackEvent('element_click', {
       element_id: elementId,
-      ...additionalParams
+      ...additionalParams,
     });
   }, []);
 

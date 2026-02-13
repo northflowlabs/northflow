@@ -9,13 +9,15 @@ const EFOSSystemOverview = () => {
             European framework for operational sovereignty
           </h2>
           <p className="text-base text-muted-foreground font-body leading-relaxed mb-8 text-center">
-            EFOS defines how sovereign digital infrastructure can be governed, coordinated, and sustained across European institutional environments.
+            EFOS defines how sovereign digital infrastructure can be governed, coordinated, and
+            sustained across European institutional environments.
           </p>
           <div className="flex justify-center mb-6">
             <EFOSSystemOverviewDiagram className="w-full max-w-3xl text-muted-foreground" />
           </div>
           <p className="text-sm text-muted-foreground font-body leading-relaxed text-center italic">
-            EFOS operates as a coordination and reference framework. It does not function as a centralised system or authority.
+            EFOS operates as a coordination and reference framework. It does not function as a
+            centralised system or authority.
           </p>
         </div>
       </div>

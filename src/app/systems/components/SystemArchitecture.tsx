@@ -20,48 +20,47 @@ const SystemArchitecture = ({ className = '' }: SystemArchitectureProps) => {
   const layers: ArchitectureLayer[] = [
     {
       id: 1,
-      name: "Infrastructure layer",
-      description: "Designed to support sovereign infrastructure with geographic distribution and jurisdictional compliance.",
+      name: 'Infrastructure layer',
+      description:
+        'Designed to support sovereign infrastructure with geographic distribution and jurisdictional compliance.',
       components: [
-        "Multi-region data centers",
-        "Network infrastructure",
-        "Storage systems",
-        "Compute resources"
-      ]
+        'Multi-region data centers',
+        'Network infrastructure',
+        'Storage systems',
+        'Compute resources',
+      ],
     },
     {
       id: 2,
-      name: "Platform layer",
-      description: "Intended to enable core platform services providing foundational capabilities for institutional operations.",
-      components: [
-        "Identity management",
-        "Access control",
-        "Audit logging",
-        "Monitoring systems"
-      ]
+      name: 'Platform layer',
+      description:
+        'Intended to enable core platform services providing foundational capabilities for institutional operations.',
+      components: ['Identity management', 'Access control', 'Audit logging', 'Monitoring systems'],
     },
     {
       id: 3,
-      name: "Application layer",
-      description: "Structured to allow mission-critical applications with governance and compliance capabilities.",
+      name: 'Application layer',
+      description:
+        'Structured to allow mission-critical applications with governance and compliance capabilities.',
       components: [
-        "Business applications",
-        "Workflow systems",
-        "Reporting tools",
-        "Integration services"
-      ]
+        'Business applications',
+        'Workflow systems',
+        'Reporting tools',
+        'Integration services',
+      ],
     },
     {
       id: 4,
-      name: "Governance layer",
-      description: "Designed to support comprehensive governance and audit framework for regulatory compliance.",
+      name: 'Governance layer',
+      description:
+        'Designed to support comprehensive governance and audit framework for regulatory compliance.',
       components: [
-        "Policy enforcement",
-        "Compliance monitoring",
-        "Audit trail",
-        "Regulatory reporting"
-      ]
-    }
+        'Policy enforcement',
+        'Compliance monitoring',
+        'Audit trail',
+        'Regulatory reporting',
+      ],
+    },
   ];
 
   return (
@@ -72,7 +71,8 @@ const SystemArchitecture = ({ className = '' }: SystemArchitectureProps) => {
             System architecture overview
           </h2>
           <p className="text-lg text-muted-foreground font-body max-w-3xl">
-            Layered reference model designed for institutional requirements. Each layer represents architectural capabilities with emphasis on oversight, continuity, and control.
+            Layered reference model designed for institutional requirements. Each layer represents
+            architectural capabilities with emphasis on oversight, continuity, and control.
           </p>
         </div>
 
@@ -89,14 +89,16 @@ const SystemArchitecture = ({ className = '' }: SystemArchitectureProps) => {
                 }`}
               >
                 <div className="flex items-center justify-between">
-                  <span className="text-sm font-headline font-semibold">
-                    {layer.name}
-                  </span>
-                  <Icon 
-                    name="ChevronRightIcon" 
-                    size={16} 
+                  <span className="text-sm font-headline font-semibold">{layer.name}</span>
+                  <Icon
+                    name="ChevronRightIcon"
+                    size={16}
                     variant="outline"
-                    className={selectedLayer === layer.id ? 'text-primary-foreground' : 'text-muted-foreground'}
+                    className={
+                      selectedLayer === layer.id
+                        ? 'text-primary-foreground'
+                        : 'text-muted-foreground'
+                    }
                   />
                 </div>
               </button>
@@ -114,7 +116,7 @@ const SystemArchitecture = ({ className = '' }: SystemArchitectureProps) => {
                   <p className="text-sm text-muted-foreground font-body leading-relaxed mb-6">
                     {layer.description}
                   </p>
-                  
+
                   <h4 className="text-sm font-headline font-semibold text-foreground mb-4">
                     Key components
                   </h4>
@@ -124,15 +126,13 @@ const SystemArchitecture = ({ className = '' }: SystemArchitectureProps) => {
                         key={index}
                         className="flex items-center space-x-3 px-4 py-3 bg-muted rounded-lg"
                       >
-                        <Icon 
-                          name="CubeIcon" 
-                          size={16} 
+                        <Icon
+                          name="CubeIcon"
+                          size={16}
                           variant="outline"
                           className="text-primary flex-shrink-0"
                         />
-                        <span className="text-sm text-foreground font-body">
-                          {component}
-                        </span>
+                        <span className="text-sm text-foreground font-body">{component}</span>
                       </div>
                     ))}
                   </div>
