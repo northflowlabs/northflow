@@ -35,6 +35,12 @@ import {
   HandRaisedIcon,
   QuestionMarkCircleIcon,
   ArrowsRightLeftIcon,
+  InformationCircleIcon,
+  UserIcon,
+  ClipboardDocumentCheckIcon,
+  NewspaperIcon,
+  CheckIcon,
+  ChatBubbleLeftRightIcon,
 } from '@heroicons/react/24/outline';
 
 // Icon mapping for tree-shaking
@@ -83,6 +89,18 @@ const iconMap = {
   ArrowRightIcon,
   GlobeEuropeAfricaIcon,
   ArrowsRightLeftIcon,
+  InformationCircleIcon,
+  UserIcon,
+  ClipboardDocumentCheckIcon,
+  NewspaperIcon,
+  BuildingOffice2Icon,
+  LockClosedIcon,
+  ShieldCheckIcon,
+  BuildingOfficeIcon,
+  DocumentMagnifyingGlassIcon,
+  ArrowPathIcon,
+  CheckIcon,
+  ChatBubbleLeftRightIcon,
 } as const;
 
 type IconVariant = 'outline' | 'solid';
