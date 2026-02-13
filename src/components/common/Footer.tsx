@@ -93,6 +93,14 @@ const Footer = () => {
               </li>
               <li>
                 <Link
+                  href="/engage/request-access"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 focus:outline-none focus:underline"
+                >
+                  Access request
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/documentation"
                   className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 focus:outline-none focus:underline"
                 >
