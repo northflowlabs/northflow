@@ -19,28 +19,28 @@ const HGEMethodology = ({ className = '' }: HGEMethodologyProps) => {
       title: 'Hypothesis generation',
       description:
         'System formulates testable hypotheses based on current knowledge state, uncertainty estimates, and domain constraints. Hypotheses are structured to enable falsification and quantitative evaluation.',
-      icon: 'sparkles',
+      icon: 'LightBulbIcon',
     },
     {
       id: 2,
       title: 'Experiment design',
       description:
         'Experiments are designed to maximize expected information gain while respecting instrument capabilities, resource constraints, and operational limits. Design prioritizes hypotheses with highest epistemic value.',
-      icon: 'beaker',
+      icon: 'BeakerIcon',
     },
     {
       id: 3,
-      title: 'Deterministic execution',
+      title: 'Execution on real instruments',
       description:
-        'Experiments are executed with full provenance tracking. Deterministic execution ensures identical conditions produce identical results — enabling independent verification and audit-grade evidence generation.',
-      icon: 'cpu-chip',
+        'Experiments are executed on physical instruments in operational environments. Execution accounts for noise, drift, calibration uncertainty, and environmental factors. Full provenance is maintained.',
+      icon: 'CpuChipIcon',
     },
     {
       id: 4,
       title: 'Belief update and iteration',
       description:
-        'Observed results update confidence through structured reasoning. Updated beliefs inform the next cycle of hypothesis generation, creating a continuous discovery loop with full traceability.',
-      icon: 'arrow-path',
+        'Observed results are used to update confidence in hypotheses through Bayesian reasoning. Updated beliefs inform the next cycle of hypothesis generation, creating a continuous discovery loop.',
+      icon: 'ArrowPathIcon',
     },
   ];
 
@@ -48,16 +48,12 @@ const HGEMethodology = ({ className = '' }: HGEMethodologyProps) => {
     <section className={`bg-background py-20 ${className}`}>
       <div className="max-w-[1400px] mx-auto px-8">
         <div className="text-center mb-16">
-          <p className="text-xs font-cta font-semibold tracking-[0.16em] text-primary mb-3">
-            METHODOLOGY
-          </p>
           <h2 className="text-3xl md:text-4xl font-headline font-semibold text-foreground mb-4">
-            Four-stage discovery cycle
+            How it works
           </h2>
-          <p className="text-lg font-body text-muted-foreground max-w-4xl mx-auto">
-            HGE implements a closed-loop methodology that mirrors the scientific method while
-            operating autonomously under real-world constraints. Each cycle increases confidence in
-            validated hypotheses while identifying new areas of uncertainty.
+          <p className="text-lg font-body text-muted-foreground max-w-3xl mx-auto">
+            HGE implements a four-stage methodology that mirrors the scientific method while
+            operating autonomously under real-world constraints.
           </p>
         </div>
 
@@ -89,8 +85,7 @@ const HGEMethodology = ({ className = '' }: HGEMethodologyProps) => {
           <p className="text-sm font-body text-muted-foreground text-center">
             <span className="font-semibold text-foreground">Methodological principle:</span> Each
             cycle increases confidence in validated hypotheses while identifying new areas of
-            uncertainty, enabling systematic exploration of complex problem spaces under resource
-            constraints.
+            uncertainty, enabling systematic exploration of complex problem spaces.
           </p>
         </div>
       </div>

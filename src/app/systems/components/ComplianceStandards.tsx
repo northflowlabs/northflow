@@ -20,7 +20,7 @@ const ComplianceStandards = ({ className = '' }: ComplianceStandardsProps) => {
       category: 'Information Security',
       description:
         'Systems designed to align with international standards for information security management.',
-      icon: 'shield-check',
+      icon: 'ShieldCheckIcon',
     },
     {
       id: 2,
@@ -28,7 +28,7 @@ const ComplianceStandards = ({ className = '' }: ComplianceStandardsProps) => {
       category: 'Data Protection',
       description:
         'Architecture informed by European Union regulation for data protection and privacy.',
-      icon: 'lock-closed',
+      icon: 'LockClosedIcon',
     },
     {
       id: 3,
@@ -36,7 +36,7 @@ const ComplianceStandards = ({ className = '' }: ComplianceStandardsProps) => {
       category: 'Network Security',
       description:
         'Design mapped to principles of EU directive for network and information systems security.',
-      icon: 'server-stack',
+      icon: 'ServerStackIcon',
     },
     {
       id: 4,
@@ -44,7 +44,7 @@ const ComplianceStandards = ({ className = '' }: ComplianceStandardsProps) => {
       category: 'Digital Resilience',
       description:
         'Framework designed to align with Digital Operational Resilience Act requirements.',
-      icon: 'chart-bar',
+      icon: 'ShieldExclamationIcon',
     },
     {
       id: 5,
@@ -52,7 +52,7 @@ const ComplianceStandards = ({ className = '' }: ComplianceStandardsProps) => {
       category: 'Business Continuity',
       description:
         'Continuity and risk management capabilities mapped to international business continuity standards.',
-      icon: 'arrow-path',
+      icon: 'ArrowPathIcon',
     },
     {
       id: 6,
@@ -60,7 +60,7 @@ const ComplianceStandards = ({ className = '' }: ComplianceStandardsProps) => {
       category: 'Service Management',
       description:
         'Operational frameworks designed to align with service management system standards.',
-      icon: 'cpu-chip',
+      icon: 'CpuChipIcon',
     },
   ];
 
@@ -76,9 +76,8 @@ const ComplianceStandards = ({ className = '' }: ComplianceStandardsProps) => {
             Standards references describe design alignment only, not achieved compliance or
             certification.
           </p>
-          <p className="text-xs text-foreground font-body mt-3 bg-card border border-primary/20 rounded-sm px-3 py-2 max-w-3xl">
-            <span className="font-semibold">Design-alignment qualifier:</span> Formal
-            certifications are pursued and verified where applicable. References to standards
+          <p className="text-xs text-muted-foreground font-body mt-2 italic">
+            Formal certifications are pursued and verified where applicable. References to standards
             describe design intent and target operating model.
           </p>
         </div>
@@ -115,7 +114,7 @@ const ComplianceStandards = ({ className = '' }: ComplianceStandardsProps) => {
         <div className="mt-12 bg-card border border-border rounded-lg p-8">
           <div className="flex items-start space-x-4">
             <Icon
-              name="building-library"
+              name="InformationCircleIcon"
               size={24}
               variant="outline"
               className="text-primary flex-shrink-0 mt-1"

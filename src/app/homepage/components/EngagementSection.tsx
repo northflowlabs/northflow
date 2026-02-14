@@ -22,9 +22,8 @@ const EngagementSection = ({ className = '' }: EngagementSectionProps) => {
       id: 1,
       icon: 'building-office-2',
       title: 'Government entities',
-      description:
-        'Infrastructure and resilience systems aligned with institutional requirements. Designed for evaluation within European space, climate, and governance frameworks.',
-      action: 'Initiate institutional dialogue →',
+      description: 'Infrastructure and resilience systems aligned with institutional requirements.',
+      action: 'Initiate institutional dialogue',
       audienceType: 'institution',
     },
     {
@@ -32,17 +31,16 @@ const EngagementSection = ({ className = '' }: EngagementSectionProps) => {
       icon: 'user-group',
       title: 'Research collaboration',
       description:
-        'Academic and research partnerships in climate resilience, astronomical observation, Earth Observation methodology, and structured discovery systems. Co-publication and methodological co-development.',
-      action: 'Explore research opportunities →',
+        'Academic and research partnerships in climate and structured discovery systems.',
+      action: 'Explore research opportunities',
       audienceType: 'research_partner',
     },
     {
       id: 3,
       icon: 'building-library',
       title: 'Institutional stakeholders',
-      description:
-        'Mission-critical infrastructure consultation within regulated environments. Evidence infrastructure evaluation and governance framework assessment.',
-      action: 'Request formal consultation →',
+      description: 'Mission-critical infrastructure consultation within regulated environments.',
+      action: 'Request formal consultation',
       audienceType: 'institution',
     },
   ];
@@ -101,6 +99,7 @@ const EngagementSection = ({ className = '' }: EngagementSectionProps) => {
                 className="inline-flex items-center space-x-2 text-primary font-cta font-medium text-sm hover:underline transition-all duration-200"
               >
                 <span>{path.action}</span>
+                <Icon name="arrow-right" size={16} variant="outline" />
               </a>
             </div>
           ))}

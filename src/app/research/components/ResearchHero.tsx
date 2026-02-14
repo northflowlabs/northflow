@@ -19,8 +19,7 @@ const ResearchHero = ({ className = '' }: ResearchHeroProps) => {
           </h1>
           <p className="text-lg font-body text-primary-foreground/90 leading-relaxed mb-8">
             Research at Northflow exists to design and validate structured evidence infrastructure
-            for climate resilience, space-enabled systems, and mission-critical institutional
-            environments.
+            for climate resilience and mission-critical institutional systems.
           </p>
           <p className="text-sm font-body text-primary-foreground/70 leading-relaxed mb-4 italic">
             The program is applied, systems-oriented, and governed by methodological discipline. Its

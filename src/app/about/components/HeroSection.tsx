@@ -18,13 +18,12 @@ const HeroSection = ({ className = '' }: HeroSectionProps) => {
             Built to support institutions that require verifiable continuity
           </h1>
           <p className="text-lg font-body text-primary-foreground/90 leading-relaxed mb-8">
-            Northflow Technologies develops institutional evidence infrastructure for climate,
-            space, and critical systems. Our architectures formalise hypothesis discovery,
-            reproducible evaluation, and governance-grade verification in regulated European
-            environments.
+            Northflow Technologies develops institutional evidence infrastructure for climate and
+            critical systems. Our architectures formalize hypothesis discovery, reproducible
+            evaluation, and governance-grade verification in regulated European environments.
           </p>
           <p className="text-xs font-body text-primary-foreground/70 leading-relaxed mb-8 italic">
-            Designed for cross-border institutional collaboration · GDPR aligned ·
+            Designed for cross-border institutional collaboration · GDPR-aligned ·
             Standards-oriented architecture
           </p>
           <div className="flex flex-wrap gap-4">

@@ -19,9 +19,11 @@ const ResearchHighlightSection = ({ className = '' }: ResearchHighlightSectionPr
             <h2 className="text-3xl lg:text-4xl font-headline font-semibold text-foreground mb-6">
               Advanced research in climate and space-enabled systems
             </h2>
-            <p className="text-base text-muted-foreground font-body leading-relaxed mb-8">
+            <p className="text-base text-muted-foreground font-body leading-relaxed mb-6">
               Northflow develops structured methodologies for institutional evidence generation
-              across climate resilience, Earth Observation, and astronomical observation domains.
+              across climate resilience and Earth Observation domains.
+            </p>
+            <p className="text-base text-muted-foreground font-body leading-relaxed mb-8">
               Research areas include structured hypothesis discovery, audit-grade evaluation
               systems, and decision architectures for uncertain and large-scale environments.
             </p>
@@ -29,7 +31,8 @@ const ResearchHighlightSection = ({ className = '' }: ResearchHighlightSectionPr
               href="/research"
               className="inline-flex items-center space-x-2 text-primary font-cta font-medium hover:underline transition-all duration-200"
             >
-              <span>Explore research capabilities →</span>
+              <span>Explore research capabilities</span>
+              <Icon name="arrow-right" size={20} variant="outline" />
             </a>
           </div>
 
@@ -45,8 +48,8 @@ const ResearchHighlightSection = ({ className = '' }: ResearchHighlightSectionPr
                     Policy framework research
                   </h3>
                   <p className="text-sm text-muted-foreground font-body leading-relaxed">
-                    Analysis of regulatory environments impacting climate, space, infrastructure,
-                    and institutional data systems.
+                    Analysis of regulatory environments impacting climate, infrastructure, and
+                    institutional data systems.
                   </p>
                 </div>
               </div>

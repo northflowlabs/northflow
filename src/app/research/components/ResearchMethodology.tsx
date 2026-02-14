@@ -36,7 +36,7 @@ const ResearchMethodology = ({ className = '' }: ResearchMethodologyProps) => {
     },
     {
       id: 4,
-      title: 'Prototype and proof',
+      title: 'Prototype frameworks and architectural proofs',
       description:
         'Construct bounded prototypes to test whether the framework yields stable conclusions under realistic institutional constraints.',
       icon: 'BeakerIcon',
@@ -50,7 +50,7 @@ const ResearchMethodology = ({ className = '' }: ResearchMethodologyProps) => {
     },
     {
       id: 6,
-      title: 'Publication',
+      title: 'Publication outputs (iterated working papers and briefs)',
       description:
         'Publish working documents as governed outputs: traceable versions refined through review, validation, and operational learning.',
       icon: 'DocumentTextIcon',

@@ -4,7 +4,9 @@ import React, { useState, useEffect } from 'react';
 
 import InitiativeHero from './InitiativeHero';
 import InitiativeGrid from './InitiativeGrid';
+import EFOSHighlight from './EFOSHighlight';
 import ParticipationFramework from './ParticipationFramework';
+import StrategicTimeline from './StrategicTimeline';
 
 export default function InitiativesContent() {
   const [isHydrated, setIsHydrated] = useState(false);
@@ -27,6 +29,8 @@ export default function InitiativesContent() {
     <div className="min-h-screen bg-background">
       <InitiativeHero />
       <InitiativeGrid />
+      <EFOSHighlight />
+      <StrategicTimeline />
       <ParticipationFramework />
     </div>
   );

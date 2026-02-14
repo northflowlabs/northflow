@@ -7,17 +7,17 @@ const ApproachSection = ({ className = '' }: ApproachSectionProps) => {
     {
       title: 'Infrastructure before interfaces',
       description:
-        'Foundational reasoning and verification layers precede interface layers. We built the deterministic execution engine and evidence verification system before any user-facing surface. Systems must operate reliably before they scale.',
+        'Foundational reasoning and verification layers precede interface layers. Systems must operate reliably before they scale.',
     },
     {
       title: 'Research before execution',
       description:
-        'Architectures are informed by structured methodology and validation, not assumption or trend. HGE\'s design was validated against Gaia DR3 - one of the most complex astronomical datasets available - before being adapted to Earth Observation.',
+        'Architectures are informed by structured methodology and validation, not assumption or trend.',
     },
     {
       title: 'Operations over abstraction',
       description:
-        'Systems are designed for real institutional environments, with resilience and auditability as primary constraints. The proof inventory determines what is publicly claimed. No capability is presented without working implementation or documented validation.',
+        'Systems are designed for real institutional environments, with resilience and auditability as primary constraints.',
     },
   ];
 

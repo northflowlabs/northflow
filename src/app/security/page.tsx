@@ -10,28 +10,15 @@ export default function SecurityPage() {
   return (
     <>
       <div className="min-h-screen bg-background">
-        <section className="bg-gradient-to-br from-primary to-primary/90 text-primary-foreground">
-          <div className="max-w-[1400px] mx-auto px-8 py-24">
-            <div className="max-w-3xl">
-              <div className="inline-flex items-center space-x-2 bg-primary-foreground/10 px-4 py-2 rounded-sm mb-6">
-                <span className="text-xs font-cta font-medium tracking-wide uppercase">
-                  Security architecture
-                </span>
-              </div>
-              <h1 className="text-4xl md:text-5xl font-headline font-semibold mb-6 leading-tight">
-                Security by design
-              </h1>
-              <p className="text-lg font-body text-primary-foreground/90 leading-relaxed">
-                Security is approached as foundational architecture, not retrospective
-                implementation. Systems employ defence-in-depth principles with layered controls,
-                cryptographic protection, and continuous monitoring — informed by research-grade
-                validation workflows from Project HGE.
-              </p>
-            </div>
-          </div>
-        </section>
-
         <div className="max-w-[1200px] mx-auto px-8 py-16">
+          <div className="max-w-[900px]">
+            <h1 className="text-4xl font-headline font-bold text-foreground mb-4">Security</h1>
+            <p className="text-lg text-muted-foreground font-body mb-12 leading-relaxed">
+              Security practices and standards for Northflow Technologies institutional
+              infrastructure.
+            </p>
+          </div>
+
           <div className="space-y-12">
             <section>
               <h2 className="text-2xl font-headline font-semibold text-foreground mb-6">
@@ -331,56 +318,40 @@ export default function SecurityPage() {
               </h2>
               <div className="space-y-4 text-base text-foreground font-body leading-relaxed">
                 <p>
-                  Security capability maturity is assessed by operational validation depth,
-                  governance readiness, and reproducibility of verification evidence.
+                  Security maturity is developed through systematic implementation of controls,
+                  continuous improvement processes, and alignment with recognised security
+                  frameworks.
                 </p>
-                <div className="grid md:grid-cols-2 gap-6 mt-6">
-                  <div className="border border-emerald-500/20 rounded-lg p-6 bg-card">
+                <p>
+                  Security practices benefit from research-grade validation workflows and provenance
+                  concepts developed in Project HGE.
+                </p>
+                <div className="grid md:grid-cols-3 gap-6 mt-6">
+                  <div className="border border-border rounded-lg p-6 bg-card">
                     <h3 className="text-lg font-headline font-semibold text-foreground mb-3">
-                      Evidence verification security
+                      Risk management
                     </h3>
-                    <p className="text-xs font-cta font-medium uppercase tracking-wide text-emerald-700 mb-3">
-                      Status: Operational
-                    </p>
                     <p className="text-sm text-muted-foreground">
-                      Cryptographic signing, tamper-resistant bundles, and deterministic replay
-                      validated through red-team testing (6 attack vectors).
+                      Systematic risk assessment, threat modelling, and mitigation planning aligned
+                      with institutional risk tolerance.
                     </p>
                   </div>
                   <div className="border border-border rounded-lg p-6 bg-card">
                     <h3 className="text-lg font-headline font-semibold text-foreground mb-3">
-                      Access control and authentication
+                      Vulnerability management
                     </h3>
-                    <p className="text-xs font-cta font-medium uppercase tracking-wide text-amber-700 mb-3">
-                      Status: Design alignment
-                    </p>
                     <p className="text-sm text-muted-foreground">
-                      Multi-factor authentication, role-based access control, and audit logging
-                      aligned with institutional governance requirements.
+                      Regular security assessments, vulnerability scanning, and remediation
+                      procedures maintaining security posture.
                     </p>
                   </div>
                   <div className="border border-border rounded-lg p-6 bg-card">
                     <h3 className="text-lg font-headline font-semibold text-foreground mb-3">
-                      Cryptographic protection
+                      Security governance
                     </h3>
-                    <p className="text-xs font-cta font-medium uppercase tracking-wide text-amber-700 mb-3">
-                      Status: Design alignment
-                    </p>
                     <p className="text-sm text-muted-foreground">
-                      Encryption at rest and in transit, key management procedures aligned with
-                      European standards.
-                    </p>
-                  </div>
-                  <div className="border border-border rounded-lg p-6 bg-card">
-                    <h3 className="text-lg font-headline font-semibold text-foreground mb-3">
-                      Incident response
-                    </h3>
-                    <p className="text-xs font-cta font-medium uppercase tracking-wide text-slate-600 mb-3">
-                      Status: Framework defined
-                    </p>
-                    <p className="text-sm text-muted-foreground">
-                      Detection, containment, investigation, and notification protocols aligned with
-                      European regulatory requirements.
+                      Governance structures, policy frameworks, and oversight mechanisms ensuring
+                      security accountability.
                     </p>
                   </div>
                 </div>
@@ -396,13 +367,7 @@ export default function SecurityPage() {
                   <p>
                     Detailed security architecture, control implementation specifics, and
                     vulnerability management procedures are subject to controlled disclosure
-                    protocols. This balances transparency for institutional evaluation with
-                    protection of operational security details.
-                  </p>
-                  <p>
-                    Security practices benefit from research-grade validation workflows and
-                    provenance concepts developed in Project HGE — including deterministic replay for
-                    security event verification and audit-grade evidence trails.
+                    protocols.
                   </p>
                   <p>This approach balances:</p>
                   <ul className="space-y-2 ml-6">

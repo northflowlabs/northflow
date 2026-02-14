@@ -7,22 +7,20 @@ const MissionSection = ({ className = '' }: MissionSectionProps) => {
     {
       title: 'Sovereign-aligned architecture',
       description:
-        'Systems designed for institutional oversight, cross-border collaboration, and regulatory coherence. Architecture supports jurisdictional data residency and governance integration.',
+        'Systems designed for institutional oversight, cross-border collaboration, and regulatory coherence.',
     },
     {
       title: 'Operational continuity',
       description:
-        'Architectures built to function across crisis, transition, and evolving governance conditions. Designed for environments where downtime or data loss is not acceptable.',
+        'Architectures built to function across crisis, transition, and evolving governance conditions.',
     },
     {
       title: 'Institutional trust',
-      description:
-        'Deterministic evaluation and verifiable outputs suitable for formal review. Every execution can be replayed; every evidence bundle can be independently verified.',
+      description: 'Deterministic evaluation and verifiable outputs suitable for formal review.',
     },
     {
       title: 'Mission-critical reliability',
-      description:
-        'Infrastructure designed for environments where failure carries institutional, environmental, or human consequences. Resilience from inception, not retrofit.',
+      description: 'Infrastructure designed for environments where failure is not acceptable.',
     },
   ];
 

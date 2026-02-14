@@ -10,7 +10,6 @@ interface Resource {
   description: string;
   type: string;
   status: string;
-  statusTone: 'available' | 'development' | 'draft';
   icon: string;
   ctaText: string;
   ctaUrl: string;
@@ -21,36 +20,50 @@ interface TechnicalResourcesProps {
 }
 
 const TechnicalResources = ({ className = '' }: TechnicalResourcesProps) => {
-  const statusClasses: Record<Resource['statusTone'], string> = {
-    available: 'bg-emerald-500/10 text-emerald-700 border-emerald-500/20',
-    development: 'bg-amber-500/10 text-amber-700 border-amber-500/20',
-    draft: 'bg-muted text-muted-foreground border-border',
-  };
-
   const resources: Resource[] = [
     {
       id: 1,
-      title: 'Project HGE methodology overview',
+      title: 'Systems architecture reference',
       description:
-        'Methodology documentation describing verification workflows, evidence structure, deterministic replay, and audit invariants used as the systems governance foundation.',
-      type: 'Methodology reference',
-      status: 'Available',
-      statusTone: 'available',
-      icon: 'beaker',
-      ctaText: 'Open overview',
-      ctaUrl: '/research/hge',
+        'Reference documentation covering infrastructure components, design patterns, and integration frameworks for evaluation purposes.',
+      type: 'Reference material',
+      status: 'Working draft',
+      icon: 'DocumentTextIcon',
+      ctaText: 'Request access',
+      ctaUrl: '/engage',
     },
     {
       id: 2,
-      title: 'Technical papers archive',
+      title: 'Governance framework outline',
       description:
-        'Collection of technical notes and working papers supporting evaluation, review, and institutional implementation planning.',
-      type: 'Working papers',
+        'Implementation reference for institutional governance and audit capabilities, intended for planning and assessment.',
+      type: 'Framework outline',
+      status: 'In development',
+      icon: 'ClipboardDocumentCheckIcon',
+      ctaText: 'Request briefing',
+      ctaUrl: '/engage',
+    },
+    {
+      id: 3,
+      title: 'Compliance mapping matrix',
+      description:
+        'Design alignment mapping across ISO/IEC 27001, GDPR, NIS2, and DORA frameworks for evaluation support.',
+      type: 'Evaluation material',
       status: 'Working draft',
-      statusTone: 'draft',
-      icon: 'document-text',
-      ctaText: 'View archive',
-      ctaUrl: '/technical-papers',
+      icon: 'TableCellsIcon',
+      ctaText: 'View outline',
+      ctaUrl: '/engage',
+    },
+    {
+      id: 4,
+      title: 'Security architecture reference',
+      description:
+        'Reference analysis of security architecture patterns and threat mitigation strategies for design context.',
+      type: 'Reference document',
+      status: 'In development',
+      icon: 'ShieldCheckIcon',
+      ctaText: 'Request briefing',
+      ctaUrl: '/engage',
     },
   ];
 
@@ -107,9 +120,7 @@ const TechnicalResources = ({ className = '' }: TechnicalResourcesProps) => {
                       <h3 className="text-base font-headline font-semibold text-foreground">
                         {resource.title}
                       </h3>
-                      <span
-                        className={`inline-flex items-center px-2 py-0.5 rounded text-xs font-medium border ${statusClasses[resource.statusTone]}`}
-                      >
+                      <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-muted-foreground/10 text-muted-foreground border border-muted-foreground/20">
                         {resource.status}
                       </span>
                     </div>
@@ -122,11 +133,11 @@ const TechnicalResources = ({ className = '' }: TechnicalResourcesProps) => {
               </div>
 
               <Link
-                href={resource.ctaUrl}
+                href="/engage/request-access?source=technical-resource"
                 onClick={() => handleResourceClick(resource)}
                 className="inline-flex items-center space-x-2 text-sm font-cta font-medium text-primary hover:text-primary/80 transition-colors duration-200"
               >
-                <Icon name="arrow-right" size={16} variant="outline" />
+                <Icon name="DocumentMagnifyingGlassIcon" size={16} variant="outline" />
                 <span>{resource.ctaText}</span>
               </Link>
             </div>
@@ -143,6 +154,12 @@ const TechnicalResources = ({ className = '' }: TechnicalResourcesProps) => {
                 Engage with our systems architecture team for detailed technical discussions and
                 implementation planning.
               </p>
+              <p className="text-sm text-muted-foreground font-body mt-2">
+                Looking for research collaboration or institutional deployment? Request a briefing.
+              </p>
+              <p className="text-xs text-muted-foreground font-body mt-2">
+                Research dialogue · Institutional collaboration · Funding discussions
+              </p>
             </div>
             <Link
               href="/engage"
@@ -150,7 +167,6 @@ const TechnicalResources = ({ className = '' }: TechnicalResourcesProps) => {
               className="inline-flex items-center justify-center px-6 py-3 bg-primary text-primary-foreground text-sm font-cta font-medium rounded-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-hover whitespace-nowrap"
             >
               Initiate dialogue
-              <Icon name="arrow-right" size={16} variant="outline" className="ml-2" />
             </Link>
           </div>
         </div>

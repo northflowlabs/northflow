@@ -16,26 +16,26 @@ const TrustIndicatorsSection = ({ className = '' }: TrustIndicatorsSectionProps)
     {
       id: 1,
       icon: 'check-badge',
-      label: 'ISO/IEC 27001 - Information security management design alignment',
-      description: 'Structural design alignment for institutional security control models.',
+      label: 'Designed to align with ISO 27001',
+      description: 'Information security management alignment.',
     },
     {
       id: 2,
       icon: 'shield-check',
-      label: 'GDPR - European data protection regulation architecture',
-      description: 'Design alignment for lawful processing and governance-ready data handling.',
+      label: 'GDPR-aligned data protection approach',
+      description: 'European data protection regulation adherence.',
     },
     {
       id: 3,
       icon: 'building-library',
-      label: 'NIS2 Directive - Network and information systems security design principles',
-      description: 'Architecture patterns aligned with resilience and incident governance intent.',
+      label: 'Mapped to relevant European governance frameworks',
+      description: 'Institutional and cross-border regulatory considerations.',
     },
     {
       id: 4,
       icon: 'document-check',
-      label: 'DORA - Digital Operational Resilience Act framework alignment',
-      description: 'Operational resilience design alignment for critical digital service contexts.',
+      label: 'Audit-ready',
+      description: 'Comprehensive governance and transparency architecture.',
     },
   ];
 
@@ -44,13 +44,11 @@ const TrustIndicatorsSection = ({ className = '' }: TrustIndicatorsSectionProps)
       <div className="max-w-[1400px] mx-auto px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-headline font-semibold text-foreground mb-4">
-            Architecture designed for European regulatory environments
+            Standards alignment framework
           </h2>
           <p className="text-lg text-muted-foreground font-body max-w-3xl mx-auto">
-            Northflow systems are developed with structural alignment to relevant European
-            regulatory and governance standards. Standards references describe design intent and
-            target operating models. Formal certifications are pursued and verified where
-            applicable.
+            Systems built with controls mapped to relevant European regulatory and governance
+            standards.
           </p>
         </div>
 

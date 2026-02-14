@@ -16,8 +16,9 @@ const ProjectHGESection = ({ className = '' }: ProjectHGESectionProps) => {
             </h2>
             <p className="text-base font-body text-muted-foreground leading-relaxed mb-8">
               Project HGE (Hypothesis Generation Engine) is Northflow’s core research methodology
-              for structured hypothesis formation, evaluation, and evidence governance. HGE is not a
-              product. It is a methodological program. It formalises:
+              for structured hypothesis formation, evaluation, and evidence governance in climate
+              resilience and mission-critical institutional systems. HGE is not a product. It is a
+              methodological program. It formalizes:
             </p>
           </div>
 
@@ -36,7 +37,7 @@ const ProjectHGESection = ({ className = '' }: ProjectHGESectionProps) => {
                   <Icon name="check-circle" size={14} variant="outline" className="text-primary" />
                 </div>
                 <span className="text-base font-body text-foreground">
-                  Information-gain-driven experiment prioritisation
+                  Information-gain–driven experiment prioritization
                 </span>
               </li>
               <li className="flex items-start space-x-3">
@@ -58,15 +59,11 @@ const ProjectHGESection = ({ className = '' }: ProjectHGESectionProps) => {
             </ul>
           </div>
 
-          <div className="mb-8 p-6 bg-background border border-primary/30 rounded-sm">
-            <p className="text-xs font-cta font-semibold tracking-[0.08em] text-primary mb-2">
-              Current validation
-            </p>
-            <p className="text-sm font-body text-muted-foreground leading-relaxed">
-              Operational validation completed on Gaia DR3 astronomical catalog datasets - one of
-              the largest structured scientific datasets in existence. Earth Observation adaptation
-              underway for ESA Sentinel data targeting wildfire risk, deforestation verification,
-              and infrastructure vulnerability mapping.
+          <div className="mb-8 p-4 bg-background border border-border rounded-sm">
+            <p className="text-sm font-body text-muted-foreground">
+              <span className="font-semibold text-foreground">Current validation:</span> Currently
+              validating on astronomical catalog datasets (Gaia DR3), with Earth Observation
+              adaptation underway for climate and resilience domains.
             </p>
           </div>
 
@@ -75,13 +72,15 @@ const ProjectHGESection = ({ className = '' }: ProjectHGESectionProps) => {
               href="/research/hge"
               className="inline-flex items-center justify-center px-6 py-3 bg-primary text-primary-foreground font-body font-medium rounded-sm hover:bg-primary/90 transition-colors duration-200 ease-institutional"
             >
-              Methodology overview →
+              Methodology overview
+              <Icon name="arrow-right" size={16} variant="outline" className="ml-2" />
             </Link>
             <Link
               href="/technical-papers"
               className="inline-flex items-center justify-center px-6 py-3 bg-background border border-border text-foreground font-body font-medium rounded-sm hover:bg-card transition-colors duration-200 ease-institutional"
             >
-              Technical note →
+              Technical note
+              <Icon name="arrow-right" size={16} variant="outline" className="ml-2" />
             </Link>
           </div>
         </div>

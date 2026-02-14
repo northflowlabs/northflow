@@ -5,8 +5,6 @@ interface InfrastructureComponent {
   title: string;
   description: string;
   icon: string;
-  status: string;
-  statusTone: 'operational' | 'development' | 'design';
   capabilities: string[];
 }
 
@@ -15,21 +13,13 @@ interface InfrastructureComponentsProps {
 }
 
 const InfrastructureComponents = ({ className = '' }: InfrastructureComponentsProps) => {
-  const statusClasses: Record<InfrastructureComponent['statusTone'], string> = {
-    operational: 'bg-emerald-500/10 text-emerald-700 border-emerald-500/20',
-    development: 'bg-amber-500/10 text-amber-700 border-amber-500/20',
-    design: 'bg-muted text-muted-foreground border-border',
-  };
-
   const components: InfrastructureComponent[] = [
     {
       id: 1,
       title: 'Sovereign data infrastructure',
       description:
         'Designed to support geographically distributed data systems with full jurisdictional control and regulatory compliance.',
-      icon: 'server-stack',
-      status: 'Design stage',
-      statusTone: 'design',
+      icon: 'ServerStackIcon',
       capabilities: [
         'Multi-region data residency',
         'Jurisdictional compliance',
@@ -42,9 +32,7 @@ const InfrastructureComponents = ({ className = '' }: InfrastructureComponentsPr
       title: 'Identity & access management',
       description:
         'Intended to enable enterprise-grade authentication systems with institutional governance and audit capabilities.',
-      icon: 'shield-check',
-      status: 'Design stage',
-      statusTone: 'design',
+      icon: 'ShieldCheckIcon',
       capabilities: [
         'Multi-factor authentication',
         'Role-based access control',
@@ -57,9 +45,7 @@ const InfrastructureComponents = ({ className = '' }: InfrastructureComponentsPr
       title: 'Operational continuity systems',
       description:
         'Structured to allow mission-critical infrastructure for uninterrupted operation during crisis scenarios.',
-      icon: 'arrow-path',
-      status: 'Design stage',
-      statusTone: 'design',
+      icon: 'ArrowPathIcon',
       capabilities: [
         'Failover mechanisms',
         'Disaster recovery',
@@ -71,10 +57,8 @@ const InfrastructureComponents = ({ className = '' }: InfrastructureComponentsPr
       id: 4,
       title: 'Governance & audit framework',
       description:
-        'Designed to support comprehensive audit and governance systems for regulatory compliance and institutional oversight. Core evidence verification capabilities are operational through the HGE verification layer.',
-      icon: 'document-check',
-      status: 'In development',
-      statusTone: 'development',
+        'Designed to support comprehensive audit and governance systems for regulatory compliance and institutional oversight.',
+      icon: 'DocumentCheckIcon',
       capabilities: [
         'Compliance monitoring',
         'Audit trail generation',
@@ -96,8 +80,8 @@ const InfrastructureComponents = ({ className = '' }: InfrastructureComponentsPr
             component is designed to support auditable operations with comprehensive governance.
           </p>
           <p className="text-sm text-muted-foreground font-body max-w-3xl italic">
-            Components described represent design capabilities and intended functionality.
-            Development status is indicated for each component.
+            Components described represent design capabilities and intended functionality, not
+            deployed features.
           </p>
         </div>
 
@@ -117,18 +101,9 @@ const InfrastructureComponents = ({ className = '' }: InfrastructureComponentsPr
                   />
                 </div>
                 <div>
-                  <div className="flex flex-wrap items-center gap-2 mb-2">
-                    <h3 className="text-xl font-headline font-semibold text-foreground">
-                      {component.title}
-                    </h3>
-                    <span
-                      className={`inline-flex items-center px-2 py-1 rounded-sm text-xs font-body font-medium border ${statusClasses[component.statusTone]}`}
-                    >
-                      {component.id === 4
-                        ? 'Partial implementation - Core verification operational via HGE'
-                        : component.status}
-                    </span>
-                  </div>
+                  <h3 className="text-xl font-headline font-semibold text-foreground mb-2">
+                    {component.title}
+                  </h3>
                   <p className="text-sm text-muted-foreground font-body leading-relaxed">
                     {component.description}
                   </p>
@@ -139,7 +114,7 @@ const InfrastructureComponents = ({ className = '' }: InfrastructureComponentsPr
                 {component.capabilities.map((capability, index) => (
                   <div key={index} className="flex items-center space-x-2">
                     <Icon
-                      name="check-circle"
+                      name="CheckCircleIcon"
                       size={16}
                       variant="solid"
                       className="text-primary flex-shrink-0"

@@ -1,124 +1,216 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import Icon from '@/components/ui/AppIcon';
 
 interface Initiative {
   id: string;
   title: string;
-  status: 'Operational' | 'In development';
-  statusTone: 'operational' | 'development';
+  category: string;
+  status:
+    | 'Framework development'
+    | 'In design'
+    | 'Exploratory'
+    | 'Concept stage'
+    | 'Flagship research initiative';
   description: string;
-  detailLabel: string;
-  details: string[];
+  secondaryDescription?: string;
+  focusAreas: string[];
+  timeline: string;
+  participants: string;
   icon: string;
-  ctaText: string;
-  ctaLink: string;
-}
-
-interface FutureDomain {
-  domain: string;
-  description: string;
-  status: string;
+  ctaText?: string;
+  ctaLink?: string;
 }
 
 export default function InitiativeGrid() {
-  const statusClasses: Record<Initiative['statusTone'], string> = {
-    operational: 'bg-emerald-500/10 text-emerald-700 border-emerald-500/20',
-    development: 'bg-amber-500/10 text-amber-700 border-amber-500/20',
-  };
+  const [selectedCategory, setSelectedCategory] = useState<string>('All');
 
   const initiatives: Initiative[] = [
     {
       id: 'hge',
-      title: 'Project HGE — Core engine validation',
-      status: 'Operational',
-      statusTone: 'operational',
+      title: 'Project HGE (Hypothesis Generation Engine)',
+      category: 'Research',
+      status: 'Flagship research initiative',
       description:
-        'Continuous validation and methodological refinement of the Hypothesis Generation Engine. Current focus: Gaia DR3 astronomical catalog validation (operational), Sentinel Earth Observation adaptation (in development), and evidence verification system hardening.',
-      detailLabel: 'Validation metrics',
-      details: [
-        'Gaia DR3: 1.8 billion objects, deterministic replay verified',
-        'Evidence bundles: 5-step verification contract operational',
-        'Red-team testing: 6 adversarial attack vectors validated',
+        'Automated, hypothesis-driven discovery infrastructure for instrument-grade research.',
+      secondaryDescription:
+        'Validated via live remote quantum hardware as a physical stress-test environment.',
+      focusAreas: [
+        'Hypothesis generation',
+        'Experiment prioritization',
+        'Uncertainty tracking',
+        'Provenance systems',
       ],
-      icon: 'beaker',
-      ctaText: 'Explore Project HGE',
-      ctaLink: '/research/hge',
-    },
-    {
-      id: 'sentinel-adapter',
-      title: 'Sentinel EO domain adapter',
-      status: 'In development',
-      statusTone: 'development',
-      description:
-        'Active adaptation of HGE for ESA Sentinel satellite data. Targeting wildfire risk modelling, deforestation verification, and infrastructure vulnerability mapping. ESA Business Applications PoC submitted February 2026.',
-      detailLabel: 'Focus areas',
-      details: [
-        'Wildfire risk hypothesis generation',
-        'Deforestation pattern detection',
-        'Infrastructure stress indicators',
-        'ESA institutional alignment',
-      ],
-      icon: 'globe-alt',
-      ctaText: 'View adaptation roadmap',
+      timeline: 'Active validation',
+      participants: 'Research infrastructure programme',
+      icon: 'BeakerIcon',
+      ctaText: 'Explore HGE',
       ctaLink: '/research',
     },
     {
-      id: 'governance',
-      title: 'Institutional evidence governance',
-      status: 'Operational',
-      statusTone: 'operational',
+      id: 'efos',
+      title: 'European framework for operational sovereignty',
+      category: 'Sovereignty',
+      status: 'Framework development',
       description:
-        'Governance methodologies for auditable digital infrastructure in regulated environments. Configurable governance modes (disabled / logging / enforced) enabling graduated institutional deployment.',
-      detailLabel: 'Capabilities',
-      details: [
-        'Policy gating and audit invariants',
-        'Signed evidence bundle format',
-        'Deterministic replay for verification',
-        'Cross-border evidence portability',
+        'Proposed framework establishing digital sovereignty principles for European government entities and critical infrastructure operators.',
+      focusAreas: [
+        'Data sovereignty',
+        'Operational independence',
+        'Regulatory compliance',
+        'Audit standards',
       ],
-      icon: 'document-check',
-      ctaText: 'Explore governance framework',
-      ctaLink: '/systems',
+      timeline: 'Development phase',
+      participants: 'Institutional dialogue underway',
+      icon: 'ShieldCheckIcon',
+    },
+    {
+      id: 'resilience',
+      title: 'Critical infrastructure resilience programme',
+      category: 'Resilience',
+      status: 'In design',
+      description:
+        'Initiative developing operational continuity frameworks for mission-critical digital infrastructure across NATO-adjacent regions.',
+      focusAreas: [
+        'Continuity planning',
+        'Failover systems',
+        'Crisis management',
+        'Recovery protocols',
+      ],
+      timeline: 'Framework definition',
+      participants: 'Exploratory engagement',
+      icon: 'CpuChipIcon',
+    },
+    {
+      id: 'governance',
+      title: 'Institutional governance framework',
+      category: 'Governance',
+      status: 'Framework development',
+      description:
+        'Governance methodologies for auditable digital infrastructure in regulated institutional environments.',
+      focusAreas: ['Audit trails', 'Compliance automation', 'Policy enforcement', 'Access control'],
+      timeline: 'In preparation',
+      participants: 'Requirements gathering',
+      icon: 'DocumentCheckIcon',
+    },
+    {
+      id: 'interop',
+      title: 'Cross-border interoperability initiative',
+      category: 'Integration',
+      status: 'Concept stage',
+      description:
+        'Technical standards enabling secure data exchange between sovereign infrastructure systems across European jurisdictions.',
+      focusAreas: [
+        'Protocol standards',
+        'Security frameworks',
+        'Data exchange',
+        'Identity management',
+      ],
+      timeline: 'Conceptual design',
+      participants: 'Early consultation',
+      icon: 'ArrowsRightLeftIcon',
+    },
+    {
+      id: 'research',
+      title: 'Sovereign technology research consortium',
+      category: 'Research',
+      status: 'Exploratory',
+      description:
+        'Research programme advancing sovereign digital infrastructure capabilities through institutional partnerships and academic collaboration.',
+      focusAreas: [
+        'Advanced cryptography',
+        'Distributed systems',
+        'Quantum readiness',
+        'Zero-trust architecture',
+      ],
+      timeline: 'Exploratory programme',
+      participants: 'Research dialogue',
+      icon: 'BeakerIcon',
+    },
+    {
+      id: 'regional',
+      title: 'Regional deployment framework',
+      category: 'Operations',
+      status: 'In design',
+      description:
+        'Deployment methodologies ensuring consistent infrastructure implementation across diverse European regulatory environments.',
+      focusAreas: [
+        'Local compliance',
+        'Regional standards',
+        'Deployment protocols',
+        'Support infrastructure',
+      ],
+      timeline: 'Framework definition',
+      participants: 'Regional consultation',
+      icon: 'GlobeEuropeAfricaIcon',
     },
   ];
 
-  const futureDomains: FutureDomain[] = [
-    {
-      domain: 'Marine & Water Systems',
-      description:
-        'Evidence frameworks for marine ecosystem monitoring and coastal resilience',
-      status: 'Planned — Phase 3',
-    },
-    {
-      domain: 'Biomedical Research',
-      description: 'Secondary validation domain demonstrating engine generality',
-      status: 'Future — validation only',
-    },
-    {
-      domain: 'Energy Infrastructure',
-      description: 'Evidence frameworks for grid resilience and flexibility',
-      status: 'Archived — post-Phase 3',
-    },
+  const categories = [
+    'All',
+    'Sovereignty',
+    'Resilience',
+    'Governance',
+    'Integration',
+    'Research',
+    'Operations',
   ];
+
+  const filteredInitiatives =
+    selectedCategory === 'All'
+      ? initiatives
+      : initiatives.filter((init) => init.category === selectedCategory);
+
+  const getStatusColor = (status: string) => {
+    switch (status) {
+      case 'Flagship research initiative':
+        return 'bg-accent/20 text-accent border border-accent/30';
+      case 'Framework development':
+        return 'bg-accent/10 text-accent';
+      case 'In design':
+        return 'bg-primary/10 text-primary';
+      case 'Exploratory':
+        return 'bg-warning/10 text-warning';
+      case 'Concept stage':
+        return 'bg-muted text-muted-foreground';
+      default:
+        return 'bg-muted text-muted-foreground';
+    }
+  };
 
   return (
     <section className="bg-background py-24">
       <div className="max-w-[1400px] mx-auto px-8">
         <div className="mb-12">
           <h2 className="text-3xl font-headline font-semibold text-foreground mb-4">
-            Active initiatives
+            Strategic programmes
           </h2>
           <p className="text-lg text-muted-foreground font-body max-w-3xl">
-            Active programmes focused on HGE validation, domain adaptation, and evidence governance
-            capabilities.
+            Framework initiatives under development, structured to advance through research, pilot
+            exploration, and institutional dialogue.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-          {initiatives.map((initiative) => (
+        <div className="flex flex-wrap gap-3 mb-12">
+          {categories.map((category) => (
+            <button
+              key={category}
+              onClick={() => setSelectedCategory(category)}
+              className={`px-4 py-2 rounded-sm text-sm font-cta font-medium transition-all duration-200 ${
+                selectedCategory === category
+                  ? 'bg-primary text-primary-foreground'
+                  : 'bg-card text-muted-foreground hover:bg-muted border border-border'
+              }`}
+            >
+              {category}
+            </button>
+          ))}
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {filteredInitiatives.map((initiative) => (
             <div
               key={initiative.id}
               className="bg-card border border-border rounded-sm p-6 hover:shadow-hover transition-all duration-200"
@@ -133,7 +225,7 @@ export default function InitiativeGrid() {
                   />
                 </div>
                 <span
-                  className={`px-3 py-1 rounded-sm text-xs font-cta font-medium border ${statusClasses[initiative.statusTone]}`}
+                  className={`px-3 py-1 rounded-sm text-xs font-cta font-medium ${getStatusColor(initiative.status)}`}
                 >
                   {initiative.status}
                 </span>
@@ -147,76 +239,50 @@ export default function InitiativeGrid() {
                 {initiative.description}
               </p>
 
-              <div className="pt-4 border-t border-border">
-                <p className="text-xs text-muted-foreground font-body mb-3">{initiative.detailLabel}</p>
-                <ul className="space-y-2">
-                  {initiative.details.map((detail, index) => (
-                    <li key={index} className="flex items-start space-x-2">
-                      <Icon
-                        name="check-circle"
-                        size={14}
-                        variant="outline"
-                        className="text-primary mt-0.5 flex-shrink-0"
-                      />
-                      <span className="text-sm text-foreground font-body">{detail}</span>
-                    </li>
-                  ))}
-                </ul>
+              {initiative.secondaryDescription && (
+                <p className="text-xs text-muted-foreground/80 font-body mb-4 leading-relaxed italic">
+                  {initiative.secondaryDescription}
+                </p>
+              )}
+
+              <div className="space-y-3 mb-4">
+                <div className="flex items-center space-x-2 text-sm text-muted-foreground">
+                  <Icon name="CalendarIcon" size={16} variant="outline" />
+                  <span className="font-body">{initiative.timeline}</span>
+                </div>
+                <div className="flex items-center space-x-2 text-sm text-muted-foreground">
+                  <Icon name="UserGroupIcon" size={16} variant="outline" />
+                  <span className="font-body">{initiative.participants}</span>
+                </div>
               </div>
 
-              <div className="mt-4 pt-4 border-t border-border">
-                <Link
-                  href={initiative.ctaLink}
-                  className="inline-flex items-center text-sm font-cta font-medium text-primary hover:text-primary/80 transition-colors"
-                >
-                  {initiative.ctaText}
-                  <Icon name="arrow-right" size={16} variant="outline" className="ml-1" />
-                </Link>
+              <div className="pt-4 border-t border-border">
+                <p className="text-xs text-muted-foreground font-body mb-2">Focus areas:</p>
+                <div className="flex flex-wrap gap-2">
+                  {initiative.focusAreas.map((area, index) => (
+                    <span
+                      key={index}
+                      className="px-2 py-1 bg-muted text-foreground text-xs font-body rounded-sm"
+                    >
+                      {area}
+                    </span>
+                  ))}
+                </div>
               </div>
+
+              {initiative.ctaText && initiative.ctaLink && (
+                <div className="mt-4 pt-4 border-t border-border">
+                  <Link
+                    href={initiative.ctaLink}
+                    className="inline-flex items-center text-sm font-cta font-medium text-primary hover:text-primary/80 transition-colors"
+                  >
+                    {initiative.ctaText}
+                    <Icon name="ArrowRightIcon" size={16} variant="outline" className="ml-1" />
+                  </Link>
+                </div>
+              )}
             </div>
           ))}
-        </div>
-
-        <div className="bg-card border border-border rounded-sm p-8">
-          <p className="text-xs font-cta font-medium text-primary uppercase tracking-wide mb-3">
-            Future domains
-          </p>
-          <p className="text-sm text-muted-foreground font-body leading-relaxed mb-6 max-w-4xl">
-            HGE is domain-agnostic by architecture. The following domains are structurally enabled
-            but frozen pending core validation milestones (ESA PoC acceptance, NTNU engagement
-            confirmation, first validation artifact publication).
-          </p>
-
-          <div className="overflow-x-auto">
-            <table className="w-full text-left border-collapse">
-              <thead>
-                <tr className="border-b border-border">
-                  <th className="py-3 pr-4 text-xs font-cta font-medium uppercase tracking-wide text-muted-foreground">
-                    Domain
-                  </th>
-                  <th className="py-3 pr-4 text-xs font-cta font-medium uppercase tracking-wide text-muted-foreground">
-                    Description
-                  </th>
-                  <th className="py-3 text-xs font-cta font-medium uppercase tracking-wide text-muted-foreground">
-                    Status
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                {futureDomains.map((domain) => (
-                  <tr key={domain.domain} className="border-b border-border last:border-b-0">
-                    <td className="py-4 pr-4 text-sm font-headline font-semibold text-foreground">
-                      {domain.domain}
-                    </td>
-                    <td className="py-4 pr-4 text-sm font-body text-muted-foreground">
-                      {domain.description}
-                    </td>
-                    <td className="py-4 text-sm font-body text-muted-foreground">{domain.status}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
         </div>
       </div>
     </section>

@@ -11,16 +11,17 @@ export default function InitiativeHero() {
             </span>
           </div>
           <h1 className="text-4xl md:text-5xl font-headline font-semibold mb-6 leading-tight">
-            Structured research and validation programmes
+            Institutional infrastructure initiatives
           </h1>
           <p className="text-lg font-body text-primary-foreground/90 leading-relaxed mb-8">
-            Northflow conducts applied research initiatives that validate and extend the Hypothesis
-            Generation Engine across operational domains. Current programmes focus on
-            space-enabled climate resilience and evidence infrastructure methodology.
+            Strategic initiatives under development, focused on designing and advancing digital
+            infrastructure frameworks for institutional environments. These initiatives are
+            structured to mature through research, pilot exploration, and phased institutional
+            engagement.
           </p>
           <p className="text-sm font-body text-primary-foreground/70 leading-relaxed mb-8 italic">
-            All initiatives ladder to Project HGE. Domain expansion follows strict validation
-            milestones.
+            Intended for institutional and research audiences. Public materials are released
+            selectively.
           </p>
           <div className="flex flex-wrap gap-4">
             <div className="flex items-center space-x-2">

@@ -54,14 +54,11 @@ const InstitutionalValidationSection = ({
           </h2>
           <p className="text-lg text-muted-foreground font-body leading-relaxed">
             Architectures developed with structural alignment to European regulatory and governance
-            environments. Standards references describe design alignment and target operating
-            models. Formal certifications are pursued and verified where applicable.
+            environments.
           </p>
-          <p className="text-sm text-muted-foreground font-body mt-4">
-            For implementation detail, see Systems architecture.
-            <a href="/systems" className="ml-1 text-primary hover:underline font-medium">
-              View systems overview →
-            </a>
+          <p className="text-xs text-muted-foreground font-body mt-4 italic">
+            Standards references describe design alignment and target operating models. Formal
+            certifications are pursued and verified where applicable.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
