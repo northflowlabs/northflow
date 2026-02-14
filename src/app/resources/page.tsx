@@ -3,9 +3,9 @@ import Link from 'next/link';
 import ResourceIndexV2 from '@/components/resources/ResourceIndexV2';
 
 export const metadata: Metadata = {
-  title: 'Research Materials & Technical Documentation | Northflow',
+  title: 'Institutional Resources & Reference Materials | Northflow',
   description:
-    'Methodology notes, validation artifacts, and framework documentation for institutional stakeholders. Structured discovery resources, evidence systems, and space-enabled climate resilience.',
+    'Searchable index of documentation, research papers, compliance materials, and institutional reference resources.',
 };
 
 export default function ResourcesPage() {

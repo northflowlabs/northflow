@@ -11,18 +11,18 @@ import { generateMetadata, generateWebPageSchema } from '@/lib/seo';
 import StructuredData from '@/components/common/StructuredData';
 
 export const metadata: Metadata = generateMetadata({
-  title: 'Structured Evidence Research | Northflow Technologies',
+  title: 'Institutional Research Infrastructure Under Uncertainty | Northflow',
   description:
-    'Applied research in structured discovery, evidence systems, and space-enabled climate resilience. Project HGE: machine-driven hypothesis generation with verifiable provenance tracking.',
+    'Northflow Research develops long-horizon discovery infrastructure for institutions operating under uncertainty, regulation, and irreversible decision environments.',
   path: '/research',
   ogType: 'website',
 });
 
 export default function ResearchPage() {
   const webPageSchema = generateWebPageSchema({
-    title: 'Structured Evidence Research | Northflow Technologies',
+    title: 'Institutional Research Infrastructure Under Uncertainty | Northflow',
     description:
-      'Applied research in structured discovery, evidence systems, and space-enabled climate resilience. Project HGE: machine-driven hypothesis generation with verifiable provenance tracking.',
+      'Northflow Research develops long-horizon discovery infrastructure for institutions operating under uncertainty, regulation, and irreversible decision environments.',
     path: '/research',
   });
 

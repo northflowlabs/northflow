@@ -11,18 +11,18 @@ import { generateMetadata, generateWebPageSchema } from '@/lib/seo';
 import StructuredData from '@/components/common/StructuredData';
 
 export const metadata: Metadata = generateMetadata({
-  title: 'Governable Infrastructure Systems | Northflow Technologies',
+  title: 'Institutional Systems & Governance Architecture | Northflow',
   description:
-    'Reference architectures for regulated, mission-critical environments. Sovereign control, compliance frameworks, and operational continuity designed for institutional governance requirements.',
+    'Northflow systems define institutional digital architecture for governance, resilience, auditability, and long-lived operational reliability in European contexts.',
   path: '/systems',
   ogType: 'website',
 });
 
 export default function SystemsPage() {
   const webPageSchema = generateWebPageSchema({
-    title: 'Governable Infrastructure Systems | Northflow Technologies',
+    title: 'Institutional Systems & Governance Architecture | Northflow',
     description:
-      'Reference architectures for regulated, mission-critical environments. Sovereign control, compliance frameworks, and operational continuity designed for institutional governance requirements.',
+      'Northflow systems define institutional digital architecture for governance, resilience, auditability, and long-lived operational reliability in European contexts.',
     path: '/systems',
   });
 

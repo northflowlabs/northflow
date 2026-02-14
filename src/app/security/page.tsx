@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Security by Design | Northflow Technologies',
+  title: 'Institutional Security & Operational Assurance | Northflow',
   description:
-    'Security as foundational architecture, not retrospective implementation. Defence-in-depth with layered controls, cryptographic protection, and continuous monitoring informed by Project HGE validation workflows.',
+    'Security practices supporting institutional-grade digital infrastructure, auditability, and operational assurance across regulated environments.',
 };
 
 export default function SecurityPage() {

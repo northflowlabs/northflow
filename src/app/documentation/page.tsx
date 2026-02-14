@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'System Architecture & Integration Guides | Northflow Docs',
+  title: 'Institutional Documentation & Technical Guidance | Northflow',
   description:
-    'Technical documentation for Project HGE and institutional evidence infrastructure. System architecture, experiment specifications, validation workflows, and integration patterns.',
+    'Technical documentation and implementation guidance for institutions engaging with Northflow systems and governance architectures.',
 };
 
 export default function DocumentationPage() {

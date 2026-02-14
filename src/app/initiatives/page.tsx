@@ -5,18 +5,18 @@ import StructuredData from '@/components/common/StructuredData';
 import InitiativesContent from './components/InitiativesContent';
 
 export const metadata: Metadata = generateMetadata({
-  title: 'Research & Validation Programmes | Northflow Initiatives',
+  title: 'Institutional Initiatives & Structured Programs | Northflow',
   description:
-    'Active programmes validating the Hypothesis Generation Engine across operational domains. Current focus: space-enabled climate resilience and evidence infrastructure methodology.',
+    'Northflow initiatives connect research and systems through structured programs, pilots, and institutional collaboration without commercial pressure.',
   path: '/initiatives',
   ogType: 'website',
 });
 
 export default function InitiativesPage() {
   const webPageSchema = generateWebPageSchema({
-    title: 'Research & Validation Programmes | Northflow Initiatives',
+    title: 'Institutional Initiatives & Structured Programs | Northflow',
     description:
-      'Active programmes validating the Hypothesis Generation Engine across operational domains. Current focus: space-enabled climate resilience and evidence infrastructure methodology.',
+      'Northflow initiatives connect research and systems through structured programs, pilots, and institutional collaboration without commercial pressure.',
     path: '/initiatives',
   });
 

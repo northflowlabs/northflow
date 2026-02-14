@@ -11,18 +11,18 @@ import { generateMetadata, generateWebPageSchema } from '@/lib/seo';
 import StructuredData from '@/components/common/StructuredData';
 
 export const metadata: Metadata = generateMetadata({
-  title: 'About Northflow | Institutional Evidence Infrastructure',
+  title: 'About Northflow | Institutional Digital Infrastructure Stewardship',
   description:
-    'Built in Norway, operating across Europe. Northflow develops research-grade evidence systems for institutions requiring verifiable continuity, auditability, and long-term operational resilience.',
+    'Northflow is a Nordic technology organization stewarding long-horizon digital infrastructure, research systems, and governance architectures for regulated European environments.',
   path: '/about',
   ogType: 'website',
 });
 
 export default function AboutPage() {
   const webPageSchema = generateWebPageSchema({
-    title: 'About Northflow | Institutional Evidence Infrastructure',
+    title: 'About Northflow | Institutional Digital Infrastructure Stewardship',
     description:
-      'Built in Norway, operating across Europe. Northflow develops research-grade evidence systems for institutions requiring verifiable continuity, auditability, and long-term operational resilience.',
+      'Northflow is a Nordic technology organization stewarding long-horizon digital infrastructure, research systems, and governance architectures for regulated European environments.',
     path: '/about',
   });
 

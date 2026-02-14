@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Compliance as Design Principle | Northflow Technologies',
+  title: 'Regulatory Alignment & Institutional Compliance | Northflow',
   description:
-    'Regulatory alignment embedded from initial design stages. GDPR, NIS2, DORA, and ISO/IEC 27001 design alignment for institutional deployment in governed European environments.',
+    "Northflow's compliance approach aligns digital infrastructure with European regulatory frameworks, governance requirements, and long-term accountability.",
 };
 
 export default function CompliancePage() {

@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Research Publication Archive | Northflow Technical Papers',
+  title: 'Technical Papers & Reference Architectures | Northflow',
   description:
-    'Methodological notes, validation studies, and framework documentation for peer review. Research emphasizes reproducibility, provenance tracking, and uncertainty-aware reasoning.',
+    'Methodological notes, validation studies, and framework documentation for peer review and institutional assessment.',
 };
 
 export default function TechnicalPapersPage() {
