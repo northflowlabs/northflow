@@ -53,7 +53,7 @@ const AccessEngagementProcess = ({ className = '' }: AccessEngagementProcessProp
             Access requests follow a structured review process designed for institutional contexts.
           </p>
           <div className="inline-flex items-center gap-3 px-6 py-3 bg-muted rounded-sm border border-border">
-            <Icon name="ClockIcon" size={20} variant="outline" className="text-primary" />
+            <Icon name="clock" size={20} variant="outline" className="text-primary" />
             <span className="text-sm font-cta font-medium text-foreground">
               Typical response time: 5–7 business days
             </span>

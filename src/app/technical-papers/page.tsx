@@ -69,10 +69,10 @@ export default function TechnicalPapersPage() {
                   </span>
                 </div>
                 <a
-                  href="/research"
+                  href="/engage/request-access"
                   className="inline-flex items-center gap-2 text-primary hover:text-primary/80 text-sm font-medium transition-colors"
                 >
-                  View paper details
+                  Request paper details
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
@@ -99,10 +99,10 @@ export default function TechnicalPapersPage() {
                   interpretation.
                 </p>
                 <a
-                  href="/research/hge"
+                  href="/engage/request-access"
                   className="inline-flex items-center gap-2 text-primary hover:text-primary/80 text-sm font-medium transition-colors"
                 >
-                  View paper details
+                  Request paper details
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
@@ -127,10 +127,10 @@ export default function TechnicalPapersPage() {
                   validation.
                 </p>
                 <a
-                  href="/research/hge"
+                  href="/engage/request-access"
                   className="inline-flex items-center gap-2 text-primary hover:text-primary/80 text-sm font-medium transition-colors"
                 >
-                  View paper details
+                  Request paper details
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
