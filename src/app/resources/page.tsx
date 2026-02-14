@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import ResourceIndexV2 from '@/components/resources/ResourceIndexV2';
+import ResourceIndex from '@/components/resources/ResourceIndex';
 
 export const metadata: Metadata = {
   title: 'Institutional Resources & Reference Materials | Northflow',
@@ -110,7 +110,7 @@ export default function ResourcesPage() {
         </div>
 
         {/* Searchable Resource Index */}
-        <ResourceIndexV2 />
+        <ResourceIndex />
       </div>
     </div>
   );
