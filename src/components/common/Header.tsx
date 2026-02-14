@@ -166,7 +166,7 @@ const Header = ({ className = '' }: HeaderProps) => {
               aria-label="Toggle navigation menu"
             >
               <Icon
-                name={isMobileMenuOpen ? 'XMarkIcon' : 'Bars3Icon'}
+                name={isMobileMenuOpen ? 'x-mark' : 'bars-3'}
                 className="h-6 w-6"
                 aria-hidden="true"
               />

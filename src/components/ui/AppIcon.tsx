@@ -34,6 +34,8 @@ import {
   ClockIcon,
   HandRaisedIcon,
   QuestionMarkCircleIcon,
+  Bars3Icon,
+  XMarkIcon,
 } from '@heroicons/react/24/outline';
 
 // Icon mapping for tree-shaking
@@ -68,6 +70,8 @@ const iconMap = {
   cog: CogIcon,
   clock: ClockIcon,
   'hand-raised': HandRaisedIcon,
+  'bars-3': Bars3Icon,
+  'x-mark': XMarkIcon,
 
   CalendarIcon,
   BellIcon,
@@ -85,6 +89,8 @@ const iconMap = {
   BeakerIcon,
   DocumentCheckIcon,
   UserGroupIcon,
+  Bars3Icon,
+  XMarkIcon,
 } as const;
 
 type IconVariant = 'outline' | 'solid';
