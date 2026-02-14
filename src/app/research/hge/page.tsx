@@ -5,13 +5,16 @@ import HGEHero from './components/HGEHero';
 import HGEMethodology from './components/HGEMethodology';
 import HGEValidation from './components/HGEValidation';
 import HGEApplications from './components/HGEApplications';
+import HGEDomainArchitecture from './components/HGEDomainArchitecture';
+import HGETechnicalSpecifications from './components/HGETechnicalSpecifications';
+import HGEPipelineVisualization from './components/HGEPipelineVisualization';
 import HGELinks from './components/HGELinks';
 import HGEContact from './components/HGEContact';
 
 export const metadata: Metadata = generateMetadata({
-  title: 'Project HGE — Hypothesis Generation Infrastructure | Northflow',
+  title: 'Hypothesis Generation Engine (HGE) | Northflow Research',
   description:
-    'Project HGE is a reference architecture for automated hypothesis generation, testing, and belief updates across real instruments and constrained research environments.',
+    'Project HGE: Structured scientific discovery infrastructure converting observational data into verifiable evidence. Deterministic execution, signed evidence bundles, audit-grade provenance tracking.',
   path: '/research/hge',
   keywords: [
     'hypothesis generation engine',
@@ -31,9 +34,12 @@ export default function ProjectHGEPage() {
   return (
     <>
       <HGEHero />
-      <HGEMethodology />
-      <HGEValidation />
       <HGEApplications />
+      <HGEMethodology />
+      <HGEPipelineVisualization />
+      <HGEValidation />
+      <HGEDomainArchitecture />
+      <HGETechnicalSpecifications />
       <HGELinks />
       <HGEContact />
     </>

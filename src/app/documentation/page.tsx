@@ -1,24 +1,36 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Institutional Documentation & Technical Guidance | Northflow',
+  title: 'System Architecture & Integration Guides | Northflow Docs',
   description:
-    'Technical documentation and implementation guidance for institutions engaging with Northflow systems and governance architectures.',
+    'Technical documentation for Project HGE and institutional evidence infrastructure. System architecture, experiment specifications, validation workflows, and integration patterns.',
 };
 
 export default function DocumentationPage() {
   return (
     <>
       <div className="min-h-screen bg-background">
-        <div className="max-w-[1200px] mx-auto px-8 py-16">
-          <div className="max-w-[900px]">
-            <h1 className="text-4xl font-headline font-bold text-foreground mb-4">Documentation</h1>
-            <p className="text-lg text-muted-foreground font-body mb-12 leading-relaxed">
-              Comprehensive documentation practices and access model for institutional stakeholders
-              requiring systematic understanding of operational frameworks.
-            </p>
+        <section className="bg-gradient-to-br from-primary to-primary/90 text-primary-foreground">
+          <div className="max-w-[1400px] mx-auto px-8 py-24">
+            <div className="max-w-3xl">
+              <div className="inline-flex items-center space-x-2 bg-primary-foreground/10 px-4 py-2 rounded-sm mb-6">
+                <span className="text-xs font-cta font-medium tracking-wide uppercase">
+                  Technical documentation
+                </span>
+              </div>
+              <h1 className="text-4xl md:text-5xl font-headline font-semibold mb-6 leading-tight">
+                System architecture and integration guides
+              </h1>
+              <p className="text-lg font-body text-primary-foreground/90 leading-relaxed">
+                Technical documentation for Project HGE and institutional evidence infrastructure.
+                Documentation covers system architecture, experiment specifications, validation
+                workflows, and integration patterns.
+              </p>
+            </div>
           </div>
+        </section>
 
+        <div className="max-w-[1200px] mx-auto px-8 py-16">
           <div className="space-y-12">
             {/* Project HGE documentation section */}
             <section className="bg-accent/5 border border-accent/20 rounded-lg p-8">
@@ -46,68 +58,86 @@ export default function DocumentationPage() {
                   physical systems while maintaining provenance and uncertainty quantification.
                 </p>
 
-                <div className="mt-8">
-                  <h3 className="text-lg font-headline font-semibold text-foreground mb-4">
-                    Available documentation
-                  </h3>
-                  <ul className="space-y-3">
-                    <li className="flex gap-3 items-start">
-                      <span className="text-accent mt-1">→</span>
-                      <div>
-                        <a
-                          href="#hge-architecture"
-                          className="text-foreground hover:text-accent transition-colors font-medium"
-                        >
-                          HGE architecture overview
-                        </a>
-                        <span className="ml-2 text-xs text-muted-foreground italic">
-                          (in progress)
+                <div className="mt-8 space-y-6">
+                  <div>
+                    <h3 className="text-lg font-headline font-semibold text-foreground mb-3">
+                      Available documentation
+                    </h3>
+                    <ul className="space-y-3 text-sm text-muted-foreground">
+                      <li>
+                        <span className="text-foreground font-medium">HGE architecture overview</span>
+                        <p>
+                          System design, component interactions, and data flow patterns for the
+                          Hypothesis Generation Engine.
+                        </p>
+                        <p className="text-xs italic">Status: Available — Version 1.2</p>
+                      </li>
+                      <li>
+                        <span className="text-foreground font-medium">
+                          Evidence bundle specification
                         </span>
-                      </div>
-                    </li>
-                    <li className="flex gap-3 items-start">
-                      <span className="text-accent mt-1">→</span>
-                      <div>
-                        <a
-                          href="#experiment-spec-schema"
-                          className="text-foreground hover:text-accent transition-colors font-medium"
-                        >
-                          ExperimentSpec / Result schema
-                        </a>
-                        <span className="ml-2 text-xs text-muted-foreground italic">
-                          (in progress)
+                        <p>
+                          Format specification for signed evidence artifacts including provenance
+                          tracking and verification procedures.
+                        </p>
+                        <p className="text-xs italic">Status: Available — Version 2.0</p>
+                      </li>
+                      <li>
+                        <span className="text-foreground font-medium">
+                          Experiment specification schema
                         </span>
-                      </div>
-                    </li>
-                    <li className="flex gap-3 items-start">
-                      <span className="text-accent mt-1">→</span>
-                      <div>
-                        <a
-                          href="#instrument-backend"
-                          className="text-foreground hover:text-accent transition-colors font-medium"
-                        >
-                          Instrument backend interface
-                        </a>
-                        <span className="ml-2 text-xs text-muted-foreground italic">
-                          (in progress)
+                        <p>
+                          JSON schema for hypothesis representation, experiment design, and result
+                          interpretation.
+                        </p>
+                        <p className="text-xs italic">Status: Available — Version 1.0</p>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h3 className="text-lg font-headline font-semibold text-foreground mb-3">
+                      In development
+                    </h3>
+                    <ul className="space-y-3 text-sm text-muted-foreground">
+                      <li>
+                        <span className="text-foreground font-medium">Sentinel data integration guide</span>
+                        <p>
+                          Adapter specifications for ESA Sentinel Earth Observation data ingestion
+                          and preprocessing.
+                        </p>
+                        <p className="text-xs italic">Status: Draft — Expected March 2026</p>
+                      </li>
+                      <li>
+                        <span className="text-foreground font-medium">Instrument backend interface</span>
+                        <p>
+                          Technical specification for connecting physical instruments and data
+                          sources to HGE.
+                        </p>
+                        <p className="text-xs italic">
+                          Status: In development — Expected April 2026
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h3 className="text-lg font-headline font-semibold text-foreground mb-3">
+                      Planned
+                    </h3>
+                    <ul className="space-y-3 text-sm text-muted-foreground">
+                      <li>
+                        <span className="text-foreground font-medium">
+                          Validation workflow automation
                         </span>
-                      </div>
-                    </li>
-                    <li className="flex gap-3 items-start">
-                      <span className="text-accent mt-1">→</span>
-                      <div>
-                        <a
-                          href="#validation-workflow"
-                          className="text-foreground hover:text-accent transition-colors font-medium"
-                        >
-                          Validation workflow and provenance
-                        </a>
-                        <span className="ml-2 text-xs text-muted-foreground italic">
-                          (in progress)
-                        </span>
-                      </div>
-                    </li>
-                  </ul>
+                        <p>
+                          Documentation for automated verification pipeline and deterministic replay
+                          systems.
+                        </p>
+                        <p className="text-xs italic">Status: Planned — Expected Q2 2026</p>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </section>
@@ -136,13 +166,12 @@ export default function DocumentationPage() {
                       Public institutional materials
                     </h3>
                     <p className="text-sm text-muted-foreground">
-                      Framework overviews, research publications, and general system descriptions
-                      available through this website.
+                      Framework overviews, validation summaries, and general system descriptions.
                     </p>
                   </div>
                   <div className="border border-border rounded-lg p-6 bg-card">
                     <h3 className="text-lg font-headline font-semibold text-foreground mb-3">
-                      Engagement documentation
+                      Structured engagement
                     </h3>
                     <p className="text-sm text-muted-foreground">
                       Technical specifications, implementation guides, and operational procedures
@@ -151,7 +180,7 @@ export default function DocumentationPage() {
                   </div>
                   <div className="border border-border rounded-lg p-6 bg-card">
                     <h3 className="text-lg font-headline font-semibold text-foreground mb-3">
-                      Controlled disclosure materials
+                      Controlled disclosure
                     </h3>
                     <p className="text-sm text-muted-foreground">
                       Detailed architectural documentation and security specifications subject to
@@ -434,27 +463,27 @@ export default function DocumentationPage() {
                     Access qualification criteria
                   </h3>
                   <ul className="space-y-3">
-                    <li className="flex gap-3">
-                      <span className="text-primary mt-1">•</span>
+                    <li className="flex items-start gap-3">
+                      <span className="mt-2 h-1.5 w-1.5 rounded-full bg-primary flex-shrink-0" />
                       <span className="text-sm text-muted-foreground">
                         Institutional affiliation with government entities, regulatory authorities,
                         or critical infrastructure operators
                       </span>
                     </li>
-                    <li className="flex gap-3">
-                      <span className="text-primary mt-1">•</span>
+                    <li className="flex items-start gap-3">
+                      <span className="mt-2 h-1.5 w-1.5 rounded-full bg-primary flex-shrink-0" />
                       <span className="text-sm text-muted-foreground">
                         Defined use case or procurement evaluation requirement
                       </span>
                     </li>
-                    <li className="flex gap-3">
-                      <span className="text-primary mt-1">•</span>
+                    <li className="flex items-start gap-3">
+                      <span className="mt-2 h-1.5 w-1.5 rounded-full bg-primary flex-shrink-0" />
                       <span className="text-sm text-muted-foreground">
                         Appropriate confidentiality and data handling protocols
                       </span>
                     </li>
-                    <li className="flex gap-3">
-                      <span className="text-primary mt-1">•</span>
+                    <li className="flex items-start gap-3">
+                      <span className="mt-2 h-1.5 w-1.5 rounded-full bg-primary flex-shrink-0" />
                       <span className="text-sm text-muted-foreground">
                         Formal engagement request through institutional channels
                       </span>

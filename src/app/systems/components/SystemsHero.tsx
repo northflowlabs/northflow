@@ -17,16 +17,16 @@ const SystemsHero = ({ className = '' }: SystemsHeroProps) => {
           <h1 className="text-4xl md:text-5xl font-headline font-semibold mb-6 leading-tight">
             Governable infrastructure systems
           </h1>
-          <p className="text-sm font-body text-primary-foreground/70 leading-relaxed mb-8 italic">
+          <p className="text-lg font-body text-primary-foreground/90 leading-relaxed mb-4">
             Reference architectures and implementation frameworks for regulated, mission-critical
             environments.
           </p>
-          <p className="text-lg font-body text-primary-foreground/90 leading-relaxed mb-4">
+          <p className="text-lg font-body font-semibold text-primary-foreground leading-relaxed mb-4">
             Systems designed to support regulated environments with continuity, oversight, and
             institutional governance requirements.
           </p>
-          <p className="text-lg font-body text-primary-foreground/90 leading-relaxed">
-            Architecture patterns emphasize auditability, control mapping, and operational
+          <p className="text-base font-body text-primary-foreground/85 leading-relaxed">
+            Architecture patterns emphasise auditability, control mapping, and operational
             resilience.
           </p>
         </div>

@@ -11,18 +11,18 @@ import { generateMetadata, generateWebPageSchema } from '@/lib/seo';
 import StructuredData from '@/components/common/StructuredData';
 
 export const metadata: Metadata = generateMetadata({
-  title: 'Institutional Systems & Governance Architecture | Northflow',
+  title: 'Governable Infrastructure Systems | Northflow Technologies',
   description:
-    'Northflow systems define institutional digital architecture for governance, resilience, auditability, and long-lived operational reliability in European contexts.',
+    'Reference architectures for regulated, mission-critical environments. Sovereign control, compliance frameworks, and operational continuity designed for institutional governance requirements.',
   path: '/systems',
   ogType: 'website',
 });
 
 export default function SystemsPage() {
   const webPageSchema = generateWebPageSchema({
-    title: 'Institutional Systems & Governance Architecture | Northflow',
+    title: 'Governable Infrastructure Systems | Northflow Technologies',
     description:
-      'Northflow systems define institutional digital architecture for governance, resilience, auditability, and long-lived operational reliability in European contexts.',
+      'Reference architectures for regulated, mission-critical environments. Sovereign control, compliance frameworks, and operational continuity designed for institutional governance requirements.',
     path: '/systems',
   });
 
@@ -40,6 +40,11 @@ export default function SystemsPage() {
               Institutional infrastructure built on three foundational pillars: sovereign control,
               compliance frameworks, and operational continuity. Each layer is designed to support
               the others while maintaining independence.
+            </p>
+            <p className="text-sm font-body text-foreground bg-background border border-primary/20 rounded-sm px-4 py-3 mb-8 text-center">
+              <span className="font-semibold">HGE connection:</span> The governance and audit layer
+              is informed by Project HGE&apos;s verification methodology, including signed evidence
+              bundles, deterministic replay, and audit invariants.
             </p>
             <div className="flex justify-center">
               <SystemDiagram className="w-full max-w-3xl text-muted-foreground" />

@@ -6,22 +6,23 @@ import PublicationArchive from './components/PublicationArchive';
 import OngoingProjects from './components/OngoingProjects';
 import ResearchMethodology from './components/ResearchMethodology';
 import CollaborationOpportunities from './components/CollaborationOpportunities';
+import DomainAdapterMap from './components/DomainAdapterMap';
 import { generateMetadata, generateWebPageSchema } from '@/lib/seo';
 import StructuredData from '@/components/common/StructuredData';
 
 export const metadata: Metadata = generateMetadata({
-  title: 'Institutional Research Infrastructure Under Uncertainty | Northflow',
+  title: 'Structured Evidence Research | Northflow Technologies',
   description:
-    'Northflow Research develops long-horizon discovery infrastructure for institutions operating under uncertainty, regulation, and irreversible decision environments.',
+    'Applied research in structured discovery, evidence systems, and space-enabled climate resilience. Project HGE: machine-driven hypothesis generation with verifiable provenance tracking.',
   path: '/research',
   ogType: 'website',
 });
 
 export default function ResearchPage() {
   const webPageSchema = generateWebPageSchema({
-    title: 'Institutional Research Infrastructure Under Uncertainty | Northflow',
+    title: 'Structured Evidence Research | Northflow Technologies',
     description:
-      'Northflow Research develops long-horizon discovery infrastructure for institutions operating under uncertainty, regulation, and irreversible decision environments.',
+      'Applied research in structured discovery, evidence systems, and space-enabled climate resilience. Project HGE: machine-driven hypothesis generation with verifiable provenance tracking.',
     path: '/research',
   });
 
@@ -33,20 +34,21 @@ export default function ResearchPage() {
         <div className="max-w-[1400px] mx-auto px-8">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl font-headline font-semibold text-foreground mb-6 text-center">
-              Institutional research for climate and critical systems
+              Institutional research for climate, space, and critical systems
             </h2>
             <p className="text-base text-muted-foreground font-body leading-relaxed mb-8 text-center">
               Northflow conducts applied research focused on structured evidence systems for climate
-              resilience and mission-critical institutional environments. The research program
-              formalizes how claims are defined, evaluated, and governed under uncertainty. Its
-              outputs progress from methodological validation to deployable system architectures
-              through structured institutional engagement.
+              resilience, space-enabled observation, and mission-critical institutional
+              environments. The research program formalises how claims are defined, evaluated, and
+              governed under uncertainty. Its outputs progress from methodological validation to
+              deployable system architectures through structured institutional engagement.
             </p>
           </div>
         </div>
       </section>
       <ResearchAreas />
       <ProjectHGESection />
+      <DomainAdapterMap />
       <PublicationArchive />
       <OngoingProjects />
       <ResearchMethodology />
