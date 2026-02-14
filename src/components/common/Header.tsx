@@ -37,7 +37,6 @@ const Header = ({ className = '' }: HeaderProps) => {
     { href: '/systems', label: 'Systems' },
     { href: '/initiatives', label: 'Initiatives' },
     { href: '/resources', label: 'Resources' },
-    { href: '/engage', label: 'Engage' },
   ];
 
   return (
