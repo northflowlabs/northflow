@@ -258,7 +258,7 @@ const InstitutionalContactForm = ({ className = '' }: InstitutionalContactFormPr
         <div className="mb-10 p-6 bg-background border border-border rounded-sm">
           <h3 className="text-lg font-headline font-semibold text-foreground mb-4 flex items-center">
             <Icon
-              name="InformationCircleIcon"
+              name="information-circle"
               size={20}
               variant="outline"
               className="text-primary mr-2"
@@ -302,7 +302,7 @@ const InstitutionalContactForm = ({ className = '' }: InstitutionalContactFormPr
           <fieldset className="mb-10">
             <legend className="text-xl font-headline font-semibold text-foreground mb-6 flex items-center">
               <Icon
-                name="BuildingOffice2Icon"
+                name="building-office-2"
                 size={24}
                 variant="outline"
                 className="text-primary mr-3"
@@ -392,7 +392,7 @@ const InstitutionalContactForm = ({ className = '' }: InstitutionalContactFormPr
           <fieldset className="mb-10">
             <legend className="text-xl font-headline font-semibold text-foreground mb-6 flex items-center">
               <Icon
-                name="UserIcon"
+                name="user"
                 size={24}
                 variant="outline"
                 className="text-primary mr-3"
@@ -503,7 +503,7 @@ const InstitutionalContactForm = ({ className = '' }: InstitutionalContactFormPr
           <fieldset className="mb-10">
             <legend className="text-xl font-headline font-semibold text-foreground mb-6 flex items-center">
               <Icon
-                name="DocumentTextIcon"
+                name="document-text"
                 size={24}
                 variant="outline"
                 className="text-primary mr-3"
@@ -583,7 +583,7 @@ const InstitutionalContactForm = ({ className = '' }: InstitutionalContactFormPr
           >
             <h4 className="text-sm font-cta font-semibold text-foreground mb-2 flex items-center">
               <Icon
-                name="LockClosedIcon"
+                name="lock-closed"
                 size={18}
                 variant="outline"
                 className="text-primary mr-2"
@@ -603,7 +603,7 @@ const InstitutionalContactForm = ({ className = '' }: InstitutionalContactFormPr
           <fieldset className="mb-8 p-6 bg-muted/30 border border-border rounded-sm">
             <legend className="text-base font-cta font-semibold text-foreground mb-4 flex items-center">
               <Icon
-                name="ShieldCheckIcon"
+                name="shield-check"
                 size={20}
                 variant="outline"
                 className="text-primary mr-2"

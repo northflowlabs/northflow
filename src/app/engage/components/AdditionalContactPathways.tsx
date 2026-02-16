@@ -21,7 +21,7 @@ const AdditionalContactPathways = ({ className = '' }: AdditionalContactPathways
           <div className="bg-background p-8 rounded-sm border border-border space-y-6">
             <div className="flex items-start space-x-4">
               <div className="w-10 h-10 bg-primary/10 rounded-sm flex items-center justify-center flex-shrink-0 mt-1">
-                <Icon name="AcademicCapIcon" size={20} variant="outline" className="text-primary" />
+                <Icon name="academic-cap" size={20} variant="outline" className="text-primary" />
               </div>
               <div>
                 <h3 className="text-lg font-headline font-semibold text-foreground mb-2">
@@ -37,7 +37,7 @@ const AdditionalContactPathways = ({ className = '' }: AdditionalContactPathways
             <div className="border-t border-border pt-6">
               <div className="flex items-start space-x-4">
                 <div className="w-10 h-10 bg-primary/10 rounded-sm flex items-center justify-center flex-shrink-0 mt-1">
-                  <Icon name="NewspaperIcon" size={20} variant="outline" className="text-primary" />
+                  <Icon name="newspaper" size={20} variant="outline" className="text-primary" />
                 </div>
                 <div>
                   <h3 className="text-lg font-headline font-semibold text-foreground mb-2">
