@@ -16,28 +16,28 @@ const EngagementProcess = ({ className = '' }: EngagementProcessProps) => {
   const processSteps: ProcessStep[] = [
     {
       id: 1,
-      icon: 'DocumentMagnifyingGlassIcon',
+      icon: 'document-magnifying-glass',
       title: 'Initial review',
       description:
         'Each inquiry is reviewed for relevance, scope, and alignment with Northflow research and systems focus.',
     },
     {
       id: 2,
-      icon: 'ClipboardDocumentCheckIcon',
+      icon: 'clipboard-document-check',
       title: 'Contextual evaluation',
       description:
         'Additional clarification may be requested to understand institutional context and objectives.',
     },
     {
       id: 3,
-      icon: 'LockClosedIcon',
+      icon: 'lock-closed',
       title: 'Confidential dialogue',
       description:
         'Engagement is conducted under appropriate confidentiality standards and professional discretion.',
     },
     {
       id: 4,
-      icon: 'ArrowPathIcon',
+      icon: 'arrow-path',
       title: 'Structured next steps',
       description:
         'Where appropriate, next steps may include briefings, exploratory discussions, or referral to research or systems teams.',

@@ -36,6 +36,10 @@ import {
   QuestionMarkCircleIcon,
   Bars3Icon,
   XMarkIcon,
+  NewspaperIcon,
+  ClipboardDocumentCheckIcon,
+  InformationCircleIcon,
+  UserIcon,
 } from '@heroicons/react/24/outline';
 
 // Icon mapping for tree-shaking
@@ -72,6 +76,10 @@ const iconMap = {
   'hand-raised': HandRaisedIcon,
   'bars-3': Bars3Icon,
   'x-mark': XMarkIcon,
+  newspaper: NewspaperIcon,
+  'clipboard-document-check': ClipboardDocumentCheckIcon,
+  'information-circle': InformationCircleIcon,
+  user: UserIcon,
 
   CalendarIcon,
   BellIcon,
@@ -91,6 +99,10 @@ const iconMap = {
   UserGroupIcon,
   Bars3Icon,
   XMarkIcon,
+  NewspaperIcon,
+  ClipboardDocumentCheckIcon,
+  InformationCircleIcon,
+  UserIcon,
 } as const;
 
 type IconVariant = 'outline' | 'solid';

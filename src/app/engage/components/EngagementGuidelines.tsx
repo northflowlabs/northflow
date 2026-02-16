@@ -16,28 +16,28 @@ const EngagementGuidelines = ({ className = '' }: EngagementGuidelinesProps) => 
   const guidelines: Guideline[] = [
     {
       id: 1,
-      icon: 'ClockIcon',
+      icon: 'clock',
       title: 'Response timeline',
       description:
         'Initial review within 5-7 business days. Complex inquiries may require additional evaluation time.',
     },
     {
       id: 2,
-      icon: 'DocumentCheckIcon',
+      icon: 'document-check',
       title: 'Evaluation process',
       description:
         'All inquiries undergo institutional review to ensure alignment with our engagement criteria and capacity.',
     },
     {
       id: 3,
-      icon: 'LockClosedIcon',
+      icon: 'lock-closed',
       title: 'Confidentiality',
       description:
         'Dialogue conducted under appropriate confidentiality frameworks. NDA arrangements available where required.',
     },
     {
       id: 4,
-      icon: 'UserGroupIcon',
+      icon: 'user-group',
       title: 'Structured dialogue',
       description:
         'Engagement follows a phased approach: initial briefing, technical evaluation, pilot exploration, or consortium participation.',
@@ -82,7 +82,7 @@ const EngagementGuidelines = ({ className = '' }: EngagementGuidelinesProps) => 
           <div className="bg-card p-8 rounded-sm border border-border">
             <h3 className="text-xl font-headline font-semibold text-foreground mb-4 flex items-center">
               <Icon
-                name="InformationCircleIcon"
+                name="information-circle"
                 size={24}
                 variant="outline"
                 className="text-primary mr-3"

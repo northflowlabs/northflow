@@ -27,6 +27,30 @@ npm run dev
 
 Visit `http://localhost:4028` to view the application.
 
+## Development workflow (recommended on Windows)
+
+If this repository is stored inside a synced folder (e.g. Google Drive / OneDrive), we recommend keeping **source files** there, but doing `npm install` and running Next.js from a **local, non-synced** working copy.
+
+Why: large dependency trees (`node_modules`) can become corrupted in synced folders (we observed 0-byte package files during install).
+
+### Suggested setup
+
+1. Keep the source repo safe (synced):
+   - `G:\My Drive\...\northflow_technologies`
+
+2. Create a local dev working copy (not synced):
+   - `C:\dev\northflow_technologies`
+
+3. Sync source-only files from Drive → local dev copy:
+   - Run: `tools\sync-to-local-dev.ps1`
+
+4. Install + run from the local dev copy:
+
+```bash
+npm install
+npm run dev
+```
+
 ## Environment Variables
 
 Required variables:
