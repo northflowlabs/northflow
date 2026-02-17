@@ -13,6 +13,7 @@ export const metadata: Metadata = generateMetadata({
     'Request a structured, non-commercial dialogue with Northflow regarding institutional infrastructure, governance alignment, or research collaboration.',
   path: '/engage',
   ogType: 'website',
+  ogImage: 'https://northflow.no/assets/images/Northflow%20-%20Earth%20Sat.jpg',
 });
 
 export default function EngagePage() {

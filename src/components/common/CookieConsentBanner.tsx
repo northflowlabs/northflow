@@ -177,7 +177,7 @@ const CookieConsentBanner = ({ className = '' }: CookieConsentBannerProps) => {
                     className="text-muted-foreground hover:text-foreground focus:outline-none focus:ring-2 focus:ring-ring rounded p-1"
                     aria-label="Close preferences"
                   >
-                    <Icon name="XMarkIcon" size={24} variant="outline" />
+                    <Icon name="x-mark" size={24} variant="outline" />
                   </button>
                 </div>
 

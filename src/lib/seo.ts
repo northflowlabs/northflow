@@ -21,6 +21,7 @@ export interface SEOProps {
   publishedTime?: string;
   modifiedTime?: string;
   authors?: string[];
+  ogImage?: string;
 }
 
 export function generateMetadata({
@@ -32,6 +33,7 @@ export function generateMetadata({
   publishedTime,
   modifiedTime,
   authors,
+  ogImage,
 }: SEOProps): Metadata {
   const url = `${siteConfig.url}${path}`;
   const fullTitle = title.includes('Northflow') ? title : `${title} | ${siteConfig.name}`;
@@ -49,7 +51,7 @@ export function generateMetadata({
     'European technology',
   ];
 
-  const allKeywords = [...new Set([...keywords, ...defaultKeywords])];
+  const allKeywords = Array.from(new Set([...keywords, ...defaultKeywords]));
 
   return {
     title: fullTitle,
@@ -76,7 +78,7 @@ export function generateMetadata({
       siteName: siteConfig.name,
       images: [
         {
-          url: siteConfig.ogImage,
+          url: ogImage || siteConfig.ogImage,
           width: 1200,
           height: 630,
           alt: `${siteConfig.name} - ${title}`,
@@ -90,7 +92,7 @@ export function generateMetadata({
       card: 'summary_large_image',
       title: fullTitle,
       description,
-      images: [siteConfig.ogImage],
+      images: [ogImage || siteConfig.ogImage],
       creator: '@northflowtech',
     },
     robots: {

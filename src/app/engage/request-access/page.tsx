@@ -7,10 +7,12 @@ import AccessEngagementProcess from './components/AccessEngagementProcess';
 import AccessRequestForm from './components/AccessRequestForm';
 
 export const metadata: Metadata = generateMetadata({
-  title: 'Request Access to Institutional Materials | Northflow',
+  title: 'Access Request & Institutional Dialogue | Northflow',
   description:
-    'Formal access pathway for institutional stakeholders requesting research publications, governance frameworks, and controlled Northflow materials.',
+    'Request structured engagement with Northflow for institutional infrastructure, research collaboration, or governance alignment. Non-commercial dialogue for qualified stakeholders.',
   path: '/engage/request-access',
+  ogType: 'website',
+  ogImage: 'https://northflow.no/assets/images/Northflow%20-%20Earth%20Sat.jpg',
   keywords: [
     'institutional access request',
     'research publication access',

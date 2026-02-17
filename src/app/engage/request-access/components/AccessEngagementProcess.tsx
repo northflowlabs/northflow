@@ -15,27 +15,27 @@ const AccessEngagementProcess = ({ className = '' }: AccessEngagementProcessProp
   const processSteps: ProcessStep[] = [
     {
       id: 1,
-      icon: 'DocumentTextIcon',
+      icon: 'document-text',
       title: 'Access request submitted',
       description: 'Your request is received and logged for institutional review.',
     },
     {
       id: 2,
-      icon: 'ClipboardDocumentCheckIcon',
+      icon: 'clipboard-document-check',
       title: 'Institutional review by Northflow Technologies',
       description:
         'Request is evaluated based on institutional role, intended use, and governance alignment.',
     },
     {
       id: 3,
-      icon: 'ChatBubbleLeftRightIcon',
+      icon: 'chat-bubble-left-right',
       title: 'Clarification requested if required',
       description:
         'Additional information may be requested to ensure appropriate access level and context.',
     },
     {
       id: 4,
-      icon: 'CheckCircleIcon',
+      icon: 'check-circle',
       title: 'Access granted or guidance provided',
       description:
         'Materials are shared with appropriate confidentiality arrangements, or alternative guidance is provided.',

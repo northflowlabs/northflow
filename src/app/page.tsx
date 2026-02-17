@@ -13,6 +13,7 @@ export const metadata: Metadata = generateMetadata({
   description:
     'Northflow builds institutional-grade evidence infrastructure that converts uncertain datasets into reproducible intelligence. Structured discovery for climate, space, and critical systems in European regulatory environments.',
   path: '/',
+  ogImage: 'https://northflow.no/assets/images/Northflow%20-%20Earth%20Sat.jpg',
   keywords: [
     'European digital sovereignty',
     'government digital infrastructure',

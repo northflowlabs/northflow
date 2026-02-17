@@ -71,16 +71,6 @@ const HGELinks = ({ className = '' }: HGELinksProps) => {
               </p>
             </div>
           </div>
-
-          <div className="mt-8 text-center">
-            <Link
-              href="/engage"
-              className="inline-flex items-center space-x-2 bg-primary text-primary-foreground px-6 py-3 rounded-sm hover:bg-primary/90 transition-colors duration-200 font-cta font-medium"
-            >
-              <span>Request research briefing →</span>
-              <Icon name="ArrowRightIcon" size={16} variant="outline" />
-            </Link>
-          </div>
         </div>
       </div>
     </section>

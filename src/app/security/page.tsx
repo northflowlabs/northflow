@@ -1,10 +1,14 @@
 import type { Metadata } from 'next';
+import { generateMetadata } from '@/lib/seo';
 
-export const metadata: Metadata = {
-  title: 'Institutional Security & Operational Assurance | Northflow',
+export const metadata: Metadata = generateMetadata({
+  title: 'Security by Design | Northflow Technologies',
   description:
-    'Security practices supporting institutional-grade digital infrastructure, auditability, and operational assurance across regulated environments.',
-};
+    'Security as foundational architecture, not retrospective implementation. Defence-in-depth with layered controls, cryptographic protection, and continuous monitoring informed by Project HGE validation workflows.',
+  path: '/security',
+  ogType: 'website',
+  ogImage: 'https://northflow.no/assets/images/Northflow%20-%20Earth%20Sat.jpg',
+});
 
 export default function SecurityPage() {
   return (
