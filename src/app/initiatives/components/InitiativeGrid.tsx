@@ -53,7 +53,7 @@ export default function InitiativeGrid() {
       status: 'In development',
       statusTone: 'development',
       description:
-        'Active adaptation of HGE for ESA Sentinel satellite data. Targeting wildfire risk modelling, deforestation verification, and infrastructure vulnerability mapping. ESA Business Applications PoC submitted February 2026.',
+        'Active adaptation of HGE for ESA Sentinel satellite data. Targeting wildfire risk modelling, deforestation verification, and infrastructure vulnerability mapping. ESA Business Applications PoC being submitted.',
       detailLabel: 'Focus areas',
       details: [
         'Wildfire risk hypothesis generation',

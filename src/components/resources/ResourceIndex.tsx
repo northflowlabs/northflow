@@ -433,7 +433,7 @@ const ResourceIndex = () => {
                   onClick={() => setShowSavedSearches(!showSavedSearches)}
                   className="px-4 py-2 bg-muted text-foreground text-sm font-medium rounded-sm transition-all duration-200 hover:bg-muted/80 flex items-center gap-2"
                 >
-                  <Icon name="BookmarkIcon" size={16} variant="outline" />
+                  <Icon name="bookmark" size={16} variant="outline" />
                   Saved searches ({savedSearches.length})
                 </button>
               )}
@@ -442,7 +442,7 @@ const ResourceIndex = () => {
                   onClick={() => setShowSaveDialog(true)}
                   className="px-4 py-2 bg-primary text-primary-foreground text-sm font-medium rounded-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-hover flex items-center gap-2"
                 >
-                  <Icon name="BookmarkIcon" size={16} variant="solid" />
+                  <Icon name="bookmark" size={16} variant="solid" />
                   Save search
                 </button>
               )}
@@ -487,7 +487,7 @@ const ResourceIndex = () => {
                         onClick={() => deleteSavedSearch(search.id)}
                         className="p-1.5 text-muted-foreground hover:text-destructive transition-colors duration-200"
                       >
-                        <Icon name="TrashIcon" size={16} variant="outline" />
+                        <Icon name="trash" size={16} variant="outline" />
                       </button>
                     </div>
                   </div>
@@ -580,7 +580,7 @@ const ResourceIndex = () => {
                       : `${selectedTopics.length} selected`}
                   </span>
                   <Icon
-                    name={showTopicsDropdown ? 'ChevronUpIcon' : 'ChevronDownIcon'}
+                    name={showTopicsDropdown ? 'chevron-up' : 'chevron-down'}
                     size={16}
                     variant="outline"
                     className="text-muted-foreground"
@@ -669,7 +669,7 @@ const ResourceIndex = () => {
                       onClick={() => toggleTopic(topic)}
                       className="hover:bg-primary/20 rounded-sm p-0.5 transition-colors duration-150"
                     >
-                      <Icon name="XMarkIcon" size={14} variant="solid" />
+                      <Icon name="x-mark" size={14} variant="solid" />
                     </button>
                   </span>
                 ))}

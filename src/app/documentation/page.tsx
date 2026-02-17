@@ -1,10 +1,14 @@
 import type { Metadata } from 'next';
+import { generateMetadata } from '@/lib/seo';
 
-export const metadata: Metadata = {
-  title: 'Institutional Documentation & Technical Guidance | Northflow',
+export const metadata: Metadata = generateMetadata({
+  title: 'System Architecture & Integration Guides | Northflow Docs',
   description:
-    'Technical documentation and implementation guidance for institutions engaging with Northflow systems and governance architectures.',
-};
+    'Technical documentation for Project HGE and institutional evidence infrastructure. System architecture, experiment specifications, validation workflows, and integration patterns.',
+  path: '/documentation',
+  ogType: 'website',
+  ogImage: 'https://northflow.no/assets/images/Northflow%20-%20Earth%20Sat.jpg',
+});
 
 export default function DocumentationPage() {
   return (

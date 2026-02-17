@@ -3,6 +3,8 @@
 import React from 'react';
 import {
   ChevronRightIcon,
+  ChevronUpIcon,
+  ChevronDownIcon,
   ArrowRightIcon,
   AcademicCapIcon,
   BuildingOfficeIcon,
@@ -40,11 +42,17 @@ import {
   ClipboardDocumentCheckIcon,
   InformationCircleIcon,
   UserIcon,
+  ChatBubbleLeftRightIcon,
+  BookmarkIcon,
+  TrashIcon,
+  XCircleIcon,
 } from '@heroicons/react/24/outline';
 
 // Icon mapping for tree-shaking
 const iconMap = {
   'chevron-right': ChevronRightIcon,
+  'chevron-up': ChevronUpIcon,
+  'chevron-down': ChevronDownIcon,
   'arrow-right': ArrowRightIcon,
   'academic-cap': AcademicCapIcon,
   'building-office': BuildingOfficeIcon,
@@ -80,7 +88,14 @@ const iconMap = {
   'clipboard-document-check': ClipboardDocumentCheckIcon,
   'information-circle': InformationCircleIcon,
   user: UserIcon,
+  'chat-bubble-left-right': ChatBubbleLeftRightIcon,
+  bookmark: BookmarkIcon,
+  trash: TrashIcon,
+  'x-circle': XCircleIcon,
 
+  ChevronRightIcon,
+  ChevronUpIcon,
+  ChevronDownIcon,
   CalendarIcon,
   BellIcon,
   CubeIcon,
@@ -103,6 +118,10 @@ const iconMap = {
   ClipboardDocumentCheckIcon,
   InformationCircleIcon,
   UserIcon,
+  ChatBubbleLeftRightIcon,
+  BookmarkIcon,
+  TrashIcon,
+  XCircleIcon,
 } as const;
 
 type IconVariant = 'outline' | 'solid';

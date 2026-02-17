@@ -16,6 +16,7 @@ export const metadata: Metadata = generateMetadata({
     'EFOS defines a reference architecture for traceable, auditable, and sovereign digital operations designed for long-horizon institutional governance.',
   path: '/efos-framework-details',
   ogType: 'website',
+  ogImage: 'https://northflow.no/assets/images/EFOS_-_Flexibility_system-1767049348023.jpg',
 });
 
 export default function EFOSFrameworkDetailsPage() {

@@ -11,11 +11,12 @@ import { generateMetadata, generateWebPageSchema } from '@/lib/seo';
 import StructuredData from '@/components/common/StructuredData';
 
 export const metadata: Metadata = generateMetadata({
-  title: 'Institutional Research Infrastructure Under Uncertainty | Northflow',
+  title: 'Structured Evidence Research | Northflow Technologies',
   description:
-    'Northflow Research develops long-horizon discovery infrastructure for institutions operating under uncertainty, regulation, and irreversible decision environments.',
+    'Applied research in structured discovery, evidence systems, and space-enabled climate resilience. Project HGE: machine-driven hypothesis generation with verifiable provenance tracking.',
   path: '/research',
   ogType: 'website',
+  ogImage: 'https://northflow.no/assets/images/Northflow%20-%20Earth%20Sat.jpg',
 });
 
 export default function ResearchPage() {

@@ -49,7 +49,7 @@ const HGEValidation = ({ className = '' }: HGEValidationProps) => {
       title: 'Sentinel Earth Observation adaptation',
       status: 'In development',
       description:
-        'Active adaptation of HGE for ESA Sentinel satellite data. Targeting wildfire risk modelling, deforestation verification, and infrastructure vulnerability mapping. ESA Business Applications PoC submitted February 2026.',
+        'Active adaptation of HGE for ESA Sentinel satellite data. Targeting wildfire risk modelling, deforestation verification, and infrastructure vulnerability mapping. ESA Business Applications PoC being submitted.',
       detailLabel: 'Focus areas',
       details: [
         'Wildfire risk hypothesis generation',

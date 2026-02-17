@@ -11,11 +11,12 @@ import { generateMetadata, generateWebPageSchema } from '@/lib/seo';
 import StructuredData from '@/components/common/StructuredData';
 
 export const metadata: Metadata = generateMetadata({
-  title: 'Institutional Systems & Governance Architecture | Northflow',
+  title: 'Governable Infrastructure Systems | Northflow Technologies',
   description:
-    'Northflow systems define institutional digital architecture for governance, resilience, auditability, and long-lived operational reliability in European contexts.',
+    'Reference architectures for regulated, mission-critical environments. Sovereign control, compliance frameworks, and operational continuity designed for institutional governance requirements.',
   path: '/systems',
   ogType: 'website',
+  ogImage: 'https://northflow.no/assets/images/Northflow%20-%20Earth%20Sat.jpg',
 });
 
 export default function SystemsPage() {

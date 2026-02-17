@@ -1,10 +1,14 @@
 import type { Metadata } from 'next';
+import { generateMetadata } from '@/lib/seo';
 
-export const metadata: Metadata = {
-  title: 'Regulatory Alignment & Institutional Compliance | Northflow',
+export const metadata: Metadata = generateMetadata({
+  title: 'Compliance as Design Principle | Northflow Technologies',
   description:
-    "Northflow's compliance approach aligns digital infrastructure with European regulatory frameworks, governance requirements, and long-term accountability.",
-};
+    'Regulatory alignment embedded from initial design stages. GDPR, NIS2, DORA, and ISO/IEC 27001 design alignment for institutional deployment in governed European environments.',
+  path: '/compliance',
+  ogType: 'website',
+  ogImage: 'https://northflow.no/assets/images/Northflow%20-%20Earth%20Sat.jpg',
+});
 
 export default function CompliancePage() {
   return (

@@ -26,7 +26,7 @@ const HGEContact = ({ className = '' }: HGEContactProps) => {
         <div className="max-w-4xl mx-auto">
           <div className="bg-card border border-border rounded-sm p-12 text-center">
             <div className="w-16 h-16 bg-primary/10 rounded-sm flex items-center justify-center mx-auto mb-6">
-              <Icon name="AcademicCapIcon" size={32} variant="outline" className="text-primary" />
+              <Icon name="academic-cap" size={32} variant="outline" className="text-primary" />
             </div>
             <h2 className="text-2xl md:text-3xl font-headline font-semibold text-foreground mb-4">
               Discuss research collaboration
@@ -42,7 +42,7 @@ const HGEContact = ({ className = '' }: HGEContactProps) => {
               className="inline-flex items-center justify-center px-8 py-3 bg-primary text-primary-foreground font-cta font-medium rounded-sm hover:bg-primary/90 transition-all duration-200 ease-institutional hover:-translate-y-0.5 hover:shadow-hover"
             >
               Initiate research dialogue
-              <Icon name="ArrowRightIcon" size={16} variant="outline" className="ml-2" />
+              <Icon name="arrow-right" size={16} variant="outline" className="ml-2" />
             </Link>
             <p className="text-xs font-body text-muted-foreground mt-6">
               Engagement follows structured institutional dialogue protocols. Response times vary

@@ -1,10 +1,14 @@
 import type { Metadata } from 'next';
+import { generateMetadata } from '@/lib/seo';
 
-export const metadata: Metadata = {
-  title: 'Technical Papers & Reference Architectures | Northflow',
+export const metadata: Metadata = generateMetadata({
+  title: 'Research Publication Archive | Northflow Technical Papers',
   description:
-    'Methodological notes, validation studies, and framework documentation for peer review and institutional assessment.',
-};
+    'Methodological notes, validation studies, and framework documentation for peer review. Research emphasizes reproducibility, provenance tracking, and uncertainty-aware reasoning.',
+  path: '/technical-papers',
+  ogType: 'website',
+  ogImage: 'https://northflow.no/assets/images/Northflow%20-%20Earth%20Sat.jpg',
+});
 
 export default function TechnicalPapersPage() {
   return (

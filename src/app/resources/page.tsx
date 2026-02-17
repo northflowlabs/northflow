@@ -1,12 +1,16 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import ResourceIndex from '@/components/resources/ResourceIndex';
+import { generateMetadata } from '@/lib/seo';
 
-export const metadata: Metadata = {
-  title: 'Institutional Resources & Reference Materials | Northflow',
+export const metadata: Metadata = generateMetadata({
+  title: 'Research Materials & Technical Documentation | Northflow',
   description:
-    'Searchable index of documentation, research papers, compliance materials, and institutional reference resources.',
-};
+    'Methodology notes, validation artifacts, and framework documentation for institutional stakeholders. Structured discovery resources, evidence systems, and space-enabled climate resilience.',
+  path: '/resources',
+  ogType: 'website',
+  ogImage: 'https://northflow.no/assets/images/Northflow%20-%20Earth%20Sat.jpg',
+});
 
 export default function ResourcesPage() {
   return (

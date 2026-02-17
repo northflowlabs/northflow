@@ -209,7 +209,7 @@ const AccessRequestForm = ({ className = '' }: AccessRequestFormProps) => {
           <fieldset className="mb-10">
             <legend className="text-xl font-headline font-semibold text-foreground mb-6 flex items-center">
               <Icon
-                name="BuildingOffice2Icon"
+                name="building-office-2"
                 size={24}
                 variant="outline"
                 className="text-primary mr-3"
@@ -560,7 +560,7 @@ const AccessRequestForm = ({ className = '' }: AccessRequestFormProps) => {
                 role="status"
                 aria-live="polite"
               >
-                <Icon name="CheckCircleIcon" size={20} variant="solid" aria-hidden="true" />
+                <Icon name="check-circle" size={20} variant="solid" aria-hidden="true" />
                 <span>
                   Access request submitted successfully. We will review your request and respond
                   within 5–7 business days.
@@ -574,7 +574,7 @@ const AccessRequestForm = ({ className = '' }: AccessRequestFormProps) => {
                 role="alert"
                 aria-live="assertive"
               >
-                <Icon name="XCircleIcon" size={20} variant="solid" aria-hidden="true" />
+                <Icon name="x-circle" size={20} variant="solid" aria-hidden="true" />
                 <span>{errorMessage}</span>
               </div>
             )}

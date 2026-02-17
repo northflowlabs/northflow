@@ -92,16 +92,9 @@ const EngagementSection = ({ className = '' }: EngagementSectionProps) => {
               <h3 className="text-xl font-headline font-semibold text-foreground mb-3">
                 {path.title}
               </h3>
-              <p className="text-sm text-muted-foreground font-body leading-relaxed mb-6">
+              <p className="text-sm text-muted-foreground font-body leading-relaxed">
                 {path.description}
               </p>
-              <a
-                href="/engage"
-                onClick={() => handlePathClick(path)}
-                className="inline-flex items-center space-x-2 text-primary font-cta font-medium text-sm hover:underline transition-all duration-200"
-              >
-                <span>{path.action}</span>
-              </a>
             </div>
           ))}
         </div>

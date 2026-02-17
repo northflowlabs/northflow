@@ -130,14 +130,14 @@ export default function EFOSHighlight() {
                 className="inline-flex items-center justify-center space-x-2 px-6 py-3 bg-primary text-primary-foreground text-sm font-cta font-medium rounded-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-hover"
               >
                 <span>View full framework details</span>
-                <Icon name="ArrowRightIcon" size={16} variant="outline" />
+                <Icon name="arrow-right" size={16} variant="outline" />
               </Link>
               <Link
                 href="/engage"
                 className="inline-flex items-center justify-center space-x-2 px-6 py-3 bg-card border border-border text-foreground text-sm font-cta font-medium rounded-sm transition-all duration-200 hover:bg-muted"
               >
                 <span>Request programme briefing</span>
-                <Icon name="ArrowRightIcon" size={16} variant="outline" />
+                <Icon name="arrow-right" size={16} variant="outline" />
               </Link>
             </div>
           </div>
@@ -152,7 +152,7 @@ export default function EFOSHighlight() {
             </div>
             <div className="absolute -bottom-6 -right-6 bg-card border border-border rounded-sm p-6 shadow-hover max-w-xs">
               <div className="flex items-center space-x-3 mb-2">
-                <Icon name="UserGroupIcon" size={20} variant="outline" className="text-primary" />
+                <Icon name="user-group" size={20} variant="outline" className="text-primary" />
                 <span className="text-2xl font-headline font-semibold text-foreground">2</span>
               </div>
               <p className="text-sm text-muted-foreground font-body">
