@@ -37,8 +37,8 @@ const RegionalPresenceSection = ({ className = '' }: RegionalPresenceSectionProp
             Operating context
           </h2>
           <p className="text-lg text-muted-foreground font-body leading-relaxed">
-            Northflow is based in Norway and operates within broader European institutional
-            contexts where continuity, auditability, and governance alignment are required.
+            Northflow is based in Norway and operates within broader European institutional contexts
+            where continuity, auditability, and governance alignment are required.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

@@ -39,7 +39,11 @@ export default function HGEExplorerLoginScreen({
       </div>
 
       {/* Layer: WebGL starfield (Three.js) */}
-      <ThreeStarfield className="absolute inset-0 z-[2] pointer-events-none" opacity={0.9} density={1} />
+      <ThreeStarfield
+        className="absolute inset-0 z-[2] pointer-events-none"
+        opacity={0.9}
+        density={1}
+      />
 
       {/* Layer: vignette */}
       <div className="hge-login__vignette" aria-hidden="true" />
@@ -143,7 +147,7 @@ export default function HGEExplorerLoginScreen({
             radial-gradient(1200px 700px at 50% 20%, rgba(255, 206, 160, 0.22), transparent 55%),
             radial-gradient(900px 600px at 15% 70%, rgba(120, 190, 255, 0.15), transparent 60%),
             radial-gradient(800px 520px at 85% 75%, rgba(185, 125, 255, 0.12), transparent 60%),
-            radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.10) 0.8px, transparent 0.9px),
+            radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.1) 0.8px, transparent 0.9px),
             radial-gradient(circle at 70% 60%, rgba(255, 255, 255, 0.08) 0.7px, transparent 0.9px),
             linear-gradient(180deg, #000 0%, #071225 40%, #000 100%);
 
@@ -194,19 +198,42 @@ export default function HGEExplorerLoginScreen({
           z-index: 5;
           pointer-events: none;
           background:
-            radial-gradient(circle at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.55) 70%, rgba(0, 0, 0, 0.88) 100%),
+            radial-gradient(
+              circle at center,
+              rgba(0, 0, 0, 0) 0%,
+              rgba(0, 0, 0, 0.55) 70%,
+              rgba(0, 0, 0, 0.88) 100%
+            ),
             linear-gradient(0deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 35%);
         }
 
         @keyframes drift {
           0% {
-            background-position: 50% 20%, 15% 70%, 85% 75%, 0 0, 0 0, 0 0;
+            background-position:
+              50% 20%,
+              15% 70%,
+              85% 75%,
+              0 0,
+              0 0,
+              0 0;
           }
           50% {
-            background-position: 52% 22%, 13% 68%, 87% 77%, 40px 10px, -30px 20px, 0 0;
+            background-position:
+              52% 22%,
+              13% 68%,
+              87% 77%,
+              40px 10px,
+              -30px 20px,
+              0 0;
           }
           100% {
-            background-position: 50% 20%, 15% 70%, 85% 75%, 0 0, 0 0, 0 0;
+            background-position:
+              50% 20%,
+              15% 70%,
+              85% 75%,
+              0 0,
+              0 0,
+              0 0;
           }
         }
 

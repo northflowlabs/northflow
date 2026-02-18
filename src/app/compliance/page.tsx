@@ -217,7 +217,9 @@ export default function CompliancePage() {
                   <ul className="space-y-2 ml-6 [&>li]:flex [&>li]:items-start [&>li]:gap-3 [&>li>span:first-child]:mt-0.5 [&>li>span:first-child]:leading-none">
                     <li className="flex gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span>Formal certification by accredited bodies (unless explicitly stated)</span>
+                      <span>
+                        Formal certification by accredited bodies (unless explicitly stated)
+                      </span>
                     </li>
                     <li className="flex gap-3">
                       <span className="text-primary mt-1">•</span>

@@ -54,14 +54,18 @@ const HGETechnicalSpecifications = ({ className = '' }: HGETechnicalSpecificatio
                         className="text-primary"
                       />
                     </div>
-                    <span className="text-sm font-body text-foreground leading-relaxed">{capability}</span>
+                    <span className="text-sm font-body text-foreground leading-relaxed">
+                      {capability}
+                    </span>
                   </li>
                 ))}
               </ul>
             </div>
 
             <div className="bg-background border border-border rounded-sm p-7">
-              <h3 className="text-xl font-headline font-semibold text-foreground mb-4">Integration</h3>
+              <h3 className="text-xl font-headline font-semibold text-foreground mb-4">
+                Integration
+              </h3>
               <ul className="space-y-3">
                 {integrationCapabilities.map((capability) => (
                   <li key={capability} className="flex items-start space-x-3">
@@ -73,7 +77,9 @@ const HGETechnicalSpecifications = ({ className = '' }: HGETechnicalSpecificatio
                         className="text-primary"
                       />
                     </div>
-                    <span className="text-sm font-body text-foreground leading-relaxed">{capability}</span>
+                    <span className="text-sm font-body text-foreground leading-relaxed">
+                      {capability}
+                    </span>
                   </li>
                 ))}
               </ul>

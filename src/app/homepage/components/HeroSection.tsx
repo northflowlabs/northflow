@@ -17,10 +17,10 @@ const HeroSection = ({ className = '' }: HeroSectionProps) => {
               infrastructure for climate, space, and critical systems
             </h1>
             <p className="text-lg lg:text-xl text-muted-foreground font-body leading-relaxed mb-6">
-              Northflow builds institutional-grade evidence infrastructure that converts large-scale,
-              uncertain datasets into reproducible, decision-ready intelligence. Our core asset is
-              the Hypothesis Generation Engine (HGE) - a structured system for machine-driven
-              hypothesis search, evaluation, and verification under uncertainty.
+              Northflow builds institutional-grade evidence infrastructure that converts
+              large-scale, uncertain datasets into reproducible, decision-ready intelligence. Our
+              core asset is the Hypothesis Generation Engine (HGE) - a structured system for
+              machine-driven hypothesis search, evaluation, and verification under uncertainty.
             </p>
             <p className="text-sm text-muted-foreground font-body mb-5">
               Built in Norway. Validated on astronomical observation data. Adapting to ESA Sentinel

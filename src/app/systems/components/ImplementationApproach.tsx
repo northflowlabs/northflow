@@ -19,7 +19,7 @@ const ImplementationApproach = ({ className = '' }: ImplementationApproachProps)
       number: '01',
       title: 'Assessment & validation',
       description:
-        'Comprehensive evaluation of institutional requirements, regulatory context, and governance readiness. Informed by HGE\'s structured evaluation methodology.',
+        "Comprehensive evaluation of institutional requirements, regulatory context, and governance readiness. Informed by HGE's structured evaluation methodology.",
       deliverables: [
         'Requirements documentation',
         'Compliance assessment',

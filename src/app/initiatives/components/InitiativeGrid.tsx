@@ -88,8 +88,7 @@ export default function InitiativeGrid() {
   const futureDomains: FutureDomain[] = [
     {
       domain: 'Marine & Water Systems',
-      description:
-        'Evidence frameworks for marine ecosystem monitoring and coastal resilience',
+      description: 'Evidence frameworks for marine ecosystem monitoring and coastal resilience',
       status: 'Planned — Phase 3',
     },
     {
@@ -148,7 +147,9 @@ export default function InitiativeGrid() {
               </p>
 
               <div className="pt-4 border-t border-border">
-                <p className="text-xs text-muted-foreground font-body mb-3">{initiative.detailLabel}</p>
+                <p className="text-xs text-muted-foreground font-body mb-3">
+                  {initiative.detailLabel}
+                </p>
                 <ul className="space-y-2">
                   {initiative.details.map((detail, index) => (
                     <li key={index} className="flex items-start space-x-2">
@@ -211,7 +212,9 @@ export default function InitiativeGrid() {
                     <td className="py-4 pr-4 text-sm font-body text-muted-foreground">
                       {domain.description}
                     </td>
-                    <td className="py-4 text-sm font-body text-muted-foreground">{domain.status}</td>
+                    <td className="py-4 text-sm font-body text-muted-foreground">
+                      {domain.status}
+                    </td>
                   </tr>
                 ))}
               </tbody>

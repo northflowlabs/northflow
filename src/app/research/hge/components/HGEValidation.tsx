@@ -68,10 +68,15 @@ const HGEValidation = ({ className = '' }: HGEValidationProps) => {
   };
 
   return (
-    <section id="validation-evidence" className={`bg-card border-y border-border py-20 ${className}`}>
+    <section
+      id="validation-evidence"
+      className={`bg-card border-y border-border py-20 ${className}`}
+    >
       <div className="max-w-[1400px] mx-auto px-8">
         <div className="text-center mb-16">
-          <p className="text-xs font-cta font-semibold tracking-[0.16em] text-primary mb-3">PROOF</p>
+          <p className="text-xs font-cta font-semibold tracking-[0.16em] text-primary mb-3">
+            PROOF
+          </p>
           <h2 className="text-3xl md:text-4xl font-headline font-semibold text-foreground mb-4">
             Operational validation
           </h2>
@@ -113,7 +118,9 @@ const HGEValidation = ({ className = '' }: HGEValidationProps) => {
                         variant="outline"
                         className="text-primary mt-0.5 flex-shrink-0"
                       />
-                      <span className="text-sm text-foreground font-body leading-relaxed">{detail}</span>
+                      <span className="text-sm text-foreground font-body leading-relaxed">
+                        {detail}
+                      </span>
                     </li>
                   ))}
                 </ul>

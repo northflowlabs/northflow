@@ -12,7 +12,7 @@ const ApproachSection = ({ className = '' }: ApproachSectionProps) => {
     {
       title: 'Research before execution',
       description:
-        'Architectures are informed by structured methodology and validation, not assumption or trend. HGE\'s design was validated against Gaia DR3 - one of the most complex astronomical datasets available - before being adapted to Earth Observation.',
+        "Architectures are informed by structured methodology and validation, not assumption or trend. HGE's design was validated against Gaia DR3 - one of the most complex astronomical datasets available - before being adapted to Earth Observation.",
     },
     {
       title: 'Operations over abstraction',

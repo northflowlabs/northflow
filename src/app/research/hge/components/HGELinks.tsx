@@ -19,9 +19,9 @@ const HGELinks = ({ className = '' }: HGELinksProps) => {
               Research access & technical briefings
             </h2>
             <p className="text-lg font-body text-muted-foreground leading-relaxed">
-              HGE technical materials, validation artifacts, and system documentation are
-              maintained internally and shared selectively with qualified research partners, funding
-              agencies, and institutional collaborators. Public releases follow peer review, partner
+              HGE technical materials, validation artifacts, and system documentation are maintained
+              internally and shared selectively with qualified research partners, funding agencies,
+              and institutional collaborators. Public releases follow peer review, partner
               validation, and governance review.
             </p>
           </div>

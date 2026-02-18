@@ -48,6 +48,20 @@ export default function ResourcesPage() {
           </p>
           <div className="flex flex-wrap gap-4">
             <Link
+              href="/research/hge"
+              className="inline-flex items-center gap-2 px-4 py-2 bg-accent text-accent-foreground rounded-md hover:bg-accent/90 transition-colors font-body text-sm font-medium"
+            >
+              HGE page
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </Link>
+            <Link
               href="/technical-papers"
               className="inline-flex items-center gap-2 px-4 py-2 bg-accent text-accent-foreground rounded-md hover:bg-accent/90 transition-colors font-body text-sm font-medium"
             >
@@ -98,8 +112,8 @@ export default function ResourcesPage() {
               Evidence infrastructure resources
             </h2>
             <p className="text-sm text-muted-foreground font-body leading-relaxed">
-              Framework documentation for institutional evidence systems, governance
-              methodologies, and audit-grade verification workflows.
+              Framework documentation for institutional evidence systems, governance methodologies,
+              and audit-grade verification workflows.
             </p>
           </div>
           <div className="p-6 bg-card border border-border rounded-lg">

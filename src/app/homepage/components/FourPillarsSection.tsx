@@ -55,8 +55,8 @@ const FourPillarsSection = ({ className = '' }: FourPillarsSectionProps) => {
             Four pillars of institutional evidence infrastructure
           </h2>
           <p className="text-lg text-muted-foreground font-body max-w-3xl mx-auto">
-            Core capabilities defining Northflow&apos;s approach to structured discovery and verifiable
-            knowledge production.
+            Core capabilities defining Northflow&apos;s approach to structured discovery and
+            verifiable knowledge production.
           </p>
         </div>
 
@@ -120,25 +120,41 @@ const FourPillarsSection = ({ className = '' }: FourPillarsSectionProps) => {
               </p>
               <ul className="space-y-3 mb-8">
                 <li className="flex items-start gap-3">
-                  <Icon name="check-circle" size={20} className="text-primary flex-shrink-0 mt-0.5" />
+                  <Icon
+                    name="check-circle"
+                    size={20}
+                    className="text-primary flex-shrink-0 mt-0.5"
+                  />
                   <span className="text-sm text-muted-foreground font-body">
                     Structured hypothesis search with explicit representation
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Icon name="check-circle" size={20} className="text-primary flex-shrink-0 mt-0.5" />
+                  <Icon
+                    name="check-circle"
+                    size={20}
+                    className="text-primary flex-shrink-0 mt-0.5"
+                  />
                   <span className="text-sm text-muted-foreground font-body">
                     Deterministic execution with signed evidence artifacts
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Icon name="check-circle" size={20} className="text-primary flex-shrink-0 mt-0.5" />
+                  <Icon
+                    name="check-circle"
+                    size={20}
+                    className="text-primary flex-shrink-0 mt-0.5"
+                  />
                   <span className="text-sm text-muted-foreground font-body">
                     Designed for institutional reproducibility and auditability
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Icon name="check-circle" size={20} className="text-primary flex-shrink-0 mt-0.5" />
+                  <Icon
+                    name="check-circle"
+                    size={20}
+                    className="text-primary flex-shrink-0 mt-0.5"
+                  />
                   <span className="text-sm text-muted-foreground font-body">
                     Validated on Gaia DR3 - operational since 2025
                   </span>

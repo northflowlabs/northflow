@@ -78,7 +78,12 @@ export default function TechnicalPapersPage() {
                 >
                   Request paper details
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 5l7 7-7 7"
+                    />
                   </svg>
                 </a>
               </div>
@@ -108,7 +113,12 @@ export default function TechnicalPapersPage() {
                 >
                   Request paper details
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 5l7 7-7 7"
+                    />
                   </svg>
                 </a>
               </div>
@@ -119,7 +129,9 @@ export default function TechnicalPapersPage() {
                     <h3 className="text-xl font-headline font-semibold text-foreground mb-2">
                       Quantum backend validation: executing experiments under noise and drift
                     </h3>
-                    <p className="text-sm text-muted-foreground">Methods note · Expected April 2026</p>
+                    <p className="text-sm text-muted-foreground">
+                      Methods note · Expected April 2026
+                    </p>
                   </div>
                   <span className="px-3 py-1 bg-yellow-500/10 text-yellow-700 text-xs font-semibold rounded-full border border-yellow-500/20">
                     In preparation — prioritized
@@ -136,7 +148,12 @@ export default function TechnicalPapersPage() {
                 >
                   Request paper details
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 5l7 7-7 7"
+                    />
                   </svg>
                 </a>
               </div>
