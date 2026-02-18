@@ -40,7 +40,7 @@ const CapabilitiesSection = ({ className = '' }: CapabilitiesSectionProps) => {
       id: 4,
       domain: 'Biomedical Research',
       scope:
-        'Secondary validation domain demonstrating engine generality. Automated hypothesis discovery in oncology and women\'s health research.',
+        "Secondary validation domain demonstrating engine generality. Automated hypothesis discovery in oncology and women's health research.",
       dataSources: 'Biomedical datasets',
       status: 'Future',
     },

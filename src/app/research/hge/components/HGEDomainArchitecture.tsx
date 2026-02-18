@@ -52,8 +52,8 @@ const HGEDomainArchitecture = ({ className = '' }: HGEDomainArchitectureProps) =
             </h2>
             <p className="text-lg font-body text-muted-foreground leading-relaxed">
               HGE is domain-agnostic by architecture. Each application domain is a structured
-              adapter connecting the engine to specific observational environments and
-              institutional contexts.
+              adapter connecting the engine to specific observational environments and institutional
+              contexts.
             </p>
           </div>
 

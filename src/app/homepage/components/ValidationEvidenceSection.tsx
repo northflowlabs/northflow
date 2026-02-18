@@ -16,7 +16,7 @@ const ValidationEvidenceSection = ({ className = '' }: ValidationEvidenceSection
       title: 'Gaia DR3 astronomical validation',
       status: 'Operational',
       description:
-        'HGE has been operationally validated against the Gaia Data Release 3 astronomical catalog - one of the largest and most complex structured scientific datasets available. This validation demonstrates the engine\'s ability to perform structured hypothesis search at scale, with deterministic execution and reproducible evidence outputs across billions of observational records.',
+        "HGE has been operationally validated against the Gaia Data Release 3 astronomical catalog - one of the largest and most complex structured scientific datasets available. This validation demonstrates the engine's ability to perform structured hypothesis search at scale, with deterministic execution and reproducible evidence outputs across billions of observational records.",
     },
     {
       id: 2,
@@ -53,14 +53,16 @@ const ValidationEvidenceSection = ({ className = '' }: ValidationEvidenceSection
     <section className={`bg-card py-20 lg:py-24 border-y border-border ${className}`}>
       <div className="max-w-[1400px] mx-auto px-8">
         <div className="text-center mb-16">
-          <p className="text-xs font-cta font-semibold tracking-[0.16em] text-primary mb-3">PROOF</p>
+          <p className="text-xs font-cta font-semibold tracking-[0.16em] text-primary mb-3">
+            PROOF
+          </p>
           <h2 className="text-3xl lg:text-4xl font-headline font-semibold text-foreground mb-4">
             Validated methodology. Operational evidence.
           </h2>
           <p className="text-lg text-muted-foreground font-body max-w-4xl mx-auto">
             Northflow follows a strict proof-before-claim discipline. Every capability presented on
-            this site is backed by a working implementation or a documented validation artifact.
-            The proof inventory is maintained and updated as development progresses.
+            this site is backed by a working implementation or a documented validation artifact. The
+            proof inventory is maintained and updated as development progresses.
           </p>
         </div>
 
@@ -80,7 +82,9 @@ const ValidationEvidenceSection = ({ className = '' }: ValidationEvidenceSection
                   {item.status}
                 </span>
               </div>
-              <p className="text-sm text-muted-foreground font-body leading-relaxed">{item.description}</p>
+              <p className="text-sm text-muted-foreground font-body leading-relaxed">
+                {item.description}
+              </p>
             </div>
           ))}
         </div>

@@ -89,7 +89,11 @@ const ValidationPage = () => {
       dateLabel: 'SUMMARY — JANUARY 2026',
       description:
         'Summary of red-team tamper resistance testing covering six adversarial attack vectors against evidence generation, storage, and verification pathways.',
-      bullets: ['6 attack vectors tested', 'Tamper detection and rejection paths', 'Incident evidence verification workflow'],
+      bullets: [
+        '6 attack vectors tested',
+        'Tamper detection and rejection paths',
+        'Incident evidence verification workflow',
+      ],
       ctaLabel: 'Review security summary',
       href: '/security',
     },
@@ -101,7 +105,11 @@ const ValidationPage = () => {
       dateLabel: 'MONTHLY UPDATES — ACTIVE',
       description:
         'Implementation logs tracking HGE adaptation to ESA Sentinel data pipelines for wildfire risk, deforestation verification, and infrastructure stress indicators.',
-      bullets: ['Adapter integration milestones', 'Validation checkpoint updates', 'Institutional engagement timeline'],
+      bullets: [
+        'Adapter integration milestones',
+        'Validation checkpoint updates',
+        'Institutional engagement timeline',
+      ],
       ctaLabel: 'View monthly logs',
       href: '#sentinel-progress-logs',
     },
@@ -113,7 +121,11 @@ const ValidationPage = () => {
       dateLabel: 'PLANNED — Q2 2026',
       description:
         'Cross-domain benchmark annex for institutional reviewers comparing reproducibility, verification latency, and governance-mode behavior across deployment contexts.',
-      bullets: ['Comparative benchmark protocol', 'Governance-mode performance matrix', 'Publication readiness checkpoints'],
+      bullets: [
+        'Comparative benchmark protocol',
+        'Governance-mode performance matrix',
+        'Publication readiness checkpoints',
+      ],
       ctaLabel: 'Track publication readiness',
       href: '/engage/request-access',
     },
@@ -150,12 +162,13 @@ const ValidationPage = () => {
               Validation artifacts and institutional evidence register
             </h1>
             <p className="text-base md:text-lg font-body text-white/90 leading-relaxed max-w-3xl">
-              Northflow follows a strict no-claim-without-artifact discipline. Every core capability is
-              mapped to a concrete, reviewable artifact with status, update date, and access pathway.
+              Northflow follows a strict no-claim-without-artifact discipline. Every core capability
+              is mapped to a concrete, reviewable artifact with status, update date, and access
+              pathway.
             </p>
             <p className="text-xs font-body text-white/80 mt-6">
-              Status legend: Operational, In development, Planned. Dates indicate latest release or target publication
-              window.
+              Status legend: Operational, In development, Planned. Dates indicate latest release or
+              target publication window.
             </p>
           </div>
         </div>
@@ -172,8 +185,8 @@ const ValidationPage = () => {
               Verifiable evidence inventory
             </h2>
             <p className="text-sm md:text-base text-muted-foreground font-body max-w-3xl mx-auto">
-              Each entry below links to documentation, downloadable packages, or operational context used in
-              institutional review cycles.
+              Each entry below links to documentation, downloadable packages, or operational context
+              used in institutional review cycles.
             </p>
           </div>
 
@@ -237,8 +250,9 @@ const ValidationPage = () => {
                 Gaia DR3 validation report — public summary
               </h2>
               <p className="text-sm md:text-base text-muted-foreground font-body max-w-3xl mx-auto">
-                This section summarizes what the validation demonstrates and what artifacts are available for review.
-                It intentionally omits implementation details that constitute proprietary methodology.
+                This section summarizes what the validation demonstrates and what artifacts are
+                available for review. It intentionally omits implementation details that constitute
+                proprietary methodology.
               </p>
             </div>
 
@@ -249,9 +263,11 @@ const ValidationPage = () => {
                     Scope and dataset context
                   </h3>
                   <p className="text-sm text-muted-foreground font-body leading-relaxed">
-                    The Gaia Data Release 3 (DR3) catalog contains approximately <span className="font-medium text-foreground">1.8 billion</span>{' '}
-                    observational objects. Northflow’s validation demonstrates that the Hypothesis Generation Engine
-                    (HGE) can operate over this scale while producing institutionally reviewable evidence outputs.
+                    The Gaia Data Release 3 (DR3) catalog contains approximately{' '}
+                    <span className="font-medium text-foreground">1.8 billion</span> observational
+                    objects. Northflow’s validation demonstrates that the Hypothesis Generation
+                    Engine (HGE) can operate over this scale while producing institutionally
+                    reviewable evidence outputs.
                   </p>
                 </div>
 
@@ -273,7 +289,9 @@ const ValidationPage = () => {
                           variant="outline"
                           className="text-primary mt-0.5 flex-shrink-0"
                         />
-                        <span className="text-sm text-foreground font-body leading-relaxed">{item}</span>
+                        <span className="text-sm text-foreground font-body leading-relaxed">
+                          {item}
+                        </span>
                       </li>
                     ))}
                   </ul>
@@ -304,8 +322,13 @@ const ValidationPage = () => {
                         body: 'The validation is designed to show that reviewable evidence workflows can operate at catalog scale, without requiring ad-hoc manual reconstruction of results.',
                       },
                     ].map((item) => (
-                      <li key={item.title} className="bg-background border border-border rounded-sm p-5">
-                        <p className="text-sm font-headline font-semibold text-foreground">{item.title}</p>
+                      <li
+                        key={item.title}
+                        className="bg-background border border-border rounded-sm p-5"
+                      >
+                        <p className="text-sm font-headline font-semibold text-foreground">
+                          {item.title}
+                        </p>
                         <p className="text-sm text-muted-foreground font-body leading-relaxed mt-1">
                           {item.body}
                         </p>
@@ -319,8 +342,9 @@ const ValidationPage = () => {
                     Artifacts available for institutional review
                   </h4>
                   <p className="text-sm text-muted-foreground font-body leading-relaxed mb-4">
-                    Public materials provide a high-level validation narrative and a public-safe summary for review.
-                    Additional packages may be shared selectively for qualified institutional stakeholders.
+                    Public materials provide a high-level validation narrative and a public-safe
+                    summary for review. Additional packages may be shared selectively for qualified
+                    institutional stakeholders.
                   </p>
                   <ul className="space-y-2 mb-6">
                     {[
@@ -336,7 +360,9 @@ const ValidationPage = () => {
                           variant="outline"
                           className="text-primary mt-0.5 flex-shrink-0"
                         />
-                        <span className="text-sm text-foreground font-body leading-relaxed">{item}</span>
+                        <span className="text-sm text-foreground font-body leading-relaxed">
+                          {item}
+                        </span>
                       </li>
                     ))}
                   </ul>
@@ -346,8 +372,8 @@ const ValidationPage = () => {
                       What we do not publish
                     </h4>
                     <p className="text-sm text-muted-foreground font-body leading-relaxed mb-3">
-                      For safety, integrity, and IP reasons, some implementation details are not published openly.
-                      We focus on publishing evidence, not recipes.
+                      For safety, integrity, and IP reasons, some implementation details are not
+                      published openly. We focus on publishing evidence, not recipes.
                     </p>
                     <ul className="space-y-2">
                       {[
@@ -362,7 +388,9 @@ const ValidationPage = () => {
                             variant="outline"
                             className="text-muted-foreground mt-0.5 flex-shrink-0"
                           />
-                          <span className="text-sm text-muted-foreground font-body leading-relaxed">{item}</span>
+                          <span className="text-sm text-muted-foreground font-body leading-relaxed">
+                            {item}
+                          </span>
                         </li>
                       ))}
                     </ul>
@@ -395,8 +423,8 @@ const ValidationPage = () => {
               Evidence bundle explorer
             </h2>
             <p className="text-sm md:text-base text-muted-foreground font-body max-w-3xl mx-auto">
-              Sample signed evidence bundle (anonymized). Expand each section to inspect how claims, provenance,
-              integrity, and audit controls are represented.
+              Sample signed evidence bundle (anonymized). Expand each section to inspect how claims,
+              provenance, integrity, and audit controls are represented.
             </p>
           </div>
 
@@ -406,7 +434,9 @@ const ValidationPage = () => {
                 <p className="text-[11px] font-cta font-semibold tracking-[0.14em] uppercase text-muted-foreground mb-1">
                   Bundle ID
                 </p>
-                <p className="text-sm font-cta font-semibold text-foreground">HGE-EVB-2026-02-017</p>
+                <p className="text-sm font-cta font-semibold text-foreground">
+                  HGE-EVB-2026-02-017
+                </p>
               </div>
               <div className="bg-background border border-border rounded-sm p-4">
                 <p className="text-[11px] font-cta font-semibold tracking-[0.14em] uppercase text-muted-foreground mb-1">
@@ -418,7 +448,9 @@ const ValidationPage = () => {
                 <p className="text-[11px] font-cta font-semibold tracking-[0.14em] uppercase text-muted-foreground mb-1">
                   Replay status
                 </p>
-                <p className="text-sm font-cta font-semibold text-emerald-700">Deterministic match</p>
+                <p className="text-sm font-cta font-semibold text-emerald-700">
+                  Deterministic match
+                </p>
               </div>
             </div>
 
@@ -449,8 +481,12 @@ const ValidationPage = () => {
                   <summary className="list-none cursor-pointer select-none p-5">
                     <div className="flex items-start justify-between gap-4">
                       <div>
-                        <p className="text-sm font-headline font-semibold text-foreground">{row.title}</p>
-                        <p className="text-xs text-muted-foreground font-body mt-1">{row.subtitle}</p>
+                        <p className="text-sm font-headline font-semibold text-foreground">
+                          {row.title}
+                        </p>
+                        <p className="text-xs text-muted-foreground font-body mt-1">
+                          {row.subtitle}
+                        </p>
                       </div>
                       <Icon
                         name="chevron-down"
@@ -461,7 +497,9 @@ const ValidationPage = () => {
                     </div>
                   </summary>
                   <div className="px-5 pb-5">
-                    <p className="text-sm text-muted-foreground font-body leading-relaxed">{row.body}</p>
+                    <p className="text-sm text-muted-foreground font-body leading-relaxed">
+                      {row.body}
+                    </p>
                   </div>
                 </details>
               ))}
@@ -478,8 +516,8 @@ const ValidationPage = () => {
               Sentinel adaptation progress logs
             </h2>
             <p className="text-sm md:text-base text-muted-foreground font-body mb-8">
-              Monthly update stream for Earth Observation adaptation. Entries are maintained for institutional
-              traceability and planning review.
+              Monthly update stream for Earth Observation adaptation. Entries are maintained for
+              institutional traceability and planning review.
             </p>
 
             <div className="space-y-4">

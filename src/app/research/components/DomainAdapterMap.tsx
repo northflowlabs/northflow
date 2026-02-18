@@ -155,7 +155,10 @@ const DomainAdapterMap = ({ className = '' }: DomainAdapterMapProps) => {
               </p>
               <ul className="space-y-3">
                 {selected.roadmap.map((item) => (
-                  <li key={item} className="text-sm font-body text-muted-foreground leading-relaxed">
+                  <li
+                    key={item}
+                    className="text-sm font-body text-muted-foreground leading-relaxed"
+                  >
                     {item}
                   </li>
                 ))}

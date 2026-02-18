@@ -69,7 +69,9 @@ export default function DocumentationPage() {
                     </h3>
                     <ul className="space-y-3 text-sm text-muted-foreground">
                       <li>
-                        <span className="text-foreground font-medium">HGE architecture overview</span>
+                        <span className="text-foreground font-medium">
+                          HGE architecture overview
+                        </span>
                         <p>
                           System design, component interactions, and data flow patterns for the
                           Hypothesis Generation Engine.
@@ -105,7 +107,9 @@ export default function DocumentationPage() {
                     </h3>
                     <ul className="space-y-3 text-sm text-muted-foreground">
                       <li>
-                        <span className="text-foreground font-medium">Sentinel data integration guide</span>
+                        <span className="text-foreground font-medium">
+                          Sentinel data integration guide
+                        </span>
                         <p>
                           Adapter specifications for ESA Sentinel Earth Observation data ingestion
                           and preprocessing.
@@ -113,7 +117,9 @@ export default function DocumentationPage() {
                         <p className="text-xs italic">Status: Draft — Expected March 2026</p>
                       </li>
                       <li>
-                        <span className="text-foreground font-medium">Instrument backend interface</span>
+                        <span className="text-foreground font-medium">
+                          Instrument backend interface
+                        </span>
                         <p>
                           Technical specification for connecting physical instruments and data
                           sources to HGE.

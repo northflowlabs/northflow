@@ -64,7 +64,12 @@ const HGEApplications = ({ className = '' }: HGEApplicationsProps) => {
             {features.map((feature) => (
               <div key={feature.title} className="bg-card border border-border rounded-sm p-7">
                 <div className="w-10 h-10 bg-primary/10 rounded-sm flex items-center justify-center mb-4">
-                  <Icon name={feature.icon as any} size={20} variant="outline" className="text-primary" />
+                  <Icon
+                    name={feature.icon as any}
+                    size={20}
+                    variant="outline"
+                    className="text-primary"
+                  />
                 </div>
                 <h3 className="text-lg font-headline font-semibold text-foreground mb-2">
                   {feature.title}

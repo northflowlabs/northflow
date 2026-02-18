@@ -15,8 +15,8 @@ export default function InitiativeHero() {
           </h1>
           <p className="text-lg font-body text-primary-foreground/90 leading-relaxed mb-8">
             Northflow conducts applied research initiatives that validate and extend the Hypothesis
-            Generation Engine across operational domains. Current programmes focus on
-            space-enabled climate resilience and evidence infrastructure methodology.
+            Generation Engine across operational domains. Current programmes focus on space-enabled
+            climate resilience and evidence infrastructure methodology.
           </p>
           <p className="text-sm font-body text-primary-foreground/70 leading-relaxed mb-8 italic">
             All initiatives ladder to Project HGE. Domain expansion follows strict validation

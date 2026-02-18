@@ -77,9 +77,9 @@ const ComplianceStandards = ({ className = '' }: ComplianceStandardsProps) => {
             certification.
           </p>
           <p className="text-xs text-foreground font-body mt-3 bg-card border border-primary/20 rounded-sm px-3 py-2 max-w-3xl">
-            <span className="font-semibold">Design-alignment qualifier:</span> Formal
-            certifications are pursued and verified where applicable. References to standards
-            describe design intent and target operating model.
+            <span className="font-semibold">Design-alignment qualifier:</span> Formal certifications
+            are pursued and verified where applicable. References to standards describe design
+            intent and target operating model.
           </p>
         </div>
 

@@ -26,10 +26,10 @@ const HGEHero = ({ className = '' }: HGEHeroProps) => {
               Structured scientific discovery infrastructure
             </p>
             <p className="text-lg font-body text-primary-foreground/90 leading-relaxed mb-6">
-              HGE converts complex observational data into verifiable evidence through machine-driven
-              hypothesis search, deterministic execution, and audit-grade provenance tracking.
-              Validated on Gaia DR3 astronomical catalog. Currently adapting to ESA Sentinel Earth
-              Observation.
+              HGE converts complex observational data into verifiable evidence through
+              machine-driven hypothesis search, deterministic execution, and audit-grade provenance
+              tracking. Validated on Gaia DR3 astronomical catalog. Currently adapting to ESA
+              Sentinel Earth Observation.
             </p>
             <p className="text-sm font-body text-primary-foreground/75 leading-relaxed mb-8">
               Built for institutional environments where reproducibility, auditability, and

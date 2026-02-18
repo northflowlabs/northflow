@@ -9,11 +9,7 @@ type Props = {
   density?: number;
 };
 
-export default function ThreeStarfield({
-  className,
-  opacity = 0.85,
-  density = 1,
-}: Props) {
+export default function ThreeStarfield({ className, opacity = 0.85, density = 1 }: Props) {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const hostRef = useRef<HTMLDivElement | null>(null);
 

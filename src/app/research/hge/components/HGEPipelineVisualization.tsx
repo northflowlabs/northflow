@@ -20,7 +20,8 @@ const stages: PipelineStage[] = [
     id: 'data',
     title: 'Data',
     icon: 'server-stack',
-    summary: 'Observational datasets are normalized, quality-checked, and mapped into reproducible evidence contexts.',
+    summary:
+      'Observational datasets are normalized, quality-checked, and mapped into reproducible evidence contexts.',
     specifications: [
       'Schema harmonization across instrument sources',
       'Outlier and drift pre-check pipeline',
@@ -31,7 +32,8 @@ const stages: PipelineStage[] = [
     id: 'hypotheses',
     title: 'Hypotheses',
     icon: 'sparkles',
-    summary: 'The engine generates explicit, testable hypotheses ranked by information gain and uncertainty impact.',
+    summary:
+      'The engine generates explicit, testable hypotheses ranked by information gain and uncertainty impact.',
     specifications: [
       'Machine-readable hypothesis schema',
       'Bayesian prior initialization and weighting',
@@ -42,7 +44,8 @@ const stages: PipelineStage[] = [
     id: 'experiments',
     title: 'Experiments',
     icon: 'beaker',
-    summary: 'Experiments are designed and executed deterministically with operational guardrails and policy gates.',
+    summary:
+      'Experiments are designed and executed deterministically with operational guardrails and policy gates.',
     specifications: [
       'Information-gain optimized experiment plans',
       'Policy-gated execution contract',
@@ -53,7 +56,8 @@ const stages: PipelineStage[] = [
     id: 'evidence',
     title: 'Evidence',
     icon: 'document-check',
-    summary: 'Signed evidence bundles capture outcomes, confidence updates, and traceable provenance chains.',
+    summary:
+      'Signed evidence bundles capture outcomes, confidence updates, and traceable provenance chains.',
     specifications: [
       'Cryptographic signature and integrity checks',
       'Audit invariants and tamper detection',
@@ -87,7 +91,9 @@ const HGEPipelineVisualization = ({ className = '' }: HGEPipelineVisualizationPr
       <div className="max-w-[1400px] mx-auto px-8">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <p className="text-xs font-cta font-semibold tracking-[0.16em] text-primary mb-3">PIPELINE</p>
+            <p className="text-xs font-cta font-semibold tracking-[0.16em] text-primary mb-3">
+              PIPELINE
+            </p>
             <h2 className="text-3xl md:text-4xl font-headline font-semibold text-foreground mb-4">
               Data to evidence pipeline
             </h2>
@@ -114,7 +120,9 @@ const HGEPipelineVisualization = ({ className = '' }: HGEPipelineVisualizationPr
                   <div className="w-10 h-10 rounded-sm bg-primary/10 flex items-center justify-center mb-3">
                     <Icon name={stage.icon} size={20} variant="outline" className="text-primary" />
                   </div>
-                  <p className="text-sm font-headline font-semibold text-foreground">{stage.title}</p>
+                  <p className="text-sm font-headline font-semibold text-foreground">
+                    {stage.title}
+                  </p>
                   {index < stages.length - 1 && (
                     <Icon
                       name="arrow-right"
@@ -152,11 +160,15 @@ const HGEPipelineVisualization = ({ className = '' }: HGEPipelineVisualizationPr
             </div>
 
             <div className="bg-background border border-border rounded-sm p-6">
-              <h3 className="text-lg font-headline font-semibold text-foreground mb-4">Live adapter status</h3>
+              <h3 className="text-lg font-headline font-semibold text-foreground mb-4">
+                Live adapter status
+              </h3>
               <div className="space-y-3">
                 {adapterStatuses.map((adapter) => (
                   <div key={adapter.label} className="border border-border rounded-sm p-3">
-                    <p className="text-sm font-headline font-semibold text-foreground mb-2">{adapter.label}</p>
+                    <p className="text-sm font-headline font-semibold text-foreground mb-2">
+                      {adapter.label}
+                    </p>
                     <span
                       className={`inline-flex px-3 py-1 rounded-sm border text-xs font-cta font-medium uppercase ${toneClasses[adapter.tone]}`}
                     >

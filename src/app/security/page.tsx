@@ -405,8 +405,8 @@ export default function SecurityPage() {
                   </p>
                   <p>
                     Security practices benefit from research-grade validation workflows and
-                    provenance concepts developed in Project HGE — including deterministic replay for
-                    security event verification and audit-grade evidence trails.
+                    provenance concepts developed in Project HGE — including deterministic replay
+                    for security event verification and audit-grade evidence trails.
                   </p>
                   <p>This approach balances:</p>
                   <ul className="space-y-2 ml-6">
