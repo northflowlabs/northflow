@@ -46,8 +46,8 @@ const ValidationPage = () => {
         'Deterministic run-to-run reproducibility',
         'Audit-ready provenance trail included',
       ],
-      ctaLabel: 'Download PDF',
-      href: '/publications/gaia-dr3-validation-summary.pdf',
+      ctaLabel: 'Read public summary',
+      href: '#gaia-dr3-public-summary',
     },
     {
       id: 'evidence-bundle-spec',
@@ -228,7 +228,7 @@ const ValidationPage = () => {
           </div>
 
           {/* Gaia DR3 report overview (public-safe) */}
-          <div className="mt-16 max-w-5xl mx-auto">
+          <div id="gaia-dr3-public-summary" className="mt-16 max-w-5xl mx-auto scroll-mt-24">
             <div className="text-center mb-10">
               <p className="text-xs font-cta font-semibold tracking-[0.18em] uppercase text-muted-foreground mb-3">
                 Report overview
@@ -319,12 +319,12 @@ const ValidationPage = () => {
                     Artifacts available for institutional review
                   </h4>
                   <p className="text-sm text-muted-foreground font-body leading-relaxed mb-4">
-                    Public materials provide a high-level validation narrative and a downloadable summary. Additional
-                    packages may be shared selectively for qualified institutional stakeholders.
+                    Public materials provide a high-level validation narrative and a public-safe summary for review.
+                    Additional packages may be shared selectively for qualified institutional stakeholders.
                   </p>
                   <ul className="space-y-2 mb-6">
                     {[
-                      'Validation summary PDF (Gaia DR3)',
+                      'Public validation summary (this page)',
                       'Evidence bundle schema + integrity verification steps',
                       'Replay demonstration context for briefings',
                       'Security / tamper testing summary (red-team results)',
@@ -371,13 +371,6 @@ const ValidationPage = () => {
               </div>
 
               <div className="mt-10 flex flex-col sm:flex-row gap-3 justify-center">
-                <a
-                  href="/publications/gaia-dr3-validation-summary.pdf"
-                  className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary text-primary-foreground font-cta font-medium rounded-sm hover:bg-primary/90 transition-colors duration-200"
-                >
-                  <span>Download Gaia DR3 validation summary</span>
-                  <Icon name="arrow-right" size={16} variant="outline" />
-                </a>
                 <Link
                   href="/engage/request-access"
                   className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-card border border-border text-foreground font-cta font-medium rounded-sm hover:bg-muted transition-colors duration-200"
