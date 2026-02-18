@@ -1,43 +1,214 @@
 %PDF-1.4
+%âãÏÓ
 1 0 obj
 << /Type /Catalog /Pages 2 0 R >>
 endobj
 2 0 obj
-<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+<< /Type /Pages /Kids [3 0 R 4 0 R 5 0 R 6 0 R] /Count 4 >>
 endobj
 3 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 7 0 R /Resources << /Font << /F1 11 0 R >> >> >>
 endobj
 4 0 obj
-<< /Length 236 >>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 8 0 R /Resources << /Font << /F1 11 0 R >> >> >>
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 9 0 R /Resources << /Font << /F1 11 0 R >> >> >>
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 10 0 R /Resources << /Font << /F1 11 0 R >> >> >>
+endobj
+7 0 obj
+<< /Length 658 >>
 stream
 BT
-/F1 14 Tf
-72 730 Td
-(Gaia DR3 Validation Report - Structured Hypothesis Search at Scale) Tj
-0 -24 Td
+/F1 18 Tf
+72 740 Td
+(Gaia DR3 Validation Report — Structured Hypothesis Search at Scale) Tj
+ET
+
+BT
+/F1 12 Tf
+72 712 Td
+(Public Institutional Summary — February 2026) Tj
+ET
+
+BT
 /F1 11 Tf
-(Version: Institutional Summary - February 2026) Tj
-0 -24 Td
-(Northflow Hypothesis Generation Engine validation artifact package.) Tj
-0 -24 Td
-(See /technical-papers and /validation for contextual documentation.) Tj
+72 680 Td
+(This document is a public-safe summary of Northflow validation work on Gaia Data Release 3) Tj
+0 -15 Td
+(\(DR3\). It is designed for institutional orientation and does not disclose proprietary) Tj
+0 -15 Td
+(methodology, internal heuristics, or security-sensitive implementation details.) Tj
+ET
+
+BT
+/F1 11 Tf
+72 610 Td
+(For contextual material: /validation, /technical-papers, and institutional engagement via) Tj
+0 -15 Td
+(/engage/request-access.) Tj
 ET
 endstream
 endobj
-5 0 obj
+8 0 obj
+<< /Length 1019 >>
+stream
+BT
+/F1 14 Tf
+72 740 Td
+(1. Scope and dataset context) Tj
+ET
+
+BT
+/F1 11 Tf
+72 712 Td
+(Gaia DR3 is one of the largest structured scientific catalogs available, containing) Tj
+0 -15 Td
+(approximately 1.8 billion observational objects. The validation demonstrates that HGE can) Tj
+0 -15 Td
+(operate at this scale while producing institutionally reviewable evidence outputs.) Tj
+ET
+
+BT
+/F1 14 Tf
+72 650 Td
+(2. What the validation demonstrates \(public-safe\)) Tj
+ET
+
+BT
+/F1 11 Tf
+72 622 Td
+(• Deterministic replay: outputs can be reproduced under identical inputs and policy) Tj
+0 -15 Td
+(constraints.) Tj
+0 -15 Td
+(• Provenance-aware evidence packaging: outputs are structured as evidence bundles for review) Tj
+0 -15 Td
+(and traceability.) Tj
+0 -15 Td
+(• Integrity verification: evidence bundles support signature + integrity checks for) Tj
+0 -15 Td
+(institutional workflows.) Tj
+0 -15 Td
+(• Institutional review readiness: artifacts are formatted for audit and governance-aligned) Tj
+0 -15 Td
+(evaluation.) Tj
+ET
+endstream
+endobj
+9 0 obj
+<< /Length 948 >>
+stream
+BT
+/F1 14 Tf
+72 740 Td
+(3. Artifacts available for review) Tj
+ET
+
+BT
+/F1 11 Tf
+72 712 Td
+(• Validation summary PDF \(this document\).) Tj
+0 -15 Td
+(• Evidence bundle schema and integrity verification steps \(specification\).) Tj
+0 -15 Td
+(• Replay demonstration context for briefings \(controlled disclosure\).) Tj
+0 -15 Td
+(• Security / tamper testing summary \(red-team results overview\).) Tj
+ET
+
+BT
+/F1 14 Tf
+72 610 Td
+(4. What we do not publish) Tj
+ET
+
+BT
+/F1 11 Tf
+72 582 Td
+(For safety, integrity, and IP reasons, certain implementation details are not published openly.) Tj
+0 -15 Td
+(Northflow focuses on publishing evidence, not recipes.) Tj
+ET
+
+BT
+/F1 11 Tf
+72 540 Td
+(• Internal heuristics, ranking logic, and decision policies.) Tj
+0 -15 Td
+(• Deployment-specific operational parameters tied to governance constraints.) Tj
+0 -15 Td
+(• Security-sensitive mechanisms that would weaken tamper resistance if disclosed.) Tj
+ET
+endstream
+endobj
+10 0 obj
+<< /Length 914 >>
+stream
+BT
+/F1 14 Tf
+72 740 Td
+(5. Access pathways) Tj
+ET
+
+BT
+/F1 11 Tf
+72 712 Td
+(Public materials are published for transparency and institutional orientation. Additional) Tj
+0 -15 Td
+(packages \(where applicable\) are shared selectively for qualified stakeholders under appropriate) Tj
+0 -15 Td
+(confidentiality arrangements.) Tj
+ET
+
+BT
+/F1 11 Tf
+72 650 Td
+(• Validation evidence register: https://northflow.no/validation) Tj
+0 -15 Td
+(• Institutional access request: https://northflow.no/engage/request-access) Tj
+0 -15 Td
+(• Technical papers: https://northflow.no/technical-papers) Tj
+0 -15 Td
+(• Security: https://northflow.no/security) Tj
+ET
+
+BT
+/F1 14 Tf
+72 560 Td
+(Document classification) Tj
+ET
+
+BT
+/F1 11 Tf
+72 532 Td
+(This summary is intended for public distribution. It does not grant access to controlled) Tj
+0 -15 Td
+(disclosure materials, internal specifications, or implementation details.) Tj
+ET
+endstream
+endobj
+11 0 obj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
 endobj
 xref
-0 6
+0 12
 0000000000 65535 f 
-0000000009 00000 n 
-0000000058 00000 n 
-0000000115 00000 n 
-0000000241 00000 n 
-0000000528 00000 n 
+0000000019 00000 n 
+0000000068 00000 n 
+0000000143 00000 n 
+0000000270 00000 n 
+0000000397 00000 n 
+0000000524 00000 n 
+0000000652 00000 n 
+0000001360 00000 n 
+0000002430 00000 n 
+0000003428 00000 n 
+0000004393 00000 n 
 trailer
-<< /Size 6 /Root 1 0 R >>
+<< /Size 12 /Root 1 0 R >>
 startxref
-598
+4464
 %%EOF
