@@ -24,12 +24,7 @@ const AccessPrinciples = ({ className = '' }: AccessPrinciplesProps) => {
               {principles.map((principle, index) => (
                 <li key={index} className="flex items-start gap-4">
                   <div className="w-6 h-6 bg-primary/10 rounded-sm flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <Icon
-                      name="check-circle"
-                      size={16}
-                      variant="outline"
-                      className="text-primary"
-                    />
+                    <Icon name="check-circle" size={16} variant="outline" className="text-primary" />
                   </div>
                   <span className="text-base text-foreground font-body leading-relaxed">
                     {principle}
