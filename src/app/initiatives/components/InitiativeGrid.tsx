@@ -97,6 +97,12 @@ export default function InitiativeGrid() {
       status: 'Future — validation only',
     },
     {
+      domain: 'Quantum Computing',
+      description:
+        'Evidence frameworks for instrument-agnostic hypothesis testing over quantum hardware backends',
+      status: 'In evaluation — Phase 2',
+    },
+    {
       domain: 'Energy Infrastructure',
       description: 'Evidence frameworks for grid resilience and flexibility',
       status: 'Archived — post-Phase 3',

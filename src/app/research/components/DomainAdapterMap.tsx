@@ -6,7 +6,7 @@ interface DomainAdapterMapProps {
   className?: string;
 }
 
-type StatusTone = 'operational' | 'development' | 'planned';
+type StatusTone = 'operational' | 'development' | 'evaluation' | 'planned';
 
 interface DomainRow {
   domain: string;
@@ -35,6 +35,17 @@ const rows: DomainRow[] = [
     roadmap: [
       'Sentinel ingestion adapter hardening in progress.',
       'Wildfire and deforestation hypothesis templates under institutional pilot review.',
+    ],
+  },
+  {
+    domain: 'Quantum Hardware',
+    status: 'In evaluation',
+    statusTone: 'evaluation',
+    dataSources:
+      'University of Osaka — Center for Quantum Information and Quantum Biology; OQTOPUS (oqtopus.io)',
+    roadmap: [
+      'Evaluating OQTOPUS as a physical QPU backend for instrument-agnostic hypothesis testing.',
+      'Focus: probabilistic outcome tracking, calibration drift provenance, and closed-loop reasoning under quantum noise.',
     ],
   },
   {
@@ -72,6 +83,7 @@ const rows: DomainRow[] = [
 const statusClasses: Record<StatusTone, string> = {
   operational: 'bg-emerald-100 text-emerald-800 border-emerald-200',
   development: 'bg-amber-100 text-amber-800 border-amber-200',
+  evaluation: 'bg-amber-100 text-amber-800 border-amber-200',
   planned: 'bg-slate-100 text-slate-700 border-slate-200',
 };
 

@@ -13,7 +13,7 @@ export const metadata: Metadata = generateMetadata({
 });
 
 const ValidationPage = () => {
-  type ArtifactStatus = 'Operational' | 'In development' | 'Planned';
+  type ArtifactStatus = 'Operational' | 'In development' | 'In evaluation' | 'Planned';
   type ArtifactCard = {
     id: string;
     title: string;
@@ -22,6 +22,7 @@ const ValidationPage = () => {
     dateLabel: string;
     description: string;
     bullets: string[];
+    bulletTone?: 'complete' | 'inProgress';
     ctaLabel: string;
     href: string;
   };
@@ -29,7 +30,22 @@ const ValidationPage = () => {
   const getStatusClasses = (status: ArtifactStatus) => {
     if (status === 'Operational') return 'bg-emerald-100 text-emerald-800 border-emerald-200';
     if (status === 'In development') return 'bg-amber-100 text-amber-800 border-amber-200';
+    if (status === 'In evaluation') return 'bg-amber-100 text-amber-800 border-amber-200';
     return 'bg-slate-100 text-slate-800 border-slate-200';
+  };
+
+  const getBulletConfig = (tone: ArtifactCard['bulletTone']) => {
+    if (tone === 'inProgress') {
+      return {
+        icon: 'clock',
+        className: 'text-amber-700 mt-0.5 flex-shrink-0',
+      } as const;
+    }
+
+    return {
+      icon: 'check-circle',
+      className: 'text-primary mt-0.5 flex-shrink-0',
+    } as const;
   };
 
   const artifacts: ArtifactCard[] = [
@@ -114,6 +130,25 @@ const ValidationPage = () => {
       href: '#sentinel-progress-logs',
     },
     {
+      id: 'quantum-oqtopus-evaluation',
+      title: 'Quantum instrument backend evaluation',
+      status: 'In evaluation',
+      statusLabel: 'In evaluation',
+      dateLabel: 'FEBRUARY 2026 — UNIVERSITY OF OSAKA',
+      description:
+        'Structured API evaluation of the OQTOPUS quantum platform (oqtopus.io) as a live physical instrument backend. Testing hypothesis submission, probabilistic result ingestion, calibration drift tracking, and provenance alignment with the HGE evidence bundle format.',
+      bullets: [
+        'API endpoint integration',
+        'Token and session management',
+        'Probabilistic outcome ingestion',
+        'Calibration drift provenance',
+        'Evidence bundle alignment',
+      ],
+      bulletTone: 'inProgress',
+      ctaLabel: 'Request evaluation briefing',
+      href: '/engage/request-access',
+    },
+    {
       id: 'benchmark-annex',
       title: 'Institutional benchmark annex',
       status: 'Planned',
@@ -140,7 +175,7 @@ const ValidationPage = () => {
     {
       month: 'January 2026',
       detail:
-        'Schema mapping finalized for Sentinel metadata fields. Provenance event contract aligned with evidence bundle specification v2.0.',
+        'Schema mapping finalized for Sentinel metadata fields. Provenance event contract aligned with evidence bundle specification v1.0.',
     },
     {
       month: 'December 2025',
@@ -167,8 +202,8 @@ const ValidationPage = () => {
               pathway.
             </p>
             <p className="text-xs font-body text-white/80 mt-6">
-              Status legend: Operational, In development, Planned. Dates indicate latest release or
-              target publication window.
+              Status legend: Operational, In development, In evaluation, Planned. Dates indicate
+              latest release or target publication window.
             </p>
           </div>
         </div>
@@ -217,12 +252,17 @@ const ValidationPage = () => {
                 <ul className="space-y-2 mb-5">
                   {card.bullets.map((b) => (
                     <li key={b} className="flex items-start gap-2">
-                      <Icon
-                        name="check-circle"
-                        size={14}
-                        variant="outline"
-                        className="text-primary mt-0.5 flex-shrink-0"
-                      />
+                      {(() => {
+                        const bulletConfig = getBulletConfig(card.bulletTone);
+                        return (
+                          <Icon
+                            name={bulletConfig.icon}
+                            size={14}
+                            variant="outline"
+                            className={bulletConfig.className}
+                          />
+                        );
+                      })()}
                       <span className="text-sm text-foreground font-body leading-relaxed">{b}</span>
                     </li>
                   ))}
