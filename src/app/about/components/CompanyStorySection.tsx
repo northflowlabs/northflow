@@ -55,8 +55,9 @@ const CompanyStorySection = ({ className = '' }: CompanyStorySectionProps) => {
                   <br />
                   Extension of validated engine to Earth Observation and climate resilience domains.
                   ESA Sentinel data adaptation in progress. ESA concept note drafted. Academic
-                  engagement initiated. Governance and reproducibility framework under
-                  consolidation.
+                  engagement initiated. Quantum hardware backend evaluation initiated. University of
+                  Osaka OQTOPUS integration in progress. Governance and reproducibility framework
+                  under consolidation.
                 </div>
               </div>
               <div className="flex space-x-4">

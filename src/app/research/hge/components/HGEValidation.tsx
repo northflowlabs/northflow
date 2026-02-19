@@ -4,7 +4,7 @@ import Icon from '@/components/ui/AppIcon';
 interface ValidationItem {
   id: number;
   title: string;
-  status: 'Operational' | 'In development';
+  status: 'Operational' | 'In development' | 'In evaluation';
   description: string;
   detailLabel: string;
   details: string[];
@@ -55,6 +55,20 @@ const HGEValidation = ({ className = '' }: HGEValidationProps) => {
         'Wildfire risk hypothesis generation',
         'Deforestation pattern detection',
         'Infrastructure stress indicators',
+      ],
+    },
+    {
+      id: 4,
+      title: 'Quantum hardware backend evaluation',
+      status: 'In evaluation',
+      description:
+        'Active technical evaluation of the University of Osaka OQTOPUS quantum platform (oqtopus.io) as a physical instrument backend for instrument-agnostic hypothesis testing workflows. Focused on probabilistic result ingestion, calibration drift provenance, and evidence bundle alignment.',
+      detailLabel: 'Evaluation focus',
+      details: [
+        'API endpoint integration',
+        'Probabilistic outcome tracking',
+        'Calibration drift provenance',
+        'Evidence bundle alignment (v1.0)',
       ],
     },
   ];
